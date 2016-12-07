@@ -2,28 +2,39 @@
 
 [Tracktive Live](http://link.com)
 
-Tracktive is a single-page, full-stack **playlist creation** application inspired by [8tracks](http://8tracks.com/), created with the goal to design a clean, lightweight (and at**tracktive**) clone of the original website. It is built on a *Ruby on Rails* backend with a *PostgreSQL* database, and uses *React.js* with *Redux* architectural framework on the frontend.
+Tracktive is a single-page, full-stack **playlist creation** application inspired by [8tracks](http://8tracks.com/), created with the goal to design a lightweight yet at**tracktive** clone of the original website. It is built on a *Ruby on Rails* backend with a *PostgreSQL* database, and uses *React.js* with *Redux* architectural framework on the frontend.
 
 ## Features & Implementation
-* Secure, convenient front-end auth
-	* What this does or means 
+* Secure front-end auth
+	* Modal login/signup form 
+	* Handrolled encryption system
 * Continuous audio streaming
-	* What this does or means 
+	* Music streaming is never interrupted by navigation
+* Easy, effective playlist creation
+	* Effectively create playlist by querying artists 
 * Personal dashboard
-	* What this does or means 
-* Playlist creation
-	* What this does or means 
-* Minimalist music player 
-	* What this does or means 
+	* User profile shows *liked* or *created* playlists
 * Playlist searching
-	* What this does or means 
+	* Dynamically search playlists based on artist or track name 
 
 
+### Front-end Auth
+Short paragraph describing this feature
 
-### Feature 1 description
-### Feature 2 description
-### Feature 3 description
-### Feature 4 description
+### Continuous Audio Streaming
+Short paragraph describing this feature
 
+### Personal Dashboard
+Short paragraph describing this feature
+
+### Easy Playlist Creation
+Short paragraph describing this feature
+
+### Personal Dashboard
+Short paragraph describing this feature
+
+### Dynamic Playlist Searching
+Short paragraph describing this feature
 
 ## Upcoming Features 
+Short paragraph describing this feature
