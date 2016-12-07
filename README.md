@@ -6,17 +6,17 @@ Tracktive is a single-page, full-stack web playlist creation application inspire
 
 ## Features & Implementation
 * Secure, convenient front-end auth
-⋅⋅* What this does or means 
+	* What this does or means 
 * Continuous audio streaming
-⋅⋅* What this does or means 
+	* What this does or means 
 * Personal dashboard
-⋅⋅* What this does or means 
+	* What this does or means 
 * Playlist creation
-⋅⋅* What this does or means 
+	* What this does or means 
 * Minimalist music player 
-⋅⋅* What this does or means 
+	* What this does or means 
 * Playlist searching
-⋅⋅* What this does or means 
+	* What this does or means 
 
 
 
