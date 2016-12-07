@@ -41,7 +41,7 @@
 
 ### Phase 2: Songs Model, API, and components (2 days) (_ days)
 
-- [ ]
+- [ ] Blabbity bla
 - [ ]
 - [ ]
 - [ ]
