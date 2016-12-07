@@ -78,12 +78,12 @@ narrows down results based on the inputted query.
 ### Phase 4:  Continuous Streaming *(2 days)*
 *Objective*: TracktLists can be streamed without being interrupted by navigation. 
 Information on the current song is displayed in the header bar.
-- [ ] `CurrentSongDisplay` component
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ] **Bonus**: Add icons to side panel
+
+- [ ] Research: requirements for continuous streaming
+- [ ] Research:  bugs that might interrupt continuous streaming
+- [ ] `CurrentSongDisplay`
+	- [ ] Presentational component and container
+- [ ] Does this need a full redux cycle?
 
 ### Phase 6:  Media Queries and Optimizing Design *(2 days)*
 *Objective*: Optimize and enhance navigation through 
@@ -93,9 +93,9 @@ Information on the current song is displayed in the header bar.
 - [ ] Implement customized CSS spinner so that it spins when user logs in or creates a TracktList
 - [ ] Add logo as favicon
 - [ ] Make sure stylistic elements and color scheme are consistent in all views 
+- [ ] **Bonus**: Add icons to side panel
 
-
-## Bonus Features
+## Bonus Features :sparkles:
 
 ### TracktList taggings
 - [ ] Create tags/taggings model and associations (join table)
