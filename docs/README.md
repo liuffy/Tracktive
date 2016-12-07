@@ -3,9 +3,9 @@
 
 ## Minimum Viable Product 
 *Tracktive* is a web application inspired by 8Tracks, built using Ruby on Rails and React/Redux. By the end of the  first 2 weeks of development, this app will, at a minimum, satisfying the following: 
-[] Hosting on Heroku
+- [] Hosting on Heroku
  * Clean styling and smooth, bug-free navigation
-[] Account creation, login, & guest/demo login
+- [ ] Account creation, login, & guest/demo login
 [] Playlist creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
 [] Continuous playlist streaming while navigating 
 [] Dashboard 
