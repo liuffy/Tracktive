@@ -42,14 +42,14 @@
 	- [ ] Session utils
 	- [ ] Session actions
 	- [ ] Session reducer 
-	- [ ] Session form presentational component and container
+	- [ ] `SessionForm` presentational component and container
 - [ ] Header 
 	- [ ] Header presentational component and container
 - [ ] `Greeting` (nested in Header)
 	- [ ] Greeting presentational component and container
 	- [ ] Check that the greeting renders in app.jsx 
 - [ ] `UserDetail` component for currentUser in header 
-- [ ] CSS: style `SessionForm` components 
+- [ ] CSS: style session-related components (`SessionForm`)
 
 
 ### Phase 2: `TracktList` Model and `TracktLikes` Model, Spotify API *(3 days)*
@@ -70,10 +70,8 @@ narrows down results based on the inputted query.
 
 - [ ] `TracktListIndexItem`
 - [ ] Import `<Link>` from `react-router` to stylize active links 
-- [ ]
-- [ ]
-- [ ] 
-- [ ] **Bonus**: Create tags/taggings model and associations (see below)
+- [ ] SEARCH STUFF !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- [ ] CSS: style search-related components 
 
 ### Phase 4:  Continuous Streaming *(2 days)*
 *Objective*: TracktLists can be streamed without being interrupted by navigation. 
@@ -83,17 +81,17 @@ Information on the current song is displayed in the header bar.
 - [ ] Research:  bugs that might interrupt continuous streaming
 - [ ] `CurrentSongDisplay`
 	- [ ] Presentational component and container
-- [ ] Does this need a full redux cycle?
+- [ ] Does `CurrentSongDisplay` need a full redux cycle?
+- [ ] CSS: Style tracktlist-related components 
 
 ### Phase 6:  Media Queries and Optimizing Design *(2 days)*
 *Objective*: Optimize and enhance navigation through 
 
 - [ ] Implement media queries so that app is usable at different viewport sizes 
 - [ ] Design custom vector logo to display in place of App Name
-- [ ] Implement customized CSS spinner so that it spins when user logs in or creates a TracktList
+- [ ] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList
 - [ ] Add logo as favicon
 - [ ] Make sure stylistic elements and color scheme are consistent in all views 
-- [ ] **Bonus**: Add icons to side panel
 
 ## Bonus Features :sparkles:
 
@@ -102,5 +100,7 @@ Information on the current song is displayed in the header bar.
 	- [ ] Make necessary CRUD API
 	- [ ] Set up fetching tags for tracks
 	- [ ] Connect this tag search with MixesIndex component where our filter is tags
+
+### Add Icons to Side nav panel 
 
 ### Infinite  scroll (pagination)
