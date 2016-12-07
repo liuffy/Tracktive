@@ -4,7 +4,7 @@
 
 *Create playlists effortlessly.* :musical_note:
 
- Tracktive is a single-page, full-stack web application inspired by [8tracks](http://8tracks.com/), created with the goal of designing a lightweight, at**tracktive** clone of the original playlist creation website. It is built on a *Ruby on Rails* backend with a *PostgreSQL* database, and uses *React.js* with *Redux* architectural framework on the frontend.
+ Tracktive is a single-page, full-stack web application inspired by [8tracks](http://8tracks.com/), created with the goal of designing a lightweight, at**tracktive** clone of the original playlist creation website. It is built on a *Ruby on Rails* backend, a *PostgreSQL* database, and a *React.js* with *Redux* architectural framework on the frontend.
 
 ## Features & Implementation
 * Secure front-end auth
