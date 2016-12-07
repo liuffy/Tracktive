@@ -72,13 +72,21 @@
 
 
 ### Phase 3: Dashboard, SideBar, Dynamic Search *(2 days)*
-*Objective*: Upon login, users see a dashboard displaying a random mix of 8 TracktLists as well as a search bar that
-narrows down results based on the inputted artist. 
+*Objective*: Upon login, users see a dashboard displaying all TracktLists as well as a search bar that
+brings up results based on the inputted artist. 
+
 
 - [ ] `TracktListIndexItem`
-- [ ] Import `<Link>` from `react-router` to stylize active links 
-- [ ] Implement custom query for searching via artists 
-- [ ] CSS: style search-related components 
+	- [ ] Presentational component, container
+	- [ ] Figure out how to import album or artist art into the IndexItem button 
+	- [ ] Use Masonry JavasScript library for Dashboard grid layout
+- [ ] `TracktListDetail`
+	- [ ] Displays: Creator of TracktList, Date Published, Name of Tracktlist (left side)
+	- [ ] Displays: TracktList (right side)
+	- [ ] Blown up Album art as banner? :art:
+- [ ] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  
+- [ ] Implement custom query for searching via *artists* 
+- [ ] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
 
 ### Phase 4:  Continuous Streaming *(2 days)*
 *Objective*: TracktLists can be streamed without being interrupted by navigation. 
