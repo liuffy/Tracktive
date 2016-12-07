@@ -40,6 +40,7 @@
 
 
 ### Phase 2: Songs Model, API, and components (2 days) (_ days)
+
 - [ ]
 - [ ]
 - [ ]
@@ -49,6 +50,7 @@
 - [ ]
 
 ### Phase 3: Playlists Model and playlist likes (_ days)
+
 - [ ]
 - [ ]
 - [ ]
@@ -58,6 +60,7 @@
 - [ ]
 
 ### Phase 4:  Streaming audio (_ days)
+
 - [ ]
 - [ ]
 - [ ]
@@ -67,6 +70,7 @@
 - [ ]
 
 ### Phase 5:  Intensive CSS workshopping (_ days)
+
 - [ ]
 - [ ]
 - [ ]
