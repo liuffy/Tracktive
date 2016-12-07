@@ -95,6 +95,7 @@ Information on the current song is displayed in the header bar.
 - [ ] Research: requirements for continuous streaming
 - [ ] Research:  bugs that might interrupt continuous streaming
 - [ ] `CurrentSong` Redux Cycle -- is this the only way to let music play continuously during navigation?????
+Serious: What if I just have second compact playlist widget?
 	- [ ] `CurrentSong` components
 	- [ ] CurrentSongBar
 	- [ ] CurrentSongDisplay 
@@ -103,7 +104,7 @@ Information on the current song is displayed in the header bar.
 - [ ] CSS: Style tracktlist-related components 
 
 ### Phase 6:  Media Queries and Optimizing Design *(2 days)*
-*Objective*: Optimize and enhance navigation through 
+*Objective*: Optimize and enhance navigation through adding or adjusting stylistic features. 
 
 - [ ] Implement animated Demo/ Guest Login using script 
 - [ ] Implement media queries so that app is usable at different viewport sizes 
