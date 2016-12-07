@@ -4,7 +4,7 @@
 
 *Create playlists effortlessly.* :musical_note:
 
- Tracktive is a single-page, full-stack web application inspired by [8tracks](http://8tracks.com/), created with the goal of designing a lightweight yet at**tracktive** clone of the original playlist creation website. It is built on a *Ruby on Rails* backend with a *PostgreSQL* database, and uses *React.js* with *Redux* architectural framework on the frontend.
+ Tracktive is a single-page, full-stack web application inspired by [8tracks](http://8tracks.com/), created with the goal of designing a lightweight, at**tracktive** clone of the original playlist creation website. It is built on a *Ruby on Rails* backend with a *PostgreSQL* database, and uses *React.js* with *Redux* architectural framework on the frontend.
 
 ## Features & Implementation
 * Secure front-end auth
@@ -12,14 +12,14 @@
 * Continuous audio streaming
 	* Music streaming is never interrupted by navigation
 * Easy, effective playlist creation
-	* Effectively create playlist by querying artists 
+	* Effortlessly create playlist by querying artists 
 	* Spotify API 
 * Dashboard 
-	* Minimalist design 
+	* Minimalist design, shows random mix of playlists until user performs search 
 * User profile
 	* User profile shows *liked* or *created* playlists
-* Playlist searching
-	* Dynamically search playlists based on artist or track name 
+* Playlist tagging and searching
+	* Dynamically search playlists based on artist name, track name, or tag.  
 
 
 ### Secure front-end auth

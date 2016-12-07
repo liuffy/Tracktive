@@ -10,7 +10,9 @@
 - [ ] Playlist creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
 - [ ] Continuous playlist streaming while navigating 
 - [ ] Dashboard 
-- [ ] User profile display liked and created playlists
+	- [ ] Search component allows users to find playlists
+- [ ] User profile
+	- [ ] displays liked and created playlists
 - [ ] A Production README
 
 ## Design Docs 
@@ -28,71 +30,79 @@
 
 - [X] Create new Rails project
 	- [ ] Webpack & react/redux modules
-	- [ ] Setup frontend folders
-- [ ] `User` model and routes 
+- [ ] `User`
 	- [ ] Model with validations
 	- [ ] UsersController with routes: create and show 
 	- [ ] Seed db with users
-- [ ] `Session` routes 
+- [ ] `Session`
 	- [ ] SessionsController with routes: create and destroy  
-- [ ] Back end authentication (session/password)
 	- [ ] Test login with users from seed file 
 - [ ] StaticPages controller and root view
-
-- [ ] Redux cycle for Sessions
+- [ ] `Sessions` Redux Cycle 
 	- [ ] Session utils
 	- [ ] Session actions
 	- [ ] Session reducer 
 	- [ ] Session form presentational component and container
 - [ ] Header 
 	- [ ] Header presentational component and container
-- [ ] Greeting (nested in Header)
+- [ ] `Greeting` (nested in Header)
 	- [ ] Greeting presentational component and container
 	- [ ] Check that the greeting renders in app.jsx 
-- [ ] Create: UserDetail component for currentUser in header 
-- [ ] Style: signup/sign in components 
+- [ ] `UserDetail` component for currentUser in header 
+- [ ] CSS: style `SessionForm` components 
 
 
-### Phase 2: Songs Model, API, and components (2 days) (_ days)
+### Phase 2: `Playlist` Model and `Likes` Model, Spotify API(3 days)
+*Objective*: Playlists can be created, liked, and unliked. 
+
+- [ ] `Playlist` model 
+- [ ] `PlaylistLike` model
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+### Phase 3: Dashboard, SideBar, Dynamic Search (2 days)
+*Objective*: Upon login, users see a dashboard displaying a random mix of playlists as well as a search bar that
+narrows down results based on the inputted query. 
+
+- [ ] `PlaylistIndexItem`
+- [ ] Drop down menu 
+- [ ]
+- [ ]
+- [ ]
+- [ ] 
+- [ ] **Bonus**: Create tags/taggings model and associations (join table)
+	- [ ] Make necessary CRUD API
+	- [ ] Set up fetching tags for tracks
+	- [ ] Connect this tag search with MixesIndex component where our filter is tags
+- [ ] Update UserDetail to display *Liked* and *Created* Playlists 
+
+### Phase 4:  Music Player, Continuous Streaming  (2 days)
+*Objective*: Playlists can be streamed without being interrupted by navigation and controlled via a playerbar.
+
+- [ ] CurrentSong components
+	- [ ] CurrentSongDisplay (nested in CurrentSong component)
+ 	- [ ] CurrentSongControls (nested in CurrentSong component)
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ] **Bonus**: Add icons to side panel
+
+
+
+### Phase 6:  Loading Spinner + CSS workshopping (2 days)
 *Objective*: 
 
-- [ ] Blabbity bla
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
 - [ ]
 
-### Phase 3: Playlists Model and Likes (_ days)
-*Objective*: 
+## Bonus Features
 
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-### Phase 4:  Streaming audio (_ days)
-*Objective*: 
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-
-### Phase 5:  Intensive CSS workshopping (_ days)
-*Objective*: 
-
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+### Tracklist taggings
+- [ ] Create tags/taggings model and associations (join table)
+	- [ ] Make necessary CRUD API
+	- [ ] Set up fetching tags for tracks
+	- [ ] Connect this tag search with MixesIndex component where our filter is tags
