@@ -1,4 +1,4 @@
-# Tractive
+# Tracktive
 [Heroku link](http://link.com)
 
 ## Minimum Viable Product 
@@ -7,12 +7,12 @@
 - [ ] Hosting on Heroku
 	- [ ] Clean styling and smooth, bug-free navigation
 - [ ] Account creation, login, & guest/demo login
-- [ ] Playlist creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
-- [ ] Continuous playlist streaming while navigating 
+- [ ] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
+- [ ] Continuous TracktList streaming while navigating 
 - [ ] Dashboard 
-	- [ ] Search component allows users to find playlists
+	- [ ] Search component in header narrows down TracktLists in dashboard
 - [ ] User profile
-	- [ ] displays liked and created playlists
+	- [ ] displays liked and created tabs 
 - [ ] A Production README
 
 ## Design Docs 
@@ -25,7 +25,7 @@
 
 ## Implementation Timeline
 
-### Phase 1: Backend Setup, Front End User Authentication (2 days)
+### Phase 1: Backend Setup, Front End User Authentication *(2 days)*
 *Objective*: Set up backend authentification and session-related components 
 
 - [X] Create new Rails project
@@ -52,57 +52,55 @@
 - [ ] CSS: style `SessionForm` components 
 
 
-### Phase 2: `Playlist` Model and `Likes` Model, Spotify API(3 days)
-*Objective*: Playlists can be created, liked, and unliked. 
+### Phase 2: `TracktList` Model and `TracktLikes` Model, Spotify API *(3 days)*
+*Objective*: TracktLists can be created, liked, and unliked. 
 
-- [ ] `Playlist` model 
-- [ ] `PlaylistLike` model
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
-- [ ]
+- [ ] Experiment with Spotify API endpoints in Chrome Dev Tools
+- [ ] `Tracktlist` 
+	- [ ] Model 
+	- [ ] TracktListsController  
+- [ ] `TracktListLike` model
+- [ ] JBuilder views for TracktLists
+- [ ]	`CreateTracktList
 
-### Phase 3: Dashboard, SideBar, Dynamic Search (2 days)
-*Objective*: Upon login, users see a dashboard displaying a random mix of playlists as well as a search bar that
+
+### Phase 3: Dashboard, SideBar, Dynamic Search *(2 days)*
+*Objective*: Upon login, users see a dashboard displaying a random mix of 8 TracktLists as well as a search bar that
 narrows down results based on the inputted query. 
 
-- [ ] `PlaylistIndexItem`
-- [ ] Drop down menu 
-- [ ]
+- [ ] `TracktListIndexItem`
+- [ ] Import `<Link>` from `react-router` to stylize active links 
 - [ ]
 - [ ]
 - [ ] 
-- [ ] **Bonus**: Create tags/taggings model and associations (join table)
-	- [ ] Make necessary CRUD API
-	- [ ] Set up fetching tags for tracks
-	- [ ] Connect this tag search with MixesIndex component where our filter is tags
-- [ ] Update UserDetail to display *Liked* and *Created* Playlists 
+- [ ] **Bonus**: Create tags/taggings model and associations (see below)
 
-### Phase 4:  Music Player, Continuous Streaming  (2 days)
-*Objective*: Playlists can be streamed without being interrupted by navigation and controlled via a playerbar.
-
-- [ ] CurrentSong components
-	- [ ] CurrentSongDisplay (nested in CurrentSong component)
- 	- [ ] CurrentSongControls (nested in CurrentSong component)
+### Phase 4:  Continuous Streaming *(2 days)*
+*Objective*: TracktLists can be streamed without being interrupted by navigation. 
+Information on the current song is displayed in the header bar.
+- [ ] `CurrentSongDisplay` component
 - [ ]
 - [ ]
 - [ ]
 - [ ]
 - [ ] **Bonus**: Add icons to side panel
 
+### Phase 6:  Media Queries and Optimizing Design *(2 days)*
+*Objective*: Optimize and enhance navigation through 
 
+- [ ] Implement media queries so that app is usable at different viewport sizes 
+- [ ] Design custom vector logo to display in place of App Name
+- [ ] Implement customized CSS spinner so that it spins when user logs in or creates a TracktList
+- [ ] Add logo as favicon
+- [ ] Make sure stylistic elements and color scheme are consistent in all views 
 
-### Phase 6:  Loading Spinner + CSS workshopping (2 days)
-*Objective*: 
-
-- [ ]
 
 ## Bonus Features
 
-### Tracklist taggings
+### TracktList taggings
 - [ ] Create tags/taggings model and associations (join table)
 	- [ ] Make necessary CRUD API
 	- [ ] Set up fetching tags for tracks
 	- [ ] Connect this tag search with MixesIndex component where our filter is tags
+
+### Infinite  scroll (pagination)
