@@ -23,23 +23,38 @@
 
 ## Implementation Timeline
 
-### Phase 1: Backend setup and Front End User Authentication (2 days)
+### Phase 1: Backend Setup, Front End User Authentication (2 days)
+*Objective*: Set up backend authentification and session-related components 
 
 - [X] Create new Rails project
-- [ ] User model/migration
+	- [ ] Webpack & react/redux modules
+	- [ ] Setup frontend folders
+- [ ] `User` model and routes 
+	- [ ] Model with validations
+	- [ ] UsersController with routes: create and show 
+	- [ ] Seed db with users
+- [ ] `Session` routes 
+	- [ ] SessionsController with routes: create and destroy  
 - [ ] Back end authentication (session/password)
+	- [ ] Test login with users from seed file 
 - [ ] StaticPages controller and root view
-- [ ] Webpack & react/redux modules
-- [ ] APIUtil to interact with the API
-- [ ] Redux cycle for front-end authentication
-- [ ] User signup/sign in components
-- [ ] UserDetail component for currentUser on account tab
-- [ ] Style signup/sign in components
-- [ ] Seed users
-- [ ] Fill out display components
+
+- [ ] Redux cycle for Sessions
+	- [ ] Session utils
+	- [ ] Session actions
+	- [ ] Session reducer 
+	- [ ] Session form presentational component and container
+- [ ] Header 
+	- [ ] Header presentational component and container
+- [ ] Greeting (nested in Header)
+	- [ ] Greeting presentational component and container
+	- [ ] Check that the greeting renders in app.jsx 
+- [ ] Create: UserDetail component for currentUser in header 
+- [ ] Style: signup/sign in components 
 
 
 ### Phase 2: Songs Model, API, and components (2 days) (_ days)
+*Objective*: 
 
 - [ ] Blabbity bla
 - [ ]
@@ -49,7 +64,8 @@
 - [ ]
 - [ ]
 
-### Phase 3: Playlists Model and playlist likes (_ days)
+### Phase 3: Playlists Model and Likes (_ days)
+*Objective*: 
 
 - [ ]
 - [ ]
@@ -60,6 +76,7 @@
 - [ ]
 
 ### Phase 4:  Streaming audio (_ days)
+*Objective*: 
 
 - [ ]
 - [ ]
@@ -70,6 +87,7 @@
 - [ ]
 
 ### Phase 5:  Intensive CSS workshopping (_ days)
+*Objective*: 
 
 - [ ]
 - [ ]
