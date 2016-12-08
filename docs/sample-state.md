@@ -1,6 +1,6 @@
 # Sample State
 
-`{
+```{
   currentUser: {
     id: 1,
     username: "randomuser1984",
@@ -37,6 +37,7 @@
       },
     },
   tracktlistDetail: {
+          **What goes here exactly??**
     id: 1,
     title: "highschool nostalgia",
     creatorId: 4,
@@ -44,10 +45,9 @@
        1:  {
           id: 1,
           title: "high school nostalgia",
-          **What goes here exactly??**
           duration: "4:40",
           album: "Lorem"
         }
     ]
   }
-}`
+}```
