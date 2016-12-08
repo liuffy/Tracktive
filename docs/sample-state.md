@@ -14,7 +14,7 @@
   currentSong: {
     song:  {
       id: 3,
-      name: "I Miss You",
+      title: "I Miss You",
       artist: "Blink-182",
       duration: "4:04"
     }
@@ -24,7 +24,7 @@
 
       1:  {
         tracktlist_id: 1,
-        name: "highschool nostalgia",
+        title: "highschool nostalgia",
         creatorId: 1,
         **spotify magic to be clarified later on**
         image_url: "albumart.png"
@@ -32,7 +32,7 @@
 
       2:  {
         tracktlist_id: 2,
-        name: "Billy Joel forever",
+        title: "Billy Joel forever",
         creatorId: 1,
         **spotify magic to be clarified later on**
         image_url: "albumart.png"
