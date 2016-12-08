@@ -29,25 +29,24 @@
 *Objective*: Set up backend authentification and session-related components 
 
 - [X] Create new Rails project
-	- [ ] Webpack & react/redux modules
+	- [X] Webpack & react/redux modules
 - [ ] `User`
-	- [ ] Model with validations
-	- [ ] UsersController with routes: create and show 
-	- [ ] Seed db with users
+	- [X] Model with validations
+	- [X] UsersController with routes: create and show 
 	- [ ] Bootstrap `currentUser` info 
 - [ ] `Session`
-	- [ ] SessionsController with routes: create and destroy  
-	- [ ] Test login with users from seed file 
-- [ ] StaticPages controller and root view
+	- [X] SessionsController with routes: create and destroy  
+	- [X] Test login with Ajax requests
+- [X] StaticPages controller and root view
 - [ ] `Sessions` Redux Cycle 
-	- [ ] Session utils
-	- [ ] Session actions
-	- [ ] Session reducer 
+	- [X] Session utils
+	- [X] Session actions
+	- [X] Session reducer 
 	- [ ] `SessionForm` presentational component and container
 - [ ] Header 
 	- [ ] Header presentational component and container
-- [ ] `Greeting` (nested in Header)
-	- [ ] Greeting presentational component and container
+- [X] `Greeting` (nested in Sidebar)
+	- [X] Greeting presentational component and container
 	- [ ] Check that the greeting renders in app.jsx 
 - [ ] `UserDetail` component for currentUser in header 
 - [ ] CSS: style session-related components (`SessionForm`)
