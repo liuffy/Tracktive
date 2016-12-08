@@ -16,7 +16,7 @@
 
 ## App Level
 
-### DashboardContainer
+### Dashboard
 * SidebarContainer
 	* ButtonItem (3)
 		* explore, create, my_music
@@ -34,6 +34,8 @@
 ### TracktlistDetailContainer
 * LikeButton 
 
+### TracktlistFormContainer
+
 ## TracktPlayer
 
 ### TracktlistPlayerContainer
@@ -47,6 +49,14 @@
 	* liked, created 
 
 
-# Routes 
+# Routes
+
+| Path                          | Component                                                       |
+|-------------------------------|-----------------------------------------------------------------|
+| "/"                           | "SessionFormContainer"                                          |
+| "/explore"                    | "SidebarContainer,  TracktlistIndexContainer,  SearchContainer" |
+| "/users/:user_id"             | "UserDetailContainer, TracktlistIndexItems"                     |
+| "/tracktlists/:tracktlist_id" | "TracktlistDetailContainer"                                     |
+| ""/tracktlists/new"           | "TracktlistFormContainer"                                       | 
 
 
