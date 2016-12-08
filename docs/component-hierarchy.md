@@ -3,11 +3,11 @@
 ## Splash Page
 
 ### LoginHeaderContainer
+* Logo
 * ButtonItem (2)
 	* sign up, sign in 
 	  * SessionFormContainer
 	  	* ButtonItem (2)
-* Logo
 
 ###SplashScreen
 * SplashImage
@@ -29,12 +29,14 @@
 
 ## Tracktlists
 
-### TracktlistIndexContainer
+### TracktlistContainer
 * Spotify widget
+
 ### TracktlistDetailContainer
 * LikeButton 
 
 ### TracktlistFormContainer
+* TracktlistForm
 
 ## TracktPlayer
 
@@ -57,6 +59,6 @@
 | "/explore"                    | "SidebarContainer,  TracktlistIndexContainer,  SearchContainer" |
 | "/users/:user_id"             | "UserDetailContainer, TracktlistIndexItems"                     |
 | "/tracktlists/:tracktlist_id" | "TracktlistDetailContainer"                                     |
-| ""/tracktlists/new"           | "TracktlistFormContainer"                                       | 
+| "/tracktlists/new"           | "TracktlistFormContainer"                                       | 
 
 
