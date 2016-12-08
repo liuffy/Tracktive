@@ -1,10 +1,11 @@
 # Sample State
-
-```{
+```
+{
   currentUser: {
     id: 1,
     username: "randomuser1984",
   },
+
   forms: {
     signIn: {errors: []},
     signUp: {errors: []},
@@ -20,6 +21,7 @@
     playing: true
   },
   tracktlists: {
+
       1:  {
         tracktlist_id: 1,
         name: "highschool nostalgia",
@@ -50,4 +52,5 @@
         }
     ]
   }
-}```
+}
+```
