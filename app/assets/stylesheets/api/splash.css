@@ -3,6 +3,14 @@
 /* Wordmark */
 .tracktive-wordmark1, .tracktive-wordmark2 {
 	font-size:70px;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+
 }
 
 .tracktive-wordmark1{

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		store = configureStore();
 	}
 
-	window.store = configureStore();
+	window.store = store;
 	window.login = login;
 	window.logout = logout;
   const root = document.getElementById('root');
