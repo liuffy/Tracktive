@@ -45,7 +45,7 @@
 	- [X] `SessionForm` presentational component and container
 - [X] `Greeting` (nested in Sidebar)
 	- [X] Greeting presentational component and container
-- [ ] `UserDetail` component for currentUser in header 
+- [X] `UserDetail` component for currentUser in header 
 - [X] CSS: style session-related components (`SessionForm`)
 
 

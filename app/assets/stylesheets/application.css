@@ -84,12 +84,96 @@ label {
 
 /* Links and errors*/
 
+
 .link{
 	color:#330d9b;
 }
 
 .link:hover{
 	text-decoration: underline;
+}
+
+div.about{
+	width:200px;
+	height:700px;
+	display:block;
+	position:absolute;
+  margin:10px 0px 0px 40px;
+}
+
+.about-link{
+	color:white;
+	font-size:25px;
+	position:relative;
+	top:500px;
+}
+
+.about-link:hover{
+	color: white;
+  font-size:25px;
+  animation: move linear 4000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(165, 75%, 30%, 1), 
+      3px -3px 0 hsla(165, 75%, 30%, 1), 
+      4px -4px 0 hsla(165, 75%, 30%, 1), 
+      1px -1px 0 hsla(165, 75%, 30%, 1),
+      -4px 4px 0 hsla(257, 51%, 48%, 1), 
+      -3px 3px 0 hsla(257, 51%, 48%, 1), 
+      -4px 4px 0 hsla(257, 51%, 48%, 1), 
+      -1px 1px 0 hsla(257, 51%, 48%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(257, 51%, 48%, 1), 
+      -3px -3px 0 hsla(257, 51%, 48%, 1), 
+      -4px -4px 0 hsla(257, 51%, 48%, 1), 
+      -1px -1px 0 hsla(257, 51%, 48%, 1),
+      4px 4px 0 hsla(165, 75%, 30%, 1), 
+      3px 3px 0 hsla(165, 75%, 30%, 1), 
+      4px 4px 0 hsla(165, 75%, 30%, 1), 
+      1px 1px 0 hsla(165, 75%, 30%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(165, 75%, 30%, 1), 
+      -3px 3px 0 hsla(165, 75%, 30%, 1), 
+      -4px 4px 0 hsla(165, 75%, 30%, 1), 
+      -1px 1px 0 hsla(165, 75%, 30%, 1),
+      4px -4px 0 hsla(257, 51%, 48%, 1), 
+      3px -3px 0 hsla(257, 51%, 48%, 1), 
+      4px -4px 0 hsla(257, 51%, 48%, 1), 
+      1px -1px 0 hsla(257, 51%, 48%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(257, 51%, 48%, 1), 
+      3px 3px 0 hsla(257, 51%, 48%, 1), 
+      4px 4px 0 hsla(257, 51%, 48%, 1), 
+      1px 1px 0 hsla(257, 51%, 48%, 1),
+      -4px -4px 0 hsla(165, 75%, 30%, 1), 
+      -3px -3px 0 hsla(165, 75%, 30%, 1), 
+      -4px -4px 0 hsla(165, 75%, 30%, 1), 
+      -1px -1px 0 hsla(165, 75%, 30%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(165, 75%, 30%, 1), 
+      3px -3px 0 hsla(165, 75%, 30%, 1), 
+      4px -4px 0 hsla(165, 75%, 30%, 1), 
+      1px -1px 0 hsla(165, 75%, 30%, 1),
+      -4px 4px 0 hsla(257, 51%, 48%, 1), 
+      -3px 3px 0 hsla(257, 51%, 48%, 1), 
+      -4px 4px 0 hsla(257, 51%, 48%, 1), 
+      -1px 1px 0 hsla(257, 51%, 48%, 1);
+  }  
 }
 
 .error{

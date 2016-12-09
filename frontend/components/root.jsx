@@ -10,9 +10,10 @@ const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
   const currentUser = store.getState().session.currentUser;
   if (currentUser) {
-    replace('/'); // redirects you to the root page if you try to go to the log out or sign up form
+    replace('/'); // redirects to the root page if you try to go to the log out or sign up form
   }
 }
+        // <Route path="/about" component={ SiteInfo } >
 
   return (
   <Provider store={ store }>
