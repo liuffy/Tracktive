@@ -43,13 +43,12 @@ body {
 	border-radius: 10px;
 	font-size:16px;
 	padding:4px 20px;
-	margin:5px;
+	margin:-4px 8px 5px 8px;
 	box-shadow: 2px 2px 2px #330d9b;
 }
 
 .standard-button:hover{
 	background: #330d9b;
-	box-shadow: 2px 2px 2px #87B7A5;
 	color:white;
 }
 
@@ -107,4 +106,9 @@ label {
 .greeting{
 	color:white;
 	font-size:24px;
+}
+
+.cancel-button{
+	position: relative;
+	left:40%;
 }

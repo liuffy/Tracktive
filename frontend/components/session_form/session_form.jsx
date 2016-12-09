@@ -9,10 +9,15 @@ class SessionForm extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.returnToMain = this.returnToMain.bind(this);
   }
 
   update(property){
   	return e => this.setState({[property]: e.target.value});
+  }
+
+  returnToMain(){
+      this.props.router.push('/')
   }
 
   componentDidUpdate() { // this is a lifecycle method used to perform 
@@ -104,7 +109,8 @@ class SessionForm extends React.Component {
 	  			</div>
 				</form>
         <button
-        className="cancel-button">Cancel</button>
+          className="cancel-button link"
+          onClick={this.returnToMain}>cancel :(</button>
   		</div>
 		)
   }

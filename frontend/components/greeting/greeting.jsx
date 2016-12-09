@@ -6,7 +6,7 @@ const Greeting = ({currentUser, logout}) => {
 	if (currentUser){
 		return (
 			<div>
-				<span className="greeting">Welcome, {currentUser.username}!</span>
+				<span className="greeting">hi again, {currentUser.username}.</span>
 				<button 
 					className="standard-button"
 					onClick={logout}>Logout</button>
