@@ -115,7 +115,7 @@ class SessionForm extends React.Component {
 				</form>
         <button
           className="cancel-button link"
-          onClick={this.returnToMain}>cancel :(</button>
+          onClick={this.returnToMain}>cancel</button>
   		</div>
 		)
   }

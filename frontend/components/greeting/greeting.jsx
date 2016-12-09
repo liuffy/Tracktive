@@ -5,8 +5,9 @@ const Greeting = ({currentUser, logout}) => {
 
 	if (currentUser){
 		return (
-			<div>
-				<span className="greeting">hi again, {currentUser.username}.</span>
+			<div className="greeting-container">
+				<span className="greeting">hi again, <Link className="link" 
+											to={`/users/${currentUser.id}`}>{currentUser.username}.</Link></span>
 				<button 
 					className="standard-button"
 					onClick={logout}>Logout</button>
@@ -14,7 +15,7 @@ const Greeting = ({currentUser, logout}) => {
 				)
 	} else {
 			return (
-				<div>
+				<div className="greeting-container">
 					<p>
 						<Link 
 						className="standard-button"
