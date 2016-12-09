@@ -67,10 +67,10 @@ class SessionForm extends React.Component {
   	let {username, password} = this.state;
 
   	return(
-  		<div>
+  		<div
+      className="session-form">
 
 	  		<form
-	  			className="session-form"
 	  			onSubmit = {this.handleSubmit}>
   			<br />
 
@@ -103,6 +103,8 @@ class SessionForm extends React.Component {
 	  		className="session-button">{formType}</button>
 	  			</div>
 				</form>
+        <button
+        className="cancel-button">Cancel</button>
   		</div>
 		)
   }

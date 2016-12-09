@@ -44,11 +44,12 @@ body {
 	font-size:16px;
 	padding:4px 20px;
 	margin:5px;
-	box-shadow: 2px 2px #330d9b;
+	box-shadow: 2px 2px 2px #330d9b;
 }
 
 .standard-button:hover{
-	background: #6b5a93;
+	background: #330d9b;
+	box-shadow: 2px 2px 2px #87B7A5;
 	color:white;
 }
 
@@ -68,7 +69,8 @@ button:hover{
 /* Input fields */
 
 .standard-input-field{
-	color: #56445D;
+	color: #330d9b;
+	letter-spacing:1px;
 	font-size:20px;
 	border: 1px solid #77AF9C;
 	margin: 10px 5px;
@@ -77,16 +79,21 @@ button:hover{
 	width:300px;
 }
 
+.standard-input-field:focus{
+	border: 1px solid #330d9b;
+}
 label {
 	font-size:20px;
 }
 
+/* Links and errors*/
+
 .link{
-	color:#56445D;
+	color:#330d9b;
 }
 
 .link:hover{
-	-webkit-filter:brightness(150%);
+	text-decoration: underline;
 }
 
 .error{
@@ -95,4 +102,9 @@ label {
 	margin-left:20px;
 	margin-bottom:20px;
 	font-size:20px;
+}
+
+.greeting{
+	color:white;
+	font-size:24px;
 }
