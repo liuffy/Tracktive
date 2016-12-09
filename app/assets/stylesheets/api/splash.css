@@ -3,7 +3,6 @@
 /* Wordmark */
 .tracktive-wordmark1, .tracktive-wordmark2 {
 	font-size:70px;
-	left:40%;
 }
 
 .tracktive-wordmark1{
@@ -30,5 +29,86 @@
 	left:35%;
 	padding:0px 20px 20px 30px;
 	border-radius:40px;
+}
+
+.demo-button, .session-button{
+	background: #77AF9C;
+	color: white;
+	font-size:20px;
+	border-radius: 10px;
+	padding:6px 30px;
+	margin:10px;
+}
+
+.demo-button{
+	background: #330d9b;
+}
+.demo-button:hover{
+
+	color: white;
+  font-size:20px;
+  animation: move linear 4000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      2px -2px 0 hsla(165, 75%, 30%, 1), 
+      3px -3px 0 hsla(165, 75%, 30%, 1), 
+      2px -2px 0 hsla(165, 75%, 30%, 1), 
+      1px -1px 0 hsla(165, 75%, 30%, 1),
+      -2px 2px 0 hsla(257, 51%, 48%, 1), 
+      -3px 3px 0 hsla(257, 51%, 48%, 1), 
+      -2px 2px 0 hsla(257, 51%, 48%, 1), 
+      -1px 1px 0 hsla(257, 51%, 48%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -2px -2px 0 hsla(257, 51%, 48%, 1), 
+      -3px -3px 0 hsla(257, 51%, 48%, 1), 
+      -2px -2px 0 hsla(257, 51%, 48%, 1), 
+      -1px -1px 0 hsla(257, 51%, 48%, 1),
+      2px 2px 0 hsla(165, 75%, 30%, 1), 
+      3px 3px 0 hsla(165, 75%, 30%, 1), 
+      2px 2px 0 hsla(165, 75%, 30%, 1), 
+      1px 1px 0 hsla(165, 75%, 30%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -2px 2px 0 hsla(165, 75%, 30%, 1), 
+      -3px 3px 0 hsla(165, 75%, 30%, 1), 
+      -2px 2px 0 hsla(165, 75%, 30%, 1), 
+      -1px 1px 0 hsla(165, 75%, 30%, 1),
+      2px -2px 0 hsla(257, 51%, 48%, 1), 
+      3px -3px 0 hsla(257, 51%, 48%, 1), 
+      2px -2px 0 hsla(257, 51%, 48%, 1), 
+      1px -1px 0 hsla(257, 51%, 48%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      2px 2px 0 hsla(257, 51%, 48%, 1), 
+      3px 3px 0 hsla(257, 51%, 48%, 1), 
+      2px 2px 0 hsla(257, 51%, 48%, 1), 
+      1px 1px 0 hsla(257, 51%, 48%, 1),
+      -2px -2px 0 hsla(165, 75%, 30%, 1), 
+      -3px -3px 0 hsla(165, 75%, 30%, 1), 
+      -2px -2px 0 hsla(165, 75%, 30%, 1), 
+      -1px -1px 0 hsla(165, 75%, 30%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      2px -2px 0 hsla(165, 75%, 30%, 1), 
+      3px -3px 0 hsla(165, 75%, 30%, 1), 
+      2px -2px 0 hsla(165, 75%, 30%, 1), 
+      1px -1px 0 hsla(165, 75%, 30%, 1),
+      -2px 2px 0 hsla(257, 51%, 48%, 1), 
+      -3px 3px 0 hsla(257, 51%, 48%, 1), 
+      -2px 2px 0 hsla(257, 51%, 48%, 1), 
+      -1px 1px 0 hsla(257, 51%, 48%, 1);
+  }  
 }
 
