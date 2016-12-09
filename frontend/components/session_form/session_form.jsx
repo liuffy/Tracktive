@@ -84,7 +84,7 @@ class SessionForm extends React.Component {
 	  		{this.renderErrors()}
 
 	  	<div className="login-box">
-	  		<label>Username:<br/>
+	  		<label>username:<br/>
 	  		<input 
           className="standard-input-field"
           type='text'
@@ -94,7 +94,7 @@ class SessionForm extends React.Component {
 	  		</label>
 	  		<br />
 
-	  		<label>Password:<br/>
+	  		<label>password:<br/>
 	  		<input 
           className="standard-input-field"
           type='password'
