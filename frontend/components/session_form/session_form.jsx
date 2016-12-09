@@ -36,9 +36,15 @@ class SessionForm extends React.Component {
   	let {formType} = this.props;
 
   	if (formType === "login"){
-  		return <Link to="/signup">Sign up instead</Link>
+  		return <Link 
+                className="link"
+                to="/signup">Sign up
+              </Link>
   	} else {
-    		return <Link to="/login">Login instead</Link>
+    		return <Link 
+                className="link"
+                to="/login">Login
+                </Link>
   	}
   }
 
@@ -49,7 +55,8 @@ class SessionForm extends React.Component {
   	return(
 			<ul>
   			{errors.map((error, idx) => (
-					<li className="error"key={idx}>{error}</li>
+					<li className="error" 
+              key={idx}>{error}</li>
   			))}
   			</ul>
   			)
@@ -65,33 +72,35 @@ class SessionForm extends React.Component {
 	  		<form
 	  			className="session-form"
 	  			onSubmit = {this.handleSubmit}>
-
-  			Welcome to BenchBnB!
   			<br />
 
-	  		<h3>Please {formType} or {this.navLink()}</h3>
-
+	  		<h3>{formType} to create trackts.</h3>
+        <h4> {this.navLink()} instead?</h4>
 	  		{this.renderErrors()}
 
 	  	<div className="login-box">
-	  		<label>Username:
-	  		<input type='text'
-	  		value={username}
-	  		placeholder="Username"
-	  		onChange={this.update('username')} />
+	  		<label>Username:<br/>
+	  		<input 
+          className="standard-input-field"
+          type='text'
+  	  		value={username}
+  	  		placeholder="Username"
+  	  		onChange={this.update('username')} />
 	  		</label>
 	  		<br />
 
-	  		<label>Password:
-	  		<input type='password'
-	  		value={password}
-	  		placeholder="Password"
-	  		onChange={this.update('password')} />
+	  		<label>Password:<br/>
+	  		<input 
+          className="standard-input-field"
+          type='password'
+  	  		value={password}
+  	  		placeholder="Password"
+  	  		onChange={this.update('password')} />
 	  		</label>
 	  		<br />
 
 	  		<button
-	  		className="session-button">Come on in!</button>
+	  		className="session-button">{formType}</button>
 	  			</div>
 				</form>
   		</div>

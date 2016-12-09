@@ -14,6 +14,85 @@
  *= require_self
  */
 
+
 body {
 	font-family: ProximaNovaA-Regular;
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #9175AD), color-stop(100, #89D4A3));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
+	/* W3C Markup */ 
+	background-image: linear-gradient(to top right, #9175AD 0%, #89D4A3 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+
+/* Buttons */
+
+.standard-button{
+	border: 2px solid #6b5a93;
+	background:white;
+	color: #330d9b;
+	border-radius: 10px;
+	font-size:16px;
+	padding:4px 20px;
+	margin:5px;
+	box-shadow: 2px 2px #330d9b;
+}
+
+.standard-button:hover{
+	background: #6b5a93;
+	color:white;
+}
+
+.session-button{
+	background: #77AF9C;
+	color: white;
+	font-size:20px;
+	border-radius: 10px;
+	padding:6px 30px;
+	margin:10px;
+}
+
+button:hover{
+	-webkit-filter:brightness(120%);
+}
+
+/* Input fields */
+
+.standard-input-field{
+	color: #56445D;
+	font-size:20px;
+	border: 1px solid #77AF9C;
+	margin: 10px 5px;
+	border-radius:8px;
+	padding: 10px 13px;
+	width:300px;
+}
+
+label {
+	font-size:20px;
+}
+
+.link{
+	color:#56445D;
+}
+
+.link:hover{
+	-webkit-filter:brightness(150%);
+}
+
+.error{
+	color: #56445D;
+	list-style:circle;
+	margin-left:20px;
+	margin-bottom:20px;
+	font-size:20px;
 }

@@ -30,26 +30,25 @@
 
 - [X] Create new Rails project
 	- [X] Webpack & react/redux modules
-- [ ] `User`
+- [X] `User`
 	- [X] Model with validations
 	- [X] UsersController with routes: create and show 
-	- [ ] Bootstrap `currentUser` info 
-- [ ] `Session`
+	- [X] Bootstrap `currentUser` info 
+- [X] `Session`
 	- [X] SessionsController with routes: create and destroy  
 	- [X] Test login with Ajax requests
 - [X] StaticPages controller and root view
-- [ ] `Sessions` Redux Cycle 
+- [X] `Sessions` Redux Cycle 
 	- [X] Session utils
 	- [X] Session actions
 	- [X] Session reducer 
-	- [ ] `SessionForm` presentational component and container
+	- [X] `SessionForm` presentational component and container
 - [ ] Header 
 	- [ ] Header presentational component and container
 - [X] `Greeting` (nested in Sidebar)
 	- [X] Greeting presentational component and container
-	- [ ] Check that the greeting renders in app.jsx 
 - [ ] `UserDetail` component for currentUser in header 
-- [ ] CSS: style session-related components (`SessionForm`)
+- [X] CSS: style session-related components (`SessionForm`)
 
 
 ### Phase 2: `TracktList` Model and `TracktLikes` Model, Spotify API *(3 days)*

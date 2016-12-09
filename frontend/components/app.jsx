@@ -3,7 +3,7 @@ import GreetingContainer from './greeting/greeting_container';
 
 const App = ({ children }) => (
   <div>
-    <h1>Tracktive!</h1>
+    <span className="tracktive-wordmark1">track</span><span className="tracktive-wordmark2">tive</span>
     <GreetingContainer />
     { children }
   </div>

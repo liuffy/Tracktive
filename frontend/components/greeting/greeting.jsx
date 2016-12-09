@@ -7,14 +7,22 @@ const Greeting = ({currentUser, logout}) => {
 		return (
 			<div>
 				Welcome, {currentUser.username}!
-				<button onClick={logout}>Logout</button>
+				<button 
+					className="standard-button"
+					onClick={logout}>Logout</button>
 			</div>
 				)
 	} else {
 			return (
 				<div>
 					<p>
-						<Link to={'/login'}>Login</Link> or <Link to={'/signup'}>Signup</Link>
+						<Link 
+						className="standard-button"
+						to={'/login'}>Login</Link> 
+
+						<Link 
+						className="standard-button"
+						to={'/signup'}>Signup</Link>
 					</p>
 				</div>
 				)
