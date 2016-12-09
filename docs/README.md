@@ -43,8 +43,6 @@
 	- [X] Session actions
 	- [X] Session reducer 
 	- [X] `SessionForm` presentational component and container
-- [ ] Header 
-	- [ ] Header presentational component and container
 - [X] `Greeting` (nested in Sidebar)
 	- [X] Greeting presentational component and container
 - [ ] `UserDetail` component for currentUser in header 

@@ -9,7 +9,7 @@ const Greeting = ({currentUser, logout}) => {
 				<span className="greeting">hi again, <Link className="link" 
 											to={`/users/${currentUser.id}`}>{currentUser.username}.</Link></span>
 				<button 
-					className="standard-button"
+					className="standard-button logout"
 					onClick={logout}>Logout</button>
 			</div>
 				)
