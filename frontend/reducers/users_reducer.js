@@ -1,12 +1,12 @@
 import {RECEIVE_USER} from '../actions/user_actions';
 
-const _defaultUser = {
-	user: {
-		id: "", 
-		username: ""
-	}
-}
-const UsersReducer = (state= _defaultUser, action) =>{
+// const _defaultUser = {
+// 	user: {
+// 		id: "", 
+// 		username: ""
+// 	}
+// }
+const UsersReducer = (state= {}, action) =>{
 	Object.freeze(state);
 
 	switch(action.type) {
