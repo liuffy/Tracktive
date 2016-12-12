@@ -1,3 +1,10 @@
+div.tracktlist-form{
+	height:600px;
+	width:725;
+	border-radius:20px;
+	padding:20px;
+}
+
 h2.create{
 	font-size:52px;
 	margin:0 auto;
@@ -8,11 +15,13 @@ h2.create{
 h3.create{
 	font-size:24px;
 	font-weight:400;
+	margin: 5 auto;
 	color:white;
 }
+
 .tracktlist-form{
 	display:block;
-	margin:0px 200px;
+	margin:0px auto;
 	width:650px;
 	height:400px;
 	padding:30px;
@@ -43,7 +52,7 @@ h3.create{
 		color: white;
 		display:inline-block;
 		border-radius: 10px;
-		padding:6px 80px;
+		padding:10px 80px;
 		margin:32px 30px 5px 40px;
 		transition: all 0.2s ease 0s
 		font-size:32px;

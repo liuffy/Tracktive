@@ -32,10 +32,12 @@ class TracktlistForm extends React.Component {
 	}
 
   handleSubmit(e) {
-  	e.preventDefault;
-  	// Redirect the user to the /#/ route if they are logged in.
-  		this.props.processForm(Object.assign({}, this.state))
+    e.preventDefault();
+    this.props.createNewPokemon(Object.assign({}, this.state)).then(newTracktlist => {
+    this.props.router.push(`tracktlists/${newTracktlist.id}`);
+    })
   }
+
 
   // renderErrors(e){
   // 	let {errors} = this.props;
@@ -54,7 +56,7 @@ class TracktlistForm extends React.Component {
   	let {title, index_image_url} = this.state;
   	return(
   		<div
-      className="tracktlist-form">
+      className="tracktlist-form cf">
 
 	  		<form
 	  			onSubmit = {this.handleSubmit}>

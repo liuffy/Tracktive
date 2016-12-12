@@ -9,7 +9,7 @@ const Sidebar = ({currentUser}) => (
 			<div className="sidebar">
 					<button><Link 
 					className="sidebar-button"
-					to={'/explore'}>explore</Link></button>
+					to={'/'}>explore</Link></button>
 
 					<button><Link 
 					className="sidebar-button"
