@@ -61,11 +61,16 @@ class TracktlistForm extends React.Component {
 	  		<form
 	  			onSubmit = {this.handleSubmit}>
   			<br />
-
+        <div 
+          className="create-header">
 	  		<h2
-          className="create">Create a tracktlist.</h2>
+          className="create">Create a tracktlist.</h2>          
+          <img 
+                className="flask-logo"
+                src="https://www.spreadshirt.com/image-server/v1/designs/10277625,width=178,height=178/chemist-flask.png"/>
+        </div>
 
-	  	<div className="create-box">
+	  	<div className="create-form">
 	  		<label><h3
           className="create">1. enter up to 4 artists you want to hear:</h3>
 	  		<input 

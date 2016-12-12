@@ -5,7 +5,12 @@ div.tracktlist-form{
 	padding:20px;
 }
 
+.create-header{
+	height:60px;
+}
+
 h2.create{
+	float:left;
 	font-size:52px;
 	margin:0 auto;
 	font-weight:bold;
@@ -13,6 +18,7 @@ h2.create{
 }
 
 h3.create{
+	position:relative;
 	font-size:24px;
 	font-weight:400;
 	margin: 5 auto;
@@ -27,7 +33,17 @@ h3.create{
 	padding:30px;
 }
 
+.create-form{
+	display:block;
+	position:relative;
+}
 
+/* Flask logo */
+.flask-logo{
+	height:60px;
+	width:auto;
+	float:left;
+}
 .creation-input-field{
 	background: rgba(255,255,255,0.2);
 	letter-spacing:1px;
@@ -52,14 +68,14 @@ h3.create{
 		color: white;
 		display:inline-block;
 		border-radius: 10px;
-		padding:10px 80px;
+		padding:10px 100px;
 		margin:32px 30px 5px 40px;
-		transition: all 0.2s ease 0s
-		font-size:32px;
+		transition: all 0.2s ease 0s;
+
  }
 
  .create-button:hover{
- 	 	background: rgba(255,255,255,0.9);
- 	 	border: 2px solid #4b3e70;
- 	 	color:#4b3e70;
+ 	 	background: rgba(255,255,255,1);
+ 	 	color: #41337c;
+		box-shadow: 2px 2px #41337c;
  }
