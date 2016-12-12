@@ -24,8 +24,7 @@ const SiteInfo = () => (
 			<img 
 				className="head-shot"
 				src="http://res.cloudinary.com/liuffy/image/upload/v1481323424/transparent_me_v6jbcl.png" />
-			<p>This the creator's first full-stack web app.</p>
-			<p>Like 99% of modern developers, she can be found on <a 
+			<p>SL has had her fingers in many pies, including organic farming, being an educator, and now a developer. Like most developers, she can be found on <a 
 				className="link"
 				href="https://github.com/liuffy">Github</a> and 
 				<a 

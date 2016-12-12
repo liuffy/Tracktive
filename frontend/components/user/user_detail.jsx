@@ -1,5 +1,5 @@
 import React from 'react';
-import {withRouter} from 'react-router';
+import {withRouter, Link} from 'react-router';
 
 class UserDetail extends React.Component{
 	 constructor(props){
@@ -14,8 +14,19 @@ class UserDetail extends React.Component{
  		let {user} = this.props;
 
  		return(
- 			<div>
- 			<h3>{user.username}</h3>
+ 			<div
+ 				className="user-detail">
+	 			<h3
+	 				className="user-header">{user.username}'s trackts</h3>
+	 			<div
+	 				className="liked-created-buttons">
+				<Link
+					onClick=""
+					className="user-button">Liked</Link>
+				<Link
+					onClick=""
+					className="user-button">Created</Link> 
+				</div>
  			</div>
 		)
  	}
