@@ -78,6 +78,7 @@ button:hover{
 .standard-input-field:focus{
 	border: 1px solid #330d9b;
 }
+
 label {
 	font-size:20px;
 }

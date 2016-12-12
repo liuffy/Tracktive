@@ -21,10 +21,10 @@ class UserDetail extends React.Component{
 	 			<div
 	 				className="liked-created-buttons">
 				<Link
-					onClick=""
+					onClick="" // ADD ON CLICK!!!!!!!!!!!!!!!!
 					className="user-button">Liked</Link>
 				<Link
-					onClick=""
+					onClick="" // ADD ON CLICK!!!!!!!!!!!!!!!!
 					className="user-button">Created</Link> 
 				</div>
  			</div>

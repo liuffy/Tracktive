@@ -60,7 +60,7 @@ box-shadow: 5px 5px 22px 0px rgba(51,13,155,1);
 }
 
 /* Silly demo button effect */
-.tracktive-wordmark1:hover{
+/*.tracktive-wordmark1:hover{
   animation: move linear 4000ms infinite;  
 }
 
@@ -125,7 +125,7 @@ box-shadow: 5px 5px 22px 0px rgba(51,13,155,1);
       -1px 1px 0 hsla(257, 51%, 48%, 1);
   }  
 }
-}
+}*/
 
 .demo-button:hover{
 
