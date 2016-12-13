@@ -4,6 +4,7 @@ import Root from './components/root';
 import configureStore from './store/store';
 // import {signup, login, logout} from './actions/session_actions';
 import {getArtists, getArtistsAlbums, getAlbumTracks} from './util/tracktlist_api_util';
+// import {getArtists} from './actions/tracktlist_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	window.store = store;
 	window.getArtists = getArtists;
-	window.getArtistsAlbums = getArtistsAlbums;
-	window.getAlbumTracks = getAlbumTracks;
+	// window.getArtistsAlbums = getArtistsAlbums;
+	// window.getAlbumTracks = getAlbumTracks;
 	// window.login = login;
 	// window.logout = logout;
   const root = document.getElementById('root');

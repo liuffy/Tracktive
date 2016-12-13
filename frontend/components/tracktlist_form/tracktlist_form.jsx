@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
-import {getArtists} from '../../util/tracktlist_api_util';
 
 class TracktlistForm extends React.Component {
   constructor(props) {
@@ -85,42 +84,41 @@ class TracktlistForm extends React.Component {
 	  		</label>
 	  		<br />
 
-	  		<button
-	  		className="create-button">create tracktlist</button>
+        <label><h3
+          className="create">2. give your Tracktlist a descriptive name (5 words or less)</h3>
+        <input 
+          className="creation-input-field"
+          type='text'
+          value={title}
+          placeholder="ex: 'high school nostalgia'"
+          onChange={this.update('title')} />
+        </label>
+        <br />
 
-	  		</div>
-				</form>
+
+        <label><h3
+          className="create">3. choose an image for your tracktlist cover art</h3>
+        <input 
+          className="creation-input-field"
+          type='text'
+          value={index_image_url}
+          placeholder="ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg"
+          onChange={this.update('index_image_url')} />
+        </label>
+        <br />
+
+        <button
+        className="create-button">create tracktlist</button>
+
+        </div>
+        </form>
         <button
           className="cancel-button link"
           onClick={this.returnToMain}>cancel</button>
-  		</div>
-		)
+      </div>
+    )
   }
 
 }
 
 export default withRouter(TracktlistForm);
-
-
-        // <label><h3
-        //   className="create">2. give your Tracktlist a descriptive name (5 words or less)</h3>
-        // <input 
-        //   className="creation-input-field"
-        //   type='text'
-        //   value={title}
-        //   placeholder="ex: 'high school nostalgia'"
-        //   onChange={this.update('title')} />
-        // </label>
-        // <br />
-
-
-        // <label><h3
-        //   className="create">3. choose an image for your tracktlist cover art</h3>
-        // <input 
-        //   className="creation-input-field"
-        //   type='text'
-        //   value={index_image_url}
-        //   placeholder="ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg"
-        //   onChange={this.update('index_image_url')} />
-        // </label>
-        // <br />
