@@ -47,12 +47,13 @@ h3.create{
 .creation-input-field{
 	background: rgba(255,255,255,0.2);
 	letter-spacing:1px;
-	font-size:16px;
+	color: black;
+	font-size:18px;
 	border: 1px solid white;
 	margin: 2px 5px;
-	border-radius:5px;
+	border-radius:3px;
 	padding: 10px 13px;
-	width:400px;
+	width:500px;
 }
 
 
@@ -67,7 +68,7 @@ h3.create{
 	 	background: rgba(255,255,255,0.1);
 		color: white;
 		display:inline-block;
-		border-radius: 10px;
+		border-radius: 3px;
 		padding:10px 100px;
 		margin:32px 30px 5px 40px;
 		transition: all 0.2s ease 0s;
@@ -76,6 +77,6 @@ h3.create{
 
  .create-button:hover{
  	 	background: rgba(255,255,255,1);
- 	 	color: #41337c;
-		box-shadow: 2px 2px #41337c;
+ 	 	color: #77AF9C;
+		box-shadow: 4px 4px #77AF9C;
  }

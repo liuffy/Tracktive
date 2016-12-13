@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
+import {getArtists} from '../../util/tracktlist_api_util';
 
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+       artists:"",
        title:"",
        index_image_url:""
     };
@@ -33,7 +35,7 @@ class TracktlistForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createNewPokemon(Object.assign({}, this.state)).then(newTracktlist => {
+    this.props.createTracktlist(Object.assign({}, this.state)).then(newTracktlist => {
     this.props.router.push(`tracktlists/${newTracktlist.id}`);
     })
   }
@@ -59,7 +61,7 @@ class TracktlistForm extends React.Component {
       className="tracktlist-form cf">
 
 	  		<form
-	  			onSubmit = {this.handleSubmit}>
+	  			onSubmit = {this.getArtists}>
   			<br />
         <div 
           className="create-header">
@@ -76,34 +78,12 @@ class TracktlistForm extends React.Component {
 	  		<input 
           className="creation-input-field"
           type='text'
-  	  		// value={username}
+  	  		// value={artists}
   	  		placeholder="ex: phantogram, grimes"
-  	  		onChange={this.update('')} />
+  	  		// onChange={this.update('artists')}
+           />
 	  		</label>
 	  		<br />
-
-	  		<label><h3
-          className="create">2. give your Tracktlist a descriptive name (5 words or less)</h3>
-	  		<input 
-          className="creation-input-field"
-          type='text'
-  	  		value={title}
-  	  		placeholder="ex: 'high school nostalgia'"
-  	  		onChange={this.update('title')} />
-	  		</label>
-	  		<br />
-
-
-        <label><h3
-          className="create">3. choose an image for your tracktlist cover art</h3>
-        <input 
-          className="creation-input-field"
-          type='text'
-          value={index_image_url}
-          placeholder="ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg"
-          onChange={this.update('index_image_url')} />
-        </label>
-        <br />
 
 	  		<button
 	  		className="create-button">create tracktlist</button>
@@ -120,3 +100,27 @@ class TracktlistForm extends React.Component {
 }
 
 export default withRouter(TracktlistForm);
+
+
+        // <label><h3
+        //   className="create">2. give your Tracktlist a descriptive name (5 words or less)</h3>
+        // <input 
+        //   className="creation-input-field"
+        //   type='text'
+        //   value={title}
+        //   placeholder="ex: 'high school nostalgia'"
+        //   onChange={this.update('title')} />
+        // </label>
+        // <br />
+
+
+        // <label><h3
+        //   className="create">3. choose an image for your tracktlist cover art</h3>
+        // <input 
+        //   className="creation-input-field"
+        //   type='text'
+        //   value={index_image_url}
+        //   placeholder="ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg"
+        //   onChange={this.update('index_image_url')} />
+        // </label>
+        // <br />
