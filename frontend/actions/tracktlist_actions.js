@@ -2,12 +2,14 @@ import * as APIUtil from '../util/tracktlist_api_util';
 
 const getObjectId = results => results.items.map(item =>item.id)
 
+let tracklistLength = 10;
 export function getArtists(artists) {
 
 	// get the results of gelling getArtists
 	// grab the first (most relevent result) result's id 
-	return (dispatch) =>{
 		let artistNames = artists.split(',')
+		tracklistLength = artistNames.length * 4;
+	return (dispatch) =>{
 		console.log(artistNames)
 		const allArtists = []
 		let mergedArtists = []
@@ -82,7 +84,11 @@ export function getTracks(albumIds) {
 export function getRandomTracks(tracks) {
 	return (dispatch) => {
 		const randomResults = [];
-		for(let i = 0; i < 10; i++) {
+		if (tracklistLength < 10){
+			tracklistLength = 10 // minimum tracklistlength is 10
+		}
+
+		for(let i = 0; i < tracklistLength; i++) {
 			randomResults.push(tracks[ Math.floor(Math.random() * tracks.length)])
 		}
 		// console.log(randomResults)
