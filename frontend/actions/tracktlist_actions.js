@@ -1,49 +1,76 @@
 import * as APIUtil from '../util/tracktlist_api_util';
 
-// const getDataObject = arr => arr[0].items;
+const getObjectId = results => results.items.map(item =>item.id)
 
 export function getArtists(artist) {
 
 	// get the results of gelling getArtists
 	// grab the first (most relevent result) result's id 
 	return (dispatch) =>{
+		// let artists = artist.split(',')
 		return APIUtil.getArtists(artist)
-			.then((...results) => {
-				results = results.map((res) => res.artists.items[0]);
-				console.log(results);
-			})
-				// getAlbums(artists);
+			.then((results) => {
+				let artistId = results.artists.items[0].id;
+				 dispatch(getAlbums(artistId));
+				})
 			}
 	}
 
-// export function getAlbums(artists) {
-// 	let albums = artists.map(artist => APIUtil.getArtistsAlbums(artist.id));
-// 		.then((...albums) => {
-// 			let albumIds = albums
-// 				.map(a => a[0].items).reduce((prev,curr) => [...prev,...curr] ,[])
-// 				.map(album => app.getAlbumTracks(album.id));
+export function getAlbums(artistId) {
+	return (dispatch) =>{
+		return APIUtil.getArtistsAlbums(artistId)
+		.then((results)  => {
+			let albumIds = getObjectId(results)
+			// console.log(albumIds)
+			dispatch(getTracks(albumIds))
+		})
+	}
+}
 
-// 			getTracks(albumIds);
-// 		});
-// };
 
-// export function getTracks(tracks) {
-// 		let tracks = tracks
-// 			.map(getDataObject)
-// 			.reduce((prev,curr) => [...prev,...curr],[]);	
-// 		const randomPlayList = getRandomTracks(50,tracks);
-// 		createPlayList(randomPlayList);
-// 	}
-// };
+// take the bunch of album Ids
+// for each album ID, invoke getAlbumTracks and push the result to allTracks 
 
-// export function createPlaylist(tracks){
 
-// }
+export function getTracks(albumIds) {
+	return (dispatch) =>{
+		const allTracks = []
+		let mergedTracks = []
 
-// export function createTracktlist(artist) {
-// 	return (dispatch) => {
-// 		return APIUtil.getArtist(artist)
-// 		.then(artistId => dispatch(APIUtil.getArtistsAlbums(artistId));
-// 			.then(album => dispatch(APIUtil.getAlbumTracks(album))
-// 			return bench})
-// 	}
+		for (var i = 0; i < albumIds.length; i++) {
+				let curr = i
+	  	APIUtil.getAlbumTracks(albumIds[i])
+				.then( results => {
+					let trackIds = getObjectId(results)
+					allTracks.push(trackIds)
+
+					if (curr === albumIds.length - 1) {
+						mergedTracks = [].concat.apply([], allTracks);
+						console.log(mergedTracks)
+						dispatch(getRandomTracks(mergedTracks))
+					}
+				})
+		}
+	}
+}
+
+
+export function getRandomTracks(tracks) {
+	return (dispatch) => {
+		const randomResults = [];
+		for(let i = 0; i < 10; i++) {
+			randomResults.push(tracks[ Math.floor(Math.random() * tracks.length)])
+		}
+		console.log(randomResults)
+		dispatch(createPlaylist(randomResults))
+	}
+}
+
+
+export function createPlaylist(randomIds){
+	return (dispatch) => {
+		const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Playlist:'
+		const playlistUrl = `${baseUrl+randomIds}` // the playlistUrl assembled 
+		console.log(playlistUrl);
+	}
+}

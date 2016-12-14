@@ -54,15 +54,15 @@
 
 :question: Do I need a separate `Trackt` model and redux cycle if the songs aren't being added by hand?
 
-- [ ] Experiment with Spotify API endpoints in Chrome Dev Tools
+- [X] Experiment with Spotify API endpoints in Chrome Dev Tools
 - [ ] Use Spotify API endpoints to create playlists 
-	- [ ] Successfully make a query to retrieve artist IDs based on inputted artist names 
-	- [ ] Successfully grab album IDs of artists using artist IDs
+	- [X] Successfully make a query to retrieve artist IDs based on inputted artist names 
+	- [X] Successfully grab album IDs of artists using artist IDs
 	- [ ] Successfully grab track IDs of tracks from album IDs 
 	- [ ] Successfully create an 8-track playlist of randomized tracks 
 - [ ] `Tracktlist` 
-	- [ ] Model 
-	- [ ] TracktListsController, route: create and destroy   
+	- [X] Model 
+	- [X] TracktListsController, route: create and destroy   
 - [ ] `TracktListLike` model
 - [ ] JBuilder views for TracktLists
 
@@ -99,7 +99,7 @@ Serious: What if I just have second compact playlist widget?
 	- [ ] CurrentSongProgressBar
 - [ ] CSS: Style tracktlist-related components 
 
-### Phase 6:  Media Queries and Optimizing Design *(2 days)*
+### Phase 5:  Media Queries and Optimizing Design *(2 days)*
 *Objective*: Optimize and enhance navigation through adding or adjusting stylistic features. 
 
 - [ ] Implement animated Demo/ Guest Login using script 

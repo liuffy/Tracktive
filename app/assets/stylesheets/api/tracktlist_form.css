@@ -1,6 +1,7 @@
 div.tracktlist-form{
 	height:600px;
-	width:725;
+	width:725px;
+	display:block;
 	border-radius:20px;
 	padding:20px;
 }

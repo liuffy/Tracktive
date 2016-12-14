@@ -10,9 +10,7 @@ export const getArtists = (artist, error = _defaultError) =>
 			type: 'artist',
 			q: artist
 		},
-		success:	(results) => {
-				console.log(results.artists.items[0].id)
-			}
+		error
 	});
 
 export const getArtistsAlbums = (id, error = _defaultError) => 

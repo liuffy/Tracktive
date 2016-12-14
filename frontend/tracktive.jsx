@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 // import {signup, login, logout} from './actions/session_actions';
-import {getArtists, getArtistsAlbums, getAlbumTracks} from './util/tracktlist_api_util';
-// import {getArtists} from './actions/tracktlist_actions';
+// import {getArtists, getArtistsAlbums, getAlbumTracks} from './util/tracktlist_api_util';
+import {getArtists, getAlbums, getTracks} from './actions/tracktlist_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		store = configureStore();
 	}
 
+	// window.getArtistsAlbums = getArtistsAlbums;
 	window.store = store;
 	window.getArtists = getArtists;
-	// window.getArtistsAlbums = getArtistsAlbums;
+	window.getAlbums = getAlbums;
+	window.getTracks = getTracks;
 	// window.getAlbumTracks = getAlbumTracks;
 	// window.login = login;
 	// window.logout = logout;
