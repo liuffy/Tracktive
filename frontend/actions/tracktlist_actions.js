@@ -2,32 +2,56 @@ import * as APIUtil from '../util/tracktlist_api_util';
 
 const getObjectId = results => results.items.map(item =>item.id)
 
-export function getArtists(artist) {
+export function getArtists(artists) {
 
 	// get the results of gelling getArtists
 	// grab the first (most relevent result) result's id 
 	return (dispatch) =>{
-		// let artists = artist.split(',')
-		return APIUtil.getArtists(artist)
-			.then((results) => {
-				let artistId = results.artists.items[0].id;
-				 dispatch(getAlbums(artistId));
-				})
-			}
-	}
+		let artistNames = artists.split(',')
+		console.log(artistNames)
+		const allArtists = []
+		let mergedArtists = []
 
-export function getAlbums(artistId) {
-	return (dispatch) =>{
-		return APIUtil.getArtistsAlbums(artistId)
-		.then((results)  => {
-			let albumIds = getObjectId(results)
-			// console.log(albumIds)
-			dispatch(getTracks(albumIds))
-		})
+		for (var i = 0; i < artistNames.length; i++){
+			let curr = i
+			APIUtil.getArtists(artistNames[i])
+			.then ( results => {
+				let artistIds = results.artists.items[0].id;
+					allArtists.push(artistIds)
+
+				if (curr === artistNames.length - 1) {
+					mergedArtists = [].concat.apply([], allArtists);
+					console.log(mergedArtists)
+					dispatch(getAlbums(mergedArtists))
+				}
+			})
+		}
 	}
 }
 
+export function getAlbums(artistIds) {
+	return (dispatch) =>{
+		const allAlbums = []
+		let mergedAlbums = []
 
+		for (var i = 0; i < artistIds.length; i++){
+			let curr = i
+			APIUtil.getArtistsAlbums(artistIds[i])
+			.then (results =>{
+				let albumIds = getObjectId(results)
+				allAlbums.push(albumIds)
+
+				if (curr === artistIds.length - 1) {
+					mergedAlbums = [].concat.apply([], allAlbums)
+					// console.log(mergedAlbums)
+					dispatch(getTracks(mergedAlbums))
+				}
+			})
+		}
+	}
+}
+
+		
 // take the bunch of album Ids
 // for each album ID, invoke getAlbumTracks and push the result to allTracks 
 
@@ -46,7 +70,7 @@ export function getTracks(albumIds) {
 
 					if (curr === albumIds.length - 1) {
 						mergedTracks = [].concat.apply([], allTracks);
-						console.log(mergedTracks)
+						// console.log(mergedTracks)
 						dispatch(getRandomTracks(mergedTracks))
 					}
 				})
@@ -61,7 +85,7 @@ export function getRandomTracks(tracks) {
 		for(let i = 0; i < 10; i++) {
 			randomResults.push(tracks[ Math.floor(Math.random() * tracks.length)])
 		}
-		console.log(randomResults)
+		// console.log(randomResults)
 		dispatch(createPlaylist(randomResults))
 	}
 }
