@@ -55,14 +55,14 @@
 :question: Do I need a separate `Trackt` model and redux cycle if the songs aren't being added by hand?
 
 - [X] Experiment with Spotify API endpoints in Chrome Dev Tools
-- [ ] Use Spotify API endpoints to create playlists 
+- [X] Use Spotify API endpoints to create playlists 
 	- [X] Successfully make a query to retrieve artist IDs based on inputted artist names 
 	- [X] Successfully grab album IDs of artists using artist IDs
-	- [ ] Successfully grab track IDs of tracks from album IDs 
-	- [ ] Successfully create an 8-track playlist of randomized tracks 
-- [ ] `Tracktlist` 
+	- [X] Successfully grab track IDs of tracks from album IDs 
+	- [X] Successfully create an playlist of randomized tracks with a length based on the number of artists inputted
+- [X] `Tracktlist` 
 	- [X] Model 
-	- [X] TracktListsController, route: create and destroy   
+	- [X] TracktListsController, route: create and destroy  + show  
 - [ ] `TracktListLike` model
 - [ ] JBuilder views for TracktLists
 

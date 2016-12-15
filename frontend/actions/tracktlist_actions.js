@@ -10,7 +10,7 @@ export function getArtists(artists) {
 		let artistNames = artists.split(',')
 		tracklistLength = artistNames.length * 4;
 	return (dispatch) =>{
-		console.log(artistNames)
+		// console.log(artistNames)
 		const allArtists = []
 		let mergedArtists = []
 
@@ -23,7 +23,7 @@ export function getArtists(artists) {
 
 				if (curr === artistNames.length - 1) {
 					mergedArtists = [].concat.apply([], allArtists);
-					console.log(mergedArtists)
+					// console.log(mergedArtists)
 					dispatch(getAlbums(mergedArtists))
 				}
 			})
@@ -101,6 +101,6 @@ export function createPlaylist(randomIds){
 	return (dispatch) => {
 		const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Playlist:'
 		const playlistUrl = `${baseUrl+randomIds}` // the playlistUrl assembled 
-		console.log(playlistUrl);
+		return playlistUrl;
 	}
 }
