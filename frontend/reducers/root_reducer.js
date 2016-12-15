@@ -6,7 +6,7 @@ import TracktlistReducer from './tracktlist_reducer';
 const RootReducer = combineReducers({
 	session: SessionReducer,
 	users: UsersReducer,
-	// tracktlist: TracktlistReducer
+	tracktlist: TracktlistReducer
 })
 
 export default RootReducer;

@@ -4,7 +4,7 @@ const TracktlistReducer = (state= {}, action) =>{
 	Object.freeze(state);
 
 	switch(action.type) {
-		case RECEIVE_TRACKTLIST:
+		case RECEIVE_TRACKTLISTS:
 			return action.tracktlists;
 		case RECEIVE_TRACKTLIST:
 			return Object.assign({}, state, {

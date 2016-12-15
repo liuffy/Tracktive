@@ -1,5 +1,5 @@
 class Tracktlist < ActiveRecord::Base
-	validates :title, :user_id, :index_image_url, presence: true
+	validates :title, :user_id, :index_image_url, :artists, presence: true
 
 	belongs_to :user
 	after_initialize :ensure_index_image

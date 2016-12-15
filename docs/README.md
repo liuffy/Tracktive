@@ -52,8 +52,6 @@
 ### Phase 2: `TracktList` Model and `TracktLikes` Model, Spotify API *(3 days)*
 *Objective*: TracktLists can be created, liked, and unliked. 
 
-:question: Do I need a separate `Trackt` model and redux cycle if the songs aren't being added by hand?
-
 - [X] Experiment with Spotify API endpoints in Chrome Dev Tools
 - [X] Use Spotify API endpoints to create playlists 
 	- [X] Successfully make a query to retrieve artist IDs based on inputted artist names 
@@ -62,9 +60,10 @@
 	- [X] Successfully create an playlist of randomized tracks with a length based on the number of artists inputted
 - [X] `Tracktlist` 
 	- [X] Model 
-	- [X] TracktListsController, route: create and destroy  + show  
-- [ ] `TracktListLike` model
+	- [X] TracktListsController, route: create and destroy 
+- [ ] Come up with a more sophistcated randomization algorithm 
 - [ ] JBuilder views for TracktLists
+- [ ] `TracktListLike` model
 
 
 ### Phase 3: Dashboard, SideBar, Dynamic Search *(2 days)*

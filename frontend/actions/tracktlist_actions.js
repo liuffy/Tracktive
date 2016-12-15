@@ -1,8 +1,15 @@
+export const RECEIVE_TRACKTLISTS = "RECEIVE_TRACKTLISTS";
+export const RECEIVE_TRACKTLIST = "RECEIVE_TRACKTLIST";
+export const REQUEST_TRACKTLIST = "REQUEST_TRACKTLIST";
+export const CREATE_TRACKTLIST = "CREATE_TRACKTLIST";
+// export const REQUEST_TRACKTLISTS = "REQUEST_TRACKTLISTS";
+
 import * as APIUtil from '../util/tracktlist_api_util';
 
 const getObjectId = results => results.items.map(item =>item.id)
 
-let tracklistLength = 10;
+let tracklistLength = 10; // default tracklist length
+
 export function getArtists(artists) {
 
 	// get the results of gelling getArtists
@@ -101,6 +108,39 @@ export function createPlaylist(randomIds){
 	return (dispatch) => {
 		const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Playlist:'
 		const playlistUrl = `${baseUrl+randomIds}` // the playlistUrl assembled 
-		return playlistUrl;
+		dispatch(APIUtil.createTracktlist(playlistUrl))
+			.then(tracktlist => dispatch(APIUtil.receiveTracktlist(tracktlist)))
 	}
 }
+
+//////////////////////////////////////////////////////////////////////////
+
+export function fetchTracktlists() { // All tracktlists
+  return (dispatch) => {
+    // dispatch(requestTracktlists());
+    return APIUtil.fetchTracktlists()
+      .then(tracktlists => dispatch(receiveTracktlists(tracktlists)));
+  }
+}
+
+export function fetchTracktlist(id) { // Single tracktlist
+  return (dispatch) => {
+    dispatch(requestTracktlist(id));
+    return APIUtil.fetchTracktlist(id)
+      .then(tracktlist => dispatch(receiveTracktlist(tracktlist)));
+  }
+}
+
+export const requestTracktlist = () => ({
+	type: REQUEST_TRACKTLIST
+})
+
+export const receiveTracktlists = tracktlists => ({
+  type: RECEIVE_TRACKTLISTS,
+  tracktlists
+});
+
+export const receiveTracktlist = tracktlist => ({
+  type: RECEIVE_TRACKTLIST,
+  tracktlist
+});

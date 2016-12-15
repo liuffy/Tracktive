@@ -31,3 +31,31 @@ export const getAlbumTracks = (id, error = _defaultError) =>
 		dataType: 'json',
 		error
 	});
+
+////////////////////////////////////////////////
+
+
+export const fetchTracktlists = () => {
+	return $.ajax({
+		method: 'GET',
+		url: '/api/tracktlists'
+		 // makes an AJAX request that will make a http request to the tracktlistsController#index endpoint
+	})
+}
+
+
+export const fetchTracktlist = (id) => {
+  return $.ajax({
+    method: 'GET',
+    url: `/api/tracktlists/${id}`
+  });
+};
+
+export const createTracktlist = (tracktlist, error = defaultError) => {
+  return $.ajax({
+    method: 'POST',
+    url: '/api/tracktlists',
+    data: {tracktlist},
+    error
+  });
+};
