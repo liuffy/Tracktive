@@ -5,10 +5,10 @@ class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-       user_id: this.props.currentUser.id
-       artists:"",
-       title:"",
-       index_image_url:""
+       user_id: currentUser.id,
+       artists:"phantogram, grimes",
+       title:"testing testing",
+       index_image_url:"http://res.cloudinary.com/liuffy/image/upload/v1481571136/index_images/minimal18.jpg"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.returnToMain = this.returnToMain.bind(this);
@@ -34,12 +34,28 @@ class TracktlistForm extends React.Component {
 		}
 	}
 
-// let it handle the chain of async action creators 
+// this will handle the chain of async action creators 
   handleSubmit(e) {
+    // let {getArtists, 
+    //       getAlbums, 
+    //       getTracks, 
+    //       getRandomTracks, 
+    //       createPlaylist} = this.props;
+
+    // e.preventDefault();
+    // getArtists(this.state.artists)
+    // .then(artistIds => getAlbums(artistIds))
+    //     .then(allTracks => getRandomTracks(allTracks))
+    //       .then(randomIds => createPlaylist(Object.assign({}, this.state, randomIds))
+
+    let {getArtists, concatPlaylistUrl, createTracktlist} = this.props;
     e.preventDefault();
-    this.props.
-    this.props.createPlaylist(Object.assign({}, this.state)).then(newTracktlist => {
-    this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
+
+    getArtists("muse") 
+    .then(randomIds => concatPlaylistUrl(randomIds))
+      .then(playlistUrl => createTracktlist(Object.assign({}, this.state, {playlistUrl: playlistUrl})))
+       .then(newTracktlist => {
+         this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
     })
   }
 
@@ -58,7 +74,7 @@ class TracktlistForm extends React.Component {
   // 		}
 				
   render(){
-  	let {title, artists, index_image_url} = this.state;
+  	let {title, artists, index_image_url, user_id} = this.state;
   	return(
   		<div
       className="tracktlist-form cf">
@@ -78,6 +94,7 @@ class TracktlistForm extends React.Component {
 
 
 	  	<div className="create-form">
+
 	  		<label><h3
           className="create">1. enter up to 4 artists you want to hear (separated by commas):</h3>
 	  		<input 

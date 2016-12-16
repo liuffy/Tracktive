@@ -51,7 +51,7 @@ export const fetchTracktlist = (id) => {
   });
 };
 
-export const createTracktlist = (tracktlist, error = defaultError) => {
+export const createTracktlist = (tracktlist, error = _defaultError) => {
   return $.ajax({
     method: 'POST',
     url: '/api/tracktlists',

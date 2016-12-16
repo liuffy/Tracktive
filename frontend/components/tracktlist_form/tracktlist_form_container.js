@@ -1,18 +1,24 @@
 import {connect} from 'react-redux';
 import TracktlistForm from './tracktlist_form';
-import {createPlaylist} from '../../actions/tracktlist_actions';
+import {getArtists, 
+				getAlbums, 
+				getTracks, 
+				getRandomTracks, 
+				concatPlaylistUrl,
+        createTracktlist} from '../../actions/tracktlist_actions';
 
 const mapStateToProps = (state) =>({
 	currentUser: state.session.currentUser
 });
 
-const mapDispatchToProps = (dispatch) => {
-  getArtists = (artistNames) => dispatch(getArtists(artistNames)),
-  getAlbums = (artistIds) => dispatch(getAlbums(artistIds)),
-  getTracks = (albumIds) => dispatch(getTracks(albumIds)),
-  getRandomTracks = (randomTracks) => dispatch(getRandomTracks(randomTracks)),
-  createPlaylist = (randomIds) => dispatch(createPlaylist(randomIds))
-}
+const mapDispatchToProps = (dispatch) => ({
+  getArtists: (artistNames) => dispatch(getArtists(artistNames)),
+  getAlbums: (artistIds) => dispatch(getAlbums(artistIds)),
+  getTracks: (albumIds) => dispatch(getTracks(albumIds)),
+  getRandomTracks: (allTracks) => dispatch(getRandomTracks(randomTracks)),
+  concatPlaylistUrl: (randomIds) => dispatch(concatPlaylistUrl(randomIds)),
+  createTracktlist: (playlistUrl) => dispatch(createTracktlist(playlistUrl))
+})
 
 export default connect(
   mapStateToProps,

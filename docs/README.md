@@ -62,7 +62,7 @@
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
 - [ ] Come up with a more sophistcated randomization algorithm 
-- [ ] JBuilder views for TracktLists
+- [X] JBuilder views for TracktLists
 - [ ] `TracktListLike` model
 
 
