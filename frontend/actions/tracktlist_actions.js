@@ -2,8 +2,8 @@ export const RECEIVE_TRACKTLISTS = "RECEIVE_TRACKTLISTS";
 export const RECEIVE_TRACKTLIST = "RECEIVE_TRACKTLIST";
 export const REQUEST_TRACKTLIST = "REQUEST_TRACKTLIST";
 export const CREATE_TRACKTLIST = "CREATE_TRACKTLIST";
-// export const REQUEST_TRACKTLISTS = "REQUEST_TRACKTLISTS";
 
+import * as SpotifyAPIUtil from '../util/spotify_api_util'
 import * as APIUtil from '../util/tracktlist_api_util';
 
 const getObjectId = results => results.items.map(item =>item.id)
@@ -12,14 +12,14 @@ let tracklistLength = 10; // default tracklist length
 
 export function getArtists(artists) {
 		let artistNames = artists.split(',')
-		tracklistLength = artistNames.length * 4;
+		tracklistLength = artistNames.length * 4; // length of tracktlist depends on number of artists inputted
 	return (dispatch) =>{
 		const allArtists = []
 		let mergedArtists = []
 
 		for (var i = 0; i < artistNames.length; i++){
 			let curr = i
-			APIUtil.getArtists(artistNames[i])
+			SpotifyAPIUtil.getArtists(artistNames[i])
 			.then ( results => {
 				// grab the first (most relevent result) result's id 
 				let artistIds = results.artists.items[0].id; 
@@ -28,6 +28,7 @@ export function getArtists(artists) {
 				if (curr === artistNames.length - 1) {
 					mergedArtists = [].concat.apply([], allArtists);
 					// return mergedArtists
+					// console.log(mergedArtists)
 					dispatch(getAlbums(mergedArtists))
 				}
 			})
@@ -42,13 +43,14 @@ export function getAlbums(artistIds) {
 
 		for (var i = 0; i < artistIds.length; i++){
 			let curr = i
-			APIUtil.getArtistsAlbums(artistIds[i])
+			SpotifyAPIUtil.getArtistsAlbums(artistIds[i])
 			.then (results =>{
 				let albumIds = getObjectId(results)
 				allAlbums.push(albumIds)
 
 				if (curr === artistIds.length - 1) {
 					mergedAlbums = [].concat.apply([], allAlbums)
+					// console.log(mergedAlbums)
 					dispatch(getTracks(mergedAlbums))
 				}
 			})
@@ -66,50 +68,45 @@ export function getTracks(albumIds) {
 		const allTracks = []
 		let mergedTracks = []
 
+		// Grab all tracks from each of the albums
 		for (var i = 0; i < albumIds.length; i++) {
-				let curr = i
-	  	APIUtil.getAlbumTracks(albumIds[i])
+			let curr = i
+
+	  	SpotifyAPIUtil.getAlbumTracks(albumIds[i]) // one last call to spotify API 
 				.then( results => {
+
 					let trackIds = getObjectId(results)
 					allTracks.push(trackIds)
 
+					// Flatten the allTracks array 
 					if (curr === albumIds.length - 1) {
-						mergedTracks = [].concat.apply([], allTracks);
-						// console.log(mergedTracks)
-						dispatch(getRandomTracks(mergedTracks))
+						mergedTracks = [].concat.apply([], allTracks); // so that's no longer a nested array
+
+					if (tracklistLength < 10){
+						tracklistLength = 10 // Make sure minimum tracklistlength is 10
+					}
+
+					// Pick 10 random track Ids for the tracklist
+					const randomTrackIds = [];
+					for(let i = 0; i < tracklistLength; i++) { // Grab 10+ random tracks 
+						randomTrackIds.push(mergedTracks[ Math.floor(Math.random() * mergedTracks.length)])
+					}
+					
+					// Make a playlist using the trackIds
+					const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Tracktlist:'
+					const playlistUrl = `${baseUrl+randomTrackIds}` // the playlistUrl ass
+					console.log(playlistUrl)
+					return playlistUrl
 					}
 				})
 		}
 	}
 }
 
-export function getRandomTracks(tracks) {
-	return (dispatch) => {
-		const randomResults = [];
-		if (tracklistLength < 10){
-			tracklistLength = 10 // minimum tracklistlength is 10
-		}
 
-		for(let i = 0; i < tracklistLength; i++) {
-			randomResults.push(tracks[ Math.floor(Math.random() * tracks.length)])
-		}
-		// console.log(randomResults)
-		// dispatch(concatPlaylistUrl(randomResults))
-		return randomResults;
-	}
-}
-
-export function concatPlaylistUrl(randomIds){
-	return (dispatch) => {
-		const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Playlist:'
-		const playlistUrl = `${baseUrl+randomIds}` // the playlistUrl assembled 
-		dispatch(concatTracktlist(playlistUrl))
-		console.log(playlistUrl)
-	}
-}
-
+//////////////////////////////////////////////////////////////////////////
 export function createTracktlist(tracktlist){ 
-	return (dispatch) =>{
+		return (dispatch) => {
 		dispatch(APIUtil.createTracktlist(tracktlist))
 				.then(tracktlist => dispatch(APIUtil.receiveTracktlist(tracktlist)))
 	}

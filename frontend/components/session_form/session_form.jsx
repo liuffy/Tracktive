@@ -32,7 +32,7 @@ class SessionForm extends React.Component {
 	}
 
   handleSubmit(e) {
-  	e.preventDefault;
+  	e.preventDefault();
   	// Redirect the user to the /#/ route if they are logged in.
   		this.props.processForm(Object.assign({}, this.state))
   }

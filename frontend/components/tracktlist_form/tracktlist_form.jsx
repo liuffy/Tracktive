@@ -4,10 +4,10 @@ import {Link, withRouter} from 'react-router';
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
-    // debugger
     this.state = {
        user_id: currentUser.id,
        artists:"phantogram, grimes",
+       playlistUrl: "",
        title:"testing testing",
        index_image_url:"http://res.cloudinary.com/liuffy/image/upload/v1481571136/index_images/minimal18.jpg"
     };
@@ -18,10 +18,6 @@ class TracktlistForm extends React.Component {
   update(property){
   	return e => this.setState({[property]: e.target.value});
   }
-
-  // componentWillMount(){
-  //   debugger
-  // }
 
   returnToMain(){
       this.props.router.push('/')
@@ -39,35 +35,21 @@ class TracktlistForm extends React.Component {
 	}
 
 // this will handle the chain of async action creators 
+
+  updateStateWithUrl (){
+    let {getArtists, 
+    getAlbums, 
+    getTracks, 
+    createTracktlist} = this.props;
+
+    let {artists} = this.state;
+    let magicUrl = getArtists(artists);
+    createTracktlist(Object.assign({}, this.state, {playlistUrl: magicUrl}))
+  }
+  
   handleSubmit(e) {
-    // let {getArtists, 
-    //       getAlbums, 
-    //       getTracks, 
-    //       getRandomTracks, 
-    //       createPlaylist} = this.props;
-
-    // e.preventDefault();
-    // getArtists(this.state.artists)
-    // .then(artistIds => getAlbums(artistIds))
-    //     .then(allTracks => getRandomTracks(allTracks))
-    //       .then(randomIds => concatPlaylistUrl(randomIds)
-    //        .then(playlistUrl => createTracktlist(
-    //          Object.assign({}, this.state, { playlistUrl: playlistUrl }))) 
-//         .then(newTracktlist => {
-        // this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
     e.preventDefault();
-    let {getArtists, concatPlaylistUrl, createTracktlist} = this.props;
-    let {artists} = this.state
-
-    getArtists(artists) 
-    .then(randomIds => concatPlaylistUrl(randomIds))
-      .then(playlistUrl => createTracktlist(
-        Object.assign({}, this.state, { playlistUrl: playlistUrl }
-          )
-        ))
-       .then(newTracktlist => {
-         this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
-    })
+    this.updateStateWithUrl()
   }
 
 
@@ -85,7 +67,7 @@ class TracktlistForm extends React.Component {
   // 		}
 				
   render(){
-  	let {title, artists, index_image_url, user_id} = this.state;
+  	let {title, artists, index_image_url, user_id, playlistUrl} = this.state;
   	return(
   		<div
       className="tracktlist-form cf">

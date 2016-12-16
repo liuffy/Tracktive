@@ -30,6 +30,6 @@ class Api::TracktlistsController < ApplicationController
 	private
 
 	def tracktlist_params
-		params.require(:tracktlist).permit(:title, :user_id, :index_image_url, artists: [])
+		params.require(:tracktlist).permit(:title, :user_id, :index_image_url, :artists, :playlistUrl)
 	end 
 end
