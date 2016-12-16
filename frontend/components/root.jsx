@@ -4,8 +4,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './app';
 import SessionFormContainer from './session_form/session_form_container';
 import UserDetailContainer from './user/user_detail_container';
-import TracktlistFormContainer from './tracktlist_form/tracktlist_form';
-// import TracktlistContainer from './tracktlist/tracktlist_container';
+import TracktlistFormContainer from './tracktlist_form/tracktlist_form_container';
 import SiteInfo from './about/site_info';
 import Dashboard from './dashboard/dashboard';
 

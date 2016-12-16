@@ -27,8 +27,8 @@ export function getArtists(artists) {
 
 				if (curr === artistNames.length - 1) {
 					mergedArtists = [].concat.apply([], allArtists);
-					return mergedArtists
-					// dispatch(getAlbums(mergedArtists))
+					// return mergedArtists
+					dispatch(getAlbums(mergedArtists))
 				}
 			})
 		}
@@ -83,7 +83,6 @@ export function getTracks(albumIds) {
 	}
 }
 
-
 export function getRandomTracks(tracks) {
 	return (dispatch) => {
 		const randomResults = [];
@@ -99,7 +98,6 @@ export function getRandomTracks(tracks) {
 		return randomResults;
 	}
 }
-
 
 export function concatPlaylistUrl(randomIds){
 	return (dispatch) => {

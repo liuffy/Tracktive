@@ -4,6 +4,7 @@ import {Link, withRouter} from 'react-router';
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
+    // debugger
     this.state = {
        user_id: currentUser.id,
        artists:"phantogram, grimes",
@@ -18,6 +19,9 @@ class TracktlistForm extends React.Component {
   	return e => this.setState({[property]: e.target.value});
   }
 
+  // componentWillMount(){
+  //   debugger
+  // }
 
   returnToMain(){
       this.props.router.push('/')
@@ -46,14 +50,21 @@ class TracktlistForm extends React.Component {
     // getArtists(this.state.artists)
     // .then(artistIds => getAlbums(artistIds))
     //     .then(allTracks => getRandomTracks(allTracks))
-    //       .then(randomIds => createPlaylist(Object.assign({}, this.state, randomIds))
-
-    let {getArtists, concatPlaylistUrl, createTracktlist} = this.props;
+    //       .then(randomIds => concatPlaylistUrl(randomIds)
+    //        .then(playlistUrl => createTracktlist(
+    //          Object.assign({}, this.state, { playlistUrl: playlistUrl }))) 
+//         .then(newTracktlist => {
+        // this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
     e.preventDefault();
+    let {getArtists, concatPlaylistUrl, createTracktlist} = this.props;
+    let {artists} = this.state
 
-    getArtists("muse") 
+    getArtists(artists) 
     .then(randomIds => concatPlaylistUrl(randomIds))
-      .then(playlistUrl => createTracktlist(Object.assign({}, this.state, {playlistUrl: playlistUrl})))
+      .then(playlistUrl => createTracktlist(
+        Object.assign({}, this.state, { playlistUrl: playlistUrl }
+          )
+        ))
        .then(newTracktlist => {
          this.props.router.push(`tracktlists/${newTracktlist.id}`); // redirect to its page
     })
