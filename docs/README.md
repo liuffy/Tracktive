@@ -1,12 +1,12 @@
 # Tracktive
-[Heroku link](http://link.com)
+[Heroku link](https://tracktive.herokuapp.com/#/)
 
 ## Minimum Viable Product 
 *Tracktive* is a web application inspired by 8Tracks, built using Ruby on Rails and React/Redux. By the end of the first 2 weeks of development, this app will, at a minimum, satisfying the following: 
 
-- [ ] Hosting on Heroku
+- [X] Hosting on Heroku
 	- [ ] Clean styling and smooth, bug-free navigation
-- [ ] Account creation, login, & guest/demo login
+- [X] Account creation, login, & guest/demo login
 - [ ] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
 - [ ] Continuous TracktList streaming while navigating 
 - [ ] Dashboard 
@@ -18,10 +18,10 @@
 ## Design Docs 
 
 * [Wireframes]()
-* [Component Hierarchy]()
-* [API Endpoints]()
-* [Schema]()
-* [Sample State]()
+* [Component Hierarchy](https://github.com/liuffy/Tracktive/tree/master/docs/wireframes)
+* [API Endpoints](https://github.com/liuffy/Tracktive/blob/master/docs/api-endpoints.md)
+* [Schema](https://github.com/liuffy/Tracktive/blob/master/docs/schema.md)
+* [Sample State](https://github.com/liuffy/Tracktive/blob/master/docs/schema.md)
 
 ## Implementation Timeline
 
