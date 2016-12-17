@@ -21,6 +21,6 @@
 	float:left;
 	padding:6px 80px;
 	margin:32px 30px 5px 8px;
-	transition: all 0.2s ease 0s
-	font-size:22px;
+	transition: all 0.2s ease 0s;
+	font-size: 22px;
 }

@@ -1,12 +1,12 @@
 /* ELements related to the Tracktlist detail page */
 
 .cover-image{
-	height:300px;
+	height: 300px;
 	width:auto;
 }
 
 .playlist-title{
-	font-size:52px;
+	font-size: 52px;
 	font-weight:bold;
 }
 
