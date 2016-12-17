@@ -26,7 +26,7 @@ class TracktlistShow extends React.Component{
       <div className="tracktlist-player">
         <iframe
           src={`${tracktlist.playlistUrl}`}
-          height="80"
+          height="400"
           frameBorder="0"
           allowTransparency="true"></iframe>
       </div>

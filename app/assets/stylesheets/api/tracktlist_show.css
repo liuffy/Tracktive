@@ -11,5 +11,6 @@
 }
 
 iframe {
-	width:500px; /* just for testing */
+	width:300px; /* just for testing */
+	border-radius:5px;
 }

@@ -13,7 +13,7 @@ const mapDispatchToProps = dispatch => ({
   getArtists: artistNames => dispatch(getArtists(artistNames)),
   getAlbums: artistIds => dispatch(getAlbums(artistIds)),
   getTracks: albumIds => dispatch(getTracks(albumIds)),
-  createTracktlist: playlistUrl => dispatch(createTracktlist(playlistUrl))
+  createTracktlist: (artistNames, title, imageUrl) => dispatch(createTracktlist(artistNames, title, imageUrl))
 })
 
 

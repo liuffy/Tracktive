@@ -37,14 +37,13 @@ class TracktlistForm extends React.Component {
 // this will handle the chain of async action creators 
 
   updateStateWithUrl (){
-    let {getArtists, 
-    getAlbums, 
-    getTracks, 
-    createTracktlist} = this.props;
+    let { createTracktlist } = this.props;
 
-    let {artists} = this.state;
-    let magicUrl = getArtists(artists);
-    createTracktlist(Object.assign({}, this.state, {playlistUrl: magicUrl}))
+    let {artists, index_image_url, title} = this.state;
+
+    createTracktlist(artists, title, index_image_url);
+    //getArtists(artists); // not returning anything :-( )
+    //createTracktlist(Object.assign({}, this.state, {playlistUrl: magicUrl}))
   }
   
   handleSubmit(e) {
