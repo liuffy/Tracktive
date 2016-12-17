@@ -19,7 +19,7 @@ class TracktlistForm extends React.Component {
   	return e => this.setState({[property]: e.target.value});
   }
 
-  returnToMain(){
+  returnToMain(){ // for the cancel button 
       this.props.router.push('/')
   }
 
@@ -41,6 +41,7 @@ class TracktlistForm extends React.Component {
 
     e.preventDefault();
     createTracktlist(artists, title, index_image_url).then(newTracktlist => {
+      console.log('yay')
     hashHistory.push(`tracktlists/${newTracktlist.id}`) // redirect
     })
   }

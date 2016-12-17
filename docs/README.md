@@ -7,11 +7,11 @@
 - [X] Hosting on Heroku
 	- [ ] Clean styling and smooth, bug-free navigation
 - [X] Account creation, login, & guest/demo login
-- [ ] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
+- [X] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
 - [ ] Continuous TracktList streaming while navigating 
 - [ ] Dashboard 
 	- [ ] Search component in header narrows down TracktLists in dashboard
-- [ ] User profile
+- [X] User profile
 	- [ ] displays liked and created playlist tabs 
 - [ ] A Production README
 

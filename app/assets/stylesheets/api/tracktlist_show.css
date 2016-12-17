@@ -1,43 +1,48 @@
 /* ELements related to the Tracktlist detail page */
 
+.cover-contents{
+	/*float:left;*/
+}
 .tracktlist-detail{
 	/*background:linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));*/
 	height:600px;
 	color:white;
 }
 
+.cover-image-container{
+ height: 200px;
+	width: 700px;
+  overflow: hidden;
+}
+
 .cover-image{
-	height: auto;
-	width: 300px;
-	float:left;
-	box-shadow: 10px 10px #413954;
+  background-position: center center;
+  /*background-repeat: no-repeat;*/
 }
 
 .playlist-title{
-text-shadow: rgb(20, 144, 120) 1px 1px,
-    rgb(20, 144, 120) 2px 2px,
-    rgb(20, 144, 120) 3px 3px,
-    rgb(20, 145, 121) 4px 4px,
-    rgb(20, 145, 121) 5px 5px,
-    rgb(20, 146, 122) 6px 6px,
-    rgb(20, 146, 122) 7px 7px;
-
+  /*position:absolute;*/
 	color:white;
 	font-size: 40px;
 	font-weight:bold;
-
 }
 
 iframe {
 	width:300px; /* just for testing */
 	float:left;
-	margin: 0px 40px;
 	display:inline-block;
 	box-shadow: 10px 10px #5b5077;
-
 }
 
 .artists-featured{
 	color:white;
-	font-size:20px;
+	font-size:24px;
+	text-shadow: rgb(20, 144, 120) 1px 1px,
+	rgb(20, 144, 120) 1px 1px,
+    rgb(107, 90, 147) 2px 2px,
+    rgb(107, 91, 148) 3px 3px,
+    rgb(107, 92, 149) 4px 4px;
+/*    rgb(20, 145, 121) 5px 5px,
+    rgb(20, 146, 122) 6px 6px,
+    rgb(20, 149, 124) 7px 7px;*/
 }

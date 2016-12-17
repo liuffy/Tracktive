@@ -46,13 +46,23 @@ body {
 	float:right;
 	padding:4px 20px;
 	margin:32px 50px 5px 8px;
-	box-shadow: 2px 2px 2px #330d9b;
+	/*box-shadow: 2px 2px 2px #330d9b;*/
+	box-shadow: 
+    rgb(107, 90, 147) 2px 2px,
+    rgb(107, 91, 148) 3px 3px,
+    rgb(107, 92, 149) 4px 4px;
 	transition: all 0.2s ease 0s
 }
 
 .standard-button:hover{
-	color:#77AF9C;
-	box-shadow: 2px 2px 2px #330d9b;
+		border: 2px solid #3f827a;
+		color:#3f827a;
+	/*box-shadow: 2px 2px 2px #330d9b;*/
+		box-shadow: 
+    rgb(72, 132, 120) 2px 2px,
+    rgb(72, 133, 121) 3px 3px,
+    rgb(72, 134, 122) 4px 4px,
+    rgb(157, 234, 204) 4px 4px;
 }
 
 button:hover{

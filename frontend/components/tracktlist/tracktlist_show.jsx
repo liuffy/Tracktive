@@ -15,16 +15,19 @@ class TracktlistShow extends React.Component{
 
     return(
     <div className="tracktlist-detail cf">
-      <h1 className="playlist-title">
-      {tracktlist.title}</h1>
-      <h3 className="artists-featured">Artists featured: {tracktlist.artists}</h3>
-
+      <div
+        className="cover-contents">
+      <div className="cover-image-container">
       <img
         className="cover-image"
         src={tracktlist.index_image_url}
         alt="Tracktlist cover"
-      />
+      /></div>
+        <h1 className="playlist-title">
+      {tracktlist.title}</h1>
+      </div>
 
+      <h3 className="artists-featured">Artists featured: {tracktlist.artists}</h3>
       <div className="tracktlist-player">
         <iframe
           src={`${tracktlist.playlistUrl}`}
