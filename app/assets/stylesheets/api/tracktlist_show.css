@@ -3,6 +3,10 @@
 .cover-contents{
 	/*float:left;*/
 }
+
+.artists-label{
+	font-size:24px;
+}
 .tracktlist-detail{
 	/*background:linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));*/
 	height:600px;
@@ -13,6 +17,7 @@
  height: 200px;
 	width: 700px;
   overflow: hidden;
+  margin:10px 0px;
 }
 
 .cover-image{
@@ -28,14 +33,16 @@
 }
 
 iframe {
+	margin: 15px 0px 0px 0px;
 	width:300px; /* just for testing */
-	float:left;
+	float:right;
 	display:inline-block;
 	box-shadow: 10px 10px #5b5077;
 }
 
 .artists-featured{
 	color:white;
+	margin:0px 0px 10px 0px;
 	font-size:24px;
 	text-shadow: rgb(20, 144, 120) 1px 1px,
 	rgb(20, 144, 120) 1px 1px,

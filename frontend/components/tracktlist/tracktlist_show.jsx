@@ -27,7 +27,9 @@ class TracktlistShow extends React.Component{
       {tracktlist.title}</h1>
       </div>
 
-      <h3 className="artists-featured">Artists featured: {tracktlist.artists}</h3>
+      <span
+        className="artists-label">Featuring:
+        <span className="artists-featured"> {tracktlist.artists}</span></span>
       <div className="tracktlist-player">
         <iframe
           src={`${tracktlist.playlistUrl}`}
