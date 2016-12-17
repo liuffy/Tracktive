@@ -6,10 +6,10 @@ class TracktlistForm extends React.Component {
     super(props);
     this.state = {
        user_id: currentUser.id,
-       artists:"phantogram, grimes",
+       artists:"",
        playlistUrl: "",
-       title:"testing testing",
-       index_image_url:"http://res.cloudinary.com/liuffy/image/upload/v1481571136/index_images/minimal18.jpg"
+       title:"",
+       index_image_url:""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.returnToMain = this.returnToMain.bind(this);

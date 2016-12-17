@@ -15,7 +15,11 @@ class TracktlistShow extends React.Component{
 
     return(
     <div className="tracktlist-detail">
-      <h1 className="playlist-title">{tracktlist.title}</h1>
+      <h1 className="playlist-title">
+      <img 
+        className="music-note"
+        src="http://www.clker.com/cliparts/b/3/b/a/11949866861452336960musical_note_3_dennis_bo_01.svg"/> {tracktlist.title}</h1>
+      <h3 className="artists-featured">Artists featured: {tracktlist.artists}</h3>
 
       <img
         className="cover-image"
@@ -28,6 +32,7 @@ class TracktlistShow extends React.Component{
           src={`${tracktlist.playlistUrl}`}
           height="400"
           frameBorder="0"
+          target="_parent"
           allowTransparency="true"></iframe>
       </div>
     </div>

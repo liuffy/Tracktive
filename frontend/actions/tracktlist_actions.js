@@ -22,9 +22,9 @@ export function createTracktlist(artistNames, title, imageUrl) {
 					const tracks = shuffle(flatMap(track => track.items.map(item =>item.id), trackData));
 					const numberOfTracks = artistNamesArr.length > 2 ? artistNamesArr.length * 4 : 10;
 					const subsetOfTracks = tracks.slice(0, numberOfTracks);
-					const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Tracktlist:';
-					const playlistUrl = `${baseUrl}${subsetOfTracks}`;
 					const state = getState();
+					const baseUrl = `https://embed.spotify.com/?theme=white&uri=spotify:trackset:${title}:`;
+					const playlistUrl = `${baseUrl}${subsetOfTracks}`;
 					const user_id = state.session.currentUser.id;
 
 					APIUtil.createTracktlist({
