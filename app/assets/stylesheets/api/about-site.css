@@ -1,6 +1,6 @@
 /* This is for the "about" page */
 
-.user-detail, .site-info{
+div.tracktlist-form, .tracktlist-detail, .user-detail, .site-info{
 	display:block;
 	margin:0px 200px;
 	width:650px;

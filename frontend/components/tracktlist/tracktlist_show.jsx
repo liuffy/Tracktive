@@ -14,7 +14,7 @@ class TracktlistShow extends React.Component{
     let {tracktlist} = this.props;
 
     return(
-    <div>
+    <div className="tracktlist-detail">
       <h1 className="playlist-title">{tracktlist.title}</h1>
 
       <img

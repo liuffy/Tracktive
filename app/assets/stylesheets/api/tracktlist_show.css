@@ -1,0 +1,15 @@
+/* ELements related to the Tracktlist detail page */
+
+.cover-image{
+	height:300px;
+	width:auto;
+}
+
+.playlist-title{
+	font-size:52px;
+	font-weight:bold;
+}
+
+iframe {
+	width:500px; /* just for testing */
+}
