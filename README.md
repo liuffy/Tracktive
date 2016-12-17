@@ -1,6 +1,6 @@
 # Tracktive
 
-[Tracktive Live](http://link.com)
+[Tracktive Live](https://tracktive.herokuapp.com/#/)
 
 *Create playlists effortlessly.* :musical_note:
 
