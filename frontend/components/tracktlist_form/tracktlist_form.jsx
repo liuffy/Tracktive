@@ -23,33 +23,28 @@ class TracktlistForm extends React.Component {
       this.props.router.push('/')
   }
 
-  componentDidUpdate() { // this is a lifecycle method used to perform 
-  	//DOM operations after the data has been updated 
-		this.redirectIfLoggedIn();
-	}
+ //  redirectIfLoggedIn() {
+ //    if (this.props.loggedIn) {
+ //      this.props.router.push("/");
+ //    }
+ //  }
 
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/");
-		}
-	}
+ //  componentDidUpdate() { // this is a lifecycle method used to perform 
+ //  	//DOM operations after the data has been updated 
+	// 	this.redirectIfLoggedIn();
+	// }
 
-// this will handle the chain of async action creators 
-
-  updateStateWithUrl (){
-    let { createTracktlist } = this.props;
-
-    let {artists, index_image_url, title} = this.state;
-
-    createTracktlist(artists, title, index_image_url);
-    //getArtists(artists); // not returning anything :-( )
-    //createTracktlist(Object.assign({}, this.state, {playlistUrl: magicUrl}))
-  }
   
   handleSubmit(e) {
+    let { createTracktlist } = this.props;
+    let { artists, index_image_url, title } = this.state;
+
     e.preventDefault();
-    this.updateStateWithUrl()
+    createTracktlist(artists, title, index_image_url).then(newTracktlist => {
+    hashHistory.push(`tracktlists/${newTracktlist.id}`) // redirect
+    })
   }
+
 
 
   // renderErrors(e){
