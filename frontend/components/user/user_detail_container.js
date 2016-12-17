@@ -5,12 +5,12 @@ import UserDetail from './user_detail';
 
 
 const mapStateToProps = (state, { params }) => {
- const userId = parseInt(params.userId);
-  const user = selectUser(state, userId);
-  return {
-    userId,
-    user
-  };
+	const userId = parseInt(params.userId);
+	const user = selectUser(state, userId);
+	  return {
+	    userId,
+	    user
+	  };
 };
 
 const mapDispatchToProps = dispatch => ({

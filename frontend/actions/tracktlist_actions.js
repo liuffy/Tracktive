@@ -94,7 +94,7 @@ export function getTracks(albumIds) {
 					
 					// Make a playlist using the trackIds
 					const baseUrl = 'https://embed.spotify.com/?theme=white&uri=spotify:trackset:My Tracktlist:'
-					const playlistUrl = `${baseUrl+randomTrackIds}` // the playlistUrl ass
+					const playlistUrl = `${baseUrl+randomTrackIds}` 
 					console.log(playlistUrl)
 					return playlistUrl
 					}
