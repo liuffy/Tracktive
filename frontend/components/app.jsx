@@ -9,7 +9,7 @@ const App = ({ children }) => (
   	<div
   		className="header-bar">
     <span 
-    	className="tracktive-wordmark"><Link to="/">trackive</Link></span>
+    	className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
     <GreetingContainer />
     <SidebarContainer />
     </div>

@@ -12,7 +12,8 @@
 
 .sidebar-button{
 	width:70px;
-	border: 2px solid #6b5a93;
+	border: 1px solid rgb(107, 90, 147);
+	/*border: 2px solid #6b5a93;*/
 	background:white;
 	color: #6b5a93;
 	display:inline-block;
@@ -21,17 +22,14 @@
 	padding:4px 20px;
 	margin:32px 50px 5px 40px;
 	transition: all 0.2s ease 0s;
-	box-shadow: 
-    rgb(107, 90, 147) 2px 2px,
-    rgb(107, 91, 148) 3px 3px,
-    rgb(107, 92, 149) 4px 4px;
 }
 
 .sidebar-button:hover{
-		border: 2px solid #3f827a;
-		color:#3f827a;
+		/*border: 2px solid #3f827a;*/
 		box-shadow: 
-    rgb(72, 132, 124) 2px 2px,
-    rgb(72, 128, 122) 3px 3px,
-    rgb(72, 128, 122) 4px 4px;
+    rgb(107, 90, 147) 2px 2px,
+    rgb(107, 91, 148) 3px 3px,
+    rgb(107, 92, 149) 4px 4px,
+    rgb(107, 92, 149) 5px 5px,
+    rgb(107, 92, 171) 6px 6px;
 }
