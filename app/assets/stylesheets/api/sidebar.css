@@ -28,12 +28,13 @@
 
 .sidebar-button:hover{
 		/*border: 2px solid #3f827a;*/
-	color: rgb(90, 87, 119);
+	color: #5635AE;
 	background:white;
 	box-shadow: 
-	rgb(90, 87, 119) 2px 2px,
-	rgb(90, 88, 120) 3px 3px,
-	rgb(90, 89, 121) 4px 4px,
-	rgb(90, 90, 122) 5px 5px,
-	rgb(90, 91, 123) 6px 6px;
+	rgb(86, 53, 174) 1px 1px,
+	rgb(86, 54, 176) 2px 2px,
+	rgb(86, 55, 178) 3px 3px,
+	rgb(86, 56, 180) 4px 4px,
+	rgb(86, 57, 182) 5px 5px,
+	rgb(86, 58, 184) 6px 6px;
 }

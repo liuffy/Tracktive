@@ -22,7 +22,7 @@ h3.create{
 	position:relative;
 	font-size:24px;
 	font-weight:400;
-	margin: 5 auto;
+	margin: 1 auto;
 	color:white;
 }
 
@@ -46,21 +46,21 @@ h3.create{
 	float:left;
 }
 .creation-input-field{
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0);
 	letter-spacing:1px;
 	color: rgb(86, 54, 175);
-	font-size:18px;
-	border: 1px solid white;
+	font-size:20px;
+	border: 2px solid white;
 	margin: 2px 5px;
 	border-radius:5px;
 	padding: 10px 13px;
-	width:500px;
+	width:80%;
 }
 
 .creation-input-field:focus{
 	color: rgb(86, 54, 175);
-	background:rgba(255,255,255,0.8);
-	border: 1px solid rgb(86, 54, 175);
+	border: 2px solid rgb(86, 54, 175);
+	/*background: rgba(255,255,255,1);*/
 }
 
 .creation-input-field::-webkit-input-placeholder {
@@ -71,8 +71,18 @@ h3.create{
  .create-button{
 	 	border: 4px solid white;
 	 	font-size: 22px;
-	 	background: rgba(255,255,255,0.1);
-		color: white;
+		background: white;
+		color: #5635AE;
+		background:white;
+		box-shadow: 
+		rgb(86, 53, 174) 1px 1px,
+		rgb(86, 53, 174) 2px 2px,
+		rgb(86, 53, 174) 3px 3px,
+		rgb(86, 54, 176) 4px 4px,
+		rgb(86, 55, 178) 5px 5px,
+		rgb(86, 56, 180) 6px 6px,
+		rgb(86, 57, 182) 7px 7px,
+		rgb(86, 58, 184) 8px 8px;
 		display:inline-block;
 		border-radius: 3px;
 		padding:10px 100px;
@@ -82,16 +92,5 @@ h3.create{
  }
 
  .create-button:hover{
-		background: rgba(255,255,255,1);
 		color: rgb(92, 96, 153);
-		box-shadow:   
-		rgb(89, 90, 147) 1px 1px,
-		rgb(89, 90, 147) 2px 2px,
-		rgb(89, 91, 149) 3px 3px,
-		rgb(89, 91, 149) 4px 4px,
-		rgb(89, 94, 150) 5px 5px, 
-		rgb(89, 96, 153) 6px 6px,
-		rgb(89, 96, 153) 7px 7px,
-		rgb(89, 97, 153) 8px 8px,	
-		rgb(89, 98, 155) 9px 9px;	
  }

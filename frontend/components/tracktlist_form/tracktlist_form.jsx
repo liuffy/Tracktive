@@ -108,7 +108,7 @@ class TracktlistForm extends React.Component {
 
 
         <label><h3
-          className="create">3. choose an image for your tracktlist cover art</h3>
+          className="create">3. paste image URL for your tracktlist cover art</h3>
         <input 
           className="creation-input-field"
           type='text'
