@@ -38,12 +38,14 @@ body {
 
 .standard-button{
 	/*border: 2px solid #6b5a93;*/
-	background:white;
-	color: #6b5a93;
-	border: 1px solid rgb(107, 90, 147);
+	opacity:0.8;
+	/*background:white;*/
+	/*color: rgb(90, 87, 119);*/
+	color:white;
+	border: 2px solid white;
 	display:inline-block;
 	border-radius: 10px;
-	font-size:16px;
+	font-size:14px;
 	float:right;
 	padding:4px 20px;
 	margin:32px 50px 5px 8px;
@@ -56,12 +58,16 @@ body {
 		/*border: 2px solid #3f827a;*/
 		/*color:#3f827a;*/
 	/*box-shadow: 2px 2px 2px #330d9b;*/
+		color: rgb(95, 94, 102);
+
+	background:white;
+	opacity:1.0;
 	box-shadow: 
-    rgb(107, 90, 147) 2px 2px,
-    rgb(107, 91, 148) 3px 3px,
-    rgb(107, 92, 149) 4px 4px,
-    rgb(107, 92, 149) 5px 5px,
-    rgb(107, 92, 171) 6px 6px;
+    rgb(95, 94, 102) 1px 1px,
+    rgb(95, 95, 104) 3px 3px,
+    rgb(95, 96, 106) 4px 4px,
+    rgb(95, 97, 108) 5px 5px,
+    rgb(95, 98, 110) 6px 6px;
 }
 
 button:hover{

@@ -48,15 +48,20 @@ h3.create{
 .creation-input-field{
 	background: rgba(255,255,255,0.2);
 	letter-spacing:1px;
-	color: black;
+	color: rgb(86, 54, 175);
 	font-size:18px;
 	border: 1px solid white;
 	margin: 2px 5px;
-	border-radius:3px;
+	border-radius:5px;
 	padding: 10px 13px;
 	width:500px;
 }
 
+.creation-input-field:focus{
+	color: rgb(86, 54, 175);
+	background:rgba(255,255,255,0.8);
+	border: 1px solid rgb(86, 54, 175);
+}
 
 .creation-input-field::-webkit-input-placeholder {
     color:white;
@@ -77,11 +82,16 @@ h3.create{
  }
 
  .create-button:hover{
- 	 	background: rgba(255,255,255,1);
- 	 	color: rgb(86, 54, 175);
+		background: rgba(255,255,255,1);
+		color: rgb(92, 96, 153);
 		box-shadow:   
-  rgb(89, 90, 147) 4px 5px,
-  rgb(107, 91, 148) 5px 5px,
-  rgb(86, 53, 174) 7px 7px, 
-  rgb(86, 54, 175) 8px 8px;	
+		rgb(89, 90, 147) 1px 1px,
+		rgb(89, 90, 147) 2px 2px,
+		rgb(89, 91, 149) 3px 3px,
+		rgb(89, 91, 149) 4px 4px,
+		rgb(89, 94, 150) 5px 5px, 
+		rgb(89, 96, 153) 6px 6px,
+		rgb(89, 96, 153) 7px 7px,
+		rgb(89, 97, 153) 8px 8px,	
+		rgb(89, 98, 155) 9px 9px;	
  }
