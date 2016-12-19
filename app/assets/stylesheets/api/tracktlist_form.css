@@ -49,7 +49,7 @@ h3.create{
 	letter-spacing:1px;
 	color: #5B3DA8;
 	font-size:20px;
-	border: 2px solid #282728;
+	border: 2px solid #5B3DA8;
 	margin: 2px 5px;
 	border-radius:5px;
 	padding: 10px 13px;
@@ -58,9 +58,10 @@ h3.create{
 }
 
 .creation-input-field:focus{
-	color: rgb(86, 54, 175);
+	color: white;
 	border: 2px solid rgb(86, 54, 175);
-	/*background: rgba(255,255,255,1);*/
+
+	background: rgb(86, 54, 175);
 }
 .creation-input-field::-webkit-input-placeholder {
     color:#aba9bc;
@@ -89,6 +90,7 @@ h3.create{
 		margin:32px 40px 20px 80px;
 		transition: all 0.2s ease 0s;
  }
+
 
  .create-button:hover{
 		color: rgb(92, 96, 153);
