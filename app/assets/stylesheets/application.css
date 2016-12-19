@@ -37,8 +37,7 @@ body {
 	padding:4px 20px;
 	margin:32px 50px 5px 8px;
 	/*box-shadow: 2px 2px 2px #330d9b;*/
-
-		transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
 }
 
 .standard-button:hover{
@@ -129,79 +128,21 @@ div.about{
 }
 
 .about-link{
+	font-weight:bold;
 	color:#5B3DA8;
 	font-size:25px;
 	position:relative;
 	top:500px;
+	transition: all 0.2s ease 0s;
 }
 
 .about-link:hover{
-	color: white;
-  font-size:25px;
-  animation: move linear 4000ms infinite;  
+ text-shadow:
+  rgba(20, 144, 120, 0.4) 5px 5px,
+  rgba(20, 144, 122, 0.4) 5px 6px;
 }
 
-@keyframes move {
-  0% {
-    text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1)
-    ;
-  }
-  25% {    
-    text-shadow:      
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -3px -3px 0 hsla(257, 51%, 48%, 1), 
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -1px -1px 0 hsla(257, 51%, 48%, 1),
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      3px 3px 0 hsla(165, 75%, 30%, 1), 
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      1px 1px 0 hsla(165, 75%, 30%, 1)      
-    ;
-  }
-  50% {
-    text-shadow:
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -3px 3px 0 hsla(165, 75%, 30%, 1), 
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -1px 1px 0 hsla(165, 75%, 30%, 1),
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      3px -3px 0 hsla(257, 51%, 48%, 1), 
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      1px -1px 0 hsla(257, 51%, 48%, 1)
-    ;
-  }
-  75% {
-    text-shadow:
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      3px 3px 0 hsla(257, 51%, 48%, 1), 
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      1px 1px 0 hsla(257, 51%, 48%, 1),
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -3px -3px 0 hsla(165, 75%, 30%, 1), 
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -1px -1px 0 hsla(165, 75%, 30%, 1)      
-    ;
-  }
-  100% {
-    text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1);
-  }  
-}
+
 
 .error{
 	color: #56445D;
