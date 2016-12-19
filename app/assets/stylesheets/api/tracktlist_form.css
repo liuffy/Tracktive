@@ -54,6 +54,7 @@ h3.create{
 	border-radius:5px;
 	padding: 10px 13px;
 	width:80%;
+	transition: all 0.2s ease 0s;
 }
 
 .creation-input-field:focus{
@@ -61,7 +62,6 @@ h3.create{
 	border: 2px solid rgb(86, 54, 175);
 	/*background: rgba(255,255,255,1);*/
 }
-
 .creation-input-field::-webkit-input-placeholder {
     color:#aba9bc;
   }
@@ -88,7 +88,6 @@ h3.create{
 		padding:10px 100px;
 		margin:32px 40px 20px 80px;
 		transition: all 0.2s ease 0s;
-
  }
 
  .create-button:hover{
