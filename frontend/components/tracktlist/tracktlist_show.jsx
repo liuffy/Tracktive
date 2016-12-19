@@ -1,5 +1,6 @@
 import React from 'react'
 import {withRouter, Link } from 'react-router';
+import LikeContainer from '../like/like_container';
 
 class TracktlistShow extends React.Component{
    constructor(props){
@@ -21,8 +22,10 @@ class TracktlistShow extends React.Component{
       <img
         className="cover-image"
         src={tracktlist.index_image_url}
-        alt="Tracktlist cover"
-      /></div>
+        alt="Tracktlist cover"/>
+      <LikeContainer />
+
+      </div>
         <h1 className="playlist-title">
       {tracktlist.title}</h1>
       </div>

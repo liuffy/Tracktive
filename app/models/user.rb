@@ -9,8 +9,12 @@ class User < ActiveRecord::Base
 
 	has_many :tracktlists, inverse_of: :user
 	has_many :likes, 
-					 class_name: "Likes", 
+					 class_name: "Like", 
 					 foreign_key: "liker_id"
+
+	has_many :liked_tracktlists,
+						through: :likes,
+						source: :tracktlist
 
 	def self.find_by_credentials(username, password)
 		@user = User.find_by_username(username)

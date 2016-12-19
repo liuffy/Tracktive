@@ -1,5 +1,10 @@
 class Api::LikesController < ApplicationController
 
+	def index
+		@likes = Like.all
+		render json: @likes
+	end 
+
 	def create
 		like = Like.new(
 			liker_id: current_user.id,

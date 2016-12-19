@@ -2,6 +2,7 @@ export const RECEIVE_TRACKTLISTS = "RECEIVE_TRACKTLISTS";
 export const RECEIVE_TRACKTLIST = "RECEIVE_TRACKTLIST";
 export const REQUEST_TRACKTLIST = "REQUEST_TRACKTLIST";
 export const CREATE_TRACKTLIST = "CREATE_TRACKTLIST";
+export const SET_CURRENT_ID = "SET_CURRENT_ID";
 
 import * as SpotifyAPIUtil from '../util/spotify_api_util'
 import * as APIUtil from '../util/tracktlist_api_util';

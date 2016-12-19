@@ -62,7 +62,14 @@
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
 - [X] JBuilder views for TracktLists
-- [X] `TracktListLike` model, controller, routes
+- [X] `TracktListLike` 
+	- [X] model, 
+	- [X] controller, 
+	- [X] routes,
+	- [X] actions,
+	- [X] utils,
+	- [X] reducer,
+	- [X] component & container,
 
 
 ### Phase 3: Dashboard, SideBar, Dynamic Search *(2 days)*

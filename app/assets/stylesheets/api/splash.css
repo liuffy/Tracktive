@@ -19,9 +19,11 @@
   color: white;
   text-shadow:
   rgb(20, 144, 120) 1px 1px,
+  rgb(20, 144, 120) 2px 2px,
   rgb(20, 144, 122) 3px 3px,
   rgb(107, 90, 147) 4px 5px,
   rgb(107, 91, 148) 5px 5px,
+  rgb(107, 91, 148) 6px 6px,
   rgb(86, 53, 174) 7px 7px, 
   rgb(86, 54, 175) 8px 8px;	
 
