@@ -9,8 +9,8 @@ const Greeting = ({currentUser, logout}) => {
 				<span className="greeting">hi again, <Link className="link" 
 											to={`/users/${currentUser.id}`}>{currentUser.username}.</Link></span>
 				<button 
-					className="standard-button logout"
-					onClick={logout}>Logout</button>
+					className="logout-button"
+					onClick={logout}>logout</button>
 			</div>
 				)
 	} else {
@@ -19,11 +19,11 @@ const Greeting = ({currentUser, logout}) => {
 					<p>
 						<Link 
 						className="standard-button"
-						to={'/login'}>Login</Link> 
+						to={'/login'}>login</Link> 
 
 						<Link 
 						className="standard-button"
-						to={'/signup'}>Signup</Link>
+						to={'/signup'}>signup</Link>
 					</p>
 				</div>
 				)

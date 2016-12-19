@@ -61,9 +61,8 @@
 - [X] `Tracktlist` 
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
-- [ ] Come up with a more sophistcated randomization algorithm 
 - [X] JBuilder views for TracktLists
-- [ ] `TracktListLike` model
+- [X] `TracktListLike` model, controller, routes
 
 
 ### Phase 3: Dashboard, SideBar, Dynamic Search *(2 days)*
@@ -106,6 +105,7 @@ Serious: What if I just have second compact playlist widget?
 - [ ] Design custom vector logo to display in place of App Name in header 
 - [ ] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList
 - [ ] Add logo as favicon
+- [ ] Custom graphics
 - [ ] Make sure stylistic elements and color scheme are consistent in all views 
 
 ## Bonus Features :sparkles:

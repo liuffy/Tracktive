@@ -4,20 +4,22 @@
 	width:100px;
 	height:500px;
 	display:block;
+	display:block;
 	position:absolute;
-  margin:100px 0px 20px 0px;
+  margin:180px 0px 20px 0px;
   z-index:3;
+  width:200px;
 }
 
 
 .sidebar-button{
 	width:70px;
 	/*border: 2px solid rgb(107, 90, 147);*/
-	border: 2px solid white;
+	border: 2px solid #5B3DA8;
 	/*border: 2px solid #6b5a93;*/
 	/*background:white;*/
 	/*color: #6b5a93;*/
-	color:white;
+	color:#5B3DA8;
 	display:inline-block;
 	border-radius: 10px;
 	font-size:20px;

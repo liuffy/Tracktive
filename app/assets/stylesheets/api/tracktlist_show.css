@@ -10,7 +10,7 @@
 .tracktlist-detail{
 	/*background:linear-gradient(to left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));*/
 	height:600px;
-	color:white;
+	color:#282728;
 }
 
 .cover-image-container{
@@ -18,7 +18,7 @@
 	width: 700px;
   overflow: hidden;
   margin:10px 0px;
-  border:2px solid white;
+  border:1px solid #9189a5;
 }
 
 .cover-image{
@@ -28,7 +28,7 @@
 
 .playlist-title{
   /*position:absolute;*/
-	color:white;
+	color:#282728;
 	font-size: 40px;
 	font-weight:bold;
 }
@@ -37,14 +37,17 @@ iframe {
 	margin: 15px 0px 0px 0px;
 	width:300px; /* just for testing */
 	float:right;
-	display:inline-block;
+	/*display:inline-block;*/
 	box-shadow: 10px 10px #5b5077;
-	/*border:2px solid white;*/
+	/*border:2px solid black;*/
 }
 
 .artists-featured{
 	color:white;
-	margin:0px 0px 10px 0px;
+	display:inline-block;
+	background:#9189a5;
+	margin:10px;
+	padding:5px;
 	font-size:24px;
 	text-shadow: rgb(20, 144, 120) 1px 1px,
 	rgb(20, 144, 120) 1px 1px,

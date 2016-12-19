@@ -27,10 +27,9 @@ const SiteInfo = () => (
 			<p>SL has had her fingers in many pies, including organic farming, educating high schoolers, and now learning how to program. 
 			Like most developers, she can be found on <a 
 				className="link"
-				href="https://github.com/liuffy">Github</a> and 
-				<a 
+				href="https://github.com/liuffy">Github</a> and  <a 
 				className="link"
-				href="https://www.linkedin.com/in/sophia-liu-a9660229"> Linkedin.</a> </p>
+				href="https://www.linkedin.com/in/sophia-liu-a9660229">Linkedin.</a> </p>
 				<br/>
 			<p>Want to get in touch? You can add her on LinkedIn or e-mail her <Mailee /></p>
 <br/>
