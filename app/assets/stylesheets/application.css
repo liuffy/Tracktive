@@ -18,10 +18,7 @@
 body {
 	font-family: ProximaNovaA-Regular;
 	/* IE10+ */ 
-	background:#F1EFF0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center; 
+	background:#f8f7f9;
 }
 
 /* Buttons */
