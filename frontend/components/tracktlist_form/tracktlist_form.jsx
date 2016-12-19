@@ -84,7 +84,7 @@ class TracktlistForm extends React.Component {
 	  	<div className="create-form">
 
 	  		<label><h3
-          className="create">1. enter up to 4 artists you want to hear (separated by commas):</h3>
+          className="create">1. Enter up to 4 artists you want to hear (separated by commas):</h3>
 	  		<input 
           className="creation-input-field"
           type='text'
@@ -96,7 +96,7 @@ class TracktlistForm extends React.Component {
 	  		<br />
 
         <label><h3
-          className="create">2. give your Tracktlist a descriptive name (5 words or less)</h3>
+          className="create">2. Give your Tracktlist a descriptive name (5 words or less)</h3>
         <input 
           className="creation-input-field"
           type='text'
@@ -108,7 +108,7 @@ class TracktlistForm extends React.Component {
 
 
         <label><h3
-          className="create">3. paste image URL for your tracktlist cover art</h3>
+          className="create">3. Paste image URL for your tracktlist cover art</h3>
         <input 
           className="creation-input-field"
           type='text'
@@ -119,7 +119,7 @@ class TracktlistForm extends React.Component {
         <br />
 
         <button
-        className="create-button">create tracktlist</button>
+        className="create-button">Create tracktlist</button>
 
         </div>
         </form>

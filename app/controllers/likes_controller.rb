@@ -39,6 +39,7 @@ class Api::LikesController < ApplicationController
 
 
 	private
+	
 	def likes_params
 		params.require(:like).permit(:tracktlist_id, :liker_id)
 	end

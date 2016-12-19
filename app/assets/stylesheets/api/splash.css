@@ -34,10 +34,7 @@
 .session-form{
 	background: #fcfcfc;
 	color:#77AF9C;
-	border:1px solid #8ADCB3;
--webkit-box-shadow: 10px 10px 22px 0px rgba(51,13,155,1);
--moz-box-shadow: 5px 5px 22px 0px rgba(51,13,155,1);
-box-shadow: 5px 5px 22px 0px rgba(51,13,155,1);
+	border:2px solid #5635AE;
 	width:400px;
 	position: relative;
 	left:35%;
@@ -55,7 +52,7 @@ box-shadow: 5px 5px 22px 0px rgba(51,13,155,1);
 }
 
 .demo-button{
-	background: #330d9b;
+	background: #5b3da8;
 }
 
 /* Silly demo button effect */

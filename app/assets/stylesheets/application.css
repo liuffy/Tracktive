@@ -31,8 +31,8 @@ body {
 	opacity:0.8;
 	/*background:white;*/
 	/*color: rgb(90, 87, 119);*/
-	color:#5B3DA8;
-	border: 2px solid #5B3DA8;
+	color:white;
+	border: 2px solid white;
 	display:inline-block;
 	border-radius: 10px;
 	font-size:14px;
@@ -67,15 +67,14 @@ body {
 	/*color: rgb(90, 87, 119);*/
 	color:white;
 	border: 2px solid white;
-	display:inline-block;
+	display:fixed;
 	border-radius: 10px;
 	font-size:14px;
 	float:right;
 	padding:4px 20px;
 	margin:50px 30px 5px 8px;
 	/*box-shadow: 2px 2px 2px #330d9b;*/
-
-		transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
 }
 
 .logout-button:hover{
@@ -226,6 +225,7 @@ div.about{
 }
 
 .greeting{
+	display:fixed;
 	color:white;
 	float:right;
 	margin:50px 20px 5px 15px;
@@ -238,7 +238,6 @@ div.about{
 }
 
 .header-bar{
-	
 	background-image: -ms-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
 	/* Mozilla Firefox */ 
 	background-image: -moz-linear-gradient(bottom left, #9175AD 0%, #89D4A3 100%);
