@@ -10,10 +10,10 @@ const App = ({ children }) => (
   <div> 
   	<div
   		className="header-bar">
-      <Search />
     <span 
-    	className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
+      className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
     <GreetingContainer />
+      <Search />
     <SidebarContainer />
     </div>
     <About />
