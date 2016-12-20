@@ -62,7 +62,7 @@
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
 - [X] JBuilder views for TracktLists
-- [X] `TracktListLike` 
+- [X] `TracktListLike`  - not functional yet!!!!
 	- [X] model, 
 	- [X] controller, 
 	- [X] routes,
@@ -83,9 +83,9 @@ brings up results based on the inputted artist.
 	- [ ] Use Masonry JavasScript library for Dashboard grid layout
 - [ ] `TracktListDetail`
 	- [ ] Displays: Creator of TracktList, Date Published, Name of Tracktlist (left side)
-	- [ ] Displays: TracktList (right side)
-	- [ ] Blown up Album art as banner? :art:
-- [ ] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  
+	- [X] Displays: TracktList (right side)
+	- [X] Blown up Album art as banner? :art:
+- [X] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  
 - [ ] Implement custom query for searching via *artists* 
 - [ ] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
 

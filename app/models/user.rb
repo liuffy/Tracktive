@@ -7,7 +7,9 @@ class User < ActiveRecord::Base
 	validates :password, length: {minimum: 6, allow_nil: true}
 	after_initialize :ensure_session_token
 
-	has_many :tracktlists, inverse_of: :user
+	has_many :tracktlists, 
+					 inverse_of: :user,
+					 foreign_key: :creator
 	has_many :likes, 
 					 class_name: "Like", 
 					 foreign_key: "liker_id"

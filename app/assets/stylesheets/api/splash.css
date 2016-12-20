@@ -18,9 +18,9 @@
   float:left;
   color: white;
   text-shadow:
-  rgb(20, 144, 120) 1px 1px,
-  rgb(20, 144, 120) 2px 2px,
-  rgb(20, 144, 122) 3px 3px,
+  rgb(73, 178, 157) 1px 1px,
+  rgb(73, 178, 157) 2px 2px,
+  rgb(73, 178, 157) 3px 3px,
   rgb(107, 90, 147) 4px 5px,
   rgb(107, 91, 148) 5px 5px,
   rgb(107, 91, 148) 6px 6px,
@@ -28,7 +28,7 @@
   rgb(86, 54, 175) 8px 8px;	
 
   font-weight: bold;
-  margin:25px 0px 0px 40px;
+  margin:45px 0px 0px 20px;
 }
 
 /* Session Form */

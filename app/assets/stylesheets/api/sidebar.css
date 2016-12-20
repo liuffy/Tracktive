@@ -2,7 +2,7 @@
 	display:flex;
 	flex-direction: column;
 	width:100px;
-	height:500px;
+	height:300px;
 	display:block;
 	display:block;
 	position:absolute;
@@ -13,13 +13,13 @@
 
 
 .sidebar-button{
-	width:70px;
+	width:60px;
 	/*border: 2px solid rgb(107, 90, 147);*/
-	border: 2px solid #5B3DA8;
+	border: 2px solid rgb(177, 158, 239);
 	/*border: 2px solid #6b5a93;*/
 	/*background:white;*/
 	/*color: #6b5a93;*/
-	color:#5B3DA8;
+	color:#9480d6;
 	display:inline-block;
 	border-radius: 10px;
 	font-size:20px;
@@ -31,13 +31,21 @@
 
 .sidebar-button:hover{
 		/*border: 2px solid #3f827a;*/
-	color: #5635AE;
-	background:white;
+	/*background:white;*/
 	box-shadow: 
-	rgb(86, 53, 174) 1px 1px,
-	rgb(86, 54, 176) 2px 2px,
-	rgb(86, 55, 178) 3px 3px,
-	rgb(86, 56, 180) 4px 4px,
-	rgb(86, 57, 182) 5px 5px,
-	rgb(86, 58, 184) 6px 6px;
+	rgb(177, 158, 239) 1px 1px,
+	rgb(177, 158, 239) 2px 2px,
+	rgb(177, 158, 239) 3px 3px,
+	rgb(177, 158, 239) 4px 4px,
+	rgb(177, 158, 239) 5px 5px,
+	rgb(177, 158, 239) 6px 6px;
+}
+
+.active-button{
+	color:white;
+	background:rgb(177, 158, 239);
+}
+
+.active-button:hover{
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.48)
 }

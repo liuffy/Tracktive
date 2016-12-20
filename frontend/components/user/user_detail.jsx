@@ -16,16 +16,19 @@ class UserDetail extends React.Component{
  		return(
  			<div
  				className="user-detail">
-	 			<h3
-	 				className="user-header">{user.username}'s trackts</h3>
+	 			<span><span
+	 				className="user-header">{user.username}'s trackts
+	 		</span><img
+	 					className="headphone-icon" 
+	 					src="http://www.clipartbest.com/cliparts/4ib/76g/4ib76gKig.png" /></span>
 	 			<div
 	 				className="liked-created-buttons">
 				<Link
 					onClick="" // ADD ON CLICK!!!!!!!!!!!!!!!!
-					className="user-button">Liked</Link>
+					className="user-button">LIKED</Link>
 				<Link
 					onClick="" // ADD ON CLICK!!!!!!!!!!!!!!!!
-					className="user-button">Created</Link> 
+					className="user-button">CREATED</Link> 
 				</div>
  			</div>
 		)
