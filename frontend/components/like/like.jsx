@@ -4,7 +4,7 @@ const LIKE_ICON = 'http://res.cloudinary.com/liuffy/image/upload/v1482185971/hea
 
 const Like = ({createLike, deleteLike, tracktlistId, currentUserId}) => {
 
-let liked = likedTracktlists.includes(currentMixId);
+let liked = likedTracktlists.includes(tracktlistId);
 // toggle styling
 
 let likeStyle = liked ? {background: `#5635ae`} : {background: `none`};

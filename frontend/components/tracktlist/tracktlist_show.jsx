@@ -1,12 +1,13 @@
 import React from 'react'
 import {withRouter, Link } from 'react-router';
-import LikeContainer from '../like/like_container';
+// import LikeContainer from '../like/like_container';
 
 class TracktlistShow extends React.Component{
    constructor(props){
     super(props);
   }
 
+      // <LikeContainer />
   componentDidMount(){
     this.props.fetchTracktlist(this.props.params.tracktlistId);
   }
@@ -23,11 +24,14 @@ class TracktlistShow extends React.Component{
         className="cover-image"
         src={tracktlist.index_image_url}
         alt="Tracktlist cover"/>
-      <LikeContainer />
 
       </div>
-        <h1 className="playlist-title">
-      {tracktlist.title}</h1>
+        <span className="playlist-title">
+      {tracktlist.title}</span>
+      <span className="author-label">by <Link 
+                                         className="link"
+                                         to={`/users/${tracktlist.user_id}`}>
+                                         {tracktlist.user}</Link></span>
       </div>
 
       <span

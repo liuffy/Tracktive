@@ -1,7 +1,7 @@
 class Tracktlist < ActiveRecord::Base
 	validates :title, :user_id, :index_image_url, :artists, :playlistUrl, presence: true
 
-	belongs_to :user
+	belongs_to :user, inverse_of: :tracktlists
 	after_initialize :ensure_index_image
 
 	DEFAULT_IMAGES = [

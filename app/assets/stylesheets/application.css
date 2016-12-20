@@ -19,6 +19,7 @@ body {
 	font-family: ProximaNovaA-Regular;
 	/* IE10+ */ 
 	background:#f8f7f9;
+	min-height:1000px;
 }
 
 /* Buttons */
@@ -114,6 +115,7 @@ label {
 .link{
 	color:#5B3DA8;
 	font-weight:bold;
+	margin: 0px 3px;
 }
 
 .link:hover{
@@ -175,7 +177,7 @@ div.about{
 	/*border-bottom: 2px solid #149078;*/
 	width:100%;
 	/*display:flex;*/
-	display:block;
+	/*display:block;*/
 /*	position:b;*/
 	/*flex-direction: row;*/
 	top: 0;
@@ -183,5 +185,6 @@ div.about{
 	overflow:hidden;
 	right: 0;
 	display:fixed;
+	box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.48);
 }
 

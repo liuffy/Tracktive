@@ -2,10 +2,10 @@ import {connect} from 'react-redux';
 import Like from './like';
 import {createLike, deleteLke} from '../../actions/like_actions';
 
-const mapStateToProps = (state) => {
-	let likedTracktlists = state.session.currentUser.likedTracktlists;
-	let currentTracktlistId = state.currentTracktlist.id;
-	let currentUserId = state.session.currentUser.id
+const mapStateToProps = (state, {session}) => {
+	let likedTracktlists = session.currentUser.likedTracktlists;
+	let tracktlistId = state.tracktlist.id;
+	let currentUserId = session.currentUser.id
 
 	return {
 		likedTracktlists,

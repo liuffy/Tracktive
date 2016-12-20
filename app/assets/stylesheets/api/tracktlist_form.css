@@ -64,7 +64,23 @@ h3.create{
   }
 
 .creation-input-field:focus{
-	background: #e3e1f2;
+/* IE10+ */ 
+background-image: -ms-linear-gradient(left, #DBFFE7 0%, #DEC8F7 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(left, #DBFFE7 0%, #DEC8F7 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(left, #DBFFE7 0%, #DEC8F7 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #DBFFE7), color-stop(100, #DEC8F7));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(left, #DBFFE7 0%, #DEC8F7 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to right, #DBFFE7 0%, #DEC8F7 100%);
 }
 
  .create-button{
@@ -78,8 +94,7 @@ h3.create{
 		position:relative;
 		padding:10px 100px;
 		margin:32px 40px 20px 80px;
-		box-shadow: 
-		rgb(141, 135, 167) 1px 1px,
-		rgb(141, 137, 171) 2px 2px;
+	box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.48);
+	
  }
 
