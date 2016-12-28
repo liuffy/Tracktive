@@ -17,11 +17,11 @@
 
 ## Design Docs 
 
-* [Wireframes]()
-* [Component Hierarchy](https://github.com/liuffy/Tracktive/tree/master/docs/wireframes)
-* [API Endpoints](https://github.com/liuffy/Tracktive/blob/master/docs/api-endpoints.md)
+* [Wireframes](https://github.com/liuffy/Tracktive/tree/master/docs/wireframes)
+* [Component Hierarchy](https://github.com/liuffy/Tracktive/blob/master/docs/api-endpoints.md)
+* [API Endpoints](https://github.com/liuffy/Tracktive/blob/master/docs/schema.md)
 * [Schema](https://github.com/liuffy/Tracktive/blob/master/docs/schema.md)
-* [Sample State](https://github.com/liuffy/Tracktive/blob/master/docs/schema.md)
+* [Sample State](https://github.com/liuffy/Tracktive/blob/master/docs/sample-state.md)
 
 ## Implementation Timeline
 

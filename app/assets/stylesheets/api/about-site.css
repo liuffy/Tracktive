@@ -1,6 +1,6 @@
 /* This is for the "about" page */
 
-div.tracktlist-form, .tracktlist-detail, .user-detail, .site-info{
+div.tracktlist-form, .tracktlist-detail, .user-detail{
 	display:block;
 	margin:0px 200px;
 	width:700px;
@@ -9,7 +9,7 @@ div.tracktlist-form, .tracktlist-detail, .user-detail, .site-info{
 }
 .site-info p{
 	color:#282728;
-	font-size:18px;
+	font-size:1.5vmax;
 }
 
 .user-header, .about-header{

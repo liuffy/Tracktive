@@ -1,8 +1,44 @@
 /* Splash page CSS only */
 
 /* Wordmark */
-.tracktive-wordmark{
-	font-size: 70px;
+
+.splash-background{
+  background-image: -ms-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #ABFFCA), color-stop(100, #B28AF7));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
+
+  /* W3C Markup */ 
+  background-image: linear-gradient(to bottom left, #ABFFCA 0%, #B28AF7 100%);
+  background-repeat:no-repeat;
+  min-height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-size: cover;
+   background-position: center;
+}
+
+.tagline{
+  color:rgba(255, 255, 255, 0.8);
+  font-size:4vmax;
+  display:inline-block;
+  font-weight:bold;
+   margin-left:15%;
+}
+
+.tracktive-wordmark-main{
+  font-size: 13vmax;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -10,10 +46,29 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
-
+  display:inline-block;
+  color: white;
+  text-shadow:
+  rgb(73, 178, 157) 1px 1px,
+  rgb(73, 178, 157) 2px 2px,
+  rgb(73, 178, 157) 3px 3px,
+  rgb(107, 90, 147) 4px 5px,
+  rgb(107, 91, 148) 5px 5px,
+  rgb(107, 91, 148) 6px 6px,
+  rgb(86, 53, 174) 7px 7px, 
+  rgb(86, 54, 175) 8px 8px; 
+  font-weight: bold;
+  margin-left:25%;
 }
-
 .tracktive-wordmark{
+	font-size: 60px;
+  cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
   display:inline-block;
   float:left;
   color: white;
@@ -28,170 +83,150 @@
   rgb(86, 54, 175) 8px 8px;	
 
   font-weight: bold;
-  margin:30px 0px 0px 20px;
+  margin:40px 0px 0px 20px;
 }
 
 /* Session Form */
 
+.splash-buttons{
+  display:flex;
+  flex-direction: row;
+  width:600px;
+  height:300px;
+  display:block;
+  position:absolute;
+  left:25%;
+  margin-top:30%;
+  z-index:3;
+  /*width:200px;*/
+}
+
+
+.splash-button{
+  /*background: rgba(255,255,255,0.8);*/
+  width:7vmax;
+  /*border: 2px solid rgb(107, 90, 147);*/
+  border: 2px solid white;
+  color:white;
+  text-align:center;
+  display:inline-block;
+  border-radius: 3px;
+  font-size:1.6vmax;
+  padding:2px 15px;
+  margin:20px 20px 5px 20px;
+  transition: all 0.2s ease 0s;
+}
+
+.splash-button:hover{
+  color: #3b3b3d;
+  border: 2px solid #3b3b3d;
+  box-shadow: #3b3b3d 0px 0px;
+}
+
+
+
+.active-button{
+  background:rgb(84, 82, 82);
+  color: white;
+  box-shadow: 
+  rgb(84, 82, 82) 0px 0px;
+}
+
+
 .session-form{
-	background: #fcfcfc;
 	color:#77AF9C;
-	border:2px solid #545252;
-	width:400px;
 	position: relative;
-	left:35%;
 	padding:0px 20px 20px 30px;
-	border-radius:10px;
-  box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);
+	/*border-radius:5px;*/
+  /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
+}
+
+.session-form-header{
+  font-size:24px;
+  font-weight:bold;
+  color:#5b3da8;
+  margin:40px 0px;
 }
 
 .demo-button, .session-button{
 	background: #149078;
 	color: white;
-	font-size:20px;
+	font-size:24px;
 	border-radius: 5px;
 	padding:6px 30px;
 	margin:10px;
 }
 
-.demo-button{
-	background: #5b3da8;
+.demo{
+  color: #5b3da8;
+  border: 2px solid #5b3da8;
 }
 
-/* Silly demo button effect */
-/*.tracktive-wordmark1:hover{
-  animation: move linear 4000ms infinite;  
-}
-
-@keyframes move {
-  0% {
-    text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1)
-    ;
-  }
-  25% {    
-    text-shadow:      
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -3px -3px 0 hsla(257, 51%, 48%, 1), 
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -1px -1px 0 hsla(257, 51%, 48%, 1),
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      3px 3px 0 hsla(165, 75%, 30%, 1), 
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      1px 1px 0 hsla(165, 75%, 30%, 1)      
-    ;
-  }
-  50% {
-    text-shadow:
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -3px 3px 0 hsla(165, 75%, 30%, 1), 
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -1px 1px 0 hsla(165, 75%, 30%, 1),
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      3px -3px 0 hsla(257, 51%, 48%, 1), 
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      1px -1px 0 hsla(257, 51%, 48%, 1)
-    ;
-  }
-  75% {
-    text-shadow:
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      3px 3px 0 hsla(257, 51%, 48%, 1), 
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      1px 1px 0 hsla(257, 51%, 48%, 1),
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -3px -3px 0 hsla(165, 75%, 30%, 1), 
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -1px -1px 0 hsla(165, 75%, 30%, 1)      
-    ;
-  }
-  100% {
-    text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1);
-  }  
-}
-}*/
-
-.demo-button:hover{
-
-	color: white;
-  font-size:20px;
-  animation: move linear 4000ms infinite;  
+.demo:hover{
+  color:white;
+  font-weight:bold;
+  animation: move linear 2000ms infinite;  
 }
 
 @keyframes move {
   0% {
     text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1)
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px -1px 0 hsla(165, 75%, 30%, 0.7),
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px 1px 0 hsla(257, 51%, 48%, 0.7)
     ;
   }
   25% {    
     text-shadow:      
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -3px -3px 0 hsla(257, 51%, 48%, 1), 
-      -4px -4px 0 hsla(257, 51%, 48%, 1), 
-      -1px -1px 0 hsla(257, 51%, 48%, 1),
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      3px 3px 0 hsla(165, 75%, 30%, 1), 
-      4px 4px 0 hsla(165, 75%, 30%, 1), 
-      1px 1px 0 hsla(165, 75%, 30%, 1)      
+      -4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px -3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px -1px 0 hsla(257, 51%, 48%, 0.7),
+      4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px 3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px 1px 0 hsla(165, 75%, 30%, 0.7)      
     ;
   }
   50% {
     text-shadow:
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -3px 3px 0 hsla(165, 75%, 30%, 1), 
-      -4px 4px 0 hsla(165, 75%, 30%, 1), 
-      -1px 1px 0 hsla(165, 75%, 30%, 1),
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      3px -3px 0 hsla(257, 51%, 48%, 1), 
-      4px -4px 0 hsla(257, 51%, 48%, 1), 
-      1px -1px 0 hsla(257, 51%, 48%, 1)
+      -4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      -3px 3px 0 hsla(165, 75%, 30%, 0.7), 
+      -4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      -1px 1px 0 hsla(165, 75%, 30%, 0.7),
+      4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      3px -3px 0 hsla(257, 51%, 48%, 0.7), 
+      4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      1px -1px 0 hsla(257, 51%, 48%, 0.7)
     ;
   }
   75% {
     text-shadow:
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      3px 3px 0 hsla(257, 51%, 48%, 1), 
-      4px 4px 0 hsla(257, 51%, 48%, 1), 
-      1px 1px 0 hsla(257, 51%, 48%, 1),
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -3px -3px 0 hsla(165, 75%, 30%, 1), 
-      -4px -4px 0 hsla(165, 75%, 30%, 1), 
-      -1px -1px 0 hsla(165, 75%, 30%, 1)      
+      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      1px 1px 0 hsla(257, 51%, 48%, 0.7),
+      -4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      -3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      -4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      -1px -1px 0 hsla(165, 75%, 30%, 0.7)      
     ;
   }
   100% {
     text-shadow:
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      3px -3px 0 hsla(165, 75%, 30%, 1), 
-      4px -4px 0 hsla(165, 75%, 30%, 1), 
-      1px -1px 0 hsla(165, 75%, 30%, 1),
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -3px 3px 0 hsla(257, 51%, 48%, 1), 
-      -4px 4px 0 hsla(257, 51%, 48%, 1), 
-      -1px 1px 0 hsla(257, 51%, 48%, 1);
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px -1px 0 hsla(165, 75%, 30%, 0.7),
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px 1px 0 hsla(257, 51%, 48%, 0.7);
   }  
 }
 

@@ -20,7 +20,8 @@
 	width: 700px;
   overflow: hidden;
   margin:0px 0px;
-  border:1px solid #9189a5;
+	box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);
+	border: 2px solid #545252;  
 }
 
 .cover-image{
@@ -45,17 +46,15 @@ iframe {
 }
 
 .artists-featured{
-	color:white;
+	color:rgb(84, 82, 82);
 	display:inline-block;
-	background:#aceed1;
+	/*background:#aceed1;*/
 	margin:10px;
 	padding:1px 10px 1px 5px;
 	font-size:24px;
-	text-shadow: rgb(20, 144, 120) 1px 1px,
-	rgb(20, 144, 120) 1px 1px,
-    rgb(107, 90, 147) 2px 2px,
-    rgb(107, 91, 148) 3px 3px,
-    rgb(107, 92, 149) 4px 4px;
+	text-shadow:
+    rgb(170, 169, 169) 1px 1px,
+    rgb(170, 169, 169) 2px 2px;
 /*    rgb(20, 145, 121) 5px 5px,
     rgb(20, 146, 122) 6px 6px,
     rgb(20, 149, 124) 7px 7px;*/

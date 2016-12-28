@@ -52,7 +52,7 @@ body {
 	color:white;
 	border: 3px solid white;
 	display:fixed;
-	/*border-radius: 5px;*/
+	border-radius: 3px;
 	font-size:14px;
 	float:right;
 	padding:4px 20px;
@@ -78,7 +78,7 @@ body {
 	color: #5B3DA8;
 	font-size:16px;
 	/*border:1px solid #5B3DA8;*/
-	margin: 2px 5px;
+	margin: 10px 5px;
 	border-radius:5px;
 	padding: 10px 13px;
 	width:80%;
@@ -87,9 +87,6 @@ body {
   box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
 
-.standard-input-field:focus{
-	border: 1px solid #330d9b;
-}
 
 label {
 	font-size:20px;
@@ -97,7 +94,11 @@ label {
 
 /* Links and errors*/
 
-
+.submit{
+	margin:20px 5px;
+	text-align:center;
+	width:75%;
+}
 .link{
 	color:#5B3DA8;
 	font-weight:bold;
@@ -117,13 +118,26 @@ div.about{
 }
 
 .about-link{
+  /*z-index:50;*/
 	font-weight:bold;
-	color:rgb(177, 158, 239);
+	color:#3b3b3d;
 	font-size:25px;
 	position:relative;
-	top:450px;
+	top:400px;
+	left:10px;
+	cursor:pointer;
 }
 
+/*.about-modal{
+	width:600px;
+	padding:30px;
+	background:white;
+	border-radius:10px;
+	z-index:99999;
+	position:fixed;
+	top:5%;
+	left:25%;
+}*/
 
 .error{
 	color: #56445D;
@@ -167,7 +181,7 @@ div.about{
 	height:140px;
 	border-bottom: 2px solid #545252;
 	width:100%;
-	z-index:2;
+	/*z-index:4;*/
 	/*display:flex;*/
 	/*display:block;*/
 /*	position:b;*/

@@ -1,125 +1,113 @@
 import React from 'react';
-import {Link, withRouter} from 'react-router';
+import {Link} from 'react-router';
 
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: "",
-      password: ""
+        username: "",
+        password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.returnToMain = this.returnToMain.bind(this);
+
+    if(this.props.demo){
+      this.startUsernameAnimation();
+    }
   }
 
-  update(property){
-  	return e => this.setState({[property]: e.target.value});
+  startUsernameAnimation(){
+    this.clearFields();
+
+    const demoName = 'DemoUser';
+    let usernameID = setInterval(() => {
+      document.getElementById('username').focus();
+      let currLength = this.state.username.length;
+
+      if(currLength < demoName.length){
+        this.setState({username: this.state.username + demoName.slice(currLength, currLength + 1)});
+      } else {
+        clearInterval(usernameID);
+        this.startPasswordAnimation();
+      }
+    }, 80);
   }
 
-  returnToMain(){
-      this.props.router.push('/')
+  startPasswordAnimation(){
+    const demoPassword = 'password';
+    let passwordID = setInterval(() => {
+      document.getElementById('password').focus();
+      let currLength = this.state.password.length;
+
+      if(currLength < demoPassword.length){
+        this.setState({password: this.state.password + demoPassword.slice(currLength, currLength + 1)});
+      } else{
+        clearInterval(passwordID);
+        this.props.processForm(this.state);
+      }
+    }, 80);
   }
 
-  componentDidUpdate() { // this is a lifecycle method used to perform 
-  	//DOM operations after the data has been updated 
-		this.redirectIfLoggedIn();
-	}
-
-	redirectIfLoggedIn() {
-		if (this.props.loggedIn) {
-			this.props.router.push("/");
-		}
-	}
-
-  handleSubmit(e) {
-  	e.preventDefault();
-  	// Redirect the user to the /#/ route if they are logged in.
-  		this.props.processForm(Object.assign({}, this.state))
+  clearFields(){
+    this.setState({username: "", password: ""});
   }
 
-  navLink(){
-  	let {formType} = this.props;
-
-  	if (formType === "login"){
-  		return <Link 
-                className="link"
-                to="/signup">Sign up
-              </Link>
-  	} else {
-    		return <Link 
-                className="link"
-                to="/login">Login
-                </Link>
-  	}
+  handleSubmit(event){
+    event.preventDefault();
+    this.props.processForm(this.state);
   }
 
+  update(place){
+    return (event) => {
+      this.setState({[place]: event.target.value});
+    };
+  }
 
-  renderErrors(e){
-  	let {errors} = this.props;
-
-  	return(
-			<ul>
-  			{errors.map((error, idx) => (
-					<li className="error" 
-              key={idx}>{error}</li>
-  			))}
-  			</ul>
-  			)
-  		}
-				
   render(){
-  	let {processForm, formType} = this.props;
-  	let {username, password} = this.state;
+    const link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
+    const header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
 
-  	return(
-  		<div
-      className="session-form">
+    const errors = this.props.errors.map(
+      (error, idx) => <li key={idx} className='error'>{error}</li>);
 
-	  		<form
-	  			onSubmit = {this.handleSubmit}>
-  			<br />
+    return (
+      <div className='session-form'>
+        <div >
+          <h1 
+          className='session-form-header'>{header} to make tracktlists.</h1>
+        </div>
+        <ul className="login-errors">
+          {errors}
+        </ul>
 
-	  		<h3>{formType} to create trackts.</h3>
-        <h4> {this.navLink()} instead?</h4>
-	  		{this.renderErrors()}
+        <form onSubmit={this.handleSubmit} className='signup-input-form'>
+          <label>username:
+          <input type='text'
+            id='username'
+            value={this.state.username}
+            onChange={this.update('username')}
+            placeholder='Username'
+            className="standard-input-field"/>
+            </label>
 
-	  	<div className="login-box">
-	  		<label>username:<br/>
-	  		<input 
-          className="standard-input-field"
-          type='text'
-  	  		value={username}
-  	  		placeholder="Username"
-  	  		onChange={this.update('username')} />
-	  		</label>
-	  		<br />
+          <label>password:
+          <input type='password'
+            id='password'
+            value={this.state.password}
+            onChange={this.update('password')}
+            placeholder='Password'
+            className='standard-input-field'/>
+            </label>
 
-	  		<label>password:<br/>
-	  		<input 
-          className="standard-input-field"
-          type='password'
-  	  		value={password}
-  	  		placeholder="Password"
-  	  		onChange={this.update('password')} />
-	  		</label>
-	  		<br />
+          <button type='submit'
+            value='Submit'
+            className='sidebar-button submit'>submit</button>
+        </form>
 
-	  		<button
-	  		className="session-button">{formType}</button>
+         <span>Did you mean to <Link className="link" onClick={this.props.toggleForm}>{link}</Link> instead?</span>
 
-        <button
-          // onClick={SOMETHING!!!!!!!!!!!}
-          className="demo-button">demo login</button>
-
-	  			</div>
-				</form>
-        <button
-          className="cancel-button link"
-          onClick={this.returnToMain}>cancel</button>
-  		</div>
-		)
+      </div>
+    );
   }
-
 }
 
-export default withRouter(SessionForm);
+export default SessionForm;
