@@ -63,15 +63,15 @@ h3.create{
     color:#aba9bc;
   }
 
-.creation-input-field::::-moz-placeholder { /* Firefox 19+ */
+.creation-input-field::-moz-placeholder { /* Firefox 19+ */
   color:#aba9bc;
 }
 
-.creation-input-field:::-ms-input-placeholder { /* IE 10+ */
+.creation-input-field::-ms-input-placeholder { /* IE 10+ */
   color:#aba9bc;
 }
 
-.creation-input-field:::-moz-placeholder { /* Firefox 18- */
+.creation-input-field::-moz-placeholder { /* Firefox 18- */
   color:#aba9bc;
 }
 
