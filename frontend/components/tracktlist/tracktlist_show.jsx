@@ -28,10 +28,7 @@ class TracktlistShow extends React.Component{
       </div>
         <span className="playlist-title">
       {tracktlist.title}</span>
-      <span className="author-label">by <Link 
-                                         className="link"
-                                         to={`/users/${tracktlist.user_id}`}>
-                                         {tracktlist.user_id}</Link></span>
+      <span className="author-label"></span>
       </div>
 
       <span

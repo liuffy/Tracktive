@@ -20,7 +20,7 @@ body {
 	/* IE10+ */ 
 	background:#f8f7f9;
 	min-height:1000px;
-	padding-top: 180px;
+	padding-top: 175px;
 }
 
 /* Buttons */
@@ -73,10 +73,8 @@ body {
 }
 
 .logout-button:hover{
-		/*border: 2px solid #3f827a;*/
-		/*color:#3f827a;*/
-	/*box-shadow: 2px 2px 2px #330d9b;*/
-	background: rgba(86, 91, 107, 0.5);
+	color: rgba(86, 91, 107, 0.8);
+	border: 4px solid rgba(86, 91, 107, 0.8);
 }
 
 /*button:hover{
@@ -152,8 +150,8 @@ div.about{
 	position:fixed;
 	color:white;
 	float:right;
-	margin:10px 20px 5px 15px;
-	font-size:20px;
+	margin:10px 20px 5px 25px;
+	font-size:16px;
 }
 
 .cancel-button{
@@ -180,7 +178,7 @@ div.about{
 	/* W3C Markup */ 
 	background-image: linear-gradient(to bottom left, #ABFFCA 0%, #B28AF7 100%);
 	height:140px;
-	border-bottom: 0.5px solid #B19EEF;
+	border-bottom: 2px solid #545252;
 	width:100%;
 	z-index:2;
 	/*display:flex;*/
@@ -191,6 +189,8 @@ div.about{
 	left: 0;
 	right: 0;
 	position:fixed;
-	box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.48);
+	box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);
+		transition: all 0.2s ease 0s;
+
 }
 

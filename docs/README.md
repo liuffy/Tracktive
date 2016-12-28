@@ -87,7 +87,7 @@ brings up results based on the inputted artist.
 	- [X] Blown up Album art as banner? :art:
 - [X] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  
 - [ ] Implement custom query for searching via *artists* 
-- [ ] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
+- [X] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
 
 ### Phase 4:  Continuous Streaming *(2 days)*
 *Objective*: TracktLists can be streamed without being interrupted by navigation. 
