@@ -1,10 +1,15 @@
 /* This is for the user detail page */
 
-/*.user-header{
-	height:300px;
-	margin:20px 0px;
+
+.user-detail{
+	display:block;
 	position:relative;
-}*/
+}
+
+.user-header{
+	font-size:25px;
+	left:30%;
+}
 .user-info{
 	color:white;
 	font-size:20px;
@@ -12,8 +17,8 @@
 
 .headphone-icon{
 	width:auto;
-	height:30px;
-	margin:10px 0px 0px 30px;
+	height:25px;
+	margin:10px 0px 0px 20px;
 	/*float:left;*/
 	display:inline-block;
 }

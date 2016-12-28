@@ -14,41 +14,39 @@
 .sidebar-button{
 	width:60px;
 	/*border: 2px solid rgb(107, 90, 147);*/
-	border: 3px solid rgb(177, 158, 239);
+	border: 3px solid rgb(84, 82, 82);
 	/*border: 2px solid #6b5a93;*/
 	/*background:white;*/
 	/*color: #6b5a93;*/
-	color:#9480d6;
+	color:rgb(84, 82, 82);
 	display:inline-block;
-	border-radius: 6px;
-	font-size:20px;
+	/*border-radius: 6px;*/
+	font-size:16px;
 	padding:4px 20px;
 	margin:40px 50px 5px 40px;
 	transition: all 0.2s ease 0s;
 	box-shadow: 
-	rgb(177, 158, 239) 1px 1px,
-	rgb(177, 158, 239) 2px 2px,
-	rgb(177, 158, 239) 3px 3px,
-	rgb(177, 158, 239) 4px 4px,
-	rgb(177, 158, 239) 5px 5px,
-	rgb(177, 158, 239) 6px 6px;
+	rgb(84, 82, 82) 1px 1px,
+	rgb(84, 82, 82) 2px 2px,
+	rgb(84, 82, 82) 3px 3px,
+	rgb(84, 82, 82) 4px 4px,
+	rgb(84, 82, 82) 5px 5px,
+	rgb(84, 82, 82) 6px 6px;
 }
 
 .sidebar-button:hover{
 		/*border: 2px solid #3f827a;*/
 	/*background:white;*/
-	background:rgb(177, 158, 239);
+	background:rgb(84, 82, 82);
 	color: white;
 	box-shadow: 
-	rgb(177, 158, 239) 0px 0px;
+	rgb(84, 82, 82) 0px 0px;
 }
 
 .active-button{
-	color:white;
-	background:rgb(177, 158, 239);
-	box-shadow:none;
+	background:rgb(84, 82, 82);
+	color: white;
+	box-shadow: 
+	rgb(84, 82, 82) 0px 0px;
 }
 
-.active-button:hover{
-	box-shadow: none;
-}
