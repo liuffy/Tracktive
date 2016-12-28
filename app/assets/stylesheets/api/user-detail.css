@@ -11,9 +11,9 @@
 }
 
 .headphone-icon{
-	height:40px;
-	margin:10px 0px 0px 20px;
 	width:auto;
+	height:30px;
+	margin:10px 0px 0px 30px;
 	/*float:left;*/
 	display:inline-block;
 }
