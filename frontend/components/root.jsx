@@ -14,17 +14,11 @@ import Dashboard from './dashboard/dashboard';
 
 const Root = ({ store }) => {
 
-  const _redirectIfLoggedIn = (nextState, replace) => {
-  const currentUser = store.getState().session.currentUser;
-  if (currentUser) {
-    replace('/explore'); // redirects to the root page if you try to go to the log out or sign up form
-  }
-}
 
   const _ensureLoggedIn = (nextState, replace) =>{
     const currentUser = store.getState().session.currentUser;
-    if (!store.getState().session.currentUser) {
-      replace("/");
+    if (!store.getState().session.currentUser) { // if there's no current user for the session
+      replace("/"); // redirect to the root page 
     }
   }
 

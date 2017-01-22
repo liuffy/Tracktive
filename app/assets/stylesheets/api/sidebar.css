@@ -4,16 +4,15 @@ div.sidebar{
 	width:100px;
 	height:300px;
 	display:block;
-	position:absolute;
+	position:relative;
   margin:180px 0px 20px 0px;
   width:200px;
-  z-index:900;
+  z-index:23;
+  /*background:black;*/
 }
 
 
 .sidebar-button{
-	  z-index:900;
-
 	width:60px;
 	/*border: 2px solid rgb(107, 90, 147);*/
 	border: 3px solid rgb(84, 82, 82);

@@ -62,7 +62,7 @@
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
 - [X] JBuilder views for TracktLists
-- [X] `TracktListLike`  - not functional yet!!!!
+- [ ] `TracktListLike`  - not functional yet!!!!
 	- [X] model, 
 	- [X] controller, 
 	- [X] routes,
@@ -107,7 +107,7 @@ Serious: What if I just have second compact playlist widget?
 ### Phase 5:  Media Queries and Optimizing Design *(2 days)*
 *Objective*: Optimize and enhance navigation through adding or adjusting stylistic features. 
 
-- [ ] Implement animated Demo/ Guest Login using script 
+- [X] Implement animated Demo/ Guest Login using script 
 - [ ] Implement media queries so that app is usable at different viewport sizes 
 - [ ] Design custom vector logo to display in place of App Name in header 
 - [ ] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList

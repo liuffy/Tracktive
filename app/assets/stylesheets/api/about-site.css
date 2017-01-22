@@ -7,15 +7,19 @@ div.tracktlist-form, .tracktlist-detail, .user-detail{
 	height:400px;
 	padding:30px;
 }
+
+div.site-info{
+	z-index:9999;
+}
 .site-info p{
 	color:#282728;
-	font-size:1.5vmax;
+	font-size:16px;
 }
 
 .user-header, .about-header{
 	color:#282728;
 	/*text-shadow: 0px 1px 5px #330d9b;*/
-	font-size: 40px;
+	font-size: 24px;
 	margin:20px 0px;
 /*		text-shadow: rgb(20, 144, 120) 1px 1px,
 	rgb(20, 144, 120) 1px 1px,

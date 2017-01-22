@@ -88,6 +88,14 @@
 
 /* Session Form */
 
+.fist-bump{
+  height:120px;
+  margin-top:-80px;
+  margin-left:5%;
+  width:auto;
+  position:fixed;
+  z-index:-2;
+}
 .splash-buttons{
   display:flex;
   flex-direction: row;
@@ -97,7 +105,7 @@
   position:absolute;
   left:25%;
   margin-top:30%;
-  z-index:3;
+  z-index:-3;
   /*width:200px;*/
 }
 
@@ -136,7 +144,7 @@
 .session-form{
 	color:#77AF9C;
 	position: relative;
-	padding:0px 20px 20px 30px;
+	padding:0px 0px 20px 30px;
 	/*border-radius:5px;*/
   /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
 }
@@ -145,7 +153,7 @@
   font-size:24px;
   font-weight:bold;
   color:#5b3da8;
-  margin:40px 0px;
+  margin:30px 0px 50px;
 }
 
 .demo-button, .session-button{

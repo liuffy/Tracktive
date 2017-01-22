@@ -5,7 +5,7 @@ export const authModalStyle = {
    left            : 0,
    right           : 0,
    bottom          : 0,
-  background: 'rgba(76, 64, 109, 0.8)',
+ background: 'rgba(176, 179, 231, 0.8)',
    zIndex          : 50
  },
  content : {

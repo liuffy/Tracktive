@@ -74,6 +74,10 @@ class SessionForm extends React.Component {
         <div >
           <h1 
           className='session-form-header'>{header} to make tracktlists.</h1>
+          <img 
+          href="https://dribbble.com/shots/3145554-Fist-Bump"
+          className="fist-bump"
+          src="http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif" />
         </div>
         <ul className="login-errors">
           {errors}

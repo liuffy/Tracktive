@@ -36,7 +36,6 @@ export default class AboutModal extends React.Component{
       <div className='about'>
       <a className='about-link' onClick={this.show.bind(this)}>about</a>
       <Modal
-     
       show={this.state.show}
       onClose={this.close.bind(this)}>
  

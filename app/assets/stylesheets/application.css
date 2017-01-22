@@ -103,6 +103,7 @@ label {
 	color:#5B3DA8;
 	font-weight:bold;
 	margin: 0px 3px;
+	cursor:pointer;
 }
 
 .link:hover{
@@ -110,20 +111,23 @@ label {
 }
 
 div.about{
-	width:200px;
-	height:700px;
-	display:block;
+	width:100px;
+	height:100px;
+	display:inline-block;
 	position:fixed;
-  margin:10px 0px 0px 40px;
+	bottom:0%;
+	left:5%;
+  /*margin:10px 0px 0px 40px;*/
 }
 
 .about-link{
+  z-index:100;
   /*z-index:50;*/
 	font-weight:bold;
 	color:#3b3b3d;
-	font-size:25px;
+	font-size:20px;
 	position:relative;
-	top:400px;
+	top:0px;
 	left:10px;
 	cursor:pointer;
 }
@@ -158,6 +162,7 @@ div.about{
 .cancel-button{
 	position: relative;
 	left:40%;
+	z-index:-3;
 }
 
 .header-bar{
@@ -181,7 +186,7 @@ div.about{
 	height:140px;
 	border-bottom: 2px solid #545252;
 	width:100%;
-	/*z-index:4;*/
+	z-index:3;
 	/*display:flex;*/
 	/*display:block;*/
 /*	position:b;*/
