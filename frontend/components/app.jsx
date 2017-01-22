@@ -9,7 +9,6 @@ import {Link} from 'react-router';
 class App extends React.Component {
   constructor(props){
     super(props);
-    this.handleLogout = this.handleLogout.bind(this);
   }
 
  componentWillReceiveProps(newProps){ // Need this to redirect! 
@@ -18,17 +17,7 @@ class App extends React.Component {
     }
   }
 
-   handleLogout(){
-    this.props.logout();
-  }
-
   render (){
-
-   let logoutButton;
-    if(this.props.currentUser){
-      logoutButton = <button onClick={this.handleLogout}
-                        className='logout-button'>Log out</button>;
-    }
 
     return(
       <div> 
