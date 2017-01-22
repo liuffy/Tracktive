@@ -12,7 +12,6 @@ class Greeting extends React.Component{
 
 	 logout(){
     this.props.logout();
-    this.props.router.push('/');
   }
 
 	render(){
@@ -27,18 +26,10 @@ class Greeting extends React.Component{
 						onClick={this.logout}>logout</button>
 				</div>
 					)
-		} else {
+		} 
+		else {
 				return (
-					<div className="greeting-container">
-						<p>
-							<Link 
-							className="standard-button"
-							to={'/login'}>login</Link> 
-
-							<Link 
-							className="standard-button"
-							to={'/signup'}>signup</Link>
-						</p>
+					<div>
 					</div>
 					)
 		}

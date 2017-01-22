@@ -20,7 +20,7 @@ class Splash extends React.Component{
 
   componentWillReceiveProps(nextProps){
     if(nextProps.currentUser && nextProps.currentUser.id){
-      this.props.router.push('/app');
+      this.props.router.push('/app'); // this is how it redirects
       }
   }
 

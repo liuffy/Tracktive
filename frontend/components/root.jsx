@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import App from './app';
+import AppContainer from './app_container';
 import SplashContainer from './splash/splash_container';
 
 import SessionFormContainer from './session_form/session_form_container';
@@ -10,10 +10,7 @@ import UserDetailContainer from './user/user_detail_container';
 import TracktlistFormContainer from './tracktlist_form/tracktlist_form_container';
 import TracktlistShowContainer from './tracktlist/tracktlist_show_container';
 
-import Dashboard from './dashboard/dashboard';
-
 const Root = ({ store }) => {
-
 
   const _ensureLoggedIn = (nextState, replace) =>{
     const currentUser = store.getState().session.currentUser;
@@ -26,7 +23,7 @@ const Root = ({ store }) => {
   <Provider store={ store }>
     <Router history={ hashHistory }>
       <Route path="/" component={ SplashContainer } />
-       <Route path='/app' component={ App} onEnter={_ensureLoggedIn}>
+       <Route path='/app' component={ AppContainer } onEnter={_ensureLoggedIn}>
         <Route path= "/users/:userId" component={UserDetailContainer}/>
          <Route path="/tracktlists/new" component={TracktlistFormContainer} onEnter={_ensureLoggedIn}/>
         <Route path='/tracktlists/:tracktlistId' component={ TracktlistShowContainer }/>
