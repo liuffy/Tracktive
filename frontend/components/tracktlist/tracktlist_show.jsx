@@ -55,6 +55,10 @@ class TracktlistShow extends React.Component{
       <span
         className="artists-label">Published:</span>
         <span> {tracktlist.created_at}</span>
+      <br />
+        <span
+        className="artists-label">Number of tracks:</span>
+        <span> {tracktlist.num_tracks}</span>
         </div>
     </div>
       )
