@@ -1,5 +1,5 @@
 class Tracktlist < ActiveRecord::Base
-	validates :title, :user_id, :index_image_url, :artists, :playlistUrl, presence: true
+	validates :title, :user_id, :username, :index_image_url, :artists, :playlistUrl, presence: true
 
 	belongs_to :user, inverse_of: :tracktlists, foreign_key: :creator
 	after_initialize :ensure_index_image

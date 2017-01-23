@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161219003620) do
+ActiveRecord::Schema.define(version: 20170123215213) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20161219003620) do
     t.datetime "updated_at",      null: false
     t.string   "playlistUrl",     null: false
     t.string   "artists",         null: false
+    t.string   "username"
   end
 
   add_index "tracktlists", ["user_id"], name: "index_tracktlists_on_user_id", using: :btree

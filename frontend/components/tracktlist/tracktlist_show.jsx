@@ -26,14 +26,6 @@ class TracktlistShow extends React.Component{
         alt="Tracktlist cover"/>
 
       </div>
-        <span className="playlist-title">
-      {tracktlist.title}</span>
-      <span className="author-label"></span>
-      </div>
-
-      <span
-        className="artists-label">Featuring:
-        <span className="artists-featured"> {tracktlist.artists}</span></span>
       <div className="tracktlist-player">
         <iframe
           src={`${tracktlist.playlistUrl}`}
@@ -42,6 +34,28 @@ class TracktlistShow extends React.Component{
           target="_parent"
           allowTransparency="true"></iframe>
       </div>
+
+      </div>
+
+      <div className="tracktlist-info">
+
+        <span className="playlist-title">
+      {tracktlist.title}</span>
+      <br/>
+      <br/>
+
+      <span className="author-label">Created by: </span>
+        <span><Link className="link" 
+                        to={`/users/${tracktlist.user_id}`}>{tracktlist.username}</Link></span>
+        <br />
+      <span
+        className="artists-label">Featuring:</span>
+        <span> {tracktlist.artists}</span>
+        <br/>
+      <span
+        className="artists-label">Published:</span>
+        <span> {tracktlist.created_at}</span>
+        </div>
     </div>
       )
   }

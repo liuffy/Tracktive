@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { fetchTracktlist } from '../../actions/tracktlist_actions';
-import {selectTracktlist} from '../../reducers/selectors';
+import { selectTracktlist } from '../../reducers/selectors';
 import TracktlistShow from './tracktlist_show';
 
 const mapStateToProps = (state, { params }) =>{

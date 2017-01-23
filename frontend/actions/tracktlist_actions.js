@@ -27,9 +27,11 @@ export function createTracktlist(artistNames, title, imageUrl) {
 					const baseUrl = `https://embed.spotify.com/?theme=white&uri=spotify:trackset:${title}:`;
 					const playlistUrl = `${baseUrl}${subsetOfTracks}`;
 					const user_id = state.session.currentUser.id;
+					const username = state.session.currentUser.username;
 
 					APIUtil.createTracktlist({
 						playlistUrl,
+						username,
 						user_id,
 						title,
 						artists: artistNames,
