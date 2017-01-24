@@ -13,10 +13,9 @@ class TracktlistShow extends React.Component{
   }
 
   render(){
-    let {tracktlist} = this.props;
+    let {tracktlist, loading} = this.props;
 
-    return(
-    <div className="tracktlist-detail cf">
+    return loading ?  : <div className="tracktlist-detail cf">
       <div
         className="cover-contents">
       <div className="cover-image-container">
@@ -61,7 +60,7 @@ class TracktlistShow extends React.Component{
         <span> {tracktlist.num_tracks}</span>
         </div>
     </div>
-      )
+      
   }
 }
 

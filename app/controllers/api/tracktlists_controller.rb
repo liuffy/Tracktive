@@ -1,10 +1,12 @@
 class Api::TracktlistsController < ApplicationController
 
 	def index
+		# sleep 1
 		@tracktlists = Tracktlist.all
 	end 
 
 	def show 
+		# sleep 1
 		@tracktlist = Tracktlist.find(params[:id])
 # @username = User.find(tracktlist.user_id).username
 		render "show_tracktlist"

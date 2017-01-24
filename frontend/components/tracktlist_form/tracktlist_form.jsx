@@ -38,12 +38,12 @@ class TracktlistForm extends React.Component {
   handleSubmit(e) {
     let { createTracktlist } = this.props;
     let { artists, index_image_url, title } = this.state;
-
+    console.log('wooohooo')
     e.preventDefault();
-    createTracktlist(artists, title, index_image_url).then(newTracktlist => {
-      console.log('yay')
-    hashHistory.push(`tracktlists/${newTracktlist.id}`) // redirect
-    })
+    createTracktlist(artists, title, index_image_url)
+    this.props.router.push(`/app`) // redirect
+
+    console.log('weeheee')
   }
 
 

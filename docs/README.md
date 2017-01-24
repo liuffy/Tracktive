@@ -81,8 +81,8 @@ brings up results based on the inputted artist.
 	- [ ] Presentational component, container
 	- [ ] Figure out how to import album or artist art into the IndexItem button 
 	- [ ] Use Masonry JavasScript library for Dashboard grid layout
-- [ ] `TracktListDetail`
-	- [ ] Displays: Creator of TracktList, Date Published, Name of Tracktlist (left side)
+- [X] `TracktListDetail`
+	- [X] Displays: Creator of TracktList, Date Published, Name of Tracktlist (left side)
 	- [X] Displays: TracktList (right side)
 	- [X] Blown up Album art as banner? :art:
 - [X] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  

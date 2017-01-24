@@ -8,7 +8,8 @@ const mapStateToProps = (state, { params }) =>{
   const tracktlist = selectTracktlist(state, tracktlistId);
   return {
     tracktlistId,
-    tracktlist
+    tracktlist,
+    loading: state.loading.detailLoading
   };
 };
 

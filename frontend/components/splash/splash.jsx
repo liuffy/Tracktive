@@ -90,6 +90,7 @@ class Splash extends React.Component{
 
             <Modal isOpen={this.state.authModal}
              onRequestClose={this.closeModal.bind(this)}
+             contentLabel="SessionForm"
              style={authModalStyle}>
 
             <SessionFormContainer formType={this.state.formType}
