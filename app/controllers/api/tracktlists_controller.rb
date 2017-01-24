@@ -6,7 +6,7 @@ class Api::TracktlistsController < ApplicationController
 	end 
 
 	def show 
-		# sleep 1
+		sleep 1
 		@tracktlist = Tracktlist.find(params[:id])
 # @username = User.find(tracktlist.user_id).username
 		render "show_tracktlist"
