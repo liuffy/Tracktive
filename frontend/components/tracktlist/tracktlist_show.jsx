@@ -15,7 +15,13 @@ class TracktlistShow extends React.Component{
   render(){
     let {tracktlist, loading} = this.props;
 
-    return loading ? <div className="loader">Loading..</div> : <div className="tracktlist-detail cf">
+    return loading ? <div className="spinner">
+  <div className="rect1"></div>
+  <div className="rect2"></div>
+  <div className="rect3"></div>
+  <div className="rect4"></div>
+  <div className="rect5"></div>
+</div> : <div className="tracktlist-detail cf">
       <div
         className="cover-contents">
       <div className="cover-image-container">
