@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
+import {fetchTracktlists, receiveTracktlists} from './actions/session_actions';
+import {selectAllTracktlists} from "./reducers/selectors";
 // import {signup, login, logout} from './actions/session_actions';
 // import {getArtists, getArtistsAlbums, getAlbumTracks} from './util/tracktlist_api_util';
-import {getArtists, getAlbums, getTracks} from './actions/tracktlist_actions';
+// import {getArtists, getAlbums, getTracks} from './actions/tracktlist_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,9 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// window.getArtistsAlbums = getArtistsAlbums;
 	window.store = store;
-	window.getArtists = getArtists;
-	window.getAlbums = getAlbums;
-	window.getTracks = getTracks;
+	// window.getArtists = getArtists;
+	// window.getAlbums = getAlbums;
+	// window.getTracks = getTracks;
+	window.fetchTracktlists = fetchTracktlists;
+	window.receiveTracktlists = receiveTracktlists;
+	window.selectAllTracktlists = selectAllTracktlists;
 	// window.getAlbumTracks = getAlbumTracks;
 	// window.login = login;
 	// window.logout = logout;

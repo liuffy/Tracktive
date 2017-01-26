@@ -21,6 +21,7 @@ class UserDetail extends React.Component{
 	 		</span><img
 	 					className="headphone-icon" 
 	 					src="http://www.clipartbest.com/cliparts/4ib/76g/4ib76gKig.png" /></span>
+	 				<br/>
 	 			<div
 	 				className="liked-created-buttons">
 				<Link

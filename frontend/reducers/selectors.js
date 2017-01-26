@@ -1,8 +1,11 @@
+import _ from 'lodash';
 
 export const selectUser = ({ users }, id) => {
    const user = users[id] || {};
    return user
  }
+
+export const selectAllTracktlists = state => _.values(state.tracktlists);
 
 
 export const selectTracktlist = ({ tracktlists }, id) =>{

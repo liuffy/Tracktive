@@ -1,6 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SidebarContainer from './sidebar/sidebar_container';
+import TracktlistIndexContainer from './tracktlist/tracktlist_index_container';
 import Search from './search/search';
 import AboutModal from './about/about-modal';
 import {Link} from 'react-router';
@@ -21,10 +22,11 @@ class App extends React.Component {
 
     return(
       <div> 
-      	<div
-      		className="header-bar">
+        <div
+          className="header-bar">
         <span 
           className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
+        <TracktlistIndexContainer />
         <GreetingContainer />
           <Search />
         <SidebarContainer />

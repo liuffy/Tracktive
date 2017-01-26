@@ -13,7 +13,7 @@ div.sidebar{
 
 
 .sidebar-button{
-	width:60px;
+	width:7vmax;
 	/*border: 2px solid rgb(107, 90, 147);*/
 	border: 3px solid rgb(84, 82, 82);
 	/*border: 2px solid #6b5a93;*/
@@ -22,7 +22,7 @@ div.sidebar{
 	color:rgb(84, 82, 82);
 	display:inline-block;
 	border-radius: 3px;
-	font-size:16px;
+	font-size:2vmax;
 	padding:4px 15px;
 	margin:40px 50px 5px 40px;
 	transition: all 0.2s ease 0s;

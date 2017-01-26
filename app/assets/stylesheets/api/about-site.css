@@ -2,10 +2,10 @@
 
 div.tracktlist-form, .tracktlist-detail, .user-detail{
 	display:block;
-	margin:0px 200px;
-	width:700px;
-	height:400px;
-	padding:30px;
+	margin:0px 23vmax;
+	width:60%;
+	/*height:400px;*/
+	padding:10px;
 }
 
 div.site-info{

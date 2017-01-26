@@ -47,7 +47,7 @@ export function createTracktlist(artistNames, title, imageUrl) {
 }
 //////////////////////////////////////////////////////////////////////////
 
-export function fetchTracktlists() { // All tracktlists
+export function fetchTracktlists() { // Fetch all tracktlists
   return (dispatch) => {
     // dispatch(requestTracktlists());
     return APIUtil.fetchTracktlists()

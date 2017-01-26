@@ -17,15 +17,16 @@
 }
 
 .tracktlist-info{
+	width: 80%;
 	display:block;
 	position:relative;
-	margin:10px 0px 0px 320px;
+	margin:10px 0px 0px 300px;
 }
 
 .cover-image-container{
 	opacity:0.8;
-  height: 200px;
-	width: 650px;
+  height: 15vmax;
+	width: 70vmax;
   overflow: hidden;
   margin:0px 0px;
 	box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);
@@ -41,7 +42,7 @@
   /*position:absolute;*/
 	color:#282728;
 	line-height: 90%;
-	font-size: 40px;
+	font-size: 6vmax;
 	font-weight:bold;
 	text-shadow:
     rgb(170, 169, 169) 1px 1px,
@@ -49,10 +50,11 @@
 }
 
 iframe {
-	margin: 0px 0px 0px 0px;
-	width:300px; /* just for testing */
+	margin: 0px 10px 0px 0px;
+	width:250px; /* just for testing */
 	float:left;
 	display:block;
+	overflow:hidden;
 	border-left: 2px solid #545252;  
 	border-right: 2px solid #545252;  
 	border-bottom: 2px solid #545252;  
