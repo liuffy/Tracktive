@@ -8,6 +8,15 @@ div.tracktlist-form, .tracktlist-detail, .user-detail{
 	padding:10px;
 }
 
+div.tracktlist-index{
+	position:relative;
+}
+
+.tracktlists-index{
+	margin-left:70px;
+	margin-right:20px;
+}
+
 div.site-info{
 	z-index:9999;
 }

@@ -8,9 +8,32 @@
   }
 
 
-.thumb{
+.thumb-image{
+/*	width:200px;
+	height:180px;*/
+	background-position: center center;
+}
+
+.index-image-container{
+	border-radius:4px;
+	overflow: hidden;
 	width:200px;
-	height:auto;
-	box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.48);
-	/*margin:5px;*/
+	height:180px;
+  margin-bottom: 30px;
+	box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.58);
+}
+
+.track-index-text{
+	padding-top:10px;
+	color:white;
+	background-color: rgba(175, 190, 227, 0.85);
+	font-size:30px;
+	line-height: 75%;
+  position: absolute;
+  height: 70px;
+  width: 200px;
+  bottom: 0;
+  margin-bottom:30px;
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
 }

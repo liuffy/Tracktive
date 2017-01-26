@@ -22,14 +22,14 @@ class App extends React.Component {
 
     return(
       <div> 
-        <div
-          className="header-bar">
+      	<div
+      		className="header-bar">
         <span 
           className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
-        <TracktlistIndexContainer />
         <GreetingContainer />
           <Search />
         <SidebarContainer />
+        <TracktlistIndexContainer />
         </div>
         <AboutModal />
         { this.props.children }

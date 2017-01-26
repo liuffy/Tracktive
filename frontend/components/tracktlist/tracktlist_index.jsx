@@ -36,7 +36,7 @@ class TracktlistIndex extends React.Component {
 
           <Masonry className='tracktlists-index-container'
           elementType={'ul'}
-           options={{fitWidth: false, columnWidth: 200 }}>
+           options={{fitWidth: false, columnWidth: 200, gutter: 30}}>
           {tracktlists.map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
