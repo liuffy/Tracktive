@@ -1,5 +1,5 @@
 div.sidebar{
-	margin-top:12vmax;
+	margin-top:6.5vmax;
 	margin-left:10vmax;
 /*	display:flex;
 	flex-direction:column;*/
@@ -21,43 +21,31 @@ div.sidebar{
   /*background:black;*/
 }
 
-
 .sidebar-button{
-	width:7vmax;
-	/*border: 2px solid rgb(107, 90, 147);*/
-	border: 3px solid rgb(84, 82, 82);
-	/*border: 2px solid #6b5a93;*/
-	/*background:white;*/
-	/*color: #6b5a93;*/
-	color:rgb(84, 82, 82);
-	display:inline-block;
-	border-radius: 3px;
-	font-size:2vmax;
-	padding:4px 15px;
-	margin:40px 50px 5px 40px; /* this garbage needs to be fixed */
-	transition: all 0.2s ease 0s;
-	box-shadow: 
-	rgb(84, 82, 82) 1px 1px,
-	rgb(84, 82, 82) 2px 2px,
-	rgb(84, 82, 82) 3px 3px,
-	rgb(84, 82, 82) 4px 4px,
-	rgb(84, 82, 82) 5px 5px,
-	rgb(84, 82, 82) 6px 6px;
+  /*background: rgba(255,255,255,0.8);*/
+  width:12vmax;
+  /*border: 2px solid rgb(107, 90, 147);*/
+  border: 2px solid white;
+  color:white;
+  text-align:center;
+  display:inline-block;
+  border-radius: 4px;
+  font-size:1.8vmax;
+  padding:2px 15px;
+  margin:60px 20px 5px 20px;
+  transition: all 0.2s ease 0s;
 }
 
 .sidebar-button:hover{
-		/*border: 2px solid #3f827a;*/
-	/*background:white;*/
-	background:rgb(84, 82, 82);
-	color: white;
-	box-shadow: 
-	rgb(84, 82, 82) 0px 0px;
+  color: #3b3b3d;
+  border: 2px solid #3b3b3d;
+  box-shadow: #3b3b3d 0px 0px;
 }
 
-.active-button{
-	background:rgb(84, 82, 82);
-	color: white;
-	box-shadow: 
-	rgb(84, 82, 82) 0px 0px;
+.active-button-side{
+	font-weight:bold;
+	border:2px solid rgb(84, 82, 82);
+	color: rgb(84, 82, 82);
+	background: rgba(255,255,255,0.4);
 }
 

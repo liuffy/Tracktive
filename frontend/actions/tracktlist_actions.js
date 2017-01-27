@@ -1,6 +1,7 @@
 export const RECEIVE_TRACKTLISTS = "RECEIVE_TRACKTLISTS";
 export const RECEIVE_TRACKTLIST = "RECEIVE_TRACKTLIST";
 export const REQUEST_TRACKTLIST = "REQUEST_TRACKTLIST";
+export const REQUEST_TRACKTLISTS = "REQUEST_TRACKTLISTS";
 export const CREATE_TRACKTLIST = "CREATE_TRACKTLIST";
 export const SET_CURRENT_ID = "SET_CURRENT_ID";
 
@@ -62,6 +63,11 @@ export function fetchTracktlist(id) { // Single tracktlist
       .then(tracktlist => dispatch(receiveTracktlist(tracktlist)));
   }
 }
+
+export const requestTracktlists = () => ({
+	type: REQUEST_TRACKTLISTS
+})
+
 
 export const requestTracktlist = () => ({
 	type: REQUEST_TRACKTLIST

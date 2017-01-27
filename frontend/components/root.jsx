@@ -7,6 +7,7 @@ import SplashContainer from './splash/splash_container';
 import SessionFormContainer from './session_form/session_form_container';
 import UserDetailContainer from './user/user_detail_container';
 
+import TracktlistIndexContainer from './tracktlist/tracktlist_index_container'
 import TracktlistFormContainer from './tracktlist_form/tracktlist_form_container';
 import TracktlistShowContainer from './tracktlist/tracktlist_show_container';
 
@@ -23,7 +24,9 @@ const Root = ({ store }) => {
   <Provider store={ store }>
     <Router history={ hashHistory }>
       <Route path="/" component={ SplashContainer } />
-       <Route path='/app' component={ AppContainer } onEnter={_ensureLoggedIn}>
+       <Route path='/app' component={ AppContainer } onEnter={_ensureLoggedIn} >
+       <Route path='/browse' component = {TracktlistIndexContainer} onEnter={_ensureLoggedIn}/>
+       <Route path='/mine' component={UserDetailContainer} onEnter={_ensureLoggedIn}/>
         <Route path= "/users/:userId" component={UserDetailContainer}/>
          <Route path="/tracktlists/new" component={TracktlistFormContainer} onEnter={_ensureLoggedIn}/>
         <Route path='/tracktlists/:tracktlistId' component={ TracktlistShowContainer }/>

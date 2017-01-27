@@ -32,7 +32,11 @@ class TracktlistIndex extends React.Component {
 </div> :
       <div className='tracktlists-index'>
         <h2
-          className="create">explore.</h2> 
+          className="create explore">explore.</h2> 
+          <img 
+            className="telescope-logo"
+            src="http://icons.iconarchive.com/icons/icons8/windows-8/512/City-Telescope-icon.png" />
+
 
           <Masonry className='tracktlists-index-container'
           elementType={'ul'}

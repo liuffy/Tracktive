@@ -25,13 +25,13 @@ class App extends React.Component {
       	<div
       		className="header-bar">
         <span 
-          className="tracktive-wordmark"><Link to="/">tracktive</Link></span>
+          className="tracktive-wordmark"><Link to="/browse">tracktive</Link></span>
         <GreetingContainer />
           <Search />
         <SidebarContainer />
-        <TracktlistIndexContainer />
-        </div>
         <AboutModal />
+        </div>
+        
         { this.props.children }
       </div>
       )

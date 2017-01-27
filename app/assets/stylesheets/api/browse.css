@@ -5,9 +5,20 @@
 	  list-style-type: none;
 	  justify-content: space-between;
 	  width: 100%;
+	  top:30;
   }
 
+/*
+ .explore{
+ 	text-align:center;
+ }*/
 
+
+.telescope-logo{
+	height:5vmax;
+	width:auto;
+	float:left;
+}
 .thumb-image{
 /*	width:200px;
 	height:180px;*/

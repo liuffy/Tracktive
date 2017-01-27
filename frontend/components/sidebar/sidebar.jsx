@@ -9,18 +9,18 @@ const Sidebar = ({currentUser}) => (
 			<div className="sidebar">
 					<button><Link 
 					className="sidebar-button"
-					activeClassName="active-button"
-					to={'/search'}>explore</Link></button>
+					activeClassName="active-button-side"
+					to={'/browse'}>explore</Link></button>
 
 					<button><Link 
 					className="sidebar-button"
-					activeClassName="active-button"
+					activeClassName="active-button-side"
 					to={'/tracktlists/new'}>create</Link></button>
 
 					<button><Link 
-					activeClassName="active-button"
 					className="sidebar-button"
-					to={'/mine'}>my &#9836;</Link></button>
+					activeClassName="active-button-side"
+					to={`/users/${currentUser.id}`}>my &#9836;</Link></button>
 			</div>
 		
 	// 	)
