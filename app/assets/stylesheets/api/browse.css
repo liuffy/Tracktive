@@ -26,14 +26,42 @@
 .track-index-text{
 	padding-top:10px;
 	color:white;
-	background-color: rgba(175, 190, 227, 0.85);
-	font-size:30px;
+	background-image: -ms-linear-gradient(bottom, #B28AF7 0%, #AECADE 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #B28AF7 0%, #AECADE 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #B28AF7 0%, #AECADE 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B28AF7), color-stop(100, #AECADE));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #B28AF7 0%, #AECADE 100%);
+
+/* W3C Markup */ 
+background-image: linear-gradient(to top, #B28AF7 0%, #AECADE 100%);
+	font-size:25px;
 	line-height: 75%;
   position: absolute;
-  height: 70px;
+  height: 30%;
   width: 200px;
   bottom: 0;
   margin-bottom:30px;
   border-bottom-left-radius:4px;
   border-bottom-right-radius:4px;
 }
+
+.track-author{
+	font-style: italic
+	font-size:15px;
+	color: rgba(255, 255, 255, 0.8)
+	background:none;
+}
+
+/*.track-index-text{
+	position:absolute;
+	bottom:0;
+	width:200px;
+}*/

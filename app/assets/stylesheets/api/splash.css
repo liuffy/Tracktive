@@ -91,9 +91,9 @@
 .fist-bump{
   height:120px;
   margin-top:-80px;
-  margin-left:5%;
+  margin-left:15%;
   width:auto;
-  position:fixed;
+  position:relative;
   z-index:-2;
 }
 .splash-buttons{

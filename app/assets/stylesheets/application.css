@@ -184,26 +184,88 @@ label {
 	text-decoration: underline;
 }
 
-div.about{
-	width:100px;
-	height:100px;
-	display:inline-block;
-	position:fixed;
-	bottom:0%;
-	left:5%;
-  /*margin:10px 0px 0px 40px;*/
-}
+
 
 .about-link{
   z-index:100;
   /*z-index:50;*/
 	font-weight:bold;
-	color:#3b3b3d;
-	font-size:2.2vmax;
-	position:relative;
-	top:0px;
+	color:rgba(255,255,255,0.8);
+	font-size:2vmax;
+	position:fixed;
+	margin-left:10px;
+	/*margin-top:5%;*/
+	top:12vmax;
 	left:10px;
 	cursor:pointer;
+}
+
+.about-link:hover{
+	color:white;
+  animation: move linear 2000ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px -1px 0 hsla(165, 75%, 30%, 0.7),
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px 1px 0 hsla(257, 51%, 48%, 0.7)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px -3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px -1px 0 hsla(257, 51%, 48%, 0.7),
+      4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px 3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px 1px 0 hsla(165, 75%, 30%, 0.7)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      -3px 3px 0 hsla(165, 75%, 30%, 0.7), 
+      -4px 4px 0 hsla(165, 75%, 30%, 0.7), 
+      -1px 1px 0 hsla(165, 75%, 30%, 0.7),
+      4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      3px -3px 0 hsla(257, 51%, 48%, 0.7), 
+      4px -4px 0 hsla(257, 51%, 48%, 0.7), 
+      1px -1px 0 hsla(257, 51%, 48%, 0.7)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      1px 1px 0 hsla(257, 51%, 48%, 0.7),
+      -4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      -3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      -4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      -1px -1px 0 hsla(165, 75%, 30%, 0.7)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      3px -3px 0 hsla(165, 75%, 30%, 0.7), 
+      4px -4px 0 hsla(165, 75%, 30%, 0.7), 
+      1px -1px 0 hsla(165, 75%, 30%, 0.7),
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -3px 3px 0 hsla(257, 51%, 48%, 0.7), 
+      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
+      -1px 1px 0 hsla(257, 51%, 48%, 0.7);
+  }  
+}
 }
 
 

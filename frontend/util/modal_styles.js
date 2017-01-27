@@ -13,7 +13,7 @@ export const authModalStyle = {
   boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
    top             : '150px',
    width           : '400px',
-   height          : '450px',
+   height          : '500px',
    borderRadius    : '5px',
    border: 'none',
    padding         : 0,
