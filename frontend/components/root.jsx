@@ -34,7 +34,6 @@ const Root = ({ store }) => {
     </Router>
   </Provider>
 	)
-	
 }
 
 

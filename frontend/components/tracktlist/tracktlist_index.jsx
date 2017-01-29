@@ -32,10 +32,10 @@ class TracktlistIndex extends React.Component {
 </div> :
       <div className='tracktlists-index'>
         <h2
-          className="create explore">explore.</h2> 
+          className="explore">explore.</h2> 
           <img 
             className="telescope-logo"
-            src="http://icons.iconarchive.com/icons/icons8/windows-8/512/City-Telescope-icon.png" />
+            src="http://freevector.co/wp-content/uploads/2009/02/21421-binoculars-front-view1.png" />
 
 
           <Masonry className='tracktlists-index-container'

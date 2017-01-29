@@ -9,13 +9,15 @@ const TracktlistIndexItem = ({tracktlist, router}) =>{
 			<li className="index-item" 
 				key={tracktlist.id}>
 				<Link to={`/tracktlists/${tracktlist.id}`}>
+				<div className="entire-item">
 				<div className="index-image-container">
 					<img className="thumb-image" 
 						src={tracktlist.index_image_url}
-						alt="Tracktlist cover"/>
+/>
 					</div>
 					<span
 						className="track-index-text">{tracktlist.title}</span>
+				</div>
 				</Link>
 			</li>)
 }
