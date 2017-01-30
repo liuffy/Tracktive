@@ -16,7 +16,8 @@ module.exports = React.createClass({
   render(){
     return(
    
-      <FormControl 
+      <FormControl
+        className="search-bar" 
         placeholder={'What artist(s) do you want to hear?'} 
         value={this.state.query} 
         onChange={this.updateQuery}/>

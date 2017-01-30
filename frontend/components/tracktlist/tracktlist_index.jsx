@@ -41,7 +41,7 @@ class TracktlistIndex extends React.Component {
           <Masonry className='tracktlists-index-container'
           elementType={'ul'}
            options={{fitWidth: false, columnWidth: 200, gutter: 30}}>
-          {tracktlists.map(tracktlist =>
+          {tracktlists.reverse().map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
            key={tracktlist.id}/>)}

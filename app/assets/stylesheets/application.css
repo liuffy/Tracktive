@@ -62,6 +62,7 @@ background-image: linear-gradient(to top, #B28AF7 0%, #AECADE 100%);
 }
 
 .spinner .rect2 {
+	border:;
   -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
@@ -127,9 +128,9 @@ background-image: linear-gradient(to top, #B28AF7 0%, #AECADE 100%);
 	border: 3px solid white;
 	display:inline-block;
 	border-radius: 3px;
-	font-size:1.5vmax;
+	font-size:15px;
 	float:right;
-	padding:4px 20px;
+	padding:2px 10px;
 	margin:15px 15px 5px 8px;
   transition: all 0.2s ease 0s;
 }
@@ -165,6 +166,7 @@ background-image: linear-gradient(to top, #B28AF7 0%, #AECADE 100%);
 
 label {
 	font-size:20px;
+	color: #545252;
 }
 
 /* Links and errors*/
@@ -175,7 +177,7 @@ label {
 	width:75%;
 }
 .link{
-	color:#5B3DA8;
+	color:#361575;
 	font-weight:bold;
 	margin: 0px 3px;
 	cursor:pointer;
@@ -192,11 +194,11 @@ label {
   /*z-index:50;*/
 	font-weight:bold;
 	color:rgba(255,255,255,0.8);
-	font-size:2vmax;
+	font-size:18px;
 	position:fixed;
 	margin-left:10px;
 	/*margin-top:5%;*/
-	top:3.2vmax;
+	top:16px;
 	left:10px;
 	cursor:pointer;
 }
@@ -294,7 +296,7 @@ label {
 	color:white;
 	float:right;
 	margin:25px 20px 5px 25px;
-	font-size:2vmax;
+	font-size:20px;
 }
 
 .cancel-button{
@@ -305,26 +307,18 @@ label {
 
 .header-bar{
 		/* IE10+ */ 
-	background-image: -ms-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
+	
 
-	/* Mozilla Firefox */ 
-	background-image: -moz-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-	/* Opera */ 
-	background-image: -o-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-	/* Webkit (Safari/Chrome 10) */ 
-	background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #ABFFCA), color-stop(100, #B28AF7));
-
-	/* Webkit (Chrome 11+) */ 
-	background-image: -webkit-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-	/* W3C Markup */ 
-	background-image: linear-gradient(to bottom left, #ABFFCA 0%, #B28AF7 100%);
-	height:18vmax;
-	border-bottom: 2px solid #545252;
+background: #DA22FF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+	   background-size: cover;
+   /*background-position: center;*/
+	/*border-bottom: 2px solid #545252;*/
 	width:100%;
-	z-index:3;
+/*	opacity:0.8;
+*/	z-index:3;
 	/*display:flex;*/
 	/*display:block;*/
 /*	position:b;*/
@@ -333,7 +327,16 @@ label {
 	left: 0;
 	right: 0;
 	position:fixed;
-	box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);
+	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.48);
+  transition: all 0.4s ease 0s;
+}
+
+.header-bar:hover{
+	opacity:1;
+}
+
+.header-bar.search-bar:focus{
+	opacity:1;
 }
 
 .loadery{

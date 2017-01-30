@@ -16,11 +16,11 @@ class UserDetail extends React.Component{
  		return(
  			<div
  				className="user-detail">
-	 			<span><span
-	 				className="user-header">{user.username}'s trackts
-	 		</span><img
+	 			<span><h2
+	 				className="create">{user.username}'s trackts
+	 		</h2><img
 	 					className="headphone-icon" 
-	 					src="http://www.clipartbest.com/cliparts/4ib/76g/4ib76gKig.png" /></span>
+	 					src="" /></span>
 	 				<br/>
 	 			<div
 	 				className="liked-created-buttons">

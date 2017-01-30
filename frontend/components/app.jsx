@@ -29,8 +29,8 @@ class App extends React.Component {
         <GreetingContainer />
           <Search />
         <SidebarContainer />
-        <AboutModal />
         </div>
+        <AboutModal />
         
         { this.props.children }
       </div>

@@ -3,30 +3,16 @@
 /* Wordmark */
 
 .splash-background{
-  background-image: -ms-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-  /* Mozilla Firefox */ 
-  background-image: -moz-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-  /* Opera */ 
-  background-image: -o-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-  /* Webkit (Safari/Chrome 10) */ 
-  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #ABFFCA), color-stop(100, #B28AF7));
-
-  /* Webkit (Chrome 11+) */ 
-  background-image: -webkit-linear-gradient(top right, #ABFFCA 0%, #B28AF7 100%);
-
-  /* W3C Markup */ 
-  background-image: linear-gradient(to bottom left, #ABFFCA 0%, #B28AF7 100%);
-  background-repeat:no-repeat;
+  background: #DA22FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 100%;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   background-size: cover;
-   background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .tagline{
@@ -49,19 +35,18 @@
   display:inline-block;
   color: white;
   text-shadow:
-  rgb(73, 178, 157) 1px 1px,
-  rgb(73, 178, 157) 2px 2px,
-  rgb(73, 178, 157) 3px 3px,
-  rgb(107, 90, 147) 4px 5px,
-  rgb(107, 91, 148) 5px 5px,
-  rgb(107, 91, 148) 6px 6px,
-  rgb(86, 53, 174) 7px 7px, 
-  rgb(86, 54, 175) 8px 8px; 
+  rgb(107, 90, 147) 1px 1px,
+  rgb(107, 90, 147) 2px 2px,
+  rgb(107, 90, 147) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px; 
   font-weight: bold;
   margin-left:25%;
 }
 .tracktive-wordmark{
-	font-size: 5.4vmax;
+	font-size: 60px;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -73,15 +58,13 @@
   float:left;
   color: white;
   text-shadow:
-  rgb(73, 178, 157) 1px 1px,
-  rgb(73, 178, 157) 2px 2px,
-  rgb(73, 178, 157) 3px 3px,
-  rgb(107, 90, 147) 4px 5px,
-  rgb(107, 91, 148) 5px 5px,
-  rgb(107, 91, 148) 6px 6px,
-  rgb(86, 53, 174) 7px 7px, 
-  rgb(86, 54, 175) 8px 8px;	
-
+  rgb(107, 90, 147) 1px 1px,
+  rgb(107, 90, 147) 2px 2px,
+  rgb(107, 90, 147) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px; 
   font-weight: bold;
   margin:40px 0px 0px 20px;
 }
@@ -123,13 +106,14 @@
   font-size:2vmax;
   padding:2px 15px;
   margin:20px 20px 5px 20px;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .splash-button:hover{
   color: #3b3b3d;
   border: 2px solid #3b3b3d;
   box-shadow: #3b3b3d 0px 0px;
+  background: rgba(255,255,255,0.6);
 }
 
 
@@ -242,4 +226,16 @@
 
 .greeting-container{
   width:100%;
+}
+
+.submit{
+  border:2px solid #3b3b3d;
+  color: #3b3b3d;
+  transition: all 0.2s ease 0s;
+}
+
+.submit:hover{
+  color: #5b3da8;
+  border: 2px solid #5b3da8;
+  background: #d8d6d6;
 }

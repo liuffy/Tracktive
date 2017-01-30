@@ -20,7 +20,7 @@ class TracktlistForm extends React.Component {
   }
 
   returnToMain(){ // for the cancel button 
-      this.props.router.push('/')
+      this.props.router.push('/browse')
   }
 
  //  redirectIfLoggedIn() {
@@ -72,7 +72,7 @@ class TracktlistForm extends React.Component {
   			<br />
         <div 
           className="create-header">
-	  		<h2
+        <h2
           className="create">create a tracktlist.</h2> 
 
           <img 
@@ -81,19 +81,19 @@ class TracktlistForm extends React.Component {
         </div>
 
 
-	  	<div className="create-form">
+      <div className="create-form">
 
-	  		<label><h3
+        <label><h3
           className="create">1. Enter up to 4 artists you want to hear (separated by commas):</h3>
-	  		<input 
+        <input 
           className="creation-input-field"
           type='text'
-  	  		value={artists}
-  	  		placeholder="ex: phantogram, grimes"
-  	  		onChange={this.update('artists')}
+          value={artists}
+          placeholder="ex: phantogram, grimes"
+          onChange={this.update('artists')}
            />
-	  		</label>
-	  		<br />
+        </label>
+        <br />
 
         <label><h3
           className="create">2. Give your Tracktlist a descriptive name (5 words or less)</h3>
@@ -119,13 +119,13 @@ class TracktlistForm extends React.Component {
         <br />
 
         <button
-        className="create-button">Create tracktlist</button>
+        className="create-button">create tracktlist</button>
 
         </div>
         </form>
-        <button
-          className="cancel-button link"
-          onClick={this.returnToMain}>cancel</button>
+
+           <Link className="cancel-button link" 
+                        to={'/browse'}>cancel</Link>
       </div>
     )
   }
