@@ -15,12 +15,9 @@ class TracktlistIndex extends React.Component {
   render(){
     // const {loading} = this.props;
     const {tracktlists, loading} = this.props;
-
-    // const tracktlists = this.props.tracktlists.map((tracktlist) => // define tracktlists
-    //   <TracktlistIndexItemContainer 
-    //     tracktlist={tracktlist} 
-    //     key={tracktlist.id}/>
-    // );
+    $(window).scroll(function(){
+    $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
 
 
    return loading ? <div className="spinner">
@@ -30,12 +27,13 @@ class TracktlistIndex extends React.Component {
   <div className="rect4"></div>
   <div className="rect5"></div>
 </div> :
-      <div className='tracktlists-index'>
+<div>
         <h2
-          className="explore">explore.</h2> 
-          <img 
-            className="telescope-logo"
-            src="http://freevector.co/wp-content/uploads/2009/02/21421-binoculars-front-view1.png" />
+          className="explore">explore          <img 
+            className="binoculars-logo"
+            src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png" /></h2> 
+
+      <div className='tracktlists-index'>
 
 
           <Masonry className='tracktlists-index-container'
@@ -48,7 +46,7 @@ class TracktlistIndex extends React.Component {
 
           </Masonry>
         </div>
-  
+  </div>
   }
 }
 

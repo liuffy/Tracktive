@@ -104,10 +104,10 @@ class SessionForm extends React.Component {
 
           <button type='submit'
             value='Submit'
-            className='sidebar-button submit'>submit</button>
+            className='submit'>submit</button>
         </form>
 
-         <span>Did you mean to <Link className="link" onClick={this.props.toggleForm}>{link}</Link> instead?</span>
+         <span className="question">Did you mean to <Link className="link" onClick={this.props.toggleForm}>{link}</Link> instead?</span>
 
       </div>
     );

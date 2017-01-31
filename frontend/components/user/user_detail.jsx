@@ -14,13 +14,14 @@ class UserDetail extends React.Component{
  		let {user} = this.props;
 
  		return(
- 			<div
- 				className="user-detail">
+ 			<div className="cool">
 	 			<span><h2
-	 				className="create">{user.username}'s trackts
+	 				className="user-detail-header">{user.username}'s trackts
 	 		</h2><img
 	 					className="headphone-icon" 
 	 					src="" /></span>
+ 			<div
+ 				className="user-detail-1">
 	 				<br/>
 	 			<div
 	 				className="liked-created-buttons">
@@ -31,6 +32,7 @@ class UserDetail extends React.Component{
 					onClick="" // ADD ON CLICK!!!!!!!!!!!!!!!!
 					className="user-button">CREATED</Link> 
 				</div>
+ 			</div>
  			</div>
 		)
  	}

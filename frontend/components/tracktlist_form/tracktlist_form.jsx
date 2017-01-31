@@ -63,21 +63,25 @@ class TracktlistForm extends React.Component {
 				
   render(){
   	let {title, artists, index_image_url, user_id, playlistUrl} = this.state;
+    $(window).scroll(function(){
+    $(".create-banner-text").css("opacity", 1 - $(window).scrollTop() / 100);
+  });
   	return(
-  		<div
+      <div>
+        <h2
+          className="create-banner-text">create a tracktlist          <img 
+                className="flask-logo"
+                src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/flask-final_mb5xeo.png"/></h2> 
+
+      <div
       className="tracktlist-form cf">
 
-	  		<form
-	  			onSubmit = {this.handleSubmit}>
-  			<br />
+        <form
+          onSubmit = {this.handleSubmit}>
+        <br />
         <div 
           className="create-header">
-        <h2
-          className="create">create a tracktlist.</h2> 
 
-          <img 
-                className="flask-logo"
-                src="https://www.spreadshirt.com/image-server/v1/designs/10277625,width=178,height=178/chemist-flask.png"/>
         </div>
 
 
@@ -123,9 +127,7 @@ class TracktlistForm extends React.Component {
 
         </div>
         </form>
-
-           <Link className="cancel-button link" 
-                        to={'/browse'}>cancel</Link>
+      </div>
       </div>
     )
   }

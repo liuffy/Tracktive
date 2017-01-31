@@ -11,12 +11,29 @@
 	width:80%;
 }
 
-h2.create{
+.create-banner-text{
 	float:left;
-	font-size:4.5vmax;
-	margin:0 auto;
-	font-weight:bold;
-	color:#282728;
+		font-size:6vmax;
+		text-align:center;
+	margin-top:0px;
+		margin-bottom:40px;
+		font-weight:bold;
+	 color: white;
+	 width:100%;
+	 left:0;
+	 right:0;
+	 padding-bottom:40px;
+	 padding-top:40px;
+	 background: #d623fe;
+  text-shadow:
+  rgb(107, 90, 147) 1px 1px,
+  rgb(107, 90, 147) 2px 2px,
+  rgb(107, 90, 147) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px; 
+  font-weight: bold;
 }
 
 h3.create{
@@ -26,6 +43,8 @@ h3.create{
 	margin: 1 auto;
 	color:#282728;
 }
+
+
 
 .tracktlist-form{
 	display:block;
@@ -43,9 +62,11 @@ h3.create{
 
 /* Flask logo */
 .flask-logo{
-	height:5vmax;
+	display:inline-block;
+	height:6vmax;
 	width:auto;
-	float:left;
+	margin-left:10px;
+	/*float:left;*/
 }
 .creation-input-field{
 	letter-spacing:1px;
@@ -84,33 +105,27 @@ h3.create{
   color:#aba9bc;
 }
 
-/* .create-button{
-	 	font-size: 2.1vmax;
-		background: #B290F5;
-		color:white;
-		border: 0.5 solid white;
-		display:inline-block;
-		border-radius: 3px;
-		position:relative;
-		padding:10px 100px;
-		margin:32px 40px 20px 80px;
-		box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.48);
 
+ .submit{
+  border:2px solid #ce25fc;
+  color: #ce25fc;
+  transition: all 0.2s ease 0s;
+}
 
- }
-
- .create-button:hover{
- 	  -webkit-filter:brightness(110%);
- }*/
+.submit:hover{
+  color: white;
+  border: 2px solid #ce25fc;
+  background: #ce25fc;
+}
 
  .create-button{
  	font-size: 2.1vmax;
  	display:inline-block;
- 	padding:6px 100px;
+ 	padding:12px 140px;
  	border-radius:4px;
-  color: #3b3b3d;
+  color: #d623fe;
   transition: all 0.2s ease 0s;
-  border:2px solid #3b3b3d;
+  border:2px solid #d623fe;
   margin-left:10vmax;
   margin-right:10vmax;
   margin-top:2vmax;
@@ -118,8 +133,8 @@ h3.create{
 }
 
 .create-button:hover{
-  color: #5b3da8;
-  border: 2px solid #5b3da8;
-  background: #d8d6d6;
+  color: white;
+  border: 2px solid #ce25fc;
+  background: #ce25fc;
 }
 

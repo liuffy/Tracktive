@@ -5,15 +5,17 @@ export const authModalStyle = {
    left            : 0,
    right           : 0,
    bottom          : 0,
- background: 'rgba(176, 179, 231, 0.8)',
+ background: 'rgba(214, 35, 254, 0.6)',
    zIndex          : 50
  },
  content : {
    position        : 'fixed',
   boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
-   top             : '150px',
+   top             : '10%',
+   left:'30vw',
    width           : '400px',
    height          : '500px',
+   background:'white',
    borderRadius    : '5px',
    border: 'none',
    padding         : 0,
@@ -30,7 +32,7 @@ export const aboutModalStyle = {
    left            : 0,
    right           : 0,
    bottom          : 0,
-   backgroundColor : 'rgba(30, 30, 30, 0.0)',
+   backgroundColor : 'rgba(214, 35, 254, 0.6)',
    zIndex          : 50
  },
  content : {

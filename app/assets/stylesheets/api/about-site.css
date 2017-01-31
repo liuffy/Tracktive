@@ -2,10 +2,10 @@
 
 
 
-.tracktlists-index, div.tracktlist-form, div.tracktlist-detail, .user-detail{
-	margin-left:80px;
-	margin-right:20px;
-	margin-top:60px;
+.tracktlists-index, div.tracktlist-form, div.tracktlist-detail, div.user-detail-1{
+	margin-left:20vmin;
+	margin-right:10vmin;
+	margin-top:80px;
 }
 
 div.site-info{
@@ -16,7 +16,7 @@ div.site-info{
 	font-size:16px;
 }
 
-.user-header, .about-header{
+.about-header{
 	color:#282728;
 	/*text-shadow: 0px 1px 5px #330d9b;*/
 	font-size: 24px;

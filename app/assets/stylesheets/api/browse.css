@@ -8,20 +8,40 @@
   }
 
   .explore{
+		display:inline-block;
 		float:left;
-		font-size:4.5vmax;
-		margin:30px auto;
+		font-size:6vmax;
+		text-align:center;
+		margin-top:0px;
+		margin-bottom:40px;
 		font-weight:bold;
-		color:#282728;
+		color: white;
+		width:100%;
+		left:0;
+		right:0;
+		padding-bottom:40px;
+		padding-top:40px;
+		background: #d623fe;
+		text-shadow:
+		rgb(107, 90, 147) 1px 1px,
+		rgb(107, 90, 147) 2px 2px,
+		rgb(107, 90, 147) 3px 3px,
+		rgb(86, 53, 174) 4px 4px, 
+		rgb(86, 54, 175) 5px 5px,
+		rgb(86, 54, 175) 6px 6px,
+		rgb(86, 54, 175) 7px 7px; 
+		font-weight: bold;
+		/*margin-left:25%;*/
   }
 
 
-.telescope-logo{
-	height:4vmax;
+.binoculars-logo{
+	height:3.2vmax;
 	margin-left:5px;
-	margin-top:40px;
+	/*top:30;*/
+	/*margin-top:60px;*/
 	width:auto;
-	float:left;
+	display:inline-block;
 }
 .thumb-image{
 /*	width:200px;
@@ -45,7 +65,7 @@
 	transition: all 0.2s ease;
   margin-bottom: 60px;
   width:200px;
-	border:2px solid #ce25fc;
+	border:2px solid #6F3E91;
 	border-radius:4px;
 }
 .entire-item:hover{
@@ -64,13 +84,10 @@
 	color:white;
 
 
-
-
-background: #9D50BB; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #9D50BB , #6E48AA); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #9D50BB , #6E48AA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-	font-size:1.3em;
+background: #DA22FF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        	font-size:1.3em;
 	line-height: 20px;
   position: absolute;
   /*bottom:0;*/

@@ -20,7 +20,7 @@ class Splash extends React.Component{
 
   componentWillReceiveProps(nextProps){
     if(nextProps.currentUser && nextProps.currentUser.id){
-      this.props.router.push('/app'); // this is how it redirects
+      this.props.router.push('/browse'); // this is how it redirects!!!!!!!!!!!!!!!!!
       }
   }
 
@@ -49,12 +49,13 @@ class Splash extends React.Component{
   }
 
     handleButtonIfLoggedIn(){
-    this.props.router.push('/app');
+    this.props.router.push('/browse');
   }
 
 
 
     render(){
+
       let buttons;
       let {currentUser} = this.props;
 
@@ -89,6 +90,7 @@ class Splash extends React.Component{
             <AboutModal />
 
             <Modal isOpen={this.state.authModal}
+             className="session-modal"
              onRequestClose={this.closeModal.bind(this)}
              contentLabel="SessionForm"
              style={authModalStyle}>
