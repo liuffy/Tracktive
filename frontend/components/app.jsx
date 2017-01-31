@@ -25,7 +25,8 @@ class App extends React.Component {
       	<div
       		className="header-bar">
         <span 
-          className="tracktive-wordmark"><Link to="/browse">tracktive</Link></span>
+          ><Link to="/browse"><img className="wordmark-logo"
+            src="http://res.cloudinary.com/liuffy/image/upload/v1485894985/wordmark-4_yiaq9n.png"/></Link></span>
         <GreetingContainer />
           <Search />
         <SidebarContainer />
