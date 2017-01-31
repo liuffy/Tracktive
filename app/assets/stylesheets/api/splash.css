@@ -71,6 +71,10 @@
 
 /* Session Form */
 
+/*.session-modal{
+transition: all 4s ease;
+}
+*/
 .fist-bump{
   height:120px;
   margin-top:-80px;
@@ -127,6 +131,18 @@
   rgb(84, 82, 82) 0px 0px;
 }
 
+.exit-button{
+  position:absolute;
+  font-size:30px;
+  top:-20px;
+  right:30px;
+  color:#d623fe;
+}
+
+.exit-button:hover{
+  color:#ae7cba;
+  cursor:pointer;
+}
 
 .session-form{
 	color:#77AF9C;

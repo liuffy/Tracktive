@@ -62,6 +62,7 @@ class SessionForm extends React.Component {
     };
   }
 
+
   render(){
     const link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
     const header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
@@ -74,6 +75,12 @@ class SessionForm extends React.Component {
         <div >
           <h1 
           className='session-form-header'>{header} to make tracktlists.</h1>
+
+          <button className="exit-button"
+          onClick={this.props.closeModal}>
+              <span>&times;</span>
+          </button>
+
           <img 
           href="https://dribbble.com/shots/3145554-Fist-Bump"
           className="fist-bump"
