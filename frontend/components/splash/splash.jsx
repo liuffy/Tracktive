@@ -95,11 +95,11 @@ class Splash extends React.Component{
              contentLabel="SessionForm"
              style={authModalStyle}>
 
-            <SessionFormContainer formType={this.state.formType}
-              closeModal={this.closeModal.bind(this)}
-              toggleForm={this.toggleForm.bind(this)}
-              demo={this.state.demo}
-            />
+              <SessionFormContainer formType={this.state.formType}
+                closeModal={this.closeModal.bind(this)}
+                toggleForm={this.toggleForm.bind(this)}
+                demo={this.state.demo}
+              />
             </Modal>
 
           </div>

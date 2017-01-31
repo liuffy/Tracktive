@@ -68,7 +68,8 @@ class SessionForm extends React.Component {
     const header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
 
     const errors = this.props.errors.map(
-      (error, idx) => <li key={idx} className='error'>{error}</li>);
+      (error, idx) => <li key={idx} className='error'><img className="error-icon" 
+                src="http://res.cloudinary.com/liuffy/image/upload/v1485891262/error-icon_pmjqe2.png"/>{error}</li>);
 
     return (
       <div className='session-form'>

@@ -277,9 +277,9 @@ label {
 }*/
 
 .error{
-	color: #56445D;
+	color: #545252;
 	list-style:circle;
-	margin-left:20px;
+	margin-left:30px;
 	margin-bottom:20px;
 	font-size:20px;
 }
@@ -291,6 +291,12 @@ label {
 	margin:25px 20px 5px 25px;
 	font-size:20px;
 }
+
+li{
+	color: #d623fe;
+/*	padding-left:10px;
+	margin-left:20px;*/
+	}
 
 .cancel-button{
 	position: relative;

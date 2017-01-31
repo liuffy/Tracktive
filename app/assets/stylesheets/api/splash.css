@@ -147,9 +147,12 @@ transition: all 4s ease;
 .session-form{
 	color:#77AF9C;
 	position: relative;
-	padding:0px 0px 20px 30px;
+	padding:0px 0px 20px 50px;
 	/*border-radius:5px;*/
   /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
+  -webkit-transition: opacity 500ms ease-in;
+-moz-transition: opacity 500ms ease-in;
+transition: opacity 500ms ease-in;
 }
 
 .session-form-header{
@@ -168,6 +171,14 @@ transition: all 4s ease;
 	margin:10px;
 }
 
+.error-icon{
+  height:1.5vmax;
+  width:auto;
+  padding-right:15px;
+  float:left;
+  margin-left:-20px;
+  /*position:relative;*/
+}
 .demo{
   color: #5b3da8;
   border: 2px solid #5b3da8;

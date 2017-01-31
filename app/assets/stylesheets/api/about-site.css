@@ -13,13 +13,13 @@ div.site-info{
 }
 .site-info p{
 	color:#282728;
-	font-size:16px;
+	font-size:1.5vmax;
 }
 
 .about-header{
 	color:#282728;
 	/*text-shadow: 0px 1px 5px #330d9b;*/
-	font-size: 24px;
+	font-size: 2vmax;
 	margin:20px 0px;
 /*		text-shadow: rgb(20, 144, 120) 1px 1px,
 	rgb(20, 144, 120) 1px 1px,
@@ -30,8 +30,12 @@ div.site-info{
 
 .head-shot{
 	float:left;
-	height:200px;
+	height:14vmax;
 	margin-right:30px;
 	width:auto;
 	filter: invert(0%)
 }
+
+/*.about-text{
+	font-size:3vmax;
+}*/
