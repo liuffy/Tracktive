@@ -33,12 +33,6 @@ const SiteInfo = () => (
 				<br/>
 			<p className="about-text">Want to get in touch? You can add her on LinkedIn or e-mail her <Mailee /></p>
 <br/>
-<br/>
-		<h4
-			className="about-header">credit</h4>
-			<p className="about-text">100% of the default playlist art featured on this site comes from  <a 
-				className="link"
-				href="http://www.dailyminimal.com/">Daily Minimal.</a></p>
 	</div>
 	)
 

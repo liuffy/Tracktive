@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session_form/session_form_container';
+import Footer from '../footer/footer';
 import {withRouter, Link} from 'react-router';
 import {authModalStyle} from '../../util/modal_styles';
 import AboutModal from '../about/about-modal';
@@ -56,6 +57,10 @@ class Splash extends React.Component{
 
     render(){
 
+    $(window).scroll(function(){
+    $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+
       let buttons;
       let {currentUser} = this.props;
 
@@ -78,10 +83,12 @@ class Splash extends React.Component{
     }
 
       return (
+        <div className="whole-page">
           <div className="splash-background"> 
             
             <span 
               className="tracktive-wordmark-main"><Link to="/">tracktive</Link></span>
+              <br/>
                {buttons}
                <br/>
             <span
@@ -101,7 +108,8 @@ class Splash extends React.Component{
                 demo={this.state.demo}
               />
             </Modal>
-
+            <Footer/>
+            </div>
           </div>
         )
   }

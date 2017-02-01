@@ -14,7 +14,7 @@ class UserDetail extends React.Component{
  		let {user} = this.props;
 
  		return(
- 			<div className="cool">
+ 			<div className="user-detail-container">
 	 			<span><h2
 	 				className="user-detail-header">{user.username}'s trackts
 	 		</h2><img

@@ -20,16 +20,17 @@ body {
 	/* IE10+ */ 
 	background:#f8f7f9;
 	min-height:63vh;
-	padding-top: 175px;
+	/*padding-top: 175px;*/
 }
 
 /* SPINNER */
 .spinner {
-  margin: 100px auto;
+  margin: 300px auto;
   width: 130px;
   height: 100px;
   text-align: center;
   font-size: 10px;
+  z-index:500;
 }
 
 .spinner > div {
@@ -306,7 +307,7 @@ li{
 
 .header-bar{
 		/* IE10+ */ 
-	height:170px;
+	height:180px;
 	background: #DA22FF; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

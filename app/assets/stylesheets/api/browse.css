@@ -9,7 +9,7 @@
 
   img.wordmark-logo{
   	/*top:5%;*/
-  	height:90px;
+  	height:95px;
   	/*position:relative;*/
   	display:inline-block;
 	  float:left;
@@ -74,7 +74,7 @@
 	transition: all 0.2s ease;
   margin-bottom: 60px;
   width:200px;
-	border:2px solid #6F3E91;
+	border:2px solid #5635AE;
 	border-radius:4px;
 }
 .entire-item:hover{
