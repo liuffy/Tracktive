@@ -1,0 +1,14 @@
+.left-side, .right-side{
+  width:200px;
+  /*border:1px solid black;*/
+  float:left;
+}
+
+.left-side{
+  width:150px;
+}
+.right-side{
+  width:300px;
+  line-height:1.5;
+  padding-top:10px;
+}

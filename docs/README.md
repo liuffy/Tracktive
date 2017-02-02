@@ -62,7 +62,12 @@
 	- [X] Model 
 	- [X] TracktListsController, route: create and destroy 
 - [X] JBuilder views for TracktLists
-- [ ] `TracktListLike`  - not functional yet!!!!
+
+
+
+
+- [ ] `TracktListLike`  - not functional yet!!!!  :+1:
+
 	- [X] model, 
 	- [X] controller, 
 	- [X] routes,
@@ -77,10 +82,10 @@
 brings up results based on the inputted artist. 
 
 
-- [ ] `TracktListIndexItem`
-	- [ ] Presentational component, container
-	- [ ] Figure out how to import album or artist art into the IndexItem button 
-	- [ ] Use Masonry JavasScript library for Dashboard grid layout
+- [X] `TracktListIndexItem`
+	- [X] Presentational component, container
+	- [X] Figure out how to import album or artist art into the IndexItem button 
+	- [X] Use Masonry JavasScript library for Dashboard grid layout
 - [X] `TracktListDetail`
 	- [X] Displays: Creator of TracktList, Date Published, Name of Tracktlist (left side)
 	- [X] Displays: TracktList (right side)
@@ -109,10 +114,10 @@ Serious: What if I just have second compact playlist widget?
 
 - [X] Implement animated Demo/ Guest Login using script 
 - [ ] Implement media queries so that app is usable at different viewport sizes 
-- [ ] Design custom vector logo to display in place of App Name in header 
-- [ ] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList
-- [ ] Add logo as favicon
-- [ ] Custom graphics
+- [X] Design custom vector logo to display in place of App Name in header 
+- [X] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList
+- [X] Add logo as favicon
+- [X] Custom graphics
 - [ ] Make sure stylistic elements and color scheme are consistent in all views 
 
 ## Bonus Features :sparkles:

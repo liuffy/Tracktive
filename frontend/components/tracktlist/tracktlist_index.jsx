@@ -13,11 +13,13 @@ class TracktlistIndex extends React.Component {
   }
 
   render(){
-    // const {loading} = this.props;
+
+    // Script for fading effect 
+
     const {tracktlists, loading} = this.props;
     $(window).scroll(function(){
     $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
+    });
 
 
    return loading ? <div className="spinner">

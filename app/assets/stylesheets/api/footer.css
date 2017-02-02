@@ -3,15 +3,46 @@
   /*display:block;*/
   right: 0;
   bottom: 0;
-  min-height:11vmax;
+  min-height:150px;
   left: 0;
   box-shadow: 5px 5px 8px 8px rgba(0,0,0,0.3);
   /*margin-top:30px;*/
   padding: 1rem;
   background-color: white;
+  display:block;
+  z-index:50;
 }
 
+.column-divs{
+  margin-left:60px;
+}
 
-.footer-link{
-  color:;
+.column-div{
+  vertical-align:top;
+  min-width:200px;
+  display:inline-block;
+}
+
+.column-header{
+  font-weight:900;
+  font-size:16px;
+  color: #c61aed;
+}
+
+.link-list li{
+  cursor:pointer;
+  line-height:35px;
+}
+
+.link-list li:hover{
+  color: #eca6fc;
+}
+
+.wordmark-logo-footer{
+  height:70px;
+  /*position:relative;*/
+  padding-right:50px;
+  display:inline-block;
+  float:left;
+  margin:40px 20px 0px 30px;
 }

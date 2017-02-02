@@ -17,8 +17,10 @@ const SiteInfo = () => (
 		<h4
 			className="about-header">site</h4>
 			<p className="about-text">This site is built on a Ruby on Rails backend, a PostgreSQL database, and
-			 	 a React.js with Redux architectural framework on the frontend.</p>
-
+			 	 a React.js with Redux architectural framework on the frontend.
+			 	 <br/>
+			 	 Icons and wordmarks were created using CSS and Adobe Photoshop 2017.
+	</p>
 		<h4
 			className="about-header">creator</h4>
 			<img 

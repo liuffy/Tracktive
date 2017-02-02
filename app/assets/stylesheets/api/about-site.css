@@ -13,7 +13,7 @@ div.site-info{
 }
 .site-info p{
 	color:#282728;
-	font-size:1.5vmax;
+	font-size:1.3vmax;
 }
 
 .about-header{
@@ -36,6 +36,6 @@ div.site-info{
 	filter: invert(0%)
 }
 
-/*.about-text{
-	font-size:3vmax;
-}*/
+.about-text{
+	line-height:1.2;
+}

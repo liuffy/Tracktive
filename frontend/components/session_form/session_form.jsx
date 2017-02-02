@@ -64,6 +64,7 @@ class SessionForm extends React.Component {
 
 
   render(){
+
     const link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
     const header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
 

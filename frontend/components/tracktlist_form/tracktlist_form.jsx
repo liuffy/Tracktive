@@ -63,6 +63,9 @@ class TracktlistForm extends React.Component {
 				
   render(){
   	let {title, artists, index_image_url, user_id, playlistUrl} = this.state;
+
+    // Script for fading effect 
+
     $(window).scroll(function(){
     $(".create-banner-text").css("opacity", 1 - $(window).scrollTop() / 100);
   });

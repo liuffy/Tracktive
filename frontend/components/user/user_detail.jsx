@@ -16,10 +16,10 @@ class UserDetail extends React.Component{
  		return(
  			<div className="user-detail-container">
 	 			<span><h2
-	 				className="user-detail-header">{user.username}'s trackts
-	 		</h2><img
-	 					className="headphone-icon" 
-	 					src="" /></span>
+	 				className="user-detail-header">{user.username}'s trackts <img
+	 					className="like-icon" 
+	 					src="http://res.cloudinary.com/liuffy/image/upload/v1486002097/like_icon_cropped_okv740.png" />
+	 		</h2></span>
  			<div
  				className="user-detail-1">
 	 				<br/>

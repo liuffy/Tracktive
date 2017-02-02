@@ -1,20 +1,10 @@
 import React from 'react';
-// import { Link } from 'react-router';
 import Modal, {closeStyle} from 'simple-react-modal';
 import {aboutModalStyle} from '../../util/modal_styles';
-import SiteInfo from './site_info';
+import Graphics from './graphics';
 
-import Mailto from 'react-mailto';
 
-const Mailee = () => (
-      <Mailto 
-      	className="link"
-      	email="sliu3@wellesley.edu" obfuscate={false}>
-        here.
-      </Mailto>
-    );
-
-export default class AboutModal extends React.Component{
+export default class GraphicsModal extends React.Component{
 
 	constructor(){
     super()
@@ -34,15 +24,15 @@ export default class AboutModal extends React.Component{
 
      return (
       <div>
-      <a onClick={this.show.bind(this)}>About site</a>
+      <a onClick={this.show.bind(this)}>Graphics</a>
       <Modal
       show={this.state.show}
       onClose={this.close.bind(this)}>
  
-      <SiteInfo/>
+      <Graphics/>
  
       </Modal>
       </div>
-	)
-}
+  	)
+  }
 }

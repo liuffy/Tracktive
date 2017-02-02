@@ -58,8 +58,14 @@ class Splash extends React.Component{
     render(){
 
     $(window).scroll(function(){
-    $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 500);
+    $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 150);
   });
+
+  $(window).scroll(function(){
+    $(".tagline").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
+
+  
 
       let buttons;
       let {currentUser} = this.props;
@@ -94,7 +100,6 @@ class Splash extends React.Component{
             <span
               className="tagline">a simple interface for making playlists.</span>
         
-            <AboutModal />
 
             <Modal isOpen={this.state.authModal}
              className="session-modal"

@@ -5,6 +5,7 @@ import TracktlistIndexContainer from './tracktlist/tracktlist_index_container';
 import Search from './search/search';
 import AboutModal from './about/about-modal';
 import {Link} from 'react-router';
+import Footer from './footer/footer';
 
 
 class App extends React.Component {
@@ -31,9 +32,9 @@ class App extends React.Component {
           <Search />
         <SidebarContainer />
         </div>
-        <AboutModal />
         
         { this.props.children }
+        
       </div>
       )
   
