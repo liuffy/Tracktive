@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
-import AboutModal from '../about/about-modal';
-import GraphicsModal from '../about/graphics-modal';
-import ThanksModal from '../about/thanks_modal';
+import AboutModal from '../modals/about-modal';
+import GraphicsModal from '../modals/graphics-modal';
+import ThanksModal from '../modals/thanks_modal';
 import Mailto from 'react-mailto';
 
 
@@ -24,6 +24,7 @@ const Mailee = () => (
       </Mailto>
     );
 
+	
   	return(
 			<div className="footer">
 <img className="wordmark-logo-footer"

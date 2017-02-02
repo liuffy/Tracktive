@@ -66,9 +66,6 @@ class TracktlistForm extends React.Component {
 
     // Script for fading effect 
 
-    $(window).scroll(function(){
-    $(".create-banner-text").css("opacity", 1 - $(window).scrollTop() / 100);
-  });
   	return(
       <div>
         <h2

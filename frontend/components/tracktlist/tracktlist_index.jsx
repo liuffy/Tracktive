@@ -2,6 +2,7 @@ import React from 'react';
 import TracktlistIndexItemContainer from './tracktlist_index_item_container';
 import {withRouter} from 'react-router';
 import Masonry from 'react-masonry-component';
+import Footer from '../footer/footer';
 
 class TracktlistIndex extends React.Component {
   constructor(props){
@@ -13,6 +14,7 @@ class TracktlistIndex extends React.Component {
   }
 
   render(){
+    $(".footer").removeClass( "footer" ).addClass("index-footer");
 
     // Script for fading effect 
 
@@ -29,7 +31,7 @@ class TracktlistIndex extends React.Component {
   <div className="rect4"></div>
   <div className="rect5"></div>
 </div> :
-<div>
+<div className="whole-index-page">
         <h2
           className="explore">explore          <img 
             className="binoculars-logo"
@@ -48,6 +50,7 @@ class TracktlistIndex extends React.Component {
 
           </Masonry>
         </div>
+          <Footer/>
   </div>
   }
 }

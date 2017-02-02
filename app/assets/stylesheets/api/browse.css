@@ -7,13 +7,19 @@
 	  width: 100%;
   }
 
+  .whole-index-page{
+	  top:0%;
+  left:0%;
+  right:0%;
+}
+
   img.wordmark-logo{
   	/*top:5%;*/
   	height:95px;
   	/*position:relative;*/
   	display:inline-block;
 	  float:left;
-	    margin:40px 20px 0px 30px;
+    margin:40px 20px 0px 30px;
   }
 
   .explore{
