@@ -1,9 +1,7 @@
 class Tracktlist < ActiveRecord::Base
 	validates :title, :user_id, :num_tracks, :username, :index_image_url, :artists, :playlistUrl, presence: true
 
-	belongs_to :user, inverse_of: :tracktlists, foreign_key: :creator
-	after_initialize :ensure_index_image
-
+	belongs_to :user
 	DEFAULT_IMAGES = [
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571133/index_images/minimal1.jpg',
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571133/index_images/minimal2.jpg',
@@ -34,8 +32,10 @@ class Tracktlist < ActiveRecord::Base
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571137/index_images/minimal29.jpg',
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571133/index_images/minimal30.jpg'
 	]
+	
+	after_initialize :ensure_index_image
 
-	private
+
 
 	def ensure_index_image
 		self.index_image_url ||= DEFAULT_IMAGES[rand(28)]

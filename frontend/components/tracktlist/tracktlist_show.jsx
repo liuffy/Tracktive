@@ -14,6 +14,10 @@ class TracktlistShow extends React.Component{
 
   render(){
     let {tracktlist, loading} = this.props;
+    
+    $(document).ready(function () {
+        window.scrollTo(0,0);
+    });
 
     return loading ? <div className="spinner">
   <div className="rect1"></div>
@@ -24,20 +28,13 @@ class TracktlistShow extends React.Component{
 </div> : <div className="tracktlist-detail cf">
       <div
         className="cover-contents">
+
       <div className="cover-image-container">
       <img
         className="cover-image"
         src={tracktlist.index_image_url}
         alt="Tracktlist cover"/>
 
-      </div>
-      <div className="tracktlist-player">
-        <iframe
-          src={`${tracktlist.playlistUrl}`}
-          height="380"
-          frameBorder="0"
-          target="_parent"
-          allowTransparency="true"></iframe>
       </div>
 
       </div>
@@ -65,6 +62,13 @@ class TracktlistShow extends React.Component{
         className="artists-label">Number of tracks:</span>
         <span> {tracktlist.num_tracks}</span>
         </div>
+              <div className="left-side-player">
+        <iframe
+          src={`${tracktlist.playlistUrl}`}
+          frameBorder="0"
+          target="_parent"
+          allowTransparency="true"></iframe>
+      </div>
     </div>
       
   }

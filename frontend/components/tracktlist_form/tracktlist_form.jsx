@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 
+
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
@@ -41,7 +42,7 @@ class TracktlistForm extends React.Component {
     console.log('wooohooo')
     e.preventDefault();
     createTracktlist(artists, title, index_image_url)
-    this.props.router.push(`/app`) // redirect
+    this.props.router.push(`/browse`) // redirect
 
     console.log('weeheee')
   }
@@ -79,10 +80,6 @@ class TracktlistForm extends React.Component {
         <form
           onSubmit = {this.handleSubmit}>
         <br />
-        <div 
-          className="create-header">
-
-        </div>
 
 
       <div className="create-form">

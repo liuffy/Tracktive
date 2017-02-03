@@ -9,13 +9,15 @@ const mapStateToProps = (state, { params }) => {
 	const user = selectUser(state, userId);
 	  return {
 	    userId,
-	    user
+	    user,
+	    // createdTracktlists: state.session.currentUser.createdTracktlists,
+
 	  };
 };
 
 const mapDispatchToProps = dispatch => ({
   fetchUser: id => dispatch(fetchUser(id))
-});
+}); 
 
 export default connect(
   mapStateToProps,

@@ -2,12 +2,13 @@
 
 
 
-.tracktlists-index, div.tracktlist-form, div.tracktlist-detail, .user-detail-container{
+div.tracktlists-index, div.tracktlist-form, div.user-detail-1{
 	margin-left:20vmin;
 	margin-right:10vmin;
 	margin-top:220px;
   bottom:0;
 }
+
 
 div.site-info{
 	z-index:9999;

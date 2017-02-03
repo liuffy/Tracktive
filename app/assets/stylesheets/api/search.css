@@ -24,10 +24,10 @@ input.form-control{
 	color: #5B3DA8;
 	font-size:18px;
 	/*border:1px solid #5B3DA8;*/
-	margin: 3px 20px;
+	margin: 60px 20px;
 	border-radius:5px;
 	padding: 10px 13px;
-	top:8%;
+	/*top:8%;*/
 	min-width:605px;
 	height:20px;
 	transition: all 0.2s ease 0s;

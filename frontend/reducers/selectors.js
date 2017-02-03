@@ -12,3 +12,10 @@ export const selectTracktlist = ({ tracktlists }, id) =>{
 	const tracktlist = tracktlists[id] || {};
 	return tracktlist
 }
+
+function belongsToUser (tracktlist, state) {
+  return tracktlist.username === state.session.currentUser.username;
+}
+
+
+export const selectUserTracktlists = ({tracktlists}) => tracktlists.filter(belongsToUser);

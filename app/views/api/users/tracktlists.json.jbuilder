@@ -1,0 +1,2 @@
+json.liked_tracktlists @user.liked_tracktlists
+json.created_tracktlists @user.tracktlists

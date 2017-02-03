@@ -5,29 +5,47 @@
 .author-label, .artists-label{
 	font-size:16px;
 	font-weight:900;
-	color: #B28CF6;
+	color: #cdcbdb;
 }
 
+
 .tracktlist-detail{
-	height:550px;
-	color:#282728;
+	margin-top:150px;
+	min-height:500px;
+	display:flex;
+	color:white;
 		/*box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.58);*/
 	/*border: 1px solid #808080;  */
 	padding:30px;
-	background:white;
 }
 
 .tracktlist-info{
-	width: 80%;
-	display:block;
+	border-radius: 3px;
+	border: 1px solid rgba(255,255,255,0.8);
+	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.48);
+	/*background: linear-gradient(to left, rgba(186, 42, 247, 0.80) , rgba(153, 51, 238, 0.80)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+	/*display:block;*/
+background: rgba(92, 37, 141, 0.8); /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, rgba(92, 37, 141, 0.8) , rgba(88, 83, 112,0.8)); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, rgba(92, 37, 141, 0.8) ,rgba(88, 83, 112,0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width:350px;
+	height:300px;
 	position:relative;
-	margin:10px 0px 0px 300px;
+	margin:50px 0px 0px 20px;
+	padding:40px;
+}
+
+.left-side-player{
+	margin:50px 0px 0px 350px;
+	position:absolute;
 }
 
 .cover-image-container{
+	position:absolute;
 	opacity:0.8;
-  height: 15vmax;
-	width: 80vmax;
+	left:0;
+  height: 100%;
+	width: 100vmax;
   overflow: hidden;
   margin:0px 0px;
 	/*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
@@ -35,21 +53,23 @@
 }
 
 .cover-image{
-  background-position: center center;
-  /*background-repeat: no-repeat;*/
+	background-position: center center;  /*background-repeat: no-repeat;*/
+	width:100%;
+	height:auto;
+	z-index:-30;
 }
 
 .playlist-title{
   /*position:absolute;*/
   width:500px;
   position:relative;
-	color:#282728;
-	line-height: 90%;
-	font-size: 5vmax;
+	color:white;
+	line-height: 33px;
+	font-size: 50px;
 	font-weight:bold;
 	text-shadow:
-    rgb(170, 169, 169) 1px 1px,
-    rgb(170, 169, 169) 2px 2px;
+    #5636af 1px 1px,
+    #5636af 2px 2px;
 }
 
 
@@ -58,12 +78,11 @@ body.ab-control.trackset.view-list.white.mode-large{
 }
 
 iframe {
-	margin: 0px 10px 0px 0px;
-	width:250px; /* just for testing */
-	float:left;
-	display:block;
-	overflow:hidden;
-	border:0;
+	width:345px; /* just for testing */
+	position:relative;
+	opacity:0.85;
+	height:380px;
+	margin-left:50%;
 /*	border-left: 2px solid #545252;  
 	border-right: 2px solid #545252;  
 	border-bottom: 2px solid #545252; */ 

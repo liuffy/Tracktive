@@ -3,6 +3,7 @@ export const RECEIVE_TRACKTLIST = "RECEIVE_TRACKTLIST";
 export const REQUEST_TRACKTLIST = "REQUEST_TRACKTLIST";
 export const REQUEST_TRACKTLISTS = "REQUEST_TRACKTLISTS";
 export const CREATE_TRACKTLIST = "CREATE_TRACKTLIST";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 export const SET_CURRENT_ID = "SET_CURRENT_ID";
 
 import * as SpotifyAPIUtil from '../util/spotify_api_util'
@@ -48,6 +49,24 @@ export function createTracktlist(artistNames, title, imageUrl) {
 }
 //////////////////////////////////////////////////////////////////////////
 
+// export const requestUserTracktlists = (userId) => ({
+//   type: REQUEST_USER_PLAYLISTS,
+//   userId
+// });
+
+
+// export const receiveUserTracktlists = (tracktlists) => ({
+//   type: RECEIVE_USER_TRACKTLISTS,
+//   likedPlaylists: playlists.liked_playlists,
+//   createdPlaylists: playlists.created_playlists
+// });
+
+export const receiveErrors = errors => ({
+  type: RECEIVE_ERRORS,
+  errors
+});
+
+
 export function fetchTracktlists() { // Fetch all tracktlists
   return (dispatch) => {
     // dispatch(requestTracktlists());
@@ -55,6 +74,7 @@ export function fetchTracktlists() { // Fetch all tracktlists
       .then(tracktlists => dispatch(receiveTracktlists(tracktlists)));
   }
 }
+
 
 export function fetchTracktlist(id) { // Single tracktlist
   return (dispatch) => {

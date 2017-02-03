@@ -73,15 +73,16 @@ class SessionForm extends React.Component {
                 src="http://res.cloudinary.com/liuffy/image/upload/v1485891262/error-icon_pmjqe2.png"/>{error}</li>);
 
     return (
+      <div>
+          <button className="exit-button"
+          onClick={this.props.closeModal}>
+              <span>&times;</span>
+          </button>
       <div className='session-form'>
         <div >
           <h1 
           className='session-form-header'>{header} to make tracktlists.</h1>
 
-          <button className="exit-button"
-          onClick={this.props.closeModal}>
-              <span>&times;</span>
-          </button>
 
           <img 
           href="https://dribbble.com/shots/3145554-Fist-Bump"
@@ -118,6 +119,7 @@ class SessionForm extends React.Component {
 
          <span className="question">Did you mean to <Link className="link" onClick={this.props.toggleForm}>{link}</Link> instead?</span>
 
+      </div>
       </div>
     );
   }
