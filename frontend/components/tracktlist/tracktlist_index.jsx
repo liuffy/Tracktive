@@ -29,9 +29,16 @@ class TracktlistIndex extends React.Component {
 // let regex = new RegExp(query, 'i'); // 'i' stands for 'ignore case'
     let result = [];
 
+    // function queryMatch(artist){
+    //    artist.match(query.toLowerCase())
+    //    console.log('artist:'artist)
+    //    console.log('query:'query)
+    // }
+
     if (query.length > 0){
         let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
-          return tracktlist.artists.toLowerCase().split(", ").indexOf(query.toLowerCase()) !== -1
+          let artists = tracktlist.artists.toLowerCase() // these are all the artists
+          return artists.match(query.toLowerCase()) // include if some (any) of the artists match the query
         })
         console.log(query);
         console.log('if statement');
