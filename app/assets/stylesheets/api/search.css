@@ -35,3 +35,19 @@ input.form-control{
   box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
 /**/
+
+.no-tracktlists{
+	height:300px;
+}
+
+.no-tracktlists h2{
+	color: #8f91aa;
+	font-size:24px;
+	min-width:300px;
+}
+
+.thumbprint{
+	height:200px;
+	width:auto;
+	margin: 0 auto;
+}

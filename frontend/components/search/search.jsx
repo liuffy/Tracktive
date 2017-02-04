@@ -19,7 +19,7 @@ class Search extends React.Component {
 
   updateQuery(e){
     e.preventDefault();
-    // hashHistory.push("/browse");
+    hashHistory.push("/browse");
     this.setState({searchString: e.target.value});
     this.props.actions.search(e.target.value);
   }

@@ -3,9 +3,6 @@ import {Link, withRouter} from 'react-router';
 
 const Sidebar = ({currentUser}) => (
 
-	// if (currentUser){
-	// 	return
-	// 	(
 			<div className="sidebar">
 					<button><Link 
 					className="sidebar-button"
@@ -23,13 +20,8 @@ const Sidebar = ({currentUser}) => (
 					to={`/users/${currentUser.id}`}>my &#9836;</Link></button>
 			</div>
 		
-	// 	)
-	// } else {
-	// 	return (
-	// 		<div>but why</div>
-	// 		)
-	// }
+
 )
 
-export default Sidebar;
+export default withRouter(Sidebar);
 

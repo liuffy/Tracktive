@@ -1,6 +1,6 @@
 import React from 'react';
 import TracktlistIndexItemContainer from './tracktlist_index_item_container';
-import {withRouter} from 'react-router';
+import {withRouter, Link} from 'react-router';
 import Masonry from 'react-masonry-component';
 import Footer from '../footer/footer';
 
@@ -25,23 +25,35 @@ class TracktlistIndex extends React.Component {
     });
 
 // SEARCHING!
-let {query, tracktlists} = this.props;
+  let {query, tracktlists} = this.props;
 // let regex = new RegExp(query, 'i'); // 'i' stands for 'ignore case'
-let result = [];
+    let result = [];
 
     if (query.length > 0){
         let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
-          return tracktlist.title.toLowerCase().match(query.toLowerCase())
+          return tracktlist.artists.toLowerCase().split(", ").indexOf(query.toLowerCase()) !== -1
         })
-        console.log(query)
+        console.log(query);
         console.log('if statement');
+        console.log(filteredTracktlists.length);
 
+        if (query.length > 10 && filteredTracktlists.length < 1 ) {
+            console.log('else if');
+            result = 
+            <div className="no-tracktlists">
+              <h2> Seems like this artist hasn't been featured in any tracktlists yet.
+              Why not <Link className="link" to={'/tracktlists/new'}>create a new one?</Link></h2>
+              <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" />
+            </div>
+       } else {
         result = filteredTracktlists.map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
            key={tracktlist.id}/>
            )
-    }
+        }
+
+    } 
     else {
       console.log('else statement')
       result = tracktlists.map(tracktlist =>
