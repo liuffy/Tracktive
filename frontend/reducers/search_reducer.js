@@ -1,20 +1,17 @@
-import {SEARCH} from '../actions/search_actions';
-
+import {SEARCH_PLAYLISTS} from '../actions/search_actions';
 
 
 const initialState = {
-  query: ""
+  query: null
 };
 
 const SearchReducer = (state = initialState, action) => {
 
 	Object.freeze(state);
- 	let dupState = {};
 
   switch(action.type) {
-    case SEARCH:
-      dupState = merge({}, action.query);
-      return dupState;
+    case SEARCH_PLAYLISTS:
+      return action.query;
 
     default:
       return state;

@@ -25,29 +25,32 @@ class TracktlistIndex extends React.Component {
     });
 
 // SEARCHING!
-// let query = this.props.query;
+let {query, tracktlists} = this.props;
 // let regex = new RegExp(query, 'i'); // 'i' stands for 'ignore case'
-// let result = [];
+let result = [];
 
-    // if (query !== ""){
-    //     let filteredTracktlists = this.props.tracktlists.filter( (tracktlist) => { 
-    //       return tracktlist.title.toLowerCase().match(query.toLowerCase())
-    //     })
+    if (query.length > 0){
+        let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
+          return tracktlist.title.toLowerCase().match(query.toLowerCase())
+        })
+        console.log(query)
+        console.log('if statement');
 
-        // result = filteredTracktlists.map(tracktlist =>
-        //   <TracktlistIndexItemContainer
-        //    tracktlist = {tracktlist}
-        //    key={tracktlist.id}/>
-        //    )
-    // }
-    // else {
-      let result = this.props.tracktlists.map(tracktlist =>
+        result = filteredTracktlists.map(tracktlist =>
+          <TracktlistIndexItemContainer
+           tracktlist = {tracktlist}
+           key={tracktlist.id}/>
+           )
+    }
+    else {
+      console.log('else statement')
+      result = tracktlists.map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
            key={tracktlist.id}/>
            )
       
-    // }
+    }
 
    return loading ? <div className="spinner">
   <div className="rect1"></div>

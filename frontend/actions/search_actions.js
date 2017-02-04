@@ -1,9 +1,10 @@
-export const SEARCH = "SEARCH";
+export const SEARCH_PLAYLISTS = "SEARCH_PLAYLISTS";
 
 
-export const search = (query) => {
+export function search (query){
+	console.log(query)
   return {
-    type: SEARCH,
+    type: SEARCH_PLAYLISTS,
     query
   };
 }

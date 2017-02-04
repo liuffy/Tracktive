@@ -1,11 +1,10 @@
 const _defaultError = data => console.log(data);
 const _defaultSuccess = data => console.log(data);
 
-export const fetchTracktlists = (searchString) => {
+export const fetchTracktlists = () => {
 	return $.ajax({
 		method: 'GET',
-		url: '/api/tracktlists',
-    data: {search_string: searchString},
+		url: '/api/tracktlists'
 		 // makes an AJAX request that will make a http request to the tracktlistsController#index endpoint
 	})
 }
