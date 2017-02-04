@@ -4,7 +4,8 @@ import SessionFormContainer from '../session_form/session_form_container';
 import Footer from '../footer/footer';
 import {withRouter, Link} from 'react-router';
 import {authModalStyle} from '../../util/modal_styles';
-import AboutModal from '../about/about-modal';
+var Slider = require('react-slick');
+
 
 document.addEventListener('DOMContentLoaded', ()=>{
   Modal.setAppElement(document.body)
@@ -53,9 +54,15 @@ class Splash extends React.Component{
     this.props.router.push('/browse');
   }
 
-
-
     render(){
+
+       var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
     $(window).scroll(function(){
     $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 150);
@@ -64,8 +71,6 @@ class Splash extends React.Component{
   $(window).scroll(function(){
     $(".tagline").css("opacity", 1 - $(window).scrollTop() / 250);
   });
-
-  
 
       let buttons;
       let {currentUser} = this.props;
@@ -99,6 +104,15 @@ class Splash extends React.Component{
                <br/>
             <span
               className="tagline">a simple interface for making playlists.</span>
+
+
+      <Slider {...settings}
+        className="carousel-container">
+        <div className="carousel-element"><h3>1</h3></div>
+        <div className="carousel-element"><h3>2</h3></div>
+        <div className="carousel-element"><h3>3</h3></div>
+        <div className="carousel-element"><h3>4</h3></div>
+      </Slider>
         
 
             <Modal isOpen={this.state.authModal}

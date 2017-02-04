@@ -47,7 +47,7 @@ class TracktlistShow extends React.Component{
       <br/>
 
       <span className="author-label">Curator: </span>
-        <span><Link className="link" 
+        <span><Link className="brighter" 
                         to={`/users/${tracktlist.user_id}`}>{tracktlist.username}</Link></span>
         <br />
       <span

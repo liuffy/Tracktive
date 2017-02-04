@@ -25,8 +25,7 @@ class App extends React.Component {
       <div className="whole-index-page"> 
       	<div
       		className="header-bar">
-        <span 
-          ><Link to="/browse"><img className="wordmark-logo"
+        <span><Link to="/browse"><img className="wordmark-logo"
             src="http://res.cloudinary.com/liuffy/image/upload/v1485894985/wordmark-4_yiaq9n.png"/></Link></span>
         <GreetingContainer />
           <Search />

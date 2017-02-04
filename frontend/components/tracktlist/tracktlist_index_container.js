@@ -7,7 +7,8 @@ import {selectAllTracktlists} from '../../reducers/selectors';
 const mapStateToProps = (state) => ({
 	tracktlists: selectAllTracktlists(state),
   currentUser: state.session.currentUser,
-  loading: state.loading.indexLoading
+  loading: state.loading.indexLoading,
+  query: state.query
 });
 
 const mapDispatchToProps = (dispatch) => ({

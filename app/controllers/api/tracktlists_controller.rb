@@ -2,6 +2,12 @@ class Api::TracktlistsController < ApplicationController
 
 	def index
 		# sleep 1
+
+
+	    # if params[:search_string]
+	    #   search_string = params[:search_string].downcase
+	    #   @tracktlists = Tracktlist.all.select{ |tracktlist| tracktlist.artists.downcase.split(", ").include?(search_string)
+     #  else 
 		@tracktlists = Tracktlist.all
 	end 
 

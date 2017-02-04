@@ -1,0 +1,33 @@
+.carousel-container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 90%;
+  display:block;
+  height:470px;
+  color: #333;
+  display:block;
+  /*background: gray;*/
+}
+
+.carousel-element h3{
+  color:white;
+}
+
+
+.carousel-image{
+	height:100%;
+	width:auto;
+}
+
+
+.slick-prev:before, .slick-next:before{
+	font-size:35px;
+	position:absolute;
+}
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 15px;
+    right:2%;
+    }

@@ -1,17 +1,25 @@
-const React = require('react');
 import { FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
+import { Link, hashHistory } from 'react-router';
+const React = require('react');
 
-module.exports = React.createClass({
 
-  getInitialState(){
-    return {query: ""};
-  },
+class Search extends React.Component {
+
+ constructor(props) {
+    super(props);
+    this.state = {
+      searchString: ""
+    }
+
+    this.updateQuery = this.updateQuery.bind(this)
+  }
 
   updateQuery(e){
     e.preventDefault();
-    this.props.queryCallback(e.target.value);
-    this.setState({query: e.target.value});
-  },
+    hashHistory.push("/browse");
+    this.setState({searchString: e.target.value});
+    this.props.search(e.target.value);
+  }
 
   render(){
     return(
@@ -19,8 +27,11 @@ module.exports = React.createClass({
       <FormControl
         className="search-bar" 
         placeholder={'What artist(s) do you want to hear?'} 
-        value={this.state.query} 
-        onChange={this.updateQuery}/>
+        value={this.state.searchString} 
+        onChange={this.updateQuery}
+        />
     );
   }
-});
+};
+
+export default Search;

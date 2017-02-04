@@ -18,11 +18,36 @@ class TracktlistIndex extends React.Component {
 
     // Script for fading effect 
 
-    const {tracktlists, loading} = this.props;
+    const {loading} = this.props;
+
     $(window).scroll(function(){
     $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
     });
 
+// SEARCHING!
+// let query = this.props.query;
+// let regex = new RegExp(query, 'i'); // 'i' stands for 'ignore case'
+// let result = [];
+
+    // if (query !== ""){
+    //     let filteredTracktlists = this.props.tracktlists.filter( (tracktlist) => { 
+    //       return tracktlist.title.toLowerCase().match(query.toLowerCase())
+    //     })
+
+        // result = filteredTracktlists.map(tracktlist =>
+        //   <TracktlistIndexItemContainer
+        //    tracktlist = {tracktlist}
+        //    key={tracktlist.id}/>
+        //    )
+    // }
+    // else {
+      let result = this.props.tracktlists.map(tracktlist =>
+          <TracktlistIndexItemContainer
+           tracktlist = {tracktlist}
+           key={tracktlist.id}/>
+           )
+      
+    // }
 
    return loading ? <div className="spinner">
   <div className="rect1"></div>
@@ -38,18 +63,15 @@ class TracktlistIndex extends React.Component {
             src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png" /></h2> 
 
       <div className='tracktlists-index'>
-
-
           <Masonry className='tracktlists-index-container'
           elementType={'ul'}
            options={{fitWidth: false, columnWidth: 200, gutter: 30}}>
-          {tracktlists.reverse().map(tracktlist =>
-          <TracktlistIndexItemContainer
-           tracktlist = {tracktlist}
-           key={tracktlist.id}/>)}
-
+      
+           {result}
           </Masonry>
-        </div>
+      </div>
+
+
           <Footer/>
   </div>
   }

@@ -2,6 +2,7 @@ class Tracktlist < ActiveRecord::Base
 	validates :title, :user_id, :num_tracks, :username, :index_image_url, :artists, :playlistUrl, presence: true
 
 	belongs_to :user
+
 	DEFAULT_IMAGES = [
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571133/index_images/minimal1.jpg',
 		'http://res.cloudinary.com/liuffy/image/upload/v1481571133/index_images/minimal2.jpg',
