@@ -24,7 +24,7 @@ class UserDetail extends React.Component{
  		// let createdTracktlists = user.tracktlists;
 
  		if (currentUser.username === user.username){
- 			greeting = <div className="profile-greeting-container"><h2 className="profile-greeting">Your tracktlists:</h2></div>
+ 			greeting = <div className="profile-greeting-container"><h2 className="profile-greeting">tracktlists you've made:</h2></div>
  		} else {
  			greeting = <div className="profile-greeting-container"><h2 className="profile-greeting"></h2></div>
  		}
