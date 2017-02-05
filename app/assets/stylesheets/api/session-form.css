@@ -134,7 +134,7 @@ transition: opacity 500ms ease-in;
   font-size:20px;
   padding:2px 15px;
   margin:50px 20px 5px 20px;
-  transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s;
   border:2px solid #ce25fc;
   color: #ce25fc;
   transition: all 0.2s ease 0s;

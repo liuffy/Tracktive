@@ -33,7 +33,7 @@ class UserDetail extends React.Component{
           return tracktlist.username === user.username // include if some (any) of the artists match the query
         })
 
- 		userPlaylists = filteredTracktlists.map(tracktlist =>
+ 		userPlaylists = filteredTracktlists.reverse().map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
            key={tracktlist.id}/>
