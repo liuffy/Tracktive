@@ -11,10 +11,11 @@ class Search extends React.Component {
  constructor(props) {
     super(props);
     this.state = {
-      searchString: ""
+      searchString: null
     }
 
     this.updateQuery = this.updateQuery.bind(this)
+    this.clearQuery = this.clearQuery.bind(this)
   }
 
   updateQuery(e){
@@ -24,16 +25,33 @@ class Search extends React.Component {
     this.props.actions.search(e.target.value);
   }
 
+
+  clearQuery(e){
+    e.preventDefault();
+    this.setState({searchString: e.target.value});
+    this.props.actions.search("");
+  }
+
   render(){
+
+    $(".clear-button").click(function() {
+      $('input').val("");
+    });
+
 
     return(
    
-      <FormControl
+   <div className="search-container">
+      <input
         className="search-bar" 
         placeholder={'What artist(s) do you want to hear?'} 
         value={this.state.searchString} 
         onChange={this.updateQuery}>
-        </FormControl>
+        </input>
+        <img className="clear-button"
+          src="http://res.cloudinary.com/liuffy/image/upload/v1486254744/clear-field_xpygqx.png" 
+          onClick={this.clearQuery}/>
+        </div>
     );
   }
 };
