@@ -23,7 +23,7 @@ export default class GraphicsModal extends React.Component{
 
 
      return (
-      <div>
+      <div className="modal">
       <a onClick={this.show.bind(this)}>Graphics</a>
       <Modal
       show={this.state.show}

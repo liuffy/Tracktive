@@ -26,26 +26,19 @@ class TracktlistIndex extends React.Component {
 
 // SEARCHING!
   let {query, tracktlists} = this.props;
-// let regex = new RegExp(query, 'i'); // 'i' stands for 'ignore case'
     let result = [];
-
-    // function queryMatch(artist){
-    //    artist.match(query.toLowerCase())
-    //    console.log('artist:'artist)
-    //    console.log('query:'query)
-    // }
 
     if (query.length > 0){
         let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
           let artists = tracktlist.artists.toLowerCase() // these are all the artists
           return artists.match(query.toLowerCase()) // include if some (any) of the artists match the query
         })
-        console.log(query);
-        console.log('if statement');
-        console.log(filteredTracktlists.length);
+        // console.log(query);
+        // console.log('if statement');
+        // console.log(filteredTracktlists.length);
 
-        if (filteredTracktlists.length < 1 ) {
-            console.log('else if');
+        if (filteredTracktlists.length < 1 ) { // nested if statement
+            // console.log('else if');
             result = 
             <div className="no-tracktlists">
               <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
@@ -62,7 +55,7 @@ class TracktlistIndex extends React.Component {
 
     } 
     else {
-      console.log('else statement')
+      // console.log('else statement')
       result = tracktlists.map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}

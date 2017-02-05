@@ -20,6 +20,7 @@ class App extends React.Component {
   }
 
   render (){
+    $('body').scrollTop(0);
 
     return(
       <div className="whole-index-page"> 

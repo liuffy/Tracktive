@@ -1,3 +1,7 @@
+
+/*.modal{
+	width:80%;
+}*/
 .left-side, .right-side{
   width:200px;
   /*border:1px solid black;*/
@@ -13,8 +17,9 @@
   padding-top:10px;
 }
 
-.numbering{
-	position:relative;
-	font-weight:bold;
-	color: #d623fe;
+p.numbering{
+  position:relative;
+  font-weight:bold;
+  color: #d623fe;
+  fony-size:12px;
 }

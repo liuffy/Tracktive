@@ -24,17 +24,6 @@ class TracktlistForm extends React.Component {
       this.props.router.push('/browse')
   }
 
- //  redirectIfLoggedIn() {
- //    if (this.props.loggedIn) {
- //      this.props.router.push("/");
- //    }
- //  }
-
- //  componentDidUpdate() { // this is a lifecycle method used to perform 
- //  	//DOM operations after the data has been updated 
-	// 	this.redirectIfLoggedIn();
-	// }
-
   
   handleSubmit(e) {
     let { createTracktlist } = this.props;

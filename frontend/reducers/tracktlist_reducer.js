@@ -1,12 +1,15 @@
 import {RECEIVE_TRACKTLISTS, 
 				RECEIVE_TRACKTLIST,
+				RECEIVE_ERRORS,
+				CLEAR_ERRORS,
 				SET_CURRENT_ID} from '../actions/tracktlist_actions';
 
 let _nullTracktlist = Object.freeze({
+	errors: [],
 	tracktlist: {},
 	currentTracktlist: {tracktlist: {}},
 	// errors: [],
-	currentTracktlistId: -1
+	// currentTracktlistId: -1
 	// playerOpen: false
 });
 
@@ -25,6 +28,14 @@ const TracktlistReducer = (state= _nullTracktlist, action) =>{
 		case SET_CURRENT_ID:
 			let dupState = Object.assign({}, state, {currentTracktlistId: action.tracktlistId});
 			return newState;
+
+		case RECEIVE_ERRORS:
+			const errors = action.errors;
+			return Object.assign({}, _nullTracktlist, {errors})
+
+		case CLEAR_ERRORS:
+			const newErrors = {errors: []};
+			return Object.assign({}, _nullTracktlist, newErrors)
 		default:
 			return state;
 	}
