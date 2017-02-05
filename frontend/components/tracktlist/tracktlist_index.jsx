@@ -44,11 +44,11 @@ class TracktlistIndex extends React.Component {
         console.log('if statement');
         console.log(filteredTracktlists.length);
 
-        if (query.length > 10 && filteredTracktlists.length < 1 ) {
+        if (filteredTracktlists.length < 1 ) {
             console.log('else if');
             result = 
             <div className="no-tracktlists">
-              <h2> Seems like this artist hasn't been featured in any tracktlists yet.
+              <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
               Why not <Link className="link" to={'/tracktlists/new'}>create a new one?</Link></h2>
               <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" />
             </div>

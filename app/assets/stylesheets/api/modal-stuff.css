@@ -12,3 +12,9 @@
   line-height:1.5;
   padding-top:10px;
 }
+
+.numbering{
+	position:relative;
+	font-weight:bold;
+	color: #d623fe;
+}

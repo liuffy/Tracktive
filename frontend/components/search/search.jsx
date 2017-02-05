@@ -32,8 +32,8 @@ class Search extends React.Component {
         className="search-bar" 
         placeholder={'What artist(s) do you want to hear?'} 
         value={this.state.searchString} 
-        onChange={this.updateQuery}
-        />
+        onChange={this.updateQuery}>
+        </FormControl>
     );
   }
 };
