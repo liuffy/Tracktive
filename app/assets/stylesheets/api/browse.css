@@ -115,7 +115,7 @@ background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, F
 }
 
 .track-author{
-	font-style: italic
+	font-style: italic;
 	font-size:15px;
 	color: rgba(255, 255, 255, 0.8)
 	background:none;

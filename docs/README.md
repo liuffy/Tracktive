@@ -5,14 +5,14 @@
 *Tracktive* is a web application inspired by 8Tracks, built using Ruby on Rails and React/Redux. By the end of the first 2 weeks of development, this app will, at a minimum, satisfying the following: 
 
 - [X] Hosting on Heroku
-	- [ ] Clean styling and smooth, bug-free navigation
+	- [X] Clean styling and smooth, bug-free navigation
 - [X] Account creation, login, & guest/demo login
 - [X] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
 - [ ] Continuous TracktList streaming while navigating 
-- [ ] Dashboard 
-	- [ ] Search component in header narrows down TracktLists in dashboard
+- [X] Dashboard 
+	- [X] Search component in header narrows down TracktLists in dashboard
 - [X] User profile
-	- [ ] displays liked and created playlist tabs 
+	- [1/2] displays liked and created playlist tabs 
 - [ ] A Production README
 
 ## Design Docs 
@@ -91,7 +91,7 @@ brings up results based on the inputted artist.
 	- [X] Displays: TracktList (right side)
 	- [X] Blown up Album art as banner? :art:
 - [X] Sidebar: Import `<Link>` component from `react-router` to stylize active links and efficiently set up routes  
-- [ ] Implement custom query for searching via *artists* 
+- [X] Implement custom query for searching via *artists* 
 - [X] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
 
 ### Phase 4:  Continuous Streaming *(2 days)*
