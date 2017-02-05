@@ -28,7 +28,7 @@
 	border-radius: 3px;
 	border: 1px solid rgba(255,255,255,0.8);
 	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.48);
-	/*background: linear-gradient(to left, rgba(186, 42, 247, 0.80) , rgba(153, 51, 238, 0.80)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+	/*background: linear-gradient(to left, rgba(186, 42, 247, 0.80) , rgba(153, 51, 238, 0.80)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	/*display:block;*/
 background: rgba(92, 37, 141, 0.8); /* fallback for old browsers */
 background: -webkit-linear-gradient(to left, rgba(92, 37, 141, 0.9) , rgba(88, 83, 112,0.9)); /* Chrome 10-25, Safari 5.1-6 */

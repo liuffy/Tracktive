@@ -9,14 +9,12 @@
 
 .whole-index-page{
 	  top:0%;
-  left:0%;
-  right:0%;
+	  left:0%;
+	  right:0%;
 }
 
   img.wordmark-logo{
-  	/*top:5%;*/
   	height:95px;
-  	/*position:relative;*/
   	display:inline-block;
 	  float:left;
     margin:40px 20px 0px 30px;
@@ -46,21 +44,16 @@
 		rgb(86, 54, 175) 6px 6px,
 		rgb(86, 54, 175) 7px 7px; 
 		font-weight: bold;
-		/*margin-left:25%;*/
   }
 
 
 .binoculars-logo{
 	height:3.2vmax;
 	margin-left:5px;
-	/*top:30;*/
-	/*margin-top:60px;*/
 	width:auto;
 	display:inline-block;
 }
 .thumb-image{
-/*	width:200px;
-	height:180px;*/
 	background-position: center center;
 	height:200px;
 	width:auto;
@@ -96,12 +89,10 @@
 	padding-bottom:10px;
 	padding-top:10px;
 	color:white;
-
-
-background: #DA22FF; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        	font-size:1.3em;
+	background: #DA22FF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size:1.3em;
 	line-height: 20px;
   position: absolute;
   /*bottom:0;*/
@@ -120,9 +111,3 @@ background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, F
 	color: rgba(255, 255, 255, 0.8);
 	background:none;
 }
-
-/*.track-index-text{
-	position:absolute;
-	bottom:0;
-	width:200px;
-}*/
