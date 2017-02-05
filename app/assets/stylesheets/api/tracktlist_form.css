@@ -1,11 +1,4 @@
-/*div.tracktlist-form{
-	height:600px;
-	width:725px;
-	display:block;
-	border-radius:20px;
-	padding:20px;
-}
-*/
+
 .create-header{
 	height:60px;
 	width:80%;
@@ -13,27 +6,27 @@
 
 .create-banner-text{
 	float:left;
-		font-size:6vmax;
-		text-align:center;
+	font-size:6vmax;
+	text-align:center;
 	margin-top:0px;
-		margin-bottom:40px;
-		font-weight:bold;
-	 color: white;
-	 width:100%;
-	 left:0;
-	 right:0;
-	 padding-bottom:40px;
-	 padding-top:40px;
-	 background: #d623fe;
-  text-shadow:
-  rgb(107, 90, 147) 1px 1px,
-  rgb(107, 90, 147) 2px 2px,
-  rgb(107, 90, 147) 3px 3px,
-  rgb(86, 53, 174) 4px 4px, 
-  rgb(86, 54, 175) 5px 5px,
-  rgb(86, 54, 175) 6px 6px,
-  rgb(86, 54, 175) 7px 7px; 
-  font-weight: bold;
+	margin-bottom:40px;
+	font-weight:bold;
+	color: white;
+	width:100%;
+	left:0;
+	right:0;
+	padding-bottom:40px;
+	padding-top:40px;
+	background: #d623fe;
+	text-shadow:
+	rgb(107, 90, 147) 1px 1px,
+	rgb(107, 90, 147) 2px 2px,
+	rgb(107, 90, 147) 3px 3px,
+	rgb(86, 53, 174) 4px 4px, 
+	rgb(86, 54, 175) 5px 5px,
+	rgb(86, 54, 175) 6px 6px,
+	rgb(86, 54, 175) 7px 7px; 
+	font-weight: bold;
 }
 
 h3.create{
@@ -42,7 +35,6 @@ h3.create{
 	font-weight:400;
 	color:#282728;
 }
-
 
 
 .tracktlist-form{
@@ -65,8 +57,8 @@ h3.create{
 	height:6vmax;
 	width:auto;
 	margin-left:10px;
-	/*float:left;*/
 }
+
 .creation-input-field{
 	letter-spacing:1px;
 	color: #5B3DA8;

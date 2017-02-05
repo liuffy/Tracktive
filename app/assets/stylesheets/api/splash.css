@@ -28,8 +28,8 @@
   position:absolute;
   display:inline-block;
   font-weight:bold;
-   margin-left:15%;
-   z-index:33;
+  margin-left:15%;
+  z-index:33;
 }
 
 .tracktive-wordmark-main{
@@ -54,6 +54,7 @@
   font-weight: bold;
   margin-left:25%;
 }
+
 .tracktive-wordmark{
 	font-size: 60px;
   cursor: pointer;
@@ -80,10 +81,6 @@
 
 /* Session Form */
 
-/*.session-modal{
-transition: all 4s ease;
-}
-*/
 
 .splash-buttons{
   display:flex;
@@ -96,7 +93,6 @@ transition: all 4s ease;
   right:15%;
   bottom:100px;
   z-index:3;
-  /*width:200px;*/
 }
 
 

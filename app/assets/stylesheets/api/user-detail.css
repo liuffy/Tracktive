@@ -8,19 +8,19 @@
 
 
 .user-detail-header{
-	float:left;
-		font-size:6vmax;
-		text-align:center;
-	margin-top:0px;
-		margin-bottom:40px;
-		font-weight:bold;
-	 color: white;
-	 width:100%;
-	 left:0;
-	 right:0;
-	 padding-bottom:40px;
-	 padding-top:40px;
-	 background: #d623fe;
+  float:left;
+  font-size:6vmax;
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:40px;
+  font-weight:bold;
+  color: white;
+  width:100%;
+  left:0;
+  right:0;
+  padding-bottom:40px;
+  padding-top:40px;
+  background: #d623fe;
   text-shadow:
   rgb(107, 90, 147) 1px 1px,
   rgb(107, 90, 147) 2px 2px,

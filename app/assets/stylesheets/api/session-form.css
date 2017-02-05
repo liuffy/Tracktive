@@ -18,8 +18,8 @@
 	/*border-radius:5px;*/
   /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
   -webkit-transition: opacity 500ms ease-in;
--moz-transition: opacity 500ms ease-in;
-transition: opacity 500ms ease-in;
+  -moz-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .session-form-header{
@@ -124,8 +124,6 @@ transition: opacity 500ms ease-in;
 }
 
 .submit{
-    /*width:150px;*/
-  /*border: 2px solid rgb(107, 90, 147);*/
   border: 2px solid #ce25fc;
   color:white;
   text-align:center;
