@@ -12,6 +12,7 @@ const mapStateToProps = (state, { params }) => {
 	const user = selectUser(state, userId);
 	  return {
 			tracktlists: selectAllTracktlists(state),
+      currentUser: state.session.currentUser,
 	    userId,
 	    user,
 	  };

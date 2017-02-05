@@ -17,19 +17,31 @@ class UserDetail extends React.Component{
 
 
  	render(){
- 		let {user, tracktlists} = this.props;
+ 		let {user, tracktlists, currentUser} = this.props;
+ 		let userPlaylists = [];
+ 		let greeting = <div><h2></h2></div>
 
- 		// let filtered = tracktlists.filter( (tracktlist) => { 
-   //        let artists = tracktlist.artists.toLowerCase() // these are all the artists
-   //        return artists.match(query.toLowerCase()) // include if some (any) of the artists match the query
-   //      })
+ 		// let createdTracktlists = user.tracktlists;
 
- 		let userPlaylists = tracktlists.map(tracktlist =>
+ 		if (currentUser.username === user.username){
+ 			greeting = <div className="profile-greeting-container"><h2 className="profile-greeting">Your tracktlists:</h2></div>
+ 		} else {
+ 			greeting = <div className="profile-greeting-container"><h2 className="profile-greeting"></h2></div>
+ 		}
+
+ 		let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
+          return tracktlist.username === user.username // include if some (any) of the artists match the query
+        })
+
+ 		userPlaylists = filteredTracktlists.map(tracktlist =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
            key={tracktlist.id}/>
            )
-      
+   //  // console.log(user.username.toLowerCase())  
+   //  console.log('user.username:', user.username)
+ 		// console.log('user.createdTracktlists: ', user.createdTracktlists)
+
         $(".footer").removeClass( "footer" ).addClass("index-footer");
 
  		return(
@@ -47,6 +59,7 @@ class UserDetail extends React.Component{
 
  				</div>
 
+               {greeting}
  				<Masonry
  							 className="tracktlists-index-container"
  				       elementType={'ul'}

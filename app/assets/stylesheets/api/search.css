@@ -41,11 +41,14 @@ input.search-bar{
 	height:300px;
 }
 
+
 .no-tracktlists h2{
+	text-align:center;
+	/*min-width:300px;*/
 	color: #55587a;
 	font-size:24px;
-	min-width:300px;
 }
+
 
 .thumbprint{
 	height:200px;

@@ -45,13 +45,13 @@ class TracktlistIndex extends React.Component {
               Why not <Link className="link" to={'/tracktlists/new'}>create a new one?</Link></h2>
               <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" />
             </div>
-       } else {
-        result = filteredTracktlists.map(tracktlist =>
-          <TracktlistIndexItemContainer
-           tracktlist = {tracktlist}
-           key={tracktlist.id}/>
-           )
-        }
+         } else {
+            result = filteredTracktlists.map(tracktlist =>
+              <TracktlistIndexItemContainer
+               tracktlist = {tracktlist}
+               key={tracktlist.id}/>
+               )
+            }
 
     } 
     else {

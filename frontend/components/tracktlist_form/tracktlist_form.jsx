@@ -21,7 +21,7 @@ class TracktlistForm extends React.Component {
   }
 
   returnToMain(){ // for the cancel button 
-      this.props.router.push('/browse')
+      this.props.router.push('/browse') // redirect to the user's page
   }
 
   

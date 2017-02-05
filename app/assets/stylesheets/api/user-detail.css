@@ -82,7 +82,13 @@
   box-shadow: #3b3b3d 0px 0px;
 }
 
-.cool-beans{
-  height:900px;
+.profile-greeting-container{
+  display:block;
 }
 
+h2.profile-greeting {
+  color: #55587a;
+  font-size:32px;
+  font-weight:bold;
+  text-align:center;
+}
