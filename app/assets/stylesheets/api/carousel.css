@@ -1,28 +1,85 @@
 .carousel-container {
   margin: 0 auto;
-  padding: 40px;
-  width: 90%;
+  top:-60px;
+  /*padding: 40px;*/
+  width: 100%;
   display:block;
-  height:470px;
+  height:500px;
+  overflow:hidden;
   color: #333;
   display:block;
+  z-index:1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  border-bottom:5px solid white;
+
   /*background: gray;*/
 }
 
+.carousel-element img {
+  border-top:5px solid white;
+  width:100%;
+  opacity:0.9;
+  margin-top:30px;
+
+
+    /*box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);*/
+
+  /*height:auto;*/
+}
 .carousel-element h3{
   color:white;
 }
 
-
+/*.purple{
+  border-top:1px solid white;
+}
+*/
 .carousel-image{
 	height:100%;
 	width:auto;
 }
 
 
-.slick-prev:before, .slick-next:before{
-	font-size:35px;
+.slick-next:before{
+	font-size:40px;
 	position:absolute;
+  right:50px;
+  z-index:300;
+  cursor:pointer;
+}
+
+button.slick-arrow.slick-next {
+  z-index:300;
+  font-size:40px;
+  cursor:pointer;
+}
+
+
+button.slick-arrow.slick-prev{
+ z-index:300;
+ cursor:pointer;
+ /*left:50px;*/
+}
+
+
+
+.slick-prev:before, .slick-next:before{
+  font-size:40px;
+}
+/* Arrows */
+
+/*.slick-prev:after,
+.slick-next:after{
+  font-size:40px;
+}*/
+
+
+.slick-prev:before {
+  font-size:40px;
+  z-index:300;
+  left:50px;
+  cursor:pointer;
+  position:absolute;
 }
 
 

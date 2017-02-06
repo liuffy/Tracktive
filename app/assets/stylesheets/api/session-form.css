@@ -47,80 +47,17 @@
   /*position:relative;*/
 }
 
-
+/*
 .splash-button.demo:hover{
   border: 2px solid white;
   color:white;
   font-weight:bold;
-  animation: move linear 2000ms infinite;  
-}
-
-@keyframes move {
-  0% {
-    text-shadow:
-      4px -4px 0 hsla(256, 53%, 45%, 0.7), 
-      3px -3px 0 hsla(256, 53%, 45%, 0.7), 
-      4px -4px 0 hsla(256, 53%, 45%, 0.7), 
-      1px -1px 0 hsla(256, 53%, 45%, 0.7),
-      -4px 4px 0 hsla(287, 97%, 57%, 0.7), 
-      -3px 3px 0 hsla(287, 97%, 57%, 0.7), 
-      -4px 4px 0 hsla(287, 97%, 57%, 0.7), 
-      -1px 1px 0 hsla(287, 97%, 57%, 0.7)
-    ;
-  }
-  25% {    
-    text-shadow:      
-      -4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      -3px -3px 0 hsla(287, 97%, 57%, 0.7), 
-      -4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      -1px -1px 0 hsla(287, 97%, 57%, 0.7),
-      4px 4px 0 hsla(256, 53%, 45%, 0.7), 
-      3px 3px 0 hsla(256, 53%, 45%, 0.7), 
-      4px 4px 0 hsla(256, 53%, 45%, 0.7), 
-      1px 1px 0 hsla(256, 53%, 45%, 0.7)      
-    ;
-  }
-  50% {
-    text-shadow:
-      -4px 4px 0 hsla(256, 53%, 45%, 0.7), 
-      -3px 3px 0 hsla(256, 53%, 45%, 0.7), 
-      -4px 4px 0 hsla(256, 53%, 45%, 0.7), 
-      -1px 1px 0 hsla(256, 53%, 45%, 0.7),
-      4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      3px -3px 0 hsla(287, 97%, 57%, 0.7), 
-      4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      1px -1px 0 hsla(287, 97%, 57%, 0.7)
-    ;
-  }
-  75% {
-    text-shadow:
-      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
-      3px 3px 0 hsla(257, 51%, 48%, 0.7), 
-      4px 4px 0 hsla(257, 51%, 48%, 0.7), 
-      1px 1px 0 hsla(257, 51%, 48%, 0.7),
-      -4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      -3px -3px 0 hsla(287, 97%, 57%, 0.7), 
-      -4px -4px 0 hsla(287, 97%, 57%, 0.7), 
-      -1px -1px 0 hsla(287, 97%, 57%, 0.7)      
-    ;
-  }
-  100% {
-    text-shadow:
-      4px -4px 0 hsla(256, 53%, 45%, 0.7), 
-      3px -3px 0 hsla(256, 53%, 45%, 0.7), 
-      4px -4px 0 hsla(256, 53%, 45%, 0.7), 
-      1px -1px 0 hsla(256, 53%, 45%, 0.7),
-      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
-      -3px 3px 0 hsla(257, 51%, 48%, 0.7), 
-      -4px 4px 0 hsla(257, 51%, 48%, 0.7), 
-      -1px 1px 0 hsla(257, 51%, 48%, 0.7);
-  }  
-}
-
+}*/
 
 .splash-button.demo{
-  color: #5b3da8;
-  border: 2px solid #5b3da8;
+  color: black;
+             
+  border: 2px solid black;
 }
 
 .submit{

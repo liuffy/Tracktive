@@ -27,9 +27,9 @@
   font-size:4vmax;
   position:absolute;
   display:inline-block;
-  font-weight:bold;
-  margin-left:15%;
+  margin-left:20%;
   z-index:33;
+  font-weight:600;
 }
 
 .tracktive-wordmark-main{
@@ -51,7 +51,7 @@
   rgb(86, 54, 175) 5px 5px,
   rgb(86, 54, 175) 6px 6px,
   rgb(86, 54, 175) 7px 7px; 
-  font-weight: bold;
+  font-weight: 600;
   margin-left:25%;
 }
 
@@ -85,38 +85,39 @@
 .splash-buttons{
   display:flex;
   flex-direction: row;
-  width:600px;
-  height:300px;
-  display:block;
+  width:700px;
+  height:100px;
   position:absolute;
-  left:25%;
-  right:15%;
-  bottom:100px;
+  display:inline-block;
+  margin-top:30%;
+  margin-left: 25%;
+  margin-top: 200px;
   z-index:3;
 }
 
 
 .splash-button{
-  /*background: rgba(255,255,255,0.8);*/
-  width:70px;
-  /*border: 2px solid rgb(107, 90, 147);*/
+  width:8vmax;
   border: 2px solid white;
-  font-weight:bold;
+  font-weight:600;
   color:white;
   text-align:center;
   display:inline-block;
   border-radius: 3px;
-  font-size:20px;
-  padding:2px 15px;
-  margin:20px 20px 5px 20px;
+  font-size:1.5vmax;
+  padding:1px 20px;
+  margin: 0 10px;
+  /*margin:20px 20px 5px 20px;*/
   transition: all 0.3s ease 0s;
 }
 
 .splash-button:hover{
-  color: #5b3da8;
-  border: 2px solid #5b3da8;
+ /* color: black;
+  border: 2px solid black;*/
   box-shadow: #3b3b3d 0px 0px;
-  background: rgba(255,255,255,0.1);
+   background: #DA22FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
