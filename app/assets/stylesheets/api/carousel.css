@@ -9,14 +9,14 @@
   color: #333;
   display:block;
   z-index:1;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-  border-bottom:5px solid white;
+/*  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);*/
+  /*border-bottom:5px solid white;*/
 
   /*background: gray;*/
 }
 
 .carousel-element img {
-  border-top:5px solid white;
+  /*border-top:5px solid white;*/
   width:100%;
   opacity:0.9;
   margin-top:30px;
@@ -26,14 +26,7 @@
 
   /*height:auto;*/
 }
-.carousel-element h3{
-  color:white;
-}
 
-/*.purple{
-  border-top:1px solid white;
-}
-*/
 .carousel-image{
 	height:100%;
 	width:auto;
@@ -87,4 +80,18 @@ button.slick-arrow.slick-prev{
   position: absolute;
   bottom: 15px;
   right:2%;
+}
+
+.subtagline{
+  color:rgba(255, 255, 255, 1.0);
+  /*position:absolute;*/
+  z-index:300;
+  text-align:center;
+ font-size:3.5vmax;
+  position:absolute;
+  margin-left:26%;
+  display:inline-block;
+  margin-top:150px;
+  z-index:33;
+  font-weight:600;
 }

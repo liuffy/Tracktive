@@ -108,9 +108,9 @@ class Splash extends React.Component{
 
       <Slider {...settings}
         className="carousel-container">
-        <div className="carousel-element"><img src="https://d13yacurqjgara.cloudfront.net/users/232012/screenshots/2970825/maitregims.gif"/></div>
-        <div className="carousel-element"><img src="http://res.cloudinary.com/liuffy/image/upload/v1486337359/purple-car_nk2mkn.gif"/></div>
-        <div className="carousel-element"><img src="http://res.cloudinary.com/liuffy/image/upload/v1486342436/indigo-fish_ykqahh.gif"/></div>
+        <div className="carousel-element"><h3 className="subtagline">you can do this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
+        <div className="carousel-element"><h3 className="subtagline">also this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
+        <div className="carousel-element"><h3 className="subtagline">and this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
       </Slider>
         
 
