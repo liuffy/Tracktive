@@ -64,6 +64,7 @@ input.search-bar{
 	width:auto;
 	position:absolute;
 	cursor:pointer;
+	transition: all 0.2s ease 0s;
 }
 
 .clear-button:hover{

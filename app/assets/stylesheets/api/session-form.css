@@ -39,11 +39,12 @@
 }
 
 .error-icon{
-  height:1.5vmax;
+  height:10px;
   width:auto;
   padding-right:15px;
   float:left;
   margin-left:-20px;
+  margin-top:6px;
   /*position:relative;*/
 }
 

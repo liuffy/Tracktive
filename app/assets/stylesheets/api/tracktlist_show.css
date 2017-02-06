@@ -25,13 +25,12 @@
 }
 
 .tracktlist-info{
-	border-radius: 3px;
-	border: 1px solid rgba(255,255,255,0.8);
+	border: 1px solid rgba(255,255,255,0.9);
 	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.48);
 	/*background: linear-gradient(to left, rgba(186, 42, 247, 0.80) , rgba(153, 51, 238, 0.80)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	/*display:block;*/
 background: rgba(34, 35, 38, 0.95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	width:350px;
+	width:300px;
 	height:200px;
 	position:relative;
 	margin:50px 0px 0px 0px;
@@ -66,13 +65,14 @@ background: rgba(34, 35, 38, 0.95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26
   /*position:absolute;*/
   width:500px;
   position:relative;
-	color:#fbfbfc;
+	color:#eaeaf2;
 	line-height: 33px;
 	font-size: 30px;
 	font-weight:bold;
 	text-shadow:
     #ba2af7 1px 1px,
-    #ba2af7 2px 2px;
+    #ba2af7 2px 2px,
+    #ba2af7 3px 3px;
 }
 
 
@@ -81,15 +81,19 @@ body.ab-control.trackset.view-list.white.mode-large{
 }
 
 iframe {
-	width:345px; /* just for testing */
+	width:380px; /* just for testing */
 	position:relative;
 	opacity:0.85;
 	height:380px;
-	margin-left:50%;
-/*	border-left: 2px solid #545252;  
-	border-right: 2px solid #545252;  
-	border-bottom: 2px solid #545252; */ 
+	margin-left:30%;
+	padding:0px;
 }
+
+/*
+div#container.container.tracklist-view{
+	font-family: ProximaNovaA-Regular;
+}
+*/
 
 .artists-featured{
 	color:rgb(84, 82, 82);

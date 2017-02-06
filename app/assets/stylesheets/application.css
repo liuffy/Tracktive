@@ -16,6 +16,7 @@
 
 
 body {
+  overflow-x:hidden;
 	font-family: ProximaNovaA-Regular;
 	/* IE10+ */ 
 	background:#f8f7f9;
@@ -154,7 +155,6 @@ body {
 
 label {
 	font-size:16px;
-  font-weight:bold;
 	color: #6f3e91;
 }
 
@@ -287,9 +287,6 @@ li{
 .header-bar{
 		/* IE10+ */ 
 	height:180px;
-	background: #DA22FF; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: cover;
 	/*background-position: center;*/
 	/*border-bottom: 2px solid #545252;*/
@@ -301,6 +298,36 @@ li{
 	position:fixed;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.48);
 	transition: all 0.4s ease 0s;
+    background: #DA22FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(128deg, #da22ff, #9733ee); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  bottom:0;
+  background-size: 150% 150%;
+  -webkit-animation: GradientAnimation 40s ease infinite;
+  -moz-animation: GradientAnimation 40s ease infinite;
+  animation: GradientAnimation 40s ease infinite;
+}
+  
+    
+    @-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes GradientAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 	}
 
 .header-bar:hover{

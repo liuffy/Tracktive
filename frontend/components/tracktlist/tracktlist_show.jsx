@@ -64,10 +64,13 @@ class TracktlistShow extends React.Component{
         </div>
               <div className="left-side-player">
         <iframe
-          src={`${tracktlist.playlistUrl}`}
+          src={`${tracktlist.playlistUrl}+'&theme=dark'`}
           frameBorder="0"
-          target="_parent"
+          width="300" 
+          height="380"
+          target="_self"
           allowTransparency="true"></iframe>
+
       </div>
     </div>
       

@@ -2,17 +2,16 @@
   margin: 0 auto;
   top:-60px;
   /*padding: 40px;*/
-  width: 100%;
+  width: 950px;
   display:block;
   height:500px;
   overflow:hidden;
   color: #333;
   display:block;
+  margin-left:50px;
   z-index:1;
 /*  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);*/
   /*border-bottom:5px solid white;*/
-
-  /*background: gray;*/
 }
 
 .carousel-element img {
@@ -20,10 +19,7 @@
   width:100%;
   opacity:0.9;
   margin-top:30px;
-
-
-    /*box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);*/
-
+  /*box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);*/
   /*height:auto;*/
 }
 
@@ -79,7 +75,7 @@ button.slick-arrow.slick-prev{
 .slick-dots {
   position: absolute;
   bottom: 15px;
-  right:2%;
+  right:25px;
 }
 
 .subtagline{
@@ -87,9 +83,9 @@ button.slick-arrow.slick-prev{
   /*position:absolute;*/
   z-index:300;
   text-align:center;
- font-size:2.5vmax;
+ font-size:28px;
   position:absolute;
-  margin-left:26%;
+  margin-left:27%;
   display:inline-block;
   margin-top:150px;
   z-index:33;

@@ -23,7 +23,7 @@
   .explore{
 		display:inline-block;
 		float:left;
-		font-size:6vmax;
+		font-size:60px;
 		text-align:center;
 		margin-top:0px;
 		margin-bottom:40px;
@@ -34,8 +34,7 @@
 		right:0;
 		padding-bottom:40px;
 		padding-top:40px;
-		background: #d623fe;
-		text-shadow:
+			text-shadow:
 		rgb(107, 90, 147) 1px 1px,
 		rgb(107, 90, 147) 2px 2px,
 		rgb(107, 90, 147) 3px 3px,
@@ -44,7 +43,40 @@
 		rgb(86, 54, 175) 6px 6px,
 		rgb(86, 54, 175) 7px 7px; 
 		font-weight: bold;
+		  background: #DA22FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  bottom:0;
+  background-size: 150% 150%;
+  -webkit-animation: GradientAnimation 30s ease infinite;
+  -moz-animation: GradientAnimation 30s ease infinite;
+  animation: GradientAnimation 30s ease infinite;
+}
+  
+    
+    @-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
   }
+  @-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes GradientAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+}
+  
+
 
 
 .binoculars-logo{
@@ -72,7 +104,7 @@
 	transition: all 0.2s ease;
   margin-bottom: 60px;
   width:200px;
-	border:2px solid #5635AE;
+	border:2px solid #949496;
 	border-radius:4px;
 }
 .entire-item:hover{
