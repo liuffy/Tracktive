@@ -14,7 +14,7 @@ export const authModalStyle = {
    top             : '10%',
    left:'30vw',
    width           : '450px',
-   height          : '500px',
+   height          : '450px',
    background:'white',
    borderRadius    : '5px',
    border: 'none',

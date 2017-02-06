@@ -16,6 +16,8 @@ div.site-info{
 .site-info p{
 	color:#282728;
 	font-size:1.3vmax;
+	word-break: normal;
+  white-space: normal;
 }
 
 .about-header{

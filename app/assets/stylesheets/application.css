@@ -153,7 +153,8 @@ body {
 }
 
 label {
-	font-size:20px;
+	font-size:16px;
+  font-weight:bold;
 	color: #6f3e91;
 }
 
