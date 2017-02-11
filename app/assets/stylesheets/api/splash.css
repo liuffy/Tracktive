@@ -9,11 +9,11 @@
   right:0%;
 }
 .splash-background{
+  min-height:100%;
+  position: relative;
   background: #DA22FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  min-height:100%;
-  position: relative;
   top: 0;
   left: 0;
   right: 0;

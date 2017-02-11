@@ -95,4 +95,6 @@ h2.profile-greeting {
   line-height:0.8;
   font-weight:bold;
   text-align:center;
+    margin-left:0px;
+    z-index:-2;
 }

@@ -36,9 +36,9 @@
   background-position: center;
   bottom:0;
   background-size: 150% 150%;
-  -webkit-animation: GradientAnimation 30s ease infinite;
-  -moz-animation: GradientAnimation 30s ease infinite;
-  animation: GradientAnimation 30s ease infinite;
+  -webkit-animation: GradientAnimation 50s ease infinite;
+  -moz-animation: GradientAnimation 50s ease infinite;
+  animation: GradientAnimation 50s ease infinite;
 }
   
     
