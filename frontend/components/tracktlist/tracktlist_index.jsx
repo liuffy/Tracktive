@@ -3,6 +3,7 @@ import TracktlistIndexItemContainer from './tracktlist_index_item_container';
 import {withRouter, Link} from 'react-router';
 import Masonry from 'react-masonry-component';
 import Footer from '../footer/footer';
+import ReactDOM from 'react-dom';
 
 class TracktlistIndex extends React.Component {
   constructor(props){
@@ -12,6 +13,10 @@ class TracktlistIndex extends React.Component {
   componentDidMount(){
     this.props.fetchTracktlists();
   }
+
+  // componentWillReceiveProps(nextProps){
+  // }
+
 
   render(){
     $(".footer").removeClass( "footer" ).addClass("index-footer");
@@ -33,12 +38,8 @@ class TracktlistIndex extends React.Component {
           let artists = tracktlist.artists.toLowerCase() // these are all the artists
           return artists.match(query.toLowerCase()) // include if some (any) of the artists match the query
         })
-        // console.log(query);
-        // console.log('if statement');
-        // console.log(filteredTracktlists.length);
 
         if (filteredTracktlists.length < 1 ) { // nested if statement
-            // console.log('else if');
             result = 
             <div className="no-tracktlists">
               <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
@@ -56,10 +57,10 @@ class TracktlistIndex extends React.Component {
     } 
     else {
       // console.log('else statement')
-      result = tracktlists.map(tracktlist =>
+      result = tracktlists.map( (tracktlist, idx) =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
-           key={tracktlist.id}/>
+           key={idx}/>
            )
       
     }

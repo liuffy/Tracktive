@@ -11,7 +11,7 @@ class Search extends React.Component {
  constructor(props) {
     super(props);
     this.state = {
-      searchString: null
+      searchString: ""
     }
 
     this.updateQuery = this.updateQuery.bind(this)
