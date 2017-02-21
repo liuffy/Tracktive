@@ -40745,8 +40745,15 @@ return jQuery;
 	      this.props.fetchTracktlists();
 	    }
 	  }, {
-	    key: 'componentWillReceiveProps',
-	    value: function componentWillReceiveProps() {}
+	    key: 'componentWillUnMount',
+	    value: function componentWillUnMount() {
+	      this.props.fetchTracktlists();
+	    }
+	
+	    // componentWillReceiveProps(){
+	    // }
+	
+	
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -97383,8 +97390,9 @@ return jQuery;
 	
 	    var _this = _possibleConstructorReturn(this, (TracktlistForm.__proto__ || Object.getPrototypeOf(TracktlistForm)).call(this, props));
 	
+	    console.log(_this.props);
 	    _this.state = {
-	      user_id: currentUser.id,
+	      user_id: _this.props.currentUser.id,
 	      artists: "",
 	      playlistUrl: "",
 	      title: "",
@@ -97780,7 +97788,7 @@ return jQuery;
 	
 	var configureStore = function configureStore() {
 		var preloadedState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-		return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()));
+		return (0, _redux.createStore)(_root_reducer2.default, preloadedState, (0, _redux.compose)((0, _redux.applyMiddleware)(_reduxThunk2.default)));
 	};
 	
 	exports.default = configureStore;
