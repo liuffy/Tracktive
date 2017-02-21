@@ -5,8 +5,9 @@ import {Link, withRouter} from 'react-router';
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
+    console.log(this.props)
     this.state = {
-       user_id: currentUser.id,
+       user_id: this.props.currentUser.id,
        artists:"",
        playlistUrl: "",
        title:"",

@@ -14,8 +14,12 @@ class TracktlistIndex extends React.Component {
     this.props.fetchTracktlists();
   }
 
-  componentWillReceiveProps(){
+  componentWillUnMount() {
+    this.props.fetchTracktlists();   
   }
+
+  // componentWillReceiveProps(){
+  // }
 
 
   render(){
