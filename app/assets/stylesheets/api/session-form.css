@@ -4,10 +4,11 @@
   top:-45px;
   right:-25px;
   color:white;
+  transition: all 0.2s ease 0s;
 }
 
 .exit-button:hover{
-  color:#ae7cba;
+  opacity:0.4;
   cursor:pointer;
 }
 

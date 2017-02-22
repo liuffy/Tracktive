@@ -279,3 +279,25 @@
         transform: translateY(50%) translateZ(-200px) rotateX(-45deg); }
     100% { opacity: .3; transform: translateY(100%) rotateX(-90deg);}
 }
+
+.left-side, .right-side{
+  width:200px;
+  /*border:1px solid black;*/
+  float:left;
+}
+
+.left-side{
+  width:150px;
+}
+.right-side{
+  width:300px;
+  line-height:1.5;
+  padding-top:10px;
+}
+
+p.numbering{
+  position:relative;
+  font-weight:bold;
+  color: #d623fe;
+  font-size:12px;
+}
