@@ -4,6 +4,11 @@ import SessionFormContainer from '../session_form/session_form_container';
 import Footer from '../footer/footer';
 import {withRouter, Link} from 'react-router';
 import {authModalStyle} from '../../util/modal_styles';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// var ReactCSSTransitionGroup = require('react-addons-css-transition-group')
+
+
+
 var Slider = require('react-slick');
 
 
@@ -22,7 +27,7 @@ class Splash extends React.Component{
 
   componentWillReceiveProps(nextProps){
     if(nextProps.currentUser && nextProps.currentUser.id){
-      this.props.router.push('/browse'); // this is how it redirects!!!!!!!!!!!!!!!!!
+      this.props.router.push('/browse'); 
       }
   }
 
@@ -56,7 +61,7 @@ class Splash extends React.Component{
 
     render(){
 
-       var settings = {
+     var settings = {
       dots: true,
       infinite: true,
       speed: 500,
@@ -113,12 +118,13 @@ class Splash extends React.Component{
         <div className="carousel-element"><h3 className="subtagline">and this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
       </Slider>
         
-
-            <Modal isOpen={this.state.authModal}
+  
+          <Modal isOpen={this.state.authModal}
              className="session-modal"
              onRequestClose={this.closeModal.bind(this)}
              contentLabel="SessionForm"
              style={authModalStyle}>
+
 
               <SessionFormContainer formType={this.state.formType}
                 closeModal={this.closeModal.bind(this)}
@@ -126,6 +132,11 @@ class Splash extends React.Component{
                 demo={this.state.demo}
               />
             </Modal>
+
+             
+
+
+
             <Footer/>
             </div>
           </div>

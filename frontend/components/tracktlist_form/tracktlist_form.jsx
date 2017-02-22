@@ -5,7 +5,6 @@ import {Link, withRouter} from 'react-router';
 class TracktlistForm extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props)
     this.state = {
        user_id: this.props.currentUser.id,
        artists:"",
@@ -29,12 +28,10 @@ class TracktlistForm extends React.Component {
   handleSubmit(e) {
     let { createTracktlist } = this.props;
     let { artists, index_image_url, title } = this.state;
-    console.log('wooohooo')
     e.preventDefault();
     createTracktlist(artists, title, index_image_url)
     this.props.router.push(`/browse`) // redirect
 
-    console.log('weeheee')
   }
 
 
