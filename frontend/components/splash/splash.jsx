@@ -4,8 +4,6 @@ import SessionFormContainer from '../session_form/session_form_container';
 import Footer from '../footer/footer';
 import {withRouter, Link} from 'react-router';
 import {authModalStyle} from '../../util/modal_styles';
-// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-// var ReactCSSTransitionGroup = require('react-addons-css-transition-group')
 
 
 
@@ -120,7 +118,7 @@ class Splash extends React.Component{
         
   
           <Modal isOpen={this.state.authModal}
-             className="session-modal"
+            className="faded-modal"
              onRequestClose={this.closeModal.bind(this)}
              contentLabel="SessionForm"
              style={authModalStyle}>
