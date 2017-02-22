@@ -11635,7 +11635,7 @@ return jQuery;
 	
 	var _root2 = _interopRequireDefault(_root);
 	
-	var _store = __webpack_require__(826);
+	var _store = __webpack_require__(839);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -12321,17 +12321,6 @@ return jQuery;
 	  }
 	};
 	
-	var fiveArgumentPooler = function (a1, a2, a3, a4, a5) {
-	  var Klass = this;
-	  if (Klass.instancePool.length) {
-	    var instance = Klass.instancePool.pop();
-	    Klass.call(instance, a1, a2, a3, a4, a5);
-	    return instance;
-	  } else {
-	    return new Klass(a1, a2, a3, a4, a5);
-	  }
-	};
-	
 	var standardReleaser = function (instance) {
 	  var Klass = this;
 	  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a pool of a different type.') : _prodInvariant('25') : void 0;
@@ -12371,8 +12360,7 @@ return jQuery;
 	  oneArgumentPooler: oneArgumentPooler,
 	  twoArgumentPooler: twoArgumentPooler,
 	  threeArgumentPooler: threeArgumentPooler,
-	  fourArgumentPooler: fourArgumentPooler,
-	  fiveArgumentPooler: fiveArgumentPooler
+	  fourArgumentPooler: fourArgumentPooler
 	};
 	
 	module.exports = PooledClass;
@@ -14706,7 +14694,14 @@ return jQuery;
 	    // We warn in this case but don't throw. We expect the element creation to
 	    // succeed and there will likely be errors in render.
 	    if (!validType) {
-	      process.env.NODE_ENV !== 'production' ? warning(false, 'React.createElement: type should not be null, undefined, boolean, or ' + 'number. It should be a string (for DOM elements) or a ReactClass ' + '(for composite components).%s', getDeclarationErrorAddendum()) : void 0;
+	      if (typeof type !== 'function' && typeof type !== 'string') {
+	        var info = '';
+	        if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) {
+	          info += ' You likely forgot to export your component from the file ' + 'it\'s defined in.';
+	        }
+	        info += getDeclarationErrorAddendum();
+	        process.env.NODE_ENV !== 'production' ? warning(false, 'React.createElement: type is invalid -- expected a string (for ' + 'built-in components) or a class/function (for composite ' + 'components) but got: %s.%s', type == null ? type : typeof type, info) : void 0;
+	      }
 	    }
 	
 	    var element = ReactElement.createElement.apply(this, arguments);
@@ -15677,7 +15672,7 @@ return jQuery;
 	
 	'use strict';
 	
-	module.exports = '15.4.1';
+	module.exports = '15.4.2';
 
 /***/ },
 /* 31 */
@@ -33113,7 +33108,7 @@ return jQuery;
 	
 	var _session_form_container2 = _interopRequireDefault(_session_form_container);
 	
-	var _user_detail_container = __webpack_require__(818);
+	var _user_detail_container = __webpack_require__(831);
 	
 	var _user_detail_container2 = _interopRequireDefault(_user_detail_container);
 	
@@ -33121,11 +33116,11 @@ return jQuery;
 	
 	var _tracktlist_index_container2 = _interopRequireDefault(_tracktlist_index_container);
 	
-	var _tracktlist_form_container = __webpack_require__(822);
+	var _tracktlist_form_container = __webpack_require__(835);
 	
 	var _tracktlist_form_container2 = _interopRequireDefault(_tracktlist_form_container);
 	
-	var _tracktlist_show_container = __webpack_require__(824);
+	var _tracktlist_show_container = __webpack_require__(837);
 	
 	var _tracktlist_show_container2 = _interopRequireDefault(_tracktlist_show_container);
 	
@@ -48564,16 +48559,17 @@ return jQuery;
 	  top: 0,
 	  right: 0,
 	  bottom: 0,
+	  animationName: 'scaleIn',
+	  animationDuration: '0.4s',
 	  left: 0,
 	  background: 'none',
 	  zIndex: 9999,
-	  transition: 'opacity 1s ease-in',
 	  pointerEvents: 'auto',
 	  overflowY: 'auto'
 	};
 	
 	var container = {
-	  width: '45%',
+	  width: '60%',
 	  height: 'auto',
 	  position: 'relative',
 	  margin: '3% auto',
@@ -48665,82 +48661,6 @@ return jQuery;
 	    overflow: 'scroll'
 	  }
 	};
-	
-	// export const playlistModalStyle = (playing) => {
-	//   if(!playing){
-	//     return {
-	//       overlay : {
-	//        position        : 'fixed',
-	//        top             : 0,
-	//        left            : '100px',
-	//        right           : 0,
-	//        bottom          : 0,
-	//        backgroundColor : 'rgba(17, 18, 20, 0.4)',
-	//        zIndex          : 50
-	//      },
-	//      content : {
-	//        position        : 'relative',
-	//        top             : 0,
-	//        right           : 0,
-	//        bottom          : 0,
-	//        borderRadius    : '0px',
-	//        width           : '70%',
-	//        height          : '100%',
-	//        padding         : 0,
-	//        float           : 'right',
-	//        zIndex          : 51
-	//      }
-	//    };
-	//  } else {
-	//    return {
-	//      overlay : {
-	//       position        : 'fixed',
-	//       top             : 0,
-	//       left            : '100px',
-	//       right           : '245px',
-	//       bottom          : 0,
-	//       backgroundColor : 'rgba(17, 18, 20, 0.75)',
-	//       zIndex          : 50
-	//     },
-	//     content : {
-	//       position        : 'relative',
-	//       top             : 0,
-	//       right           : 0,
-	//       bottom          : 0,
-	//       borderRadius    : '0px',
-	//       width           : '70%',
-	//       height          : '100%',
-	//       padding         : 0,
-	//       float           : 'right',
-	//       zIndex          : 51
-	//     }
-	//   };
-	//  }
-	// };
-	
-	// export const searchModalStyle = {
-	//     overlay : {
-	//      position        : 'fixed',
-	//      top             : 0,
-	//      left            : '100px',
-	//      right           : 0,
-	//      bottom          : 0,
-	//      backgroundColor : 'rgba(17, 18, 20, 0.75)',
-	//      zIndex          : 100,
-	//    },
-	//    content : {
-	//      position        : 'relative',
-	//      top             : 0,
-	//      right           : 0,
-	//      bottom          : 0,
-	//      left            : '-5px',
-	//      width           : '250px',
-	//      height          : '100%',
-	//      backgroundColor : 'rgba(34, 35, 38, 1)',
-	//      zIndex          : 101,
-	//      border          : null
-	//    }
-	// };
 
 /***/ },
 /* 312 */
@@ -49093,7 +49013,7 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"1. This gif from the session form was created by ",
+					"[Fist bump, wave] This gif from the session form was created by ",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
@@ -49105,7 +49025,7 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"2. This gif from the search component was created by ",
+					"[Fingerprint] This gif from the search component was created by ",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
@@ -93723,7 +93643,7 @@ return jQuery;
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Slider = __webpack_require__(802);
+	var Slider = __webpack_require__(815);
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	  _reactModal2.default.setAppElement(document.body);
@@ -93747,7 +93667,7 @@ return jQuery;
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
 	      if (nextProps.currentUser && nextProps.currentUser.id) {
-	        this.props.router.push('/browse'); // this is how it redirects!!!!!!!!!!!!!!!!!
+	        this.props.router.push('/browse');
 	      }
 	    }
 	  }, {
@@ -93903,7 +93823,7 @@ return jQuery;
 	          _react2.default.createElement(
 	            _reactModal2.default,
 	            { isOpen: this.state.authModal,
-	              className: 'session-modal',
+	              className: 'faded-modal',
 	              onRequestClose: this.closeModal.bind(this),
 	              contentLabel: 'SessionForm',
 	              style: _modal_styles.authModalStyle },
@@ -94760,14 +94680,18 @@ return jQuery;
 	    value: function render() {
 	
 	      var link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
+	      var picture = this.props.formType === 'login' ? _react2.default.createElement('img', {
+	        className: 'fist-bump',
+	        src: 'http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif' }) : _react2.default.createElement('img', {
+	        className: 'hand-wave',
+	        src: 'http://res.cloudinary.com/liuffy/image/upload/v1487791818/hand_wave_oyn1yz.svg' });
+	
 	      var header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
 	
 	      var errors = this.props.errors.map(function (error, idx) {
 	        return _react2.default.createElement(
 	          'li',
 	          { key: idx, className: 'error' },
-	          _react2.default.createElement('img', { className: 'error-icon',
-	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1485891262/error-icon_pmjqe2.png' }),
 	          error
 	        );
 	      });
@@ -94798,10 +94722,7 @@ return jQuery;
 	              header,
 	              ' to make tracktlists.'
 	            ),
-	            _react2.default.createElement('img', {
-	              href: 'https://dribbble.com/shots/3145554-Fist-Bump',
-	              className: 'fist-bump',
-	              src: 'http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif' })
+	            picture
 	          ),
 	          _react2.default.createElement(
 	            'ul',
@@ -94863,15 +94784,28 @@ return jQuery;
 	exports.default = SessionForm;
 
 /***/ },
-/* 802 */
+/* 802 */,
+/* 803 */,
+/* 804 */,
+/* 805 */,
+/* 806 */,
+/* 807 */,
+/* 808 */,
+/* 809 */,
+/* 810 */,
+/* 811 */,
+/* 812 */,
+/* 813 */,
+/* 814 */,
+/* 815 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(803);
+	module.exports = __webpack_require__(816);
 
 /***/ },
-/* 803 */
+/* 816 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -94882,21 +94816,21 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _innerSlider = __webpack_require__(804);
+	var _innerSlider = __webpack_require__(817);
 	
 	var _objectAssign = __webpack_require__(4);
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _json2mq = __webpack_require__(813);
+	var _json2mq = __webpack_require__(826);
 	
 	var _json2mq2 = _interopRequireDefault(_json2mq);
 	
-	var _reactResponsiveMixin = __webpack_require__(815);
+	var _reactResponsiveMixin = __webpack_require__(828);
 	
 	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
 	
-	var _defaultProps = __webpack_require__(809);
+	var _defaultProps = __webpack_require__(822);
 	
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 	
@@ -95003,7 +94937,7 @@ return jQuery;
 	module.exports = Slider;
 
 /***/ },
-/* 804 */
+/* 817 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -95017,19 +94951,19 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _eventHandlers = __webpack_require__(805);
+	var _eventHandlers = __webpack_require__(818);
 	
 	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
 	
-	var _helpers = __webpack_require__(807);
+	var _helpers = __webpack_require__(820);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
-	var _initialState = __webpack_require__(808);
+	var _initialState = __webpack_require__(821);
 	
 	var _initialState2 = _interopRequireDefault(_initialState);
 	
-	var _defaultProps = __webpack_require__(809);
+	var _defaultProps = __webpack_require__(822);
 	
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 	
@@ -95041,11 +94975,11 @@ return jQuery;
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _track = __webpack_require__(810);
+	var _track = __webpack_require__(823);
 	
-	var _dots = __webpack_require__(811);
+	var _dots = __webpack_require__(824);
 	
-	var _arrows = __webpack_require__(812);
+	var _arrows = __webpack_require__(825);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -95281,16 +95215,16 @@ return jQuery;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 805 */
+/* 818 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _trackHelper = __webpack_require__(806);
+	var _trackHelper = __webpack_require__(819);
 	
-	var _helpers = __webpack_require__(807);
+	var _helpers = __webpack_require__(820);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
@@ -95621,7 +95555,7 @@ return jQuery;
 	exports.default = EventHandlers;
 
 /***/ },
-/* 806 */
+/* 819 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95781,7 +95715,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 807 */
+/* 820 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95798,7 +95732,7 @@ return jQuery;
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _trackHelper = __webpack_require__(806);
+	var _trackHelper = __webpack_require__(819);
 	
 	var _objectAssign = __webpack_require__(4);
 	
@@ -96151,7 +96085,7 @@ return jQuery;
 	exports.default = helpers;
 
 /***/ },
-/* 808 */
+/* 821 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -96202,7 +96136,7 @@ return jQuery;
 	module.exports = initialState;
 
 /***/ },
-/* 809 */
+/* 822 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96268,7 +96202,7 @@ return jQuery;
 	module.exports = defaultProps;
 
 /***/ },
-/* 810 */
+/* 823 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96437,7 +96371,7 @@ return jQuery;
 	});
 
 /***/ },
-/* 811 */
+/* 824 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96515,7 +96449,7 @@ return jQuery;
 	});
 
 /***/ },
-/* 812 */
+/* 825 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96533,7 +96467,7 @@ return jQuery;
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _helpers = __webpack_require__(807);
+	var _helpers = __webpack_require__(820);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
@@ -96624,10 +96558,10 @@ return jQuery;
 	});
 
 /***/ },
-/* 813 */
+/* 826 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var camel2hyphen = __webpack_require__(814);
+	var camel2hyphen = __webpack_require__(827);
 	
 	var isDimension = function (feature) {
 	  var re = /[height|width]$/;
@@ -96680,7 +96614,7 @@ return jQuery;
 	module.exports = json2mq;
 
 /***/ },
-/* 814 */
+/* 827 */
 /***/ function(module, exports) {
 
 	var camel2hyphen = function (str) {
@@ -96694,12 +96628,12 @@ return jQuery;
 	module.exports = camel2hyphen;
 
 /***/ },
-/* 815 */
+/* 828 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var canUseDOM = __webpack_require__(816);
-	var enquire = canUseDOM && __webpack_require__(817);
-	var json2mq = __webpack_require__(813);
+	var canUseDOM = __webpack_require__(829);
+	var enquire = canUseDOM && __webpack_require__(830);
+	var json2mq = __webpack_require__(826);
 	
 	var ResponsiveMixin = {
 	  media: function (query, handler) {
@@ -96730,7 +96664,7 @@ return jQuery;
 
 
 /***/ },
-/* 816 */
+/* 829 */
 /***/ function(module, exports) {
 
 	var canUseDOM = !!(
@@ -96742,7 +96676,7 @@ return jQuery;
 	module.exports = canUseDOM;
 
 /***/ },
-/* 817 */
+/* 830 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -97040,7 +96974,7 @@ return jQuery;
 	}));
 
 /***/ },
-/* 818 */
+/* 831 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97051,13 +96985,13 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(179);
 	
-	var _user_actions = __webpack_require__(819);
+	var _user_actions = __webpack_require__(832);
 	
 	var _selectors = __webpack_require__(535);
 	
 	var _tracktlist_actions = __webpack_require__(318);
 	
-	var _user_detail = __webpack_require__(821);
+	var _user_detail = __webpack_require__(834);
 	
 	var _user_detail2 = _interopRequireDefault(_user_detail);
 	
@@ -97092,7 +97026,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_user_detail2.default);
 
 /***/ },
-/* 819 */
+/* 832 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97103,7 +97037,7 @@ return jQuery;
 	exports.receiveUser = exports.requestUser = exports.RECEIVE_USER = exports.REQUEST_USER = undefined;
 	exports.fetchUser = fetchUser;
 	
-	var _user_api_util = __webpack_require__(820);
+	var _user_api_util = __webpack_require__(833);
 	
 	var APIUtil = _interopRequireWildcard(_user_api_util);
 	
@@ -97136,7 +97070,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 820 */
+/* 833 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -97156,7 +97090,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 821 */
+/* 834 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97310,7 +97244,7 @@ return jQuery;
 	exports.default = UserDetail;
 
 /***/ },
-/* 822 */
+/* 835 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97321,7 +97255,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(179);
 	
-	var _tracktlist_form = __webpack_require__(823);
+	var _tracktlist_form = __webpack_require__(836);
 	
 	var _tracktlist_form2 = _interopRequireDefault(_tracktlist_form);
 	
@@ -97355,7 +97289,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_tracktlist_form2.default);
 
 /***/ },
-/* 823 */
+/* 836 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97390,7 +97324,6 @@ return jQuery;
 	
 	    var _this = _possibleConstructorReturn(this, (TracktlistForm.__proto__ || Object.getPrototypeOf(TracktlistForm)).call(this, props));
 	
-	    console.log(_this.props);
 	    _this.state = {
 	      user_id: _this.props.currentUser.id,
 	      artists: "",
@@ -97427,12 +97360,9 @@ return jQuery;
 	          index_image_url = _state.index_image_url,
 	          title = _state.title;
 	
-	      console.log('wooohooo');
 	      e.preventDefault();
 	      createTracktlist(artists, title, index_image_url);
 	      this.props.router.push('/browse'); // redirect
-	
-	      console.log('weeheee');
 	    }
 	
 	    // renderErrors(e){
@@ -97555,7 +97485,7 @@ return jQuery;
 	exports.default = (0, _reactRouter.withRouter)(TracktlistForm);
 
 /***/ },
-/* 824 */
+/* 837 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97570,7 +97500,7 @@ return jQuery;
 	
 	var _selectors = __webpack_require__(535);
 	
-	var _tracktlist_show = __webpack_require__(825);
+	var _tracktlist_show = __webpack_require__(838);
 	
 	var _tracktlist_show2 = _interopRequireDefault(_tracktlist_show);
 	
@@ -97599,7 +97529,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_tracktlist_show2.default);
 
 /***/ },
-/* 825 */
+/* 838 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97765,7 +97695,7 @@ return jQuery;
 	exports.default = TracktlistShow;
 
 /***/ },
-/* 826 */
+/* 839 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97776,11 +97706,11 @@ return jQuery;
 	
 	var _redux = __webpack_require__(190);
 	
-	var _reduxThunk = __webpack_require__(827);
+	var _reduxThunk = __webpack_require__(840);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
-	var _root_reducer = __webpack_require__(828);
+	var _root_reducer = __webpack_require__(841);
 	
 	var _root_reducer2 = _interopRequireDefault(_root_reducer);
 	
@@ -97794,7 +97724,7 @@ return jQuery;
 	exports.default = configureStore;
 
 /***/ },
-/* 827 */
+/* 840 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -97822,7 +97752,7 @@ return jQuery;
 	exports['default'] = thunk;
 
 /***/ },
-/* 828 */
+/* 841 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97833,23 +97763,23 @@ return jQuery;
 	
 	var _redux = __webpack_require__(190);
 	
-	var _session_reducer = __webpack_require__(829);
+	var _session_reducer = __webpack_require__(842);
 	
 	var _session_reducer2 = _interopRequireDefault(_session_reducer);
 	
-	var _users_reducer = __webpack_require__(830);
+	var _users_reducer = __webpack_require__(843);
 	
 	var _users_reducer2 = _interopRequireDefault(_users_reducer);
 	
-	var _tracktlist_reducer = __webpack_require__(831);
+	var _tracktlist_reducer = __webpack_require__(844);
 	
 	var _tracktlist_reducer2 = _interopRequireDefault(_tracktlist_reducer);
 	
-	var _loading_reducer = __webpack_require__(832);
+	var _loading_reducer = __webpack_require__(845);
 	
 	var _loading_reducer2 = _interopRequireDefault(_loading_reducer);
 	
-	var _search_reducer = __webpack_require__(833);
+	var _search_reducer = __webpack_require__(846);
 	
 	var _search_reducer2 = _interopRequireDefault(_search_reducer);
 	
@@ -97866,7 +97796,7 @@ return jQuery;
 	exports.default = RootReducer;
 
 /***/ },
-/* 829 */
+/* 842 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97908,7 +97838,7 @@ return jQuery;
 	exports.default = SessionReducer;
 
 /***/ },
-/* 830 */
+/* 843 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97917,7 +97847,7 @@ return jQuery;
 		value: true
 	});
 	
-	var _user_actions = __webpack_require__(819);
+	var _user_actions = __webpack_require__(832);
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
@@ -97945,7 +97875,7 @@ return jQuery;
 	exports.default = UsersReducer;
 
 /***/ },
-/* 831 */
+/* 844 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97995,7 +97925,7 @@ return jQuery;
 	exports.default = TracktlistReducer;
 
 /***/ },
-/* 832 */
+/* 845 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -98034,7 +97964,7 @@ return jQuery;
 	exports.default = loadingReducer;
 
 /***/ },
-/* 833 */
+/* 846 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';

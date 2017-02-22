@@ -19,7 +19,7 @@ const Graphics = () => (
 			</div>
       <div className = "right-side">
      <p className="about-text">
-		[Fist bump, wave] This gif from the session form was created by <a className="link"
+		[Fist bump, wave] Gifs from the session form were created by <a className="link"
 																			href="https://dribbble.com/matt_yow">Matt Yow.</a>
 		</p>
 		
