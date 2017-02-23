@@ -61,9 +61,9 @@
 h3.create{
 	position:relative;
 	font-weight:400;
-	font-size:20px;
+	font-size:18px;
 	line-height:0.9;
-	color:#282728;
+	color:#5636af;
 }
 
 
@@ -110,20 +110,42 @@ h3.create{
 	z-index:1000;
 }
 
-.creation-input-field::-webkit-input-placeholder {
+.standard-input-field2::-webkit-input-placeholder {
     color:#aba9bc;
   }
 
-.creation-input-field::-moz-placeholder { /* Firefox 19+ */
+.standard-input-field2::-moz-placeholder { /* Firefox 19+ */
   color:#aba9bc;
 }
 
-.creation-input-field::-ms-input-placeholder { /* IE 10+ */
+.standard-input-field2::-ms-input-placeholder { /* IE 10+ */
   color:#aba9bc;
 }
 
-.creation-input-field::-moz-placeholder { /* Firefox 18- */
+.standard-input-field2::-moz-placeholder { /* Firefox 18- */
   color:#aba9bc;
+}
+
+
+.standard-input-field2{
+	letter-spacing:1px;
+	color: #5B3DA8;
+	font-size:20px;
+	/*border:1px solid #5B3DA8;*/
+	margin: 3px 0px;
+	/*border-radius:5px;*/
+	padding: 10px 13px;
+	width:600px;
+	transition: all 0.2s ease 0s;
+  border-bottom: 3px solid #ededef;
+  /*box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;*/
+  transition: all 0.2s ease 0s;
+}
+
+
+.standard-input-field2:focus{
+   transform: scale(1.05) translate(10px);
+   background: #ededef;
 }
 
 
