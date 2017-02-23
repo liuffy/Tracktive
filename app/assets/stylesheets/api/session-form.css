@@ -15,6 +15,9 @@
 .session-form{
 	color:#77AF9C;
 	position: relative;
+/*  display: flex;
+  align-items:center;
+  flex-direction:column*/
 	padding:0px 0px 20px 50px;
 	/*border-radius:5px;*/
   /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
@@ -27,7 +30,7 @@
   font-size:24px;
   font-weight:bold;
   color:#5b3da8;
-  margin:30px 0px 50px;
+  margin:30px 0px 50px 100px;
 }
 
 .demo-button, .session-button{
@@ -38,23 +41,6 @@
 	padding:6px 30px;
 	margin:10px;
 }
-
-.error-icon{
-  height:10px;
-  width:auto;
-  padding-right:15px;
-  float:left;
-  margin-left:-20px;
-  margin-top:6px;
-  /*position:relative;*/
-}
-
-/*
-.splash-button.demo:hover{
-  border: 2px solid white;
-  color:white;
-  font-weight:bold;
-}*/
 
 .splash-button.demo{
   color: black;

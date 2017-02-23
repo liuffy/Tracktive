@@ -6,7 +6,7 @@
 
 .faded-modal{ 
   animation-name: slideIn;
-  animation-duration: 0.4s;
+  animation-duration: 0.2s;
 }
 
 .scaled-modal{
@@ -279,6 +279,10 @@
         transform: translateY(50%) translateZ(-200px) rotateX(-45deg); }
     100% { opacity: .3; transform: translateY(100%) rotateX(-90deg);}
 }
+
+
+/* Formatting for modal content */
+
 
 .left-side, .right-side{
   width:200px;

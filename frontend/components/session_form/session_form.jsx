@@ -74,7 +74,7 @@ class SessionForm extends React.Component {
           className="hand-wave"
           src="http://res.cloudinary.com/liuffy/image/upload/v1487791818/hand_wave_oyn1yz.svg" />
 
-    const header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
+    const header = this.props.formType === 'signup' ? 'sign up' : 'login';
 
     const errors = this.props.errors.map(
       (error, idx) => <li key={idx} className='error'>{error}</li>);
@@ -98,23 +98,20 @@ class SessionForm extends React.Component {
         </ul>
 
         <form onSubmit={this.handleSubmit} className='signup-input-form'>
-          <label>username:
+  
           <input type='text'
             id='username'
             value={this.state.username}
             onChange={this.update('username')}
             placeholder='Username'
             className="standard-input-field"/>
-            </label>
 
-          <label>password:
           <input type='password'
             id='password'
             value={this.state.password}
             onChange={this.update('password')}
             placeholder='Password'
             className='standard-input-field'/>
-            </label>
 
           <button type='submit'
             value='Submit'

@@ -77,7 +77,10 @@
   rgb(86, 53, 174) 4px 4px, 
   rgb(86, 54, 175) 5px 5px,
   rgb(86, 54, 175) 6px 6px,
-  rgb(86, 54, 175) 7px 7px; 
+  rgb(86, 54, 175) 7px 7px,
+  rgb(86, 54, 175) 8px 8px,
+  rgb(86, 54, 175) 9px 9px,
+  rgb(86, 54, 175) 10px 10px; 
   font-weight: 600;
   margin-left:250px;
 }
@@ -101,7 +104,7 @@
   rgb(86, 53, 174) 4px 4px, 
   rgb(86, 54, 175) 5px 5px,
   rgb(86, 54, 175) 6px 6px,
-  rgb(86, 54, 175) 7px 7px; 
+  rgb(86, 54, 175) 7px 7px;
   font-weight: bold;
   margin:40px 0px 0px 20px;
 }
@@ -124,6 +127,7 @@
 
 
 .splash-button{
+  opacity:0.8;
   width:80px;
   border: 2px solid white;
   font-weight:600;
@@ -133,18 +137,13 @@
   border-radius: 3px;
   font-size:20px;
   padding:1px 20px;
-  margin: 0 10px;
-  /*margin:20px 20px 5px 20px;*/
-  transition: all 0.3s ease 0s;
+  margin: 0 15px;
+  transition: all 0.2s ease 0s;
 }
 
 .splash-button:hover{
- /* color: black;
-  border: 2px solid black;*/
-  box-shadow: #3b3b3d 0px 0px;
-   background: #DA22FF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity:1.0;
+  transform:scale(1.05);
 }
 
 
@@ -163,19 +162,19 @@
 }
 
 .fist-bump{
-    height:120px;
-    margin-top:-80px;
-    margin-left:20%;
+    height:100px;
+    margin-top:-50px;
+    margin-left:150px;
     width:auto;
     position:relative;
     z-index:-1;
   }
 
   .hand-wave{
-    height:120px;
+    height:100px;
     width:auto;
-    margin-top:-80px;
-    margin-left:-20%;
+    margin-top:-50px;
+    margin-left:50px;
     position:relative;
     z-index:-1;
   }
