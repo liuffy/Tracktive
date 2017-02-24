@@ -11635,7 +11635,7 @@ return jQuery;
 	
 	var _root2 = _interopRequireDefault(_root);
 	
-	var _store = __webpack_require__(839);
+	var _store = __webpack_require__(826);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -33108,7 +33108,7 @@ return jQuery;
 	
 	var _session_form_container2 = _interopRequireDefault(_session_form_container);
 	
-	var _user_detail_container = __webpack_require__(831);
+	var _user_detail_container = __webpack_require__(818);
 	
 	var _user_detail_container2 = _interopRequireDefault(_user_detail_container);
 	
@@ -33116,11 +33116,11 @@ return jQuery;
 	
 	var _tracktlist_index_container2 = _interopRequireDefault(_tracktlist_index_container);
 	
-	var _tracktlist_form_container = __webpack_require__(835);
+	var _tracktlist_form_container = __webpack_require__(822);
 	
 	var _tracktlist_form_container2 = _interopRequireDefault(_tracktlist_form_container);
 	
-	var _tracktlist_show_container = __webpack_require__(837);
+	var _tracktlist_show_container = __webpack_require__(824);
 	
 	var _tracktlist_show_container2 = _interopRequireDefault(_tracktlist_show_container);
 	
@@ -40608,7 +40608,7 @@ return jQuery;
 											className: 'sidebar-button',
 											activeClassName: 'active-button-side',
 											to: '/browse' },
-									'explore'
+									'EXPLORE'
 							)
 					),
 					_react2.default.createElement(
@@ -40620,7 +40620,7 @@ return jQuery;
 											className: 'sidebar-button',
 											activeClassName: 'active-button-side',
 											to: '/tracktlists/new' },
-									'create'
+									'CREATE'
 							)
 					),
 					_react2.default.createElement(
@@ -40632,7 +40632,7 @@ return jQuery;
 											className: 'sidebar-button',
 											activeClassName: 'active-button-side',
 											to: '/users/' + currentUser.id },
-									'my \u266C'
+									'MY \u266C'
 							)
 					)
 			);
@@ -40744,11 +40744,6 @@ return jQuery;
 	    value: function componentWillUnMount() {
 	      this.props.fetchTracktlists();
 	    }
-	
-	    // componentWillReceiveProps(){
-	    // }
-	
-	
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -40818,11 +40813,7 @@ return jQuery;
 	      return loading ? _react2.default.createElement(
 	        'div',
 	        { className: 'spinner' },
-	        _react2.default.createElement('div', { className: 'rect1' }),
-	        _react2.default.createElement('div', { className: 'rect2' }),
-	        _react2.default.createElement('div', { className: 'rect3' }),
-	        _react2.default.createElement('div', { className: 'rect4' }),
-	        _react2.default.createElement('div', { className: 'rect5' })
+	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png' })
 	      ) : _react2.default.createElement(
 	        'div',
 	        { className: 'whole-index-page' },
@@ -48150,6 +48141,10 @@ return jQuery;
 	
 	var _reactMailto2 = _interopRequireDefault(_reactMailto);
 	
+	var _reactMasonryComponent = __webpack_require__(282);
+	
+	var _reactMasonryComponent2 = _interopRequireDefault(_reactMasonryComponent);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -48191,103 +48186,118 @@ return jQuery;
 				return _react2.default.createElement(
 					'div',
 					{ className: 'footer' },
-					_react2.default.createElement('img', { className: 'wordmark-logo-footer',
-						src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894898/wordmark-3_xpp12b.png' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'column-divs' },
 						_react2.default.createElement(
-							'div',
-							{ className: 'column-div' },
+							_reactMasonryComponent2.default,
+							{
+								elementType: 'ul',
+								options: { fitWidth: false, columnWidth: 170, gutter: 20 }
+							},
+							_react2.default.createElement('img', { className: 'wordmark-logo-footer',
+								src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894898/wordmark-3_xpp12b.png' }),
 							_react2.default.createElement(
-								'h3',
-								{ className: 'column-header' },
-								'TRACKTIVE'
-							),
-							_react2.default.createElement(
-								'ul',
-								{ className: 'link-list' },
+								'div',
+								{ className: 'column-div' },
 								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(_aboutModal2.default, null)
+									'h3',
+									{ className: 'column-header' },
+									'TRACKTIVE'
 								),
 								_react2.default.createElement(
-									'li',
-									null,
+									'ul',
+									{ className: 'link-list' },
 									_react2.default.createElement(
-										'a',
-										{ href: '' },
-										'Portfolio'
+										'li',
+										null,
+										_react2.default.createElement(_aboutModal2.default, null)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{
+												target: '_blank',
+												href: 'https://liuffy.github.io/' },
+											'Portfolio'
+										)
 									)
 								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'column-div' },
-							_react2.default.createElement(
-								'h3',
-								{ className: 'column-header' },
-								'CONNECT'
 							),
 							_react2.default.createElement(
-								'ul',
-								{ className: 'link-list' },
+								'div',
+								{ className: 'column-div' },
 								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(
-										'a',
-										{ href: 'https://github.com/liuffy' },
-										'Github'
-									)
+									'h3',
+									{ className: 'column-header' },
+									'CONNECT'
 								),
 								_react2.default.createElement(
-									'li',
-									null,
+									'ul',
+									{ className: 'link-list' },
 									_react2.default.createElement(
-										'a',
-										{ href: 'https://www.linkedin.com/in/sophia-liu-a9660229' },
-										'LinkedIn'
-									)
-								),
-								_react2.default.createElement(
-									'li',
-									null,
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{
+												target: '_blank',
+												href: 'https://github.com/liuffy' },
+											'Github'
+										)
+									),
 									_react2.default.createElement(
-										'a',
-										{ href: 'http://recursively-dreaming.tumblr.com/' },
-										'Tumblr'
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{
+												target: '_blank',
+												href: 'https://www.linkedin.com/in/sophia-liu-a9660229' },
+											'LinkedIn'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(
+											'a',
+											{
+												target: '_blank',
+												href: 'http://recursively-dreaming.tumblr.com/' },
+											'Tumblr'
+										)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(Mailee, null)
 									)
-								),
-								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(Mailee, null)
 								)
-							)
-						),
-						_react2.default.createElement(
-							'div',
-							{ className: 'column-div' },
-							_react2.default.createElement(
-								'h3',
-								{ className: 'column-header' },
-								'CREDITS'
 							),
 							_react2.default.createElement(
-								'ul',
-								{ className: 'link-list' },
+								'div',
+								{ className: 'column-div' },
 								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(_graphicsModal2.default, null)
+									'h3',
+									{ className: 'column-header' },
+									'CREDITS'
 								),
 								_react2.default.createElement(
-									'li',
-									null,
-									_react2.default.createElement(_thanks_modal2.default, null)
+									'ul',
+									{ className: 'link-list' },
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(_graphicsModal2.default, null)
+									),
+									_react2.default.createElement(
+										'li',
+										null,
+										_react2.default.createElement(_thanks_modal2.default, null)
+									)
 								)
 							)
 						)
@@ -48575,7 +48585,7 @@ return jQuery;
 	  margin: '3% auto',
 	  padding: '10px 40px 40px 20px',
 	  background: '#fff',
-	  borderRadius: '5px',
+	  // borderRadius: '5px',
 	  boxShadow: '1px 1px 8px 0px rgba(0,0,0,0.8)'
 	  // overflow: 'scroll'
 	};
@@ -48617,6 +48627,8 @@ return jQuery;
 	    position: 'fixed',
 	    top: 0,
 	    left: 0,
+	    // animationName: 'fadeIn',
+	    // animationDuration: '0.2s',
 	    right: 0,
 	    bottom: 0,
 	    background: 'rgba(0,0,0,0.2)',
@@ -48627,10 +48639,10 @@ return jQuery;
 	    boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
 	    top: '10%',
 	    left: '30vw',
-	    width: '450px',
-	    height: '480px',
+	    width: '580px',
+	    height: '440px',
 	    background: 'white',
-	    borderRadius: '5px',
+	    // borderRadius    : '5px',
 	    border: 'none',
 	    padding: 0,
 	    margin: '0 auto',
@@ -49013,7 +49025,7 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"[Fist bump, wave] This gif from the session form was created by ",
+					"[Fist bump, wave] Gifs from the session form were created by ",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
@@ -49025,7 +49037,7 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"[Fingerprint] This gif from the search component was created by ",
+					"[Fingerprint] This image from the search component was created by ",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
@@ -74818,9 +74830,13 @@ return jQuery;
 	          placeholder: 'What artist(s) do you want to hear?',
 	          value: this.state.searchString,
 	          onChange: this.updateQuery }),
-	        React.createElement('img', { className: 'clear-button',
-	          src: 'http://res.cloudinary.com/liuffy/image/upload/v1486254744/clear-field_xpygqx.png',
-	          onClick: this.clearQuery })
+	        React.createElement(
+	          'span',
+	          {
+	            className: 'clear-button',
+	            onClick: this.clearQuery },
+	          '\xD7'
+	        )
 	      );
 	    }
 	  }]);
@@ -93643,7 +93659,7 @@ return jQuery;
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Slider = __webpack_require__(815);
+	var Slider = __webpack_require__(802);
 	
 	document.addEventListener('DOMContentLoaded', function () {
 	  _reactModal2.default.setAppElement(document.body);
@@ -94635,7 +94651,7 @@ return jQuery;
 	          clearInterval(usernameID);
 	          _this2.startPasswordAnimation();
 	        }
-	      }, 80);
+	      }, 120);
 	    }
 	  }, {
 	    key: 'startPasswordAnimation',
@@ -94653,7 +94669,7 @@ return jQuery;
 	          clearInterval(passwordID);
 	          _this3.props.processForm(_this3.state);
 	        }
-	      }, 80);
+	      }, 120);
 	    }
 	  }, {
 	    key: 'clearFields',
@@ -94680,13 +94696,15 @@ return jQuery;
 	    value: function render() {
 	
 	      var link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
+	
+	      var headerClass = this.props.formType === 'login' ? 'session-form-header purple' : 'session-form-header pink';
 	      var picture = this.props.formType === 'login' ? _react2.default.createElement('img', {
 	        className: 'fist-bump',
 	        src: 'http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif' }) : _react2.default.createElement('img', {
 	        className: 'hand-wave',
 	        src: 'http://res.cloudinary.com/liuffy/image/upload/v1487791818/hand_wave_oyn1yz.svg' });
 	
-	      var header = this.props.formType === 'signup' ? 'Sign Up' : 'Login';
+	      var header = this.props.formType === 'signup' ? 'sign up' : 'login';
 	
 	      var errors = this.props.errors.map(function (error, idx) {
 	        return _react2.default.createElement(
@@ -94718,7 +94736,7 @@ return jQuery;
 	            _react2.default.createElement(
 	              'h1',
 	              {
-	                className: 'session-form-header' },
+	                className: headerClass },
 	              header,
 	              ' to make tracktlists.'
 	            ),
@@ -94732,28 +94750,18 @@ return jQuery;
 	          _react2.default.createElement(
 	            'form',
 	            { onSubmit: this.handleSubmit, className: 'signup-input-form' },
-	            _react2.default.createElement(
-	              'label',
-	              null,
-	              'username:',
-	              _react2.default.createElement('input', { type: 'text',
-	                id: 'username',
-	                value: this.state.username,
-	                onChange: this.update('username'),
-	                placeholder: 'Username',
-	                className: 'standard-input-field' })
-	            ),
-	            _react2.default.createElement(
-	              'label',
-	              null,
-	              'password:',
-	              _react2.default.createElement('input', { type: 'password',
-	                id: 'password',
-	                value: this.state.password,
-	                onChange: this.update('password'),
-	                placeholder: 'Password',
-	                className: 'standard-input-field' })
-	            ),
+	            _react2.default.createElement('input', { type: 'text',
+	              id: 'username',
+	              value: this.state.username,
+	              onChange: this.update('username'),
+	              placeholder: 'Username',
+	              className: 'standard-input-field' }),
+	            _react2.default.createElement('input', { type: 'password',
+	              id: 'password',
+	              value: this.state.password,
+	              onChange: this.update('password'),
+	              placeholder: 'Password',
+	              className: 'standard-input-field' }),
 	            _react2.default.createElement(
 	              'button',
 	              { type: 'submit',
@@ -94784,28 +94792,15 @@ return jQuery;
 	exports.default = SessionForm;
 
 /***/ },
-/* 802 */,
-/* 803 */,
-/* 804 */,
-/* 805 */,
-/* 806 */,
-/* 807 */,
-/* 808 */,
-/* 809 */,
-/* 810 */,
-/* 811 */,
-/* 812 */,
-/* 813 */,
-/* 814 */,
-/* 815 */
+/* 802 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	module.exports = __webpack_require__(816);
+	module.exports = __webpack_require__(803);
 
 /***/ },
-/* 816 */
+/* 803 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -94816,21 +94811,21 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _innerSlider = __webpack_require__(817);
+	var _innerSlider = __webpack_require__(804);
 	
 	var _objectAssign = __webpack_require__(4);
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _json2mq = __webpack_require__(826);
+	var _json2mq = __webpack_require__(813);
 	
 	var _json2mq2 = _interopRequireDefault(_json2mq);
 	
-	var _reactResponsiveMixin = __webpack_require__(828);
+	var _reactResponsiveMixin = __webpack_require__(815);
 	
 	var _reactResponsiveMixin2 = _interopRequireDefault(_reactResponsiveMixin);
 	
-	var _defaultProps = __webpack_require__(822);
+	var _defaultProps = __webpack_require__(809);
 	
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 	
@@ -94937,7 +94932,7 @@ return jQuery;
 	module.exports = Slider;
 
 /***/ },
-/* 817 */
+/* 804 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -94951,19 +94946,19 @@ return jQuery;
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _eventHandlers = __webpack_require__(818);
+	var _eventHandlers = __webpack_require__(805);
 	
 	var _eventHandlers2 = _interopRequireDefault(_eventHandlers);
 	
-	var _helpers = __webpack_require__(820);
+	var _helpers = __webpack_require__(807);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
-	var _initialState = __webpack_require__(821);
+	var _initialState = __webpack_require__(808);
 	
 	var _initialState2 = _interopRequireDefault(_initialState);
 	
-	var _defaultProps = __webpack_require__(822);
+	var _defaultProps = __webpack_require__(809);
 	
 	var _defaultProps2 = _interopRequireDefault(_defaultProps);
 	
@@ -94975,11 +94970,11 @@ return jQuery;
 	
 	var _objectAssign2 = _interopRequireDefault(_objectAssign);
 	
-	var _track = __webpack_require__(823);
+	var _track = __webpack_require__(810);
 	
-	var _dots = __webpack_require__(824);
+	var _dots = __webpack_require__(811);
 	
-	var _arrows = __webpack_require__(825);
+	var _arrows = __webpack_require__(812);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -95215,16 +95210,16 @@ return jQuery;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 818 */
+/* 805 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _trackHelper = __webpack_require__(819);
+	var _trackHelper = __webpack_require__(806);
 	
-	var _helpers = __webpack_require__(820);
+	var _helpers = __webpack_require__(807);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
@@ -95555,7 +95550,7 @@ return jQuery;
 	exports.default = EventHandlers;
 
 /***/ },
-/* 819 */
+/* 806 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95715,7 +95710,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 820 */
+/* 807 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -95732,7 +95727,7 @@ return jQuery;
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _trackHelper = __webpack_require__(819);
+	var _trackHelper = __webpack_require__(806);
 	
 	var _objectAssign = __webpack_require__(4);
 	
@@ -96085,7 +96080,7 @@ return jQuery;
 	exports.default = helpers;
 
 /***/ },
-/* 821 */
+/* 808 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -96136,7 +96131,7 @@ return jQuery;
 	module.exports = initialState;
 
 /***/ },
-/* 822 */
+/* 809 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96202,7 +96197,7 @@ return jQuery;
 	module.exports = defaultProps;
 
 /***/ },
-/* 823 */
+/* 810 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96371,7 +96366,7 @@ return jQuery;
 	});
 
 /***/ },
-/* 824 */
+/* 811 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96449,7 +96444,7 @@ return jQuery;
 	});
 
 /***/ },
-/* 825 */
+/* 812 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96467,7 +96462,7 @@ return jQuery;
 	
 	var _classnames2 = _interopRequireDefault(_classnames);
 	
-	var _helpers = __webpack_require__(820);
+	var _helpers = __webpack_require__(807);
 	
 	var _helpers2 = _interopRequireDefault(_helpers);
 	
@@ -96558,10 +96553,10 @@ return jQuery;
 	});
 
 /***/ },
-/* 826 */
+/* 813 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var camel2hyphen = __webpack_require__(827);
+	var camel2hyphen = __webpack_require__(814);
 	
 	var isDimension = function (feature) {
 	  var re = /[height|width]$/;
@@ -96614,7 +96609,7 @@ return jQuery;
 	module.exports = json2mq;
 
 /***/ },
-/* 827 */
+/* 814 */
 /***/ function(module, exports) {
 
 	var camel2hyphen = function (str) {
@@ -96628,12 +96623,12 @@ return jQuery;
 	module.exports = camel2hyphen;
 
 /***/ },
-/* 828 */
+/* 815 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var canUseDOM = __webpack_require__(829);
-	var enquire = canUseDOM && __webpack_require__(830);
-	var json2mq = __webpack_require__(826);
+	var canUseDOM = __webpack_require__(816);
+	var enquire = canUseDOM && __webpack_require__(817);
+	var json2mq = __webpack_require__(813);
 	
 	var ResponsiveMixin = {
 	  media: function (query, handler) {
@@ -96664,7 +96659,7 @@ return jQuery;
 
 
 /***/ },
-/* 829 */
+/* 816 */
 /***/ function(module, exports) {
 
 	var canUseDOM = !!(
@@ -96676,7 +96671,7 @@ return jQuery;
 	module.exports = canUseDOM;
 
 /***/ },
-/* 830 */
+/* 817 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -96974,7 +96969,7 @@ return jQuery;
 	}));
 
 /***/ },
-/* 831 */
+/* 818 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -96985,13 +96980,13 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(179);
 	
-	var _user_actions = __webpack_require__(832);
+	var _user_actions = __webpack_require__(819);
 	
 	var _selectors = __webpack_require__(535);
 	
 	var _tracktlist_actions = __webpack_require__(318);
 	
-	var _user_detail = __webpack_require__(834);
+	var _user_detail = __webpack_require__(821);
 	
 	var _user_detail2 = _interopRequireDefault(_user_detail);
 	
@@ -97026,7 +97021,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_user_detail2.default);
 
 /***/ },
-/* 832 */
+/* 819 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97037,7 +97032,7 @@ return jQuery;
 	exports.receiveUser = exports.requestUser = exports.RECEIVE_USER = exports.REQUEST_USER = undefined;
 	exports.fetchUser = fetchUser;
 	
-	var _user_api_util = __webpack_require__(833);
+	var _user_api_util = __webpack_require__(820);
 	
 	var APIUtil = _interopRequireWildcard(_user_api_util);
 	
@@ -97070,7 +97065,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 833 */
+/* 820 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -97090,7 +97085,7 @@ return jQuery;
 	};
 
 /***/ },
-/* 834 */
+/* 821 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97145,6 +97140,11 @@ return jQuery;
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	
+	      $(window).scroll(function () {
+	        $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
+	      });
+	
 	      var _props = this.props,
 	          user = _props.user,
 	          tracktlists = _props.tracktlists,
@@ -97244,7 +97244,7 @@ return jQuery;
 	exports.default = UserDetail;
 
 /***/ },
-/* 835 */
+/* 822 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97255,7 +97255,7 @@ return jQuery;
 	
 	var _reactRedux = __webpack_require__(179);
 	
-	var _tracktlist_form = __webpack_require__(836);
+	var _tracktlist_form = __webpack_require__(823);
 	
 	var _tracktlist_form2 = _interopRequireDefault(_tracktlist_form);
 	
@@ -97265,6 +97265,7 @@ return jQuery;
 	
 	var mapStateToProps = function mapStateToProps(state) {
 	  return {
+	    tracktlists: state.tracktlists, // need to get this through state 
 	    currentUser: state.session.currentUser
 	  };
 	};
@@ -97289,7 +97290,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_tracktlist_form2.default);
 
 /***/ },
-/* 836 */
+/* 823 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97305,6 +97306,10 @@ return jQuery;
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactRouter = __webpack_require__(217);
+	
+	var _footer = __webpack_require__(307);
+	
+	var _footer2 = _interopRequireDefault(_footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -97354,15 +97359,19 @@ return jQuery;
 	  }, {
 	    key: 'handleSubmit',
 	    value: function handleSubmit(e) {
-	      var createTracktlist = this.props.createTracktlist;
+	      e.preventDefault();
+	      var _props = this.props,
+	          createTracktlist = _props.createTracktlist,
+	          tracktlists = _props.tracktlists;
 	      var _state = this.state,
 	          artists = _state.artists,
 	          index_image_url = _state.index_image_url,
 	          title = _state.title;
 	
-	      e.preventDefault();
+	      var showpageId = tracktlists.length + 1;
+	      console.log(tracktlists.length);
 	      createTracktlist(artists, title, index_image_url);
-	      this.props.router.push('/browse'); // redirect
+	      this.props.router.push('/tracktlists/' + showpageId); // redirect
 	    }
 	
 	    // renderErrors(e){
@@ -97381,6 +97390,8 @@ return jQuery;
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      // $(".footer").removeClass( "footer" ).addClass("form-footer");
+	      var tracktlists = this.props.tracktlists;
 	      var _state2 = this.state,
 	          title = _state2.title,
 	          artists = _state2.artists,
@@ -97392,7 +97403,7 @@ return jQuery;
 	
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'form' },
 	        _react2.default.createElement(
 	          'h2',
 	          {
@@ -97421,10 +97432,10 @@ return jQuery;
 	                  'h3',
 	                  {
 	                    className: 'create' },
-	                  '1. enter up to 4 artists you want to hear (separated by commas):'
+	                  '1. Enter up to 4 artists you want to hear (separated by commas):'
 	                ),
 	                _react2.default.createElement('input', {
-	                  className: 'creation-input-field',
+	                  className: 'standard-input-field2',
 	                  type: 'text',
 	                  value: artists,
 	                  placeholder: 'ex: phantogram, grimes',
@@ -97439,10 +97450,10 @@ return jQuery;
 	                  'h3',
 	                  {
 	                    className: 'create' },
-	                  '2. give your Tracktlist a descriptive name (5 words or less)'
+	                  '2. Give your Tracktlist a descriptive name (5 words or less)'
 	                ),
 	                _react2.default.createElement('input', {
-	                  className: 'creation-input-field',
+	                  className: 'standard-input-field2',
 	                  type: 'text',
 	                  value: title,
 	                  placeholder: 'ex: \'high school nostalgia\'',
@@ -97456,10 +97467,10 @@ return jQuery;
 	                  'h3',
 	                  {
 	                    className: 'create' },
-	                  '3. paste image URL for your tracktlist cover art'
+	                  '3. Paste image URL for your tracktlist cover art'
 	                ),
 	                _react2.default.createElement('input', {
-	                  className: 'creation-input-field',
+	                  className: 'standard-input-field2',
 	                  type: 'text',
 	                  value: index_image_url,
 	                  placeholder: 'ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg',
@@ -97485,7 +97496,7 @@ return jQuery;
 	exports.default = (0, _reactRouter.withRouter)(TracktlistForm);
 
 /***/ },
-/* 837 */
+/* 824 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97500,7 +97511,7 @@ return jQuery;
 	
 	var _selectors = __webpack_require__(535);
 	
-	var _tracktlist_show = __webpack_require__(838);
+	var _tracktlist_show = __webpack_require__(825);
 	
 	var _tracktlist_show2 = _interopRequireDefault(_tracktlist_show);
 	
@@ -97529,7 +97540,7 @@ return jQuery;
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_tracktlist_show2.default);
 
 /***/ },
-/* 838 */
+/* 825 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97545,6 +97556,14 @@ return jQuery;
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactRouter = __webpack_require__(217);
+	
+	var _footer = __webpack_require__(307);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	var _reactMasonryComponent = __webpack_require__(282);
+	
+	var _reactMasonryComponent2 = _interopRequireDefault(_reactMasonryComponent);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -97588,103 +97607,50 @@ return jQuery;
 	      return loading ? _react2.default.createElement(
 	        'div',
 	        { className: 'spinner' },
-	        _react2.default.createElement('div', { className: 'rect1' }),
-	        _react2.default.createElement('div', { className: 'rect2' }),
-	        _react2.default.createElement('div', { className: 'rect3' }),
-	        _react2.default.createElement('div', { className: 'rect4' }),
-	        _react2.default.createElement('div', { className: 'rect5' })
+	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png' })
 	      ) : _react2.default.createElement(
 	        'div',
 	        { className: 'tracktlist-detail cf' },
 	        _react2.default.createElement(
 	          'div',
-	          {
-	            className: 'cover-contents' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'cover-image-container' },
-	            _react2.default.createElement('img', {
-	              className: 'cover-image',
-	              src: tracktlist.index_image_url,
-	              alt: 'Tracktlist cover' })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
 	          { className: 'tracktlist-info' },
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'playlist-title' },
-	            tracktlist.title
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'author-label' },
-	            'Curator: '
+	            'div',
+	            { className: 'mix-image-container' },
+	            _react2.default.createElement('img', {
+	              className: 'mix-image',
+	              src: tracktlist.index_image_url,
+	              alt: 'Tracktlist cover' })
 	          ),
 	          _react2.default.createElement(
-	            'span',
-	            null,
+	            'div',
+	            { className: 'info-box' },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { className: 'brighter',
-	                to: '/users/' + tracktlist.user_id },
-	              tracktlist.username
+	              'span',
+	              { className: 'playlist-title' },
+	              tracktlist.title
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { className: 'brighter',
+	                  to: '/users/' + tracktlist.user_id },
+	                tracktlist.username
+	              ),
+	              ' | ',
+	              tracktlist.artists,
+	              ' | ',
+	              tracktlist.created_at,
+	              ' | ',
+	              tracktlist.num_tracks,
+	              ' tracks '
 	            )
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'span',
-	            {
-	              className: 'artists-label' },
-	            'Featuring:'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            ' ',
-	            tracktlist.artists
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'span',
-	            {
-	              className: 'artists-label' },
-	            'Published:'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            ' ',
-	            tracktlist.created_at
-	          ),
-	          _react2.default.createElement('br', null),
-	          _react2.default.createElement(
-	            'span',
-	            {
-	              className: 'artists-label' },
-	            'Number of tracks:'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            ' ',
-	            tracktlist.num_tracks
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'left-side-player' },
-	          _react2.default.createElement('iframe', {
-	            src: tracktlist.playlistUrl + '+\'&theme=dark\'',
-	            frameBorder: '0',
-	            width: '300',
-	            height: '380',
-	            target: '_self',
-	            allowTransparency: 'true' })
-	        )
+	        _react2.default.createElement('div', { className: 'left-side-player' })
 	      );
 	    }
 	  }]);
@@ -97695,7 +97661,7 @@ return jQuery;
 	exports.default = TracktlistShow;
 
 /***/ },
-/* 839 */
+/* 826 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97706,11 +97672,11 @@ return jQuery;
 	
 	var _redux = __webpack_require__(190);
 	
-	var _reduxThunk = __webpack_require__(840);
+	var _reduxThunk = __webpack_require__(827);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
-	var _root_reducer = __webpack_require__(841);
+	var _root_reducer = __webpack_require__(828);
 	
 	var _root_reducer2 = _interopRequireDefault(_root_reducer);
 	
@@ -97724,7 +97690,7 @@ return jQuery;
 	exports.default = configureStore;
 
 /***/ },
-/* 840 */
+/* 827 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -97752,7 +97718,7 @@ return jQuery;
 	exports['default'] = thunk;
 
 /***/ },
-/* 841 */
+/* 828 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97763,23 +97729,23 @@ return jQuery;
 	
 	var _redux = __webpack_require__(190);
 	
-	var _session_reducer = __webpack_require__(842);
+	var _session_reducer = __webpack_require__(829);
 	
 	var _session_reducer2 = _interopRequireDefault(_session_reducer);
 	
-	var _users_reducer = __webpack_require__(843);
+	var _users_reducer = __webpack_require__(830);
 	
 	var _users_reducer2 = _interopRequireDefault(_users_reducer);
 	
-	var _tracktlist_reducer = __webpack_require__(844);
+	var _tracktlist_reducer = __webpack_require__(831);
 	
 	var _tracktlist_reducer2 = _interopRequireDefault(_tracktlist_reducer);
 	
-	var _loading_reducer = __webpack_require__(845);
+	var _loading_reducer = __webpack_require__(832);
 	
 	var _loading_reducer2 = _interopRequireDefault(_loading_reducer);
 	
-	var _search_reducer = __webpack_require__(846);
+	var _search_reducer = __webpack_require__(833);
 	
 	var _search_reducer2 = _interopRequireDefault(_search_reducer);
 	
@@ -97796,7 +97762,7 @@ return jQuery;
 	exports.default = RootReducer;
 
 /***/ },
-/* 842 */
+/* 829 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97838,7 +97804,7 @@ return jQuery;
 	exports.default = SessionReducer;
 
 /***/ },
-/* 843 */
+/* 830 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97847,7 +97813,7 @@ return jQuery;
 		value: true
 	});
 	
-	var _user_actions = __webpack_require__(832);
+	var _user_actions = __webpack_require__(819);
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
@@ -97875,7 +97841,7 @@ return jQuery;
 	exports.default = UsersReducer;
 
 /***/ },
-/* 844 */
+/* 831 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97925,7 +97891,7 @@ return jQuery;
 	exports.default = TracktlistReducer;
 
 /***/ },
-/* 845 */
+/* 832 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -97964,7 +97930,7 @@ return jQuery;
 	exports.default = loadingReducer;
 
 /***/ },
-/* 846 */
+/* 833 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
