@@ -59,6 +59,9 @@ class TracktlistForm extends React.Component {
 
     // Script for fading effect 
 
+        // $("modal").addClass("modal-form");
+
+
   	return(
       <div className="form">
         <h2
@@ -114,7 +117,7 @@ class TracktlistForm extends React.Component {
 
         <button
         className="create-button">create tracktlist</button>
-
+             
         </div>
         </form>
       </div>

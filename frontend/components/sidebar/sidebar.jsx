@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
+import FormModal from '../modals/form_modal';
+
 
 const Sidebar = ({currentUser}) => (
 
@@ -9,10 +11,7 @@ const Sidebar = ({currentUser}) => (
 					activeClassName="active-button-side"
 					to={'/browse'}>EXPLORE</Link></button>
 
-					<button><Link 
-					className="sidebar-button"
-					activeClassName="active-button-side"
-					to={'/tracktlists/new'}>CREATE</Link></button>
+					<button className="sidebar-button"><FormModal>CREATE</FormModal></button>
 
 					<button><Link 
 					className="sidebar-button"

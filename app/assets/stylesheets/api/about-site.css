@@ -2,7 +2,7 @@
 
 
 
-div.tracktlists-index, div.tracktlist-form, div.user-detail-1{
+div.tracktlists-index, div.user-detail-1{
 	margin-left:20vmin;
 	margin-right:10vmin;
 	margin-top:180px;
@@ -12,10 +12,11 @@ div.tracktlists-index, div.tracktlist-form, div.user-detail-1{
 
 div.site-info{
 	z-index:9999;
+	padding:20px;
 }
 .site-info p{
 	color:#282728;
-	font-size:1.3vmax;
+	font-size:16px;
 	word-break: normal;
   white-space: normal;
 }
