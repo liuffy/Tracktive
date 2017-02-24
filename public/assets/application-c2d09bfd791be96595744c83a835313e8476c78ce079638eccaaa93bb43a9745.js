@@ -97181,10 +97181,10 @@ return jQuery;
 	        return tracktlist.username === user.username; // include if some (any) of the artists match the query
 	      });
 	
-	      userPlaylists = filteredTracktlists.reverse().map(function (tracktlist) {
+	      userPlaylists = filteredTracktlists.reverse().map(function (tracktlist, idx) {
 	        return _react2.default.createElement(_tracktlist_index_item_container2.default, {
 	          tracktlist: tracktlist,
-	          key: tracktlist.id });
+	          key: idx });
 	      });
 	      //  // console.log(user.username.toLowerCase())  
 	      //  console.log('user.username:', user.username)
@@ -97436,6 +97436,7 @@ return jQuery;
 	                ),
 	                _react2.default.createElement('input', {
 	                  className: 'standard-input-field2',
+	                  'data-role': 'tagsinput',
 	                  type: 'text',
 	                  value: artists,
 	                  placeholder: 'ex: phantogram, grimes',
