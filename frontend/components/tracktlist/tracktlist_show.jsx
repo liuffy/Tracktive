@@ -23,6 +23,19 @@ class TracktlistShow extends React.Component{
         window.scrollTo(0,0);
     });
 
+$(window).on('load resize', function() {
+  $('iframe[src*="embed.spotify.com"]').each( function() {
+    $(this).css('width', $(this).parent().css('width'));
+    $(this).attr('src', $(this).attr('src'));
+    $(this).removeClass('loaded');
+    
+    $(this).on('load', function(){
+      $(this).addClass('loaded');
+    });
+  });
+});
+   let playlistUrl = tracktlist.playlistUrl
+
     return loading ? <div className="spinner">
   <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
 </div> : <div className="tracktlist-detail cf">
@@ -46,10 +59,12 @@ class TracktlistShow extends React.Component{
         </div>
 
        </div>
-              <div className="left-side-player">
-
-      </div>
-  
+       <br/>
+            <div className="iframe-container">
+<iframe 
+src={`${playlistUrl}`}
+allowtransparency="true"></iframe>
+            </div>
     </div>
       
   }
