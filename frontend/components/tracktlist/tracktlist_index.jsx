@@ -32,8 +32,10 @@ class TracktlistIndex extends React.Component {
 // SEARCHING!
   let {query, tracktlists} = this.props;
     let result = [];
+    let indexText;
 
     if (query.length > 0){
+        indexText = 'search'
         let filteredTracktlists = tracktlists.filter( (tracktlist) => { 
           let artists = tracktlist.artists.toLowerCase() // these are all the artists
           return artists.match(query.toLowerCase()) // include if some (any) of the artists match the query
@@ -56,7 +58,7 @@ class TracktlistIndex extends React.Component {
 
     } 
     else {
-      // console.log('else statement')
+      indexText = 'explore'
       result = tracktlists.map( (tracktlist, idx) =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
@@ -70,7 +72,7 @@ class TracktlistIndex extends React.Component {
 </div> :
 <div className="whole-index-page">
         <h2
-          className="explore">explore          <img 
+          className="explore">{indexText}         <img 
             className="binoculars-logo"
             src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png" /></h2> 
 

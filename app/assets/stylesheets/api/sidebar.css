@@ -34,20 +34,22 @@ div.sidebar{
   /*border: 2px solid #6b5a93;*/
   /*background:white;*/
   /*color: rgb(90, 87, 119);*/
-  color:white;
-  /*border: 0.3px solid white;*/
+  color:#dadada;
+  /*border: 0.3px solid #dadada;*/
   display:inline-block;
   /*border-radius: 3px;*/
   font-size:15px;
   float:left;
-  padding:2px 5px;
+  padding:2px 0px;
   font-weight:900;
   margin:25px 30px 5px 0px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .logout-button:hover{
+  border-bottom: 3px solid #dadada;
+  transform:scale(0.9);
   /*color: #361575;*/
-  background:rgba(0, 0, 0, 0.3);
-  border-radius:2px;
+/*  background:rgba(0, 0, 0, 0.3);
+  border-radius:2px;*/
 }

@@ -24,7 +24,7 @@ export function createTracktlist(artistNames, title, imageUrl) {
 				
 				Promise.all(albums.map(SpotifyAPIUtil.getAlbumTracks)).then(trackData => {
 					const tracks = shuffle(flatMap(track => track.items.map(item =>item.id), trackData));
-					const num_tracks = artistNamesArr.length > 2 ? artistNamesArr.length * 4 : 10;
+					const num_tracks = artistNamesArr.length > 2 ? artistNamesArr.length * 6 : 12;
 					const subsetOfTracks = tracks.slice(0, num_tracks);
 					const state = getState();
 					const baseUrl = `https://embed.spotify.com/?theme=white&uri=spotify:trackset:${title}:`;

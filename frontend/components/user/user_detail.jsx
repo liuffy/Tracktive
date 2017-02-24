@@ -58,13 +58,11 @@ class UserDetail extends React.Component{
 	 		</h2>
  			<div
  				className="tracktlists-index">
+
  				<div className="userpage-buttons">
 	 				<button className="user-button">CREATED</button>
 	 				<button className="user-button">LIKED</button>
-
  				</div>
-
-               {greeting}
  				<Masonry
  							 className="tracktlists-index-container"
  				       elementType={'ul'}

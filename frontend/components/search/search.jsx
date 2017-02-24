@@ -44,7 +44,7 @@ class Search extends React.Component {
    <div className="search-container">
       <input
         className="search-bar" 
-        placeholder={'What artist(s) do you want to hear?'} 
+        placeholder={'artists/bands you like'} 
         value={this.state.searchString} 
         onChange={this.updateQuery}>
         </input>

@@ -237,7 +237,7 @@ label {
 }
 
 .link:hover{
-	text-decoration: underline;
+	border-bottom:3px solid #361575;
 }
 
 .about-link{
@@ -334,7 +334,7 @@ label {
 	position:fixed;
 	color:white;
 	float:left;
-	margin:50px 40px 5px 5px;
+	margin:55px 40px 5px 0px;
 	font-size:16px;
 }
 
@@ -357,7 +357,7 @@ li{
 
 .header-bar{
 		/* IE10+ */ 
-	height:140px;
+	height:110px;
 	background-size: cover;
 	/*background-position: center;*/
 	/*border-bottom: 2px solid #545252;*/

@@ -24,7 +24,8 @@
 
 .mix-image:hover{
 	width:auto;
-	height:260px;
+	height:280px;
+	transform:translate(-40px, -40px);
 }
 
 .mix-image-container{
@@ -40,13 +41,13 @@
 }
 
 .mix-image-container:hover{
-	transform:translate(-40px, -40px);
-	width:260px;
-	height:260px;
+	/*transform:translate(-40px, -40px);*/
+	width:280px;
+	height:280px;
 }
 
 .tracktlist-detail{
-	margin-top:150px;
+	margin-top:100px;
 	min-height:500px;
 	display:flex;
 	flex-direction:column;
@@ -132,7 +133,7 @@ div#container.container.tracklist-view{
 }
 
 .brighter:hover{
-	text-decoration: underline;
+	border-bottom:3px solid #d759f9;
 }
 
 .iframe-container{
@@ -141,15 +142,27 @@ div#container.container.tracklist-view{
 	width:100%;
 	height:500px;
 	border: 1px solid #bfbfbf;
-	margin:-15px 10px;
+	/*margin:-15px 10px;*/
 }
 
-iframe{
+iframe.player-frame{
 	border: 0px solid white;
 	display:block;
 	/*width:720px;*/
 	/*height:400px;*/
 	margin-top:10px;
-	margin-left:-15px;
+	margin-left:0px;
+	float:left;
+}
+
+.play-info-container{
+	/*float:left;*/
+	/*position:fixed;*/
+	width:60%;
+}
+
+.play-info-container h3{
+		color: #ce25fc;
+	font-size:24px;
 }
 

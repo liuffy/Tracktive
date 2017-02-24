@@ -2,6 +2,26 @@
 
 /* Wordmark */
 
+.gradient-div{
+  display:block;
+  /*margin-top:100px;*/
+  width:760px;
+  height:268px;
+  background: #DA22FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  bottom:0;
+  background-size: 150% 150%;
+  -webkit-animation: GradientAnimation 10s ease infinite;
+  -moz-animation: GradientAnimation 10s ease infinite;
+  animation: GradientAnimation 10s ease infinite;
+}
+
 .whole-page{
   height:950px;
   top:0%;

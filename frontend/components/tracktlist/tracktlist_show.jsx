@@ -62,9 +62,13 @@ $(window).on('load resize', function() {
        <br/>
             <div className="iframe-container">
 <iframe 
+className="player-frame"
 src={`${playlistUrl}`}
-allowtransparency="true"></iframe>
-            </div>
+allowTransparency="true"></iframe>
+        <div className="play-info-container">
+        <h3>To listen to this tracktlist: </h3>
+        </div>
+      </div>
     </div>
       
   }

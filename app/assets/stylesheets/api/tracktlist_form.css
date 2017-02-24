@@ -8,7 +8,7 @@
 
 .create-banner-text{
 	float:left;
-	font-size:60px;
+	font-size:40px;
 	text-align:center;
 	margin-top:0px;
 	margin-bottom:40px;
@@ -17,8 +17,8 @@
 	width:100%;
 	left:0;
 	right:0;
-	padding-bottom:60px;
-	padding-top:60px;
+	padding-bottom:45px;
+	padding-top:50px;
 	text-shadow:
 	rgb(107, 90, 147) 1px 1px,
 	rgb(107, 90, 147) 2px 2px,
@@ -62,10 +62,13 @@
 
 h3.create{
 	position:relative;
-	color: #7c7c7c;
-	font-weight:400;
+	font-weight:600;
 	font-size:18px;
 	line-height:0.9;
+	padding:10px;
+	display:inline-block;
+	color: #ce25fc;
+	/*background:#ce25fc;*/
 }
 
 .purple{
@@ -94,24 +97,11 @@ h3.create{
 /* Flask logo */
 .flask-logo{
 	display:inline-block;
-	height:6vmax;
+	height:50px;
 	width:auto;
 	margin-left:10px;
 }
 
-.creation-input-field{
-	letter-spacing:1px;
-	color: #5B3DA8;
-	font-size:20px;
-	/*border:1px solid #5B3DA8;*/
-	margin: 2px 5px;
-	border-radius:3px;
-	padding: 10px 13px;
-	width:100%;
-	transition: all 0.2s ease 0s;
-  border-bottom: 1px solid #DDD;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
-}
 
 .cancel-button{
 	display:inline-block;
@@ -144,7 +134,7 @@ h3.create{
 	/*border:1px solid #5B3DA8;*/
 	margin: 3px 0px;
 	/*border-radius:5px;*/
-	padding: 10px 13px;
+	padding: 5px 13px;
 	width:600px;
 	transition: all 0.2s ease 0s;
   border-bottom: 3px solid #ededef;
@@ -172,15 +162,17 @@ h3.create{
 }
 
  .create-button{
- 	font-size: 2.1vmax;
+ 	font-size: 18px;
  	display:inline-block;
- 	padding:12px 140px;
+ 	width:70%;
+ 	text-align:center;
+ 	padding:6px 0px;
  	border-radius:4px;
   color: #d623fe;
   transition: all 0.2s ease 0s;
   border:2px solid #d623fe;
-  margin-left:10vmax;
-  margin-right:10vmax;
+  /*margin-left:10vmax;*/
+  /*margin-right:10vmax;*/
   margin-top:2vmax;
   line-height:2vmax;
   margin-bottom:5vmax;
