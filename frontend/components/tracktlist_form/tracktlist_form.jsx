@@ -52,10 +52,10 @@ class TracktlistForm extends React.Component {
 
   	return(
       <div className="form">
-        <h2
+        <h1
           className="create-banner-text">create a tracktlist          <img 
                 className="flask-logo"
-                src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/flask-final_mb5xeo.png"/></h2> 
+                src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/flask-final_mb5xeo.png"/></h1> 
 
       <div
       className="tracktlist-form cf">
@@ -66,9 +66,10 @@ class TracktlistForm extends React.Component {
 
 
       <div className="create-form">
-
+      <h3 className="form-explanation">Tracktive will create a shuffled Spotify playlist based
+      on the artists you enter.</h3>
         <label><h3
-          className="create">1. Enter up to 4 artists you want to hear (separated by commas):</h3>
+          className="create">Enter artists you want to hear (separated by commas).</h3>
         <input 
           className="standard-input-field2"
           data-role="tagsinput"
@@ -81,7 +82,7 @@ class TracktlistForm extends React.Component {
         <br />
 
         <label><h3
-          className="create">2. Give your Tracktlist a descriptive name (5 words or less)</h3>
+          className="create">Name your tracktlist.</h3>
         <input 
           className="standard-input-field2"
           type='text'
@@ -93,12 +94,12 @@ class TracktlistForm extends React.Component {
 
 
         <label><h3
-          className="create">3. Paste image URL for your tracktlist cover art</h3>
+          className="create">Paste image URL for the mix's cover art (PNG, JPG, etc.)</h3>
         <input 
           className="standard-input-field2"
           type='text'
           value={index_image_url}
-          placeholder="ex: http://www.phantogram.com/wp-content/themes/phantogram/dist/images/music-new.jpg"
+          placeholder="ex: pretty_picture.png"
           onChange={this.update('index_image_url')} />
         </label>
         <br />

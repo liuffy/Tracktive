@@ -4,6 +4,8 @@ import {withRouter, Link} from 'react-router';
 import Masonry from 'react-masonry-component';
 import Footer from '../footer/footer';
 import ReactDOM from 'react-dom';
+import FormModal from '../modals/form_modal';
+
 
 class TracktlistIndex extends React.Component {
   constructor(props){
@@ -45,7 +47,7 @@ class TracktlistIndex extends React.Component {
             result = 
             <div className="no-tracktlists">
               <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
-              Why not <Link className="link" to={'/tracktlists/new'}>create a new one?</Link></h2>
+              Why not <FormModal/>a new one?</h2>
               <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" />
             </div>
          } else {

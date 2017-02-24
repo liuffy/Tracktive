@@ -28,7 +28,9 @@ export default class ThanksModal extends React.Component{
       <Modal
       show={this.state.show}
       onClose={this.close.bind(this)}>
- 
+            <span 
+      onClick={this.close.bind(this)}
+      className="exit-button">&times;</span>
       <Thanks/>
  
       </Modal>

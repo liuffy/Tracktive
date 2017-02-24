@@ -1,24 +1,31 @@
 .form{
 	display:block;
 }
+
+.form-explanation{
+	height:70px;
+	font-size:24px;
+	margin:0px;
+	margin-top:-15px;
+	font-weight:600;
+	padding:0px;
+	color: #797a7a;
+	line-height:1.0;
+}
+
 .create-header{
-	/*height:60px;*/
 	width:80%;
 }
 
 .create-banner-text{
 	float:left;
 	font-size:40px;
-	/*text-align:center;*/
 	margin-top:0px;
-	/*margin-bottom:40px;*/
 	font-weight:bold;
 	color: white;
 	width:100%;
 	left:0;
 	right:0;
-/*	padding-bottom:45px;
-	padding-top:50px;*/
 	text-shadow:
 	rgb(107, 90, 147) 1px 1px,
 	rgb(107, 90, 147) 2px 2px,
@@ -29,13 +36,13 @@
 	rgb(86, 54, 175) 7px 7px; 
 	font-weight: bold;
 	padding:15px 0px;
-background: linear-gradient(6deg, #d0d0d0, #d623fe);
-background-size: 400% 400%;
+background: linear-gradient(6deg, #d0d0d0, #242626);
+background-size: 200% 200%;
 
--webkit-animation: AnimationName 9s ease infinite;
--moz-animation: AnimationName 9s ease infinite;
--o-animation: AnimationName 9s ease infinite;
-animation: AnimationName 9s ease infinite;
+-webkit-animation: AnimationName 11s ease infinite;
+-moz-animation: AnimationName 11s ease infinite;
+-o-animation: AnimationName 11s ease infinite;
+animation: AnimationName 11s ease infinite;
 }
   
   
@@ -81,7 +88,7 @@ h3.create{
 	font-weight:600;
 	font-size:18px;
 	line-height:0.9;
-	padding:5px;
+	padding:2px;
 	display:inline-block;
 	color: #ce25fc;
 	/*background:#ce25fc;*/
@@ -105,7 +112,7 @@ h3.create{
 	margin:0px auto;
 	width:80%;
 	overflow:hidden;
-	height:430px;
+	height:460px;
 	padding:15px;
 	z-index:-3;
 }
