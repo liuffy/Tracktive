@@ -33,6 +33,19 @@
     transform: translateY(-6px);
     animation-timing-function: ease-in;
   }
+}  
+
+@keyframes hovery {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 0.7;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-4px);
+    opacity:1.0;
+    animation-timing-function: ease-in;
+  }
 }
 
   .explore{
@@ -134,7 +147,7 @@
 	padding-top:10px;
 	color:white;
 	background: #DA22FF; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE);  Chrome 10-25, Safari 5.1-6 
 	background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-size:1.3em;
 	line-height: 20px;

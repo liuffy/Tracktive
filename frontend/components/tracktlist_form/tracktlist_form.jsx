@@ -14,24 +14,17 @@ class TracktlistForm extends React.Component {
        index_image_url:""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.returnToMain = this.returnToMain.bind(this);
   }
 
   update(property){
   	return e => this.setState({[property]: e.target.value});
   }
 
-  returnToMain(){ // for the cancel button 
-      this.props.router.push('/browse') // redirect to the user's page
-  }
-
-  
   handleSubmit(e) {
     e.preventDefault();
     let { createTracktlist, tracktlists } = this.props;
     let { artists, index_image_url, title } = this.state;
-    let showpageId = tracktlists.length + 1
-    console.log(tracktlists.length)
+    let showpageId = tracktlists.length + 1 // redirect to page of newly created playlist
     createTracktlist(artists, title, index_image_url)
     this.props.router.push(`/tracktlists/${showpageId}`) // redirect
 
@@ -53,13 +46,8 @@ class TracktlistForm extends React.Component {
   // 		}
 				
   render(){
-    // $(".footer").removeClass( "footer" ).addClass("form-footer");
     let {tracktlists} = this.props;
   	let {title, artists, index_image_url, user_id, playlistUrl} = this.state;
-
-    // Script for fading effect 
-
-        // $("modal").addClass("modal-form");
 
 
   	return(

@@ -2,6 +2,7 @@ import React from 'react';
 import Modal, {closeStyle} from 'simple-react-modal';
 import {aboutModalStyle} from '../../util/modal_styles';
 import TracktlistFormContainer from '../tracktlist_form/tracktlist_form_container';
+import { browserHistory } from 'react-router';
 
 
 export default class FormModal extends React.Component{
@@ -9,6 +10,10 @@ export default class FormModal extends React.Component{
 	constructor(){
     super()
     this.state = {}
+
+    browserHistory.listen( location =>  {
+    this.close()
+  });
   }
 
   show(){
@@ -19,19 +24,23 @@ export default class FormModal extends React.Component{
     this.setState({show: false})
   }
  
+
   render(){
 
+  // var trackForm = document.getElementById('tracktlistForm');
+  //     trackForm.addEventListener("submit", close, false);
 
      return (
       <div>
-      <a onClick={this.show.bind(this)}>CREATE</a>
+      <button className="create-modal-button" onClick={this.show.bind(this)}>CREATE</button>
       <Modal
+      id="formModal"
       show={this.state.show}
       onClose={this.close.bind(this)}>
  
-      <TracktlistFormContainer/>
+      <TracktlistFormContainer
+        id="tracktlistForm"/>
     
-            
       </Modal>
       </div>
   	)

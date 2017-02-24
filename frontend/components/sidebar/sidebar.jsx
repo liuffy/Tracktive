@@ -11,7 +11,7 @@ const Sidebar = ({currentUser}) => (
 					activeClassName="active-button-side"
 					to={'/browse'}>EXPLORE</Link></button>
 
-					<button className="sidebar-button"><FormModal>CREATE</FormModal></button>
+					<div className="sidebar-button"><FormModal></FormModal></div>
 
 					<button><Link 
 					className="sidebar-button"

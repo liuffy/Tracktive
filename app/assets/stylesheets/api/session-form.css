@@ -33,7 +33,7 @@
   margin:30px 0px 50px 100px;
 }
 
-.demo-button, .session-button{
+/*.demo-button, .session-button{
 	background: #149078;
 	color: white;
 	font-size:2vmax;
@@ -41,11 +41,13 @@
 	padding:6px 30px;
 	margin:10px;
 }
-
+*/
 .splash-button.demo{
-  color: black;
-             
-  border: 2px solid black;
+  color: #361575;
+  background:white;
+ animation: hover 0.8s infinite;
+  animation-iteration-count: 3;
+  border: 2px solid #361575;
 }
 
 .submit{

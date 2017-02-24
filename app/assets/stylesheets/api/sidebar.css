@@ -3,15 +3,25 @@ div.sidebar{
 	margin-left:0px;
 }
 
+.create-modal-button{
+  animation: hovery 0.8s infinite;
+  animation-iteration-count: 3;
+  width:100%;
+}
+
+.create-modal-button:hover{
+  animation: hovery 0.8s infinite;
+}
+
 .sidebar-button{
-  width:190px;
+  width:200px;
   border-bottom:3px solid white;
   color:white;
   text-align:center;
   display:inline-block;
   /*border-radius: 4px;*/
   font-size:20px;
-  padding:2px 15px;
+  padding:2px;
   margin:40px 0px 5px 0px;
   transition: all 0.2s ease 0s;
 
@@ -43,12 +53,10 @@ div.sidebar{
   padding:2px 0px;
   font-weight:900;
   margin:25px 30px 5px 0px;
-  transition: all 0.2s ease 0s;
 }
 
 .logout-button:hover{
   border-bottom: 3px solid #dadada;
-  transform:scale(0.9);
   /*color: #361575;*/
 /*  background:rgba(0, 0, 0, 0.3);
   border-radius:2px;*/
