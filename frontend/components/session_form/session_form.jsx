@@ -29,7 +29,7 @@ class SessionForm extends React.Component {
         clearInterval(usernameID);
         this.startPasswordAnimation();
       }
-    }, 80);
+    }, 120);
   }
 
   startPasswordAnimation(){
@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
         clearInterval(passwordID);
         this.props.processForm(this.state);
       }
-    }, 80);
+    }, 120);
   }
 
   clearFields(){
@@ -66,6 +66,9 @@ class SessionForm extends React.Component {
   render(){
 
     const link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
+
+    const headerClass = this.props.formType === 'login' ? 'session-form-header purple' : 
+                                                  'session-form-header pink';
     const picture = this.props.formType === 'login' ?  <img 
           className="fist-bump"
           src="http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif" /> :
@@ -88,7 +91,7 @@ class SessionForm extends React.Component {
       <div className='session-form'>
         <div >
           <h1 
-          className='session-form-header'>{header} to make tracktlists.</h1>
+          className={headerClass}>{header} to make tracktlists.</h1>
 
 
          {picture}

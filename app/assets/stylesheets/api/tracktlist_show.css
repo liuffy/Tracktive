@@ -1,6 +1,12 @@
 /* ELements related to the Tracktlist detail page */
 
 
+.info-box{
+	float:left;
+	color: #FBFBFB;
+	word-spacing:6px;
+	width:60%;
+}
 
 .author-label, .artists-label{
 	font-size:16px;
@@ -9,15 +15,30 @@
 	margin-right:15px;
 }
 
+.mix-image{
+	background-position: center center;
+	height:250px;
+	width:auto;
+}
+
+.mix-image-container{
+	width:250px;
+	height:250px;
+	overflow:hidden;
+	float:left;
+	margin-right:50px;
+	margin-bottom:50px;
+	display:inline-block;
+	/*border-radius:20px;*/
+}
 
 .tracktlist-detail{
-	margin-top:150px;
+	margin-top:200px;
 	min-height:500px;
 	display:flex;
 	color:#88898c;
 		/*box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.58);*/
 	/*border: 1px solid #808080;  */
-	padding:30px;
 }
 
 .brighter-link{
@@ -25,16 +46,15 @@
 }
 
 .tracktlist-info{
-	border: 1px solid rgba(255,255,255,0.9);
-	box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.48);
-	/*background: linear-gradient(to left, rgba(186, 42, 247, 0.80) , rgba(153, 51, 238, 0.80)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	/*display:block;*/
-background: rgba(34, 35, 38, 0.95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	width:300px;
-	height:200px;
-	position:relative;
-	margin:50px 0px 0px 0px;
+	display:block;
+	transition: all 0.4s ease 0s;
+  background: linear-gradient(237deg, #686d6c, #252626);
+  -webkit-animation: GradientAnimation 50s ease infinite;
+  -moz-animation: GradientAnimation 50s ease infinite;
+  animation: GradientAnimation 50s ease infinite;
+	width:100%;
 	padding:40px;
+	height:260px;
 }
 
 .left-side-player{
@@ -42,37 +62,17 @@ background: rgba(34, 35, 38, 0.95); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26
 	position:absolute;
 }
 
-.cover-image-container{
-	position:absolute;
-	opacity:0.8;
-	left:0;
-  height: 100%;
-	width: 100vmax;
-  overflow: hidden;
-  margin:0px 0px;
-	/*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
-	/*border: 2px solid #545252;  */
-}
-
-.cover-image{
-	background-position: center center;  /*background-repeat: no-repeat;*/
-	width:100%;
-	height:auto;
-	z-index:-30;
-}
 
 .playlist-title{
-  /*position:absolute;*/
+	opacity:0.8;
   width:500px;
+  display:block;
   position:relative;
 	color:#eaeaf2;
 	line-height: 33px;
-	font-size: 30px;
-	font-weight:bold;
-	text-shadow:
-    #ba2af7 1px 1px,
-    #ba2af7 2px 2px,
-    #ba2af7 3px 3px;
+	font-size: 48px;
+	font-weight:900;
+	margin-bottom:30px;
 }
 
 

@@ -17,6 +17,11 @@ class UserDetail extends React.Component{
 
 
  	render(){
+
+        $(window).scroll(function(){
+    $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
+    });
+        
  		let {user, tracktlists, currentUser} = this.props;
  		let userPlaylists = [];
  		let greeting = <div><h2></h2></div>

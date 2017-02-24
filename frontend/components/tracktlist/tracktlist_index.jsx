@@ -18,10 +18,6 @@ class TracktlistIndex extends React.Component {
     this.props.fetchTracktlists();   
   }
 
-  // componentWillReceiveProps(){
-  // }
-
-
   render(){
     $(".footer").removeClass( "footer" ).addClass("index-footer");
 
@@ -70,11 +66,7 @@ class TracktlistIndex extends React.Component {
     }
 
    return loading ? <div className="spinner">
-  <div className="rect1"></div>
-  <div className="rect2"></div>
-  <div className="rect3"></div>
-  <div className="rect4"></div>
-  <div className="rect5"></div>
+  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
 </div> :
 <div className="whole-index-page">
         <h2

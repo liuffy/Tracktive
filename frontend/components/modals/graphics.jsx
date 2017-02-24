@@ -27,7 +27,7 @@ const Graphics = () => (
 		     
 
 		<p className="about-text">
-		[Fingerprint] This gif from the search component was created by <a className="link"
+		[Fingerprint] This image from the search component was created by <a className="link"
 																			href="https://dribbble.com/antonkudin">Anton Kudin.</a>
 		</p>
 	

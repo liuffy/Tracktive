@@ -48,9 +48,9 @@ class Search extends React.Component {
         value={this.state.searchString} 
         onChange={this.updateQuery}>
         </input>
-        <img className="clear-button"
-          src="http://res.cloudinary.com/liuffy/image/upload/v1486254744/clear-field_xpygqx.png" 
-          onClick={this.clearQuery}/>
+        <span
+        className="clear-button"
+          onClick={this.clearQuery}>&times;</span>
         </div>
     );
   }

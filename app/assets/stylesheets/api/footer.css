@@ -7,7 +7,7 @@
   padding: 1rem;
   background-color: white;
   display:block;
-  z-index:50;
+  z-index:100;
   bottom: 0;
   white-space: nowrap;
   word-wrap:break-word
@@ -15,6 +15,21 @@
 
 .index-footer{
   /*display:block;*/
+  right: 0;
+  min-height:150px;
+  left: 0;
+  box-shadow: 5px 5px 8px 8px rgba(0,0,0,0.3);
+  /*margin-top:30px;*/
+  padding: 1rem;
+  background-color: white;
+  display:block;
+  z-index:50;
+  bottom: 0;
+}
+
+.form-footer{
+  position:relative;
+  display:block;
   right: 0;
   min-height:150px;
   left: 0;

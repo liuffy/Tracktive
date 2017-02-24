@@ -7,17 +7,17 @@ const Sidebar = ({currentUser}) => (
 					<button><Link 
 					className="sidebar-button"
 					activeClassName="active-button-side"
-					to={'/browse'}>explore</Link></button>
+					to={'/browse'}>EXPLORE</Link></button>
 
 					<button><Link 
 					className="sidebar-button"
 					activeClassName="active-button-side"
-					to={'/tracktlists/new'}>create</Link></button>
+					to={'/tracktlists/new'}>CREATE</Link></button>
 
 					<button><Link 
 					className="sidebar-button"
 					activeClassName="active-button-side"
-					to={`/users/${currentUser.id}`}>my &#9836;</Link></button>
+					to={`/users/${currentUser.id}`}>MY &#9836;</Link></button>
 			</div>
 		
 

@@ -1,4 +1,6 @@
-
+.form{
+	display:block;
+}
 .create-header{
 	height:60px;
 	width:80%;
@@ -15,8 +17,8 @@
 	width:100%;
 	left:0;
 	right:0;
-	padding-bottom:40px;
-	padding-top:40px;
+	padding-bottom:60px;
+	padding-top:60px;
 	text-shadow:
 	rgb(107, 90, 147) 1px 1px,
 	rgb(107, 90, 147) 2px 2px,
@@ -60,10 +62,18 @@
 
 h3.create{
 	position:relative;
+	color: #7c7c7c;
 	font-weight:400;
 	font-size:18px;
 	line-height:0.9;
+}
+
+.purple{
 	color:#5636af;
+}
+
+.pink{
+	color:#ce25fc;
 }
 
 

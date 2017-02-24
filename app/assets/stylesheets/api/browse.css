@@ -14,11 +14,26 @@
 }
 
   img.wordmark-logo{
-  	height:95px;
+  	height:70px;
   	display:inline-block;
 	  float:left;
-    margin:40px 20px 0px 30px;
+    margin:30px 20px 0px 30px;
   }
+
+  img.wordmark-logo:hover{
+	  animation: hover 0.8s infinite;
+  }
+
+  @keyframes hover {
+  0%, 100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in;
+  }
+}
 
   .explore{
 		display:inline-block;
@@ -32,8 +47,7 @@
 		width:100%;
 		left:0;
 		right:0;
-		padding-bottom:40px;
-		padding-top:40px;
+		padding:60px 0px;
 			text-shadow:
 		rgb(107, 90, 147) 1px 1px,
 		rgb(107, 90, 147) 2px 2px,
@@ -42,7 +56,7 @@
 		rgb(86, 54, 175) 5px 5px,
 		rgb(86, 54, 175) 6px 6px,
 		rgb(86, 54, 175) 7px 7px; 
-		font-weight: bold;
+		font-weight: 900;
 		  background: #DA22FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

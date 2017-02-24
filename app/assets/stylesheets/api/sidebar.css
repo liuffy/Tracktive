@@ -1,31 +1,53 @@
 div.sidebar{
-	margin-top:70px;
-	margin-left:10px;
+	margin-top:35px;
+	margin-left:0px;
 }
 
 .sidebar-button{
-  width:150px;
-  border: 2px solid white;
+  width:190px;
+  border-bottom:3px solid white;
   color:white;
   text-align:center;
   display:inline-block;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   font-size:20px;
   padding:2px 15px;
-  margin:50px 20px 5px 20px;
+  margin:40px 0px 5px 0px;
   transition: all 0.2s ease 0s;
 }
 
 .sidebar-button:hover{
-  color: #3b3b3d;
-  border: 2px solid #3b3b3d;
-  box-shadow: #3b3b3d 0px 0px;
+  background:rgba(255,255,255,0.3);
+  /*box-shadow: #3b3b3d 0px 0px;*/
 }
 
 .active-button-side{
 	font-weight:bold;
-	border:2px solid rgb(84, 82, 82);
-	color: rgb(84, 82, 82);
-	background: rgba(255,255,255,0.4);
+	border-bottom:3px solid #361575;
+	color: #361575;
+	/*background: rgba(255,255,255,0.4);*/
 }
 
+
+
+.logout-button{
+  /*border: 2px solid #6b5a93;*/
+  /*background:white;*/
+  /*color: rgb(90, 87, 119);*/
+  color:white;
+  /*border: 0.3px solid white;*/
+  display:inline-block;
+  /*border-radius: 3px;*/
+  font-size:15px;
+  float:left;
+  padding:2px 5px;
+  font-weight:900;
+  margin:25px 30px 5px 0px;
+  transition: all 0.5s ease 0s;
+}
+
+.logout-button:hover{
+  /*color: #361575;*/
+  background:rgba(0, 0, 0, 0.3);
+  border-radius:2px;
+}

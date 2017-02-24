@@ -5,7 +5,9 @@ import {getArtists,
 				getTracks, 
         createTracktlist} from '../../actions/tracktlist_actions';
 
+
 const mapStateToProps = (state) =>({
+  tracktlists:state.tracktlists, // need to get this through state 
 	currentUser: state.session.currentUser
 });
 
