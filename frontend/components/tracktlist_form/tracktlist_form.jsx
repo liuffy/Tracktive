@@ -80,6 +80,7 @@ class TracktlistForm extends React.Component {
           className="create">1. Enter up to 4 artists you want to hear (separated by commas):</h3>
         <input 
           className="standard-input-field2"
+          data-role="tagsinput"
           type='text'
           value={artists}
           placeholder="ex: phantogram, grimes"

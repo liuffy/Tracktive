@@ -21,7 +21,7 @@ class UserDetail extends React.Component{
         $(window).scroll(function(){
     $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
     });
-        
+
  		let {user, tracktlists, currentUser} = this.props;
  		let userPlaylists = [];
  		let greeting = <div><h2></h2></div>
@@ -38,10 +38,10 @@ class UserDetail extends React.Component{
           return tracktlist.username === user.username // include if some (any) of the artists match the query
         })
 
- 		userPlaylists = filteredTracktlists.reverse().map(tracktlist =>
+ 		userPlaylists = filteredTracktlists.reverse().map((tracktlist,idx) =>
           <TracktlistIndexItemContainer
            tracktlist = {tracktlist}
-           key={tracktlist.id}/>
+           key={idx}/>
            )
    //  // console.log(user.username.toLowerCase())  
    //  console.log('user.username:', user.username)
