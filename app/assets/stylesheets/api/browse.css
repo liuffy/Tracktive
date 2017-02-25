@@ -1,3 +1,5 @@
+
+
   .tracktlists-index-container {
 	  display: flex;
 	  flex-direction: row;
@@ -112,25 +114,29 @@
 }
 .thumb-image{
 	background-position: center center;
-	height:200px;
+  /*border: 1px solid rgba(126, 93, 237,0.2);*/
+	height:140px;
 	width:auto;
 }
 
 .index-image-container{
-	/*border-radius:4px;*/
-	width:200px;
-	height:180px;
-	box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.58);
+  padding:20px;
+	width:140px;
+	height:140px;
 	overflow:hidden;
 }
 
 .entire-item{
 	/*overflow:hidden;*/
+  background:white;
+  display:flex;
+  flex-direction:row;
 	transition: all 0.2s ease;
   margin-bottom: 60px;
-  width:200px;
-	border:2px solid #949496;
-	border-radius:4px;
+  width:400px;
+	border:1px solid #949496;
+	border-radius:3px;
+  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
 }
 .entire-item:hover{
 	/*font-size: 1.05em;*/
@@ -138,33 +144,53 @@
   -ms-transform: scale(1.05);
   transform: scale(1.05);
   	/*overflow:hidden;*/
-
-  -webkit-filter: brightness(80%);
 }
 
-.track-index-text{
-	padding-bottom:10px;
-	padding-top:10px;
-	color:white;
-	background: #DA22FF; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #DA22FF , #9733EE);  Chrome 10-25, Safari 5.1-6 
-	background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-size:1.3em;
+
+/*Index item text */
+
+  .index-right{
+    margin:20px 5px;
+    width:180px;
+    float:left;
+    display:block;
+    padding-left:10px;
+      /*border-bottom: 0.5px solid rgb(126, 93, 237);*/
+  }
+
+.track-index-title{
+	font-size:24px;
+  padding-bottom:15px;
+  opacity:0.8;
+  font-weight:bold;
+  float:left;
+  color:#333333;
 	line-height: 20px;
-  position: absolute;
-  /*bottom:0;*/
-  /*postion:relative;*/
   width: 200px;
-  margin-top:-40px;
-  /*margin-bottom:0px;*/
-/*  border-bottom-left-radius:4px;
-  border-bottom-right-radius:4px;*/
-  /*border-bottom: 2px solid #545252;*/
+  height:auto;
+  word-spacing:4px;
+  /*border-bottom: 0.5px solid rgb(126, 93, 237);*/
 }
 
-.track-author{
-	font-style: italic;
-	font-size:15px;
-	color: rgba(255, 255, 255, 0.8);
-	background:none;
+.index-text{
+  font-size:14px;
+  color: #666464;
 }
+
+.creator-name{
+  padding-top:10px;
+  font-style: italic;
+}
+
+.artists{
+  font-weight:bold;
+  float:left;
+  line-height: 18px;
+  font-size:16px;
+  width: 200px;
+  height:auto;
+  color: rgb(126, 93, 237);
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
+}
+

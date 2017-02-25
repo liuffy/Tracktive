@@ -1,7 +1,19 @@
+.exit-button{
+  z-index:2000;
+  position:absolute;
+  font-size:30px;
+  top:-30px;
+  right:-25px;
+  color:white;
+  opacity:0.4;
+  transition: all 0.2s ease 0s;
+}
 
-/*.modal{
-	width:80%;
-}*/
+.exit-button:hover{
+  opacity:1;
+  cursor:pointer;
+}
+
 
 
 .faded-modal{ 

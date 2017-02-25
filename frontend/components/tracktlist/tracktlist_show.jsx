@@ -57,16 +57,17 @@ $(window).on('load resize', function() {
                         to={`/users/${tracktlist.user_id}`}>{tracktlist.username}</Link> | {tracktlist.artists} | {tracktlist.created_at} | {tracktlist.num_tracks} tracks </span>
       
         </div>
-
        </div>
        <br/>
-            <div className="iframe-container">
-<iframe 
-className="player-frame"
-src={`${playlistUrl}`}
-allowTransparency="true"></iframe>
-        <div className="play-info-container">
-        <h3>To listen to this tracktlist: </h3>
+        <div className="iframe-container">
+        <div className="iframe-trap">
+            <iframe 
+            className="player-frame"
+            src={`${playlistUrl}`}
+            allowTransparency="true"></iframe>
+        </div>
+            <div className="play-info-container">
+            <h3>To listen to this tracktlist: </h3>
         </div>
       </div>
     </div>

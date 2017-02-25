@@ -196,18 +196,14 @@ h3.create{
  .create-button{
  	font-size: 18px;
  	display:inline-block;
- 	width:70%;
- 	text-align:center;
+ 	width:100%;
  	padding:6px 0px;
  	border-radius:4px;
   color: #d623fe;
   transition: all 0.2s ease 0s;
   border:2px solid #d623fe;
-  /*margin-left:10vmax;*/
-  /*margin-right:10vmax;*/
   margin-top:2vmax;
-  line-height:2vmax;
-  margin-bottom:5vmax;
+  bottom:0;
 }
 
 .create-button:hover{

@@ -10,8 +10,7 @@ export default class FormModal extends React.Component{
 	constructor(){
     super()
     this.state = {}
-    browserHistory.listen( location =>  { // modal closes once form is submitted 
-                                          // or if we go somewhere else
+    browserHistory.listen( location =>  { // modal closes once route changes
       this.close()
     });
   }

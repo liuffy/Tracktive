@@ -1,17 +1,3 @@
-.exit-button{
-  z-index:2000;
-  position:absolute;
-  font-size:40px;
-  top:-30px;
-  right:-25px;
-  color:white;
-  transition: all 0.2s ease 0s;
-}
-
-.exit-button:hover{
-  opacity:0.4;
-  cursor:pointer;
-}
 
 .session-form{
 	color:#77AF9C;
