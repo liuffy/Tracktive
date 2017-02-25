@@ -23,10 +23,14 @@
 }
 
 .whole-page{
-  height:950px;
+  display:block;
+  width:100%;
+  /*min-width:1000px;*/
+  height:1000px;
   top:0%;
   left:0%;
   right:0%;
+  /*margin:0 auto;*/
 }
 .splash-background{
   min-height:100%;
@@ -66,10 +70,9 @@
 
 
 
-
 .tagline{
   color:rgba(255, 255, 255, 0.7);
-  font-size:54px;
+  font-size:48px;
   position:absolute;
   display:inline-block;
   margin-left:150px;
@@ -80,7 +83,8 @@
 }
 
 .tracktive-wordmark-main{
-  font-size: 148px;
+  font-size: 120px;
+  letter-spacing:7px;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari 
     -webkit-user-select: none; /* Chrome/Safari/Opera */
@@ -101,8 +105,9 @@
   rgb(86, 54, 175) 8px 8px,
   rgb(86, 54, 175) 9px 9px,
   rgb(86, 54, 175) 10px 10px; 
-  font-weight: 600;
-  margin-left:250px;
+  font-weight: 900;
+  margin-left:230px;
+  left:45%;
 }
 
 .tracktive-wordmark{
@@ -141,7 +146,7 @@
   white-space: nowrap;
   display:inline-block;
   margin-left: 280px;
-  margin-top: 350px;
+  margin-top: 450px;
   z-index:3;
 }
 

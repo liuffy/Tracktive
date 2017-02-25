@@ -85,12 +85,13 @@ class TracktlistShow extends React.Component{
               className="spotify-instructions">
 
               <li>Click on the playlist.</li>
-              <li>Use the following demo login credentials to log in to the Spotify web player:
-              <p className="credentials">
-              <br/>
-              Username: TracktiveDemoUser
-              <br/>
-              Password: tracktive</p></li>
+              <li>Use login credentials below to log in to the Spotify web player:
+                <p className="credentials">
+                <br/>
+                Username: TracktiveDemoUser
+                <br/>
+                Password: tracktive</p>
+              </li>
            </ol>
         </div>
       </div>
