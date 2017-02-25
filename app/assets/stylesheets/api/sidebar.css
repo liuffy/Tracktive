@@ -1,6 +1,7 @@
 div.sidebar{
 	margin-top:34px;
 	margin-left:0px;
+  z-index:300;
 }
 
 .create-modal-button{
