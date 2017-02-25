@@ -32,7 +32,7 @@
 .splash-button.demo{
   color: white;
   background:#d623fe;
- animation: hover 0.8s infinite;
+   animation: hover 0.8s infinite;
   animation-iteration-count: 3;
   /*border: 2px solid #361575;*/
 }

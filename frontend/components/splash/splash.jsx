@@ -111,9 +111,23 @@ class Splash extends React.Component{
 
       <Slider {...settings}
         className="carousel-container">
-        <div className="carousel-element"><h3 className="subtagline">you can do this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
-        <div className="carousel-element"><h3 className="subtagline">also this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
-        <div className="carousel-element"><h3 className="subtagline">and this thing</h3><img src="https://dev.w3.org/2007/mobileok-ref/test/data/ROOT/GraphicsForSpacingTest/1/largeTransparent.gif"/></div>
+
+        <div className="carousel-element">
+          <h3 className="subtagline">make playlists</h3>
+          <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050212/view-playlist_copy_kuivuk.png"/>
+        </div>
+        
+        <div className="carousel-element">
+          <h3 className="subtagline">save playlists</h3>
+          <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050192/saved-cropped_b9y1lu.png"/>
+        </div>
+
+        <div className="carousel-element">
+          <h3 className="subtagline">browse other playlists!</h3>
+          <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050195/search-cropped_dlho9f.png"/>
+        </div>
+
+
       </Slider>
         
   

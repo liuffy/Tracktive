@@ -1,10 +1,13 @@
 .exit-button{
   z-index:2000;
   position:absolute;
-  font-size:30px;
-  top:-30px;
-  right:-25px;
-  color:white;
+  font-size:70px;
+  top:-55px;
+  right:-35px;
+  color: white;
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px;
   opacity:0.4;
   transition: all 0.2s ease 0s;
 }

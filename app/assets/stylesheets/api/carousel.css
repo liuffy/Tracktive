@@ -1,7 +1,6 @@
 .carousel-container {
-  margin: 0 auto;
+  margin-top:50px;
   top:-60px;
-  /*padding: 40px;*/
   width: 950px;
   display:block;
   height:500px;
@@ -14,13 +13,19 @@
   /*border-bottom:5px solid white;*/
 }
 
+.carousel-element{
+  height:480px;
+}
+
 .carousel-element img {
-  /*border-top:5px solid white;*/
-  width:100%;
+  width:60%;
+  border: 1px solid white;
+  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+  border-radius:3px;
+  height:auto;
   opacity:0.9;
-  margin-top:30px;
-  /*box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);*/
-  /*height:auto;*/
+  margin-top:150px;
+  margin-left:210px;
 }
 
 .carousel-image{
@@ -32,7 +37,7 @@
 .slick-next:before{
 	font-size:40px;
 	position:absolute;
-  right:50px;
+  right:100px;
   z-index:300;
   cursor:pointer;
 }
@@ -47,7 +52,7 @@ button.slick-arrow.slick-next {
 button.slick-arrow.slick-prev{
  z-index:300;
  cursor:pointer;
- /*left:50px;*/
+ left:50px;
 }
 
 
@@ -55,12 +60,6 @@ button.slick-arrow.slick-prev{
 .slick-prev:before, .slick-next:before{
   font-size:40px;
 }
-/* Arrows */
-
-/*.slick-prev:after,
-.slick-next:after{
-  font-size:40px;
-}*/
 
 
 .slick-prev:before {
@@ -75,19 +74,16 @@ button.slick-arrow.slick-prev{
 .slick-dots {
   position: absolute;
   bottom: 15px;
-  right:25px;
+  /*right:25px;*/
 }
 
 .subtagline{
+  display:block;
   color:rgba(255, 255, 255, 1.0);
-  /*position:absolute;*/
-  z-index:300;
-  text-align:center;
  font-size:28px;
   position:absolute;
-  margin-left:27%;
+  margin-left:380px;
   display:inline-block;
-  margin-top:150px;
-  z-index:33;
+  margin-top:380px;
   font-weight:600;
 }
