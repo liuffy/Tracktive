@@ -1,3 +1,6 @@
+
+include ActionView::Helpers::DateHelper
+
 class Tracktlist < ActiveRecord::Base
 	validates :title, :user_id, :num_tracks, :username, :index_image_url, :artists, :playlistUrl, presence: true
 
@@ -36,7 +39,9 @@ class Tracktlist < ActiveRecord::Base
 	
 	after_initialize :ensure_index_image
 
-
+  def age
+    return time_ago_in_words(created_at)
+  end
 
 	def ensure_index_image
 		self.index_image_url ||= DEFAULT_IMAGES[rand(28)]

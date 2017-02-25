@@ -30,7 +30,8 @@ class TracktlistShow extends React.Component{
     });
 
 
-   let playlistUrl = tracktlist.playlistUrl
+   let playlistUrl = tracktlist.playlistUrl;
+   let tracktlistAge = `~${tracktlist.age} ago`;
 
     return loading ? <div className="spinner">
   <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
@@ -50,7 +51,7 @@ class TracktlistShow extends React.Component{
       {tracktlist.title}</span>
       <br/>
    <span><Link className="brighter" 
-                        to={`/users/${tracktlist.user_id}`}>{tracktlist.username}</Link> | {tracktlist.artists} | {tracktlist.created_at} | {tracktlist.num_tracks} tracks </span>
+                        to={`/users/${tracktlist.user_id}`}>{tracktlist.username}</Link> | {tracktlist.artists} | {tracktlistAge} | {tracktlist.num_tracks} tracks </span>
       
         </div>
        </div>

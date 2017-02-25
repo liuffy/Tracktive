@@ -114,7 +114,7 @@ class Splash extends React.Component{
 
         <div className="carousel-element">
           <h3 className="subtagline">make playlists</h3>
-          <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050212/view-playlist_copy_kuivuk.png"/>
+          <img src="http://res.cloudinary.com/liuffy/image/upload/v1488056587/view-playlist_copy_copy_rgecg0.png"/>
         </div>
         
         <div className="carousel-element">
