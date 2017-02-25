@@ -16,24 +16,20 @@ class TracktlistShow extends React.Component{
     this.props.fetchTracktlist(this.props.params.tracktlistId);
   }
 
+  instructionsToggle(){
+
+  }
+
   render(){
+
     let {tracktlist, loading} = this.props;
-    
+
     $(document).ready(function () {
         window.scrollTo(0,0);
+
     });
 
-$(window).on('load resize', function() {
-  $('iframe[src*="embed.spotify.com"]').each( function() {
-    $(this).css('width', $(this).parent().css('width'));
-    $(this).attr('src', $(this).attr('src'));
-    $(this).removeClass('loaded');
-    
-    $(this).on('load', function(){
-      $(this).addClass('loaded');
-    });
-  });
-});
+
    let playlistUrl = tracktlist.playlistUrl
 
     return loading ? <div className="spinner">
@@ -67,7 +63,35 @@ $(window).on('load resize', function() {
             allowTransparency="true"></iframe>
         </div>
             <div className="play-info-container">
-            <h3>To listen to this tracktlist: </h3>
+            <h3>How to listen if you... </h3>
+            <button 
+            id="optionOne"
+            className="info-subtitle optionOne">Have the Spotify app
+
+
+            </button>
+ 
+            <ol 
+              id="haveSpotify"
+              className="spotify-instructions">
+            <li>Click on the playlist, and it will open in the app!</li></ol>
+
+            <button 
+            id="optionTwo"
+            className="info-subtitle otherOption">Don't have Spotify app/account</button>
+            
+             <ol 
+              id="dontHaveSpotify"
+              className="spotify-instructions">
+
+              <li>Click on the playlist.</li>
+              <li>Use the following demo login credentials to log in to the Spotify web player:
+              <p className="credentials">
+              <br/>
+              Username: TracktiveDemoUser
+              <br/>
+              Password: tracktive</p></li>
+           </ol>
         </div>
       </div>
     </div>

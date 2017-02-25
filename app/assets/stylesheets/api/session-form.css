@@ -30,22 +30,23 @@
 }
 */
 .splash-button.demo{
-  color: #361575;
-  background:white;
+  color: white;
+  background:#d623fe;
  animation: hover 0.8s infinite;
   animation-iteration-count: 3;
-  border: 2px solid #361575;
+  /*border: 2px solid #361575;*/
 }
 
 .submit{
   border: 2px solid #ce25fc;
+  width:90%;
   color:white;
   text-align:center;
   display:inline-block;
   border-radius: 4px;
   font-size:20px;
   padding:2px 15px;
-  margin:50px 20px 5px 20px;
+  /*margin:50px 20px 5px 20px;*/
   transition: all 0.2s ease 0s;
   border:2px solid #ce25fc;
   color: #ce25fc;

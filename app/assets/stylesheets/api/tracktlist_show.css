@@ -79,7 +79,7 @@
 
 
 .playlist-title{
-	opacity:0.8;
+	opacity:0.9;
   width:500px;
   display:block;
   position:relative;
@@ -117,7 +117,7 @@ body.ab-control.trackset.view-list.white.mode-large{
 	width:100%;
 	left:0;
 	height:500px;
-	border: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
 	/*margin:-15px 10px;*/
 }
 
@@ -142,11 +142,59 @@ iframe {
 	float:left;
 	position:relative;
 	display:block;
-	width:60%;
+	margin-left:20px;
+	width:50%;
+	height:auto;
 }
 
 .play-info-container h3{
+  color: #626665;
+	font-size:32px;
+	margin-bottom:0px;
+	font-weight:bold;
+/*  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;*/
+  margin-top:10px;
+}
+
+.info-subtitle{
+	display:block;
+	margin:20px 0px;
+	font-size:20px;
+	padding:5px 15px;
+	border-radius:20px;
+}
+
+.play-info-container li{
+	color: #444343;
+}
+
+.optionOne{
+	color: #444343;
+	border:2px solid #444343;
+	box-shadow:
+	rgba(89, 88, 88, 0.5) 1px 1px,
+	rgba(89, 88, 88, 0.4) 2px 2px,
+	rgba(89, 88, 88, 0.3) 3px 3px;
+}
+
+.otherOption{
+	color: rgb(126, 93, 237);
+	border: 2px solid rgb(126, 93, 237);
+	box-shadow:
+  rgba(123, 155, 242, 0.5) 1px 1px,
+  rgba(123, 155, 242, 0.4) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px;
+}
+
+
+.credentials{
+	margin-top:-10px;
+  line-height: 18px;
+  font-size:16px;
+  height:auto;
   color: rgb(126, 93, 237);
-	font-size:24px;
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
 }
 

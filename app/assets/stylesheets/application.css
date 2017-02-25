@@ -230,6 +230,8 @@ label {
 	font-weight:bold;
 	margin: 0px 3px;
 	cursor:pointer;
+/*  text-shadow:
+  rgb(123, 155, 242) 1px 1px;*/
 }
 
 .link:hover{
