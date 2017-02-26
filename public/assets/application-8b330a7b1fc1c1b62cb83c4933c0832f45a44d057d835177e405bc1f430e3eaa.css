@@ -516,11 +516,11 @@ button.slick-arrow.slick-prev{
 /* the regular nav bar disappears at this max width*/
 
 .explore{
-	width:100vh;
+	width:140vh;
 }
 
 .splash-background{
-	width: 150vh;
+	width: 180vh;
     height: 1800px;
 }
 
@@ -533,7 +533,7 @@ iframe{
 	left:50%;
 }
 .tracktlist-info{
-	width:100vh !important;
+	width:140vh !important;
 	margin-top:10vh;
 }
 
