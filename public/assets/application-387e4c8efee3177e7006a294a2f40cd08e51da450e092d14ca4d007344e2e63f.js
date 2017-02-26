@@ -40599,7 +40599,7 @@ return jQuery;
 					'div',
 					{ className: 'sidebar' },
 					_react2.default.createElement(
-							'button',
+							'div',
 							null,
 							_react2.default.createElement(
 									_reactRouter.Link,
@@ -40616,7 +40616,7 @@ return jQuery;
 							_react2.default.createElement(_form_modal2.default, null)
 					),
 					_react2.default.createElement(
-							'button',
+							'div',
 							null,
 							_react2.default.createElement(
 									_reactRouter.Link,
@@ -40624,7 +40624,7 @@ return jQuery;
 											className: 'sidebar-button',
 											activeClassName: 'active-button-side',
 											to: '/users/' + currentUser.id },
-									'MY \u266C'
+									'MINE'
 							)
 					)
 			);
@@ -40958,7 +40958,7 @@ return jQuery;
 	    top: '10%',
 	    left: '21%',
 	    width: '580px',
-	    height: '440px',
+	    height: '460px',
 	    background: 'white',
 	    border: 'none',
 	    padding: 0,

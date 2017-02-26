@@ -949,7 +949,7 @@ input.search-bar{
 	color: #5B3DA8;
 	font-size:14px;
 	margin-left:110px;
-	margin-top:20px;
+	margin-top:15px;
 	border-radius:20px;
 	padding: 10px 35px;
 	height:20px;
@@ -987,7 +987,7 @@ input.search-bar{
 	height:20px;
 	opacity:0.2;
 	margin-left:125px;
-	margin-top:25px;
+	margin-top:20px;
 	font-size:24px;
 	position:absolute;
 	cursor:pointer;
@@ -1019,15 +1019,6 @@ input.search-bar{
   margin:30px 0px 50px 100px;
 }
 
-/*.demo-button, .session-button{
-	background: #149078;
-	color: white;
-	font-size:2vmax;
-	border-radius: 5px;
-	padding:6px 30px;
-	margin:10px;
-}
-*/
 .splash-button.demo{
   color: white;
   background:#d623fe;
@@ -1074,13 +1065,13 @@ input.search-bar{
 div.sidebar{
 	margin-top:34px;
 	margin-left:0px;
-  z-index:300;
 }
 
 .create-modal-button{
   animation: hovery 0.8s infinite;
   animation-iteration-count: 3;
   width:100%;
+  margin:0px;
 }
 
 .create-modal-button:hover{
@@ -1089,16 +1080,16 @@ div.sidebar{
 
 .sidebar-button{
   width:200px;
+  height:31px;
   border-bottom:3px solid white;
   color:white;
   text-align:center;
   display:inline-block;
   /*border-radius: 4px;*/
   font-size:20px;
-  padding:2px;
+  float:left;
   margin:40px 0px 5px 0px;
   transition: all 0.2s ease 0s;
-
 }
 
 .sidebar-button:hover{
@@ -1115,13 +1106,8 @@ div.sidebar{
 
 
 .logout-button{
-  /*border: 2px solid #6b5a93;*/
-  /*background:white;*/
-  /*color: rgb(90, 87, 119);*/
-  color:#dadada;
-  /*border: 0.3px solid #dadada;*/
+  color:white;
   display:inline-block;
-  /*border-radius: 3px;*/
   font-size:15px;
   float:left;
   padding:2px 0px;
@@ -1131,9 +1117,6 @@ div.sidebar{
 
 .logout-button:hover{
   border-bottom: 3px solid #626665;
-  /*color: #361575;*/
-/*  background:rgba(0, 0, 0, 0.3);
-  border-radius:2px;*/
 }
 /* Splash page CSS only */
 
@@ -1244,7 +1227,7 @@ div.sidebar{
   rgb(86, 54, 175) 8px 8px,
   rgb(86, 54, 175) 9px 9px,
   rgb(86, 54, 175) 10px 10px; 
-  font-weight: 900;
+  font-weight: 600;
   margin-left:230px;
   left:45%;
 }
@@ -1859,6 +1842,67 @@ h2.profile-greeting {
   margin-left:0px;
   z-index:-2;
 }
+@import url("//hello.myfonts.net/count/32a41d");
+@font-face {
+  font-family: 'ProximaNovaA-Bold';
+  src: url(/fonts/assets/fonts/32A41D_0_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_0_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_0_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_0_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_0_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaS-Bold';
+  src: url(/fonts/assets/fonts/32A41D_1_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_1_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_1_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_1_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_1_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaA-BoldIt';
+  src: url(/fonts/assets/fonts/32A41D_2_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_2_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_2_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_2_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_2_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url(/fonts/assets/fonts/32A41D_3_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_3_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_3_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_3_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_3_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaS-BoldIt';
+  src: url(/fonts/assets/fonts/32A41D_4_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_4_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_4_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_4_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_4_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNova-BoldIt';
+  src: url(/fonts/assets/fonts/32A41D_5_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_5_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_5_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_5_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_5_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaA-Regular';
+  src: url(/fonts/assets/fonts/32A41D_6_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_6_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_6_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_6_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_6_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaS-Regular';
+  src: url(/fonts/assets/fonts/32A41D_7_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_7_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_7_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_7_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_7_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaA-RegularIt';
+  src: url(/fonts/assets/fonts/32A41D_8_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_8_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_8_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_8_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_8_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url(/fonts/assets/fonts/32A41D_9_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_9_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_9_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_9_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_9_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNovaS-RegularIt';
+  src: url(/fonts/assets/fonts/32A41D_A_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_A_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_A_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_A_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_A_0.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url(/fonts/assets/fonts/32A41D_B_0.eot);
+  src: url(/fonts/assets/fonts/32A41D_B_0.eot?#iefix) format("embedded-opentype"), url(/fonts/assets/fonts/32A41D_B_0.woff2) format("woff2"), url(/fonts/assets/fonts/32A41D_B_0.woff) format("woff"), url(/fonts/assets/fonts/32A41D_B_0.ttf) format("truetype");
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -1934,47 +1978,6 @@ h2.profile-greeting {
 /* @import must be at top of file, otherwise CSS will not work */
 
 
-
-
-
-@import url("//hello.myfonts.net/count/32a41d");
-
-  
-@font-face {font-family: 'ProximaNovaA-Bold';src: font_url('32A41D_0_0.eot');src: font_url('32A41D_0_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_0_0.woff2') format('woff2'),font_url('32A41D_0_0.woff') format('woff'),font_url('32A41D_0_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaS-Bold';src: font_url('32A41D_1_0.eot');src: font_url('32A41D_1_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_1_0.woff2') format('woff2'),font_url('32A41D_1_0.woff') format('woff'),font_url('32A41D_1_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaA-BoldIt';src: font_url('32A41D_2_0.eot');src: font_url('32A41D_2_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_2_0.woff2') format('woff2'),font_url('32A41D_2_0.woff') format('woff'),font_url('32A41D_2_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova-Bold';src: font_url('32A41D_3_0.eot');src: font_url('32A41D_3_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_3_0.woff2') format('woff2'),font_url('32A41D_3_0.woff') format('woff'),font_url('32A41D_3_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaS-BoldIt';src: font_url('32A41D_4_0.eot');src: font_url('32A41D_4_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_4_0.woff2') format('woff2'),font_url('32A41D_4_0.woff') format('woff'),font_url('32A41D_4_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova-BoldIt';src: font_url('32A41D_5_0.eot');src: font_url('32A41D_5_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_5_0.woff2') format('woff2'),font_url('32A41D_5_0.woff') format('woff'),font_url('32A41D_5_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaA-Regular';src: font_url('32A41D_6_0.eot');src: font_url('32A41D_6_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_6_0.woff2') format('woff2'),font_url('32A41D_6_0.woff') format('woff'),font_url('32A41D_6_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaS-Regular';src: font_url('32A41D_7_0.eot');src: font_url('32A41D_7_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_7_0.woff2') format('woff2'),font_url('32A41D_7_0.woff') format('woff'),font_url('32A41D_7_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaA-RegularIt';src: font_url('32A41D_8_0.eot');src: font_url('32A41D_8_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_8_0.woff2') format('woff2'),font_url('32A41D_8_0.woff') format('woff'),font_url('32A41D_8_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova-Regular';src: font_url('32A41D_9_0.eot');src: font_url('32A41D_9_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_9_0.woff2') format('woff2'),font_url('32A41D_9_0.woff') format('woff'),font_url('32A41D_9_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNovaS-RegularIt';src: font_url('32A41D_A_0.eot');src: font_url('32A41D_A_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_A_0.woff2') format('woff2'),font_url('32A41D_A_0.woff') format('woff'),font_url('32A41D_A_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'ProximaNova-RegularIt';src: font_url('32A41D_B_0.eot');src: font_url('32A41D_B_0.eot?#iefix') format('embedded-opentype'),font_url('32A41D_B_0.woff2') format('woff2'),font_url('32A41D_B_0.woff') format('woff'),font_url('32A41D_B_0.ttf') format('truetype');}
- 
 
 body {
   overflow-x:hidden;
