@@ -1,8 +1,6 @@
-div.sidebar{
-	margin-top:36px;
-	margin-left:0px;
+.fullscreen-sidebar{
+  margin-top:36px;
 }
-
 .create-modal-button{
   animation: hovery 0.8s infinite;
   animation-iteration-count: 3;
