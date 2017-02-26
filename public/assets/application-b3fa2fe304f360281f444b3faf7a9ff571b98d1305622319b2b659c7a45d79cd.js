@@ -94187,7 +94187,6 @@ return jQuery;
 	              className: 'tagline' },
 	            'make spotify playlists on the fly.'
 	          ),
-	          buttons,
 	          _react2.default.createElement(
 	            Slider,
 	            _extends({}, settings, {
@@ -94223,6 +94222,7 @@ return jQuery;
 	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488050195/search-cropped_dlho9f.png' })
 	            )
 	          ),
+	          buttons,
 	          _react2.default.createElement(
 	            _reactModal2.default,
 	            { isOpen: this.state.authModal,
