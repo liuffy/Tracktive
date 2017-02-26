@@ -6,17 +6,17 @@ import FormModal from '../modals/form_modal';
 const Sidebar = ({currentUser}) => (
 
 			<div className="sidebar">
-					<button><Link 
+					<div><Link 
 					className="sidebar-button"
 					activeClassName="active-button-side"
-					to={'/browse'}>EXPLORE</Link></button>
+					to={'/browse'}>EXPLORE</Link></div>
 
 					<div className="sidebar-button"><FormModal></FormModal></div>
 
-					<button><Link 
+					<div><Link 
 					className="sidebar-button"
 					activeClassName="active-button-side"
-					to={`/users/${currentUser.id}`}>MY &#9836;</Link></button>
+					to={`/users/${currentUser.id}`}>MINE</Link></div>
 			</div>
 		
 
