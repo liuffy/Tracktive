@@ -1,5 +1,5 @@
 div.sidebar{
-	margin-top:34px;
+	margin-top:36px;
 	margin-left:0px;
 }
 
@@ -8,6 +8,8 @@ div.sidebar{
   animation-iteration-count: 3;
   width:100%;
   margin:0px;
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
 }
 
 .create-modal-button:hover{
@@ -15,6 +17,8 @@ div.sidebar{
 }
 
 .sidebar-button{
+    text-shadow:
+  rgba(123, 155, 242, 0.7) 1px 1px;
   width:200px;
   height:31px;
   border-bottom:3px solid white;
@@ -33,7 +37,7 @@ div.sidebar{
 }
 
 .active-button-side{
-	font-weight:bold;
+	font-weight:600;
 	border-bottom:3px solid #361575;
 	color: #361575;
 	/*background: rgba(255,255,255,0.4);*/

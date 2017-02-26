@@ -188,6 +188,8 @@ label {
 	font-weight:600;
 	margin: 0px 3px;
 	cursor:pointer;
+    text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
 /*  text-shadow:
   rgb(123, 155, 242) 1px 1px;*/
 }
