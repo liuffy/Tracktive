@@ -17,14 +17,7 @@
     height: 1800px;
 }
 
-iframe{
-	left:50%;
-}
 
-.play-info-container{
-	width:100% !important;
-	left:50%;
-}
 .tracktlist-info{
 	width:140vh !important;
 	margin-top:10vh;
@@ -67,7 +60,7 @@ iframe{
   } */
 
   div.index-footer{
-  	width:100vh !important;
+  	width:140vh !important;
   }
 
   .hamburger-dropdown ul{
