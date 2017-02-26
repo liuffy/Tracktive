@@ -41156,7 +41156,7 @@ return jQuery;
 	
 	      var showpageId = tracktlists.length + 1; // redirect to page of newly created playlist
 	      createTracktlist(artists, title, index_image_url);
-	      this.props.router.push('/tracktlists/' + showpageId); // redirect
+	      this.props.router.push('/users/' + this.props.currentUser.id); // redirect
 	    }
 	
 	    // renderErrors(e){
