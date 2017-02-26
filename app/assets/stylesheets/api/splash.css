@@ -27,7 +27,7 @@
   display:block;
   width:100%;
   /*min-width:1000px;*/
-  height:1000px;
+  height:100vh;
   top:0%;
   left:0%;
   right:0%;
@@ -95,7 +95,7 @@
   display:inline-block;
   color: white;
   text-shadow:
-  
+
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
   rgba(123, 155, 242, 0.3) 3px 3px,
@@ -139,17 +139,14 @@
 
 
 .splash-buttons{
-  display:flex;
-  flex-direction: row;
-  width:700px;
-  height:100px;
-  position:absolute;
-  white-space: nowrap;
+  /*position:absolute;*/
   display:inline-block;
-  margin-left: 240px;
-  margin-top: 500px;
-  z-index:3;
-}
+  margin-left:230px;
+  line-height:0.8;
+  white-space: nowrap;
+  z-index:33;
+  margin-bottom: 269px;
+  }
 
 
 .splash-button{
@@ -162,7 +159,7 @@
   display:inline-block;
   border-radius: 3px;
   font-size:20px;
-  padding:1px 20px;
+  padding:6px 30px;
   margin: 0 15px;
   transition: all 0.2s ease 0s;
 }

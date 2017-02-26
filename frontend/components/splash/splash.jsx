@@ -106,7 +106,6 @@ class Splash extends React.Component{
                <br/>
             <span
               className="tagline">make spotify playlists on the fly.</span>
-               {buttons}
 
 
       <Slider {...settings}
@@ -129,6 +128,7 @@ class Splash extends React.Component{
 
 
       </Slider>
+               {buttons}
         
   
           <Modal isOpen={this.state.authModal}
