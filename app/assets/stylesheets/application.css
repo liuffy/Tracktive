@@ -83,7 +83,7 @@ font-family: 'Raleway', sans-serif;	/* IE10+ */
    -webkit-font-smoothing: subpixel-antialiased;
    
 	background:#f8f7f9;
-	min-height:20vh;
+	min-height:100vh;
 	/*padding-top: 175px;*/
 }
 
