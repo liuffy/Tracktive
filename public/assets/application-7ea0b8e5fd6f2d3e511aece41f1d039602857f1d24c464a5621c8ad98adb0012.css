@@ -311,6 +311,7 @@ div.site-info{
 	line-height: 20px;
   width: 200px;
   height:auto;
+  word-wrap: break-word;
   /*word-spacing:4px;*/
   /*border-bottom: 0.5px solid rgb(126, 93, 237);*/
 }
@@ -1338,6 +1339,8 @@ div.sidebar{
 	padding:0px;
 	color: #797a7a;
 	line-height:1.0;
+		  text-shadow:
+  rgba(255, 255, 255, 0.0) 0px 0px;
 }
 
 .create-header{
@@ -1418,6 +1421,8 @@ h3.create{
 	padding:2px;
 	display:inline-block;
 	color: #ce25fc;
+	  text-shadow:
+  rgba(255, 255, 255, 0.0) 0px 0px;
 	/*background:#ce25fc;*/
 }
 
