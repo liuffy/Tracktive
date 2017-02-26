@@ -12,6 +12,24 @@
 	width:100vh;
 }
 
+.splash-background{
+	width: 150vh;
+    height: 1800px;
+}
+
+iframe{
+	left:50%;
+}
+
+.play-info-container{
+	width:100% !important;
+	left:50%;
+}
+.tracktlist-info{
+	width:100vh !important;
+	margin-top:10vh;
+}
+
 	ul.sidebar{ 
 		display:none;
 		flex-direction:column;
@@ -43,6 +61,13 @@
     position:relative;
     cursor: pointer;
   }
+
+ /* .footer{
+  	width:100vh;
+  } 
+  .index-footer{
+  	width:100vh;
+  }*/
 
   .hamburger-dropdown ul{
     margin-top: 65px;

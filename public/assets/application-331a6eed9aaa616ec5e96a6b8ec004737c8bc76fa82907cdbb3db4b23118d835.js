@@ -40597,34 +40597,79 @@ return jQuery;
 			var currentUser = _ref.currentUser;
 			return _react2.default.createElement(
 					'div',
-					{ className: 'sidebar' },
+					null,
 					_react2.default.createElement(
-							'div',
-							null,
+							'ul',
+							{ className: 'fullscreen-sidebar' },
 							_react2.default.createElement(
-									_reactRouter.Link,
-									{
-											className: 'sidebar-button',
-											activeClassName: 'active-button-side',
-											to: '/browse' },
-									'EXPLORE'
+									'li',
+									null,
+									_react2.default.createElement(
+											_reactRouter.Link,
+											{
+													className: 'sidebar-button',
+													activeClassName: 'active-button-side',
+													to: '/browse' },
+											'EXPLORE'
+									)
+							),
+							_react2.default.createElement(
+									'li',
+									{ className: 'sidebar-button' },
+									_react2.default.createElement(_form_modal2.default, null)
+							),
+							_react2.default.createElement(
+									'li',
+									null,
+									_react2.default.createElement(
+											_reactRouter.Link,
+											{
+													className: 'sidebar-button',
+													activeClassName: 'active-button-side',
+													to: '/users/' + currentUser.id },
+											'MINE'
+									)
 							)
 					),
 					_react2.default.createElement(
-							'div',
-							{ className: 'sidebar-button' },
-							_react2.default.createElement(_form_modal2.default, null)
-					),
-					_react2.default.createElement(
-							'div',
-							null,
+							'ul',
+							{ className: 'hamburger-dropdown' },
 							_react2.default.createElement(
-									_reactRouter.Link,
-									{
-											className: 'sidebar-button',
-											activeClassName: 'active-button-side',
-											to: '/users/' + currentUser.id },
-									'MINE'
+									'li',
+									null,
+									_react2.default.createElement(
+											'ul',
+											{ className: 'sidebar' },
+											_react2.default.createElement(
+													'li',
+													null,
+													_react2.default.createElement(
+															_reactRouter.Link,
+															{
+																	className: 'sidebar-button ham',
+																	activeClassName: 'active-button-side',
+																	to: '/browse' },
+															'EXPLORE'
+													)
+											),
+											_react2.default.createElement(
+													'li',
+													{ className: 'sidebar-button ham' },
+													_react2.default.createElement(_form_modal2.default, null)
+											),
+											_react2.default.createElement(
+													'li',
+													null,
+													_react2.default.createElement(
+															_reactRouter.Link,
+															{
+																	className: 'sidebar-button ham',
+																	activeClassName: 'active-button-side',
+																	to: '/users/' + currentUser.id },
+															'MINE'
+													)
+											)
+									)
 							)
 					)
 			);
@@ -40899,7 +40944,7 @@ return jQuery;
 	};
 	
 	var container = {
-	   width: '580px',
+	   width: '80%',
 	  height: 'auto',
 	  position: 'relative',
 	  margin: '3% auto',

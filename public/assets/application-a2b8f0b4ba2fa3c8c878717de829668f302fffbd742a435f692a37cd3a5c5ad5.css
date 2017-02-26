@@ -277,8 +277,8 @@ div.site-info{
 	transition: all 0.2s ease;
   margin-bottom: 60px;
   width:400px;
+  border-radius:3px;
 	border:1px solid #949496;
-	border-radius:3px;
   box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
 }
 .entire-item:hover{
@@ -437,7 +437,6 @@ button.slick-arrow.slick-prev{
   padding: 1rem;
   background-color: white;
   display:block;
-  z-index:100;
   bottom: 0;
   white-space: nowrap;
   word-wrap:break-word
@@ -505,6 +504,110 @@ button.slick-arrow.slick-prev{
   display:inline-block;
   float:left;
   margin-top:40px;
+}
+.hamburger-dropdown{ 
+  display:none;
+}
+
+
+
+@media all and (max-width: 830px){
+
+/* the regular nav bar disappears at this max width*/
+
+.explore{
+	width:100vh;
+}
+
+.splash-background{
+	width: 150vh;
+    height: 1800px;
+}
+
+iframe{
+	left:50%;
+}
+
+.play-info-container{
+	width:100% !important;
+	left:50%;
+}
+.tracktlist-info{
+	width:100vh !important;
+	margin-top:10vh;
+}
+
+	ul.sidebar{ 
+		display:none;
+		flex-direction:column;
+	}
+
+	ul.fullscreen-sidebar{
+		display:none;
+	}
+
+	img.wordmark-logo{
+		visibility:hidden;
+	}
+	  .hamburger-dropdown {
+    display: block;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    margin-top:20px;
+  }
+
+
+    .hamburger-dropdown > li{
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1488132852/hamburger-vector_r4zcmr.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    position:relative;
+    cursor: pointer;
+  }
+
+ /* .footer{
+  	width:100vh;
+  } 
+  .index-footer{
+  	width:100vh;
+  }*/
+
+  .hamburger-dropdown ul{
+    margin-top: 65px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    width:200px;
+    right:100px; /* this is relative to the hamburger dropdown icon*/
+    /* display flex children as a single column*/
+    cursor: pointer;
+ 	border:1px solid #949496;
+  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+  }
+
+    .hamburger-dropdown:hover ul{
+    display:flex;
+   /* enables a flex context for all its direct children*/
+    background: ghostwhite;
+  }
+
+  .ham{
+  	font-size:24px !important;
+  	font-weight:600;
+		color: rgb(126, 93, 237) !important;
+		text-shadow:
+		rgba(123, 155, 242, 0.3) 1px 1px !important;
+		padding:20px 0px !important;
+		margin-top:0px !important;
+		border-bottom: 1px solid rgb(126, 93, 237) !important;
+  }
+
+  .ham:hover{
+  	-webkit-filter: brightness( 60% )
+  }
 }
 .exit-button{
   z-index:2000;
@@ -1064,11 +1167,9 @@ input.search-bar{
 }
 
 
-div.sidebar{
-	margin-top:36px;
-	margin-left:0px;
+.fullscreen-sidebar{
+  margin-top:36px;
 }
-
 .create-modal-button{
   animation: hovery 0.8s infinite;
   animation-iteration-count: 3;
@@ -1689,7 +1790,7 @@ iframe {
 	float:left;
 	position:relative;
 	display:block;
-	margin-left:20px;
+	margin-left:10px;
 	width:50%;
 	height:auto;
 }
