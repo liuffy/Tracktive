@@ -22,11 +22,11 @@ iframe{
 }
 
 .play-info-container{
-	width:100%;
+	width:100% !important;
 	left:50%;
 }
 .tracktlist-info{
-	width:100vh;
+	width:100vh !important;
 	margin-top:10vh;
 }
 
