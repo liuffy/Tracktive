@@ -11,6 +11,8 @@
 	padding:0px;
 	color: #797a7a;
 	line-height:1.0;
+		  text-shadow:
+  rgba(255, 255, 255, 0.0) 0px 0px;
 }
 
 .create-header{
@@ -91,6 +93,8 @@ h3.create{
 	padding:2px;
 	display:inline-block;
 	color: #ce25fc;
+	  text-shadow:
+  rgba(255, 255, 255, 0.0) 0px 0px;
 	/*background:#ce25fc;*/
 }
 
