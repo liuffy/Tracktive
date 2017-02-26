@@ -26,7 +26,7 @@ class TracktlistForm extends React.Component {
     let { artists, index_image_url, title } = this.state;
     let showpageId = tracktlists.length + 1 // redirect to page of newly created playlist
     createTracktlist(artists, title, index_image_url)
-    this.props.router.push(`/tracktlists/${showpageId}`) // redirect
+    this.props.router.push(`/users/${this.props.currentUser.id}`) // redirect
 
   }
 
