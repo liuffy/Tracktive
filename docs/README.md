@@ -8,12 +8,11 @@
 	- [X] Clean styling and smooth, bug-free navigation
 - [X] Account creation, login, & guest/demo login
 - [X] TracktList creation and deletion (utilizing [Spotify's API](https://developer.spotify.com/web-api/))
-- [ ] Continuous TracktList streaming while navigating 
 - [X] Dashboard 
 	- [X] Search component in header narrows down TracktLists in dashboard
 - [X] User profile
 	- [1/2] displays liked and created playlist tabs 
-- [ ] A Production README
+- [X] A Production README
 
 ## Design Docs 
 
@@ -64,8 +63,6 @@
 - [X] JBuilder views for TracktLists
 
 
-
-
 - [ ] `TracktListLike`  - not functional yet!!!!  :+1:
 
 	- [X] model, 
@@ -94,31 +91,18 @@ brings up results based on the inputted artist.
 - [X] Implement custom query for searching via *artists* 
 - [X] CSS: style search-related components (`TrackListIndexItem`, `Searchbar`)
 
-### Phase 4:  Continuous Streaming *(2 days)*
-*Objective*: TracktLists can be streamed without being interrupted by navigation. 
-Information on the current song is displayed in the header bar.
 
-- [ ] Research: requirements for continuous streaming
-- [ ] Research:  bugs that might interrupt continuous streaming
-- [ ] `CurrentSong` Redux Cycle -- is this the only way to let music play continuously during navigation?????
-Serious: What if I just have second compact playlist widget?
-	- [ ] `CurrentSong` components
-	- [ ] CurrentSongBar
-	- [ ] CurrentSongDisplay 
-	- [ ] CurrentSongControlsContainer
-	- [ ] CurrentSongProgressBar
-- [ ] CSS: Style tracktlist-related components 
 
-### Phase 5:  Media Queries and Optimizing Design *(2 days)*
+### Phase 4:  Media Queries and Optimizing Design *(2 days)*
 *Objective*: Optimize and enhance navigation through adding or adjusting stylistic features. 
 
 - [X] Implement animated Demo/ Guest Login using script 
-- [ ] Implement media queries so that app is usable at different viewport sizes 
+- [X] Implement media queries so that app is usable at different viewport sizes 
 - [X] Design custom vector logo to display in place of App Name in header 
 - [X] Embed customized CSS spinner so that it displays when user logs in or creates a TracktList
 - [X] Add logo as favicon
 - [X] Custom graphics
-- [ ] Make sure stylistic elements and color scheme are consistent in all views 
+- [X] Make sure stylistic elements and color scheme are consistent in all views 
 
 ## Bonus Features :sparkles:
 
@@ -127,7 +111,5 @@ Serious: What if I just have second compact playlist widget?
 	- [ ] Make necessary CRUD API
 	- [ ] Set up fetching tags for tracks
 	- [ ] Connect this tag search with MixesIndex component where our filter is tags
-
-### Add Icons to Side nav panel 
 
 ### Infinite  scroll (pagination)
