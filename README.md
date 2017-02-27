@@ -39,7 +39,7 @@ Users will have access to playlists that they have liked or created on their use
 As the user types into the search bar at the top of the page, the playlists rendered is narrowed dynamically to only include items that include the artist(s) entered by the user. If no playlists include the artist(s) entered by the user, a message containing a link to the playlist creation form is rendered.
 
 ### Responsive Design 
-![response_design](http://res.cloudinary.com/liuffy/image/upload/c_scale,w_946/v1488221575/mobile_gajbbl.png)
+![response_design](http://res.cloudinary.com/liuffy/image/upload/c_scale,w_400/v1488221575/mobile_gajbbl.png)
 
 Media queries are used so that the content can adapt to the size of the screen it is presented on. If the viewport decreases enough that the navigation bar cannot fit, the links in the navigation bar convert to a hamburger button/ dropdown menu, the content of the bar is reformatted to take up less horizontal space.
 
@@ -55,7 +55,5 @@ While the backend for `Likes` has created, the front-end is currently still in t
 ##### Sharing functionality
 
 In the future, users should be able to share their playlists to other platforms such as Facebook or Twitter directly within the app. 
-
-
 
 
