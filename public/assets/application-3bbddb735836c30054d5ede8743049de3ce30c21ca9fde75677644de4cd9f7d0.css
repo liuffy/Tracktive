@@ -516,12 +516,12 @@ button.slick-arrow.slick-prev{
 /* the regular nav bar disappears at this max width*/
 
 .explore{
-	width:140vh;
+	/*width:140vh;*/
 }
 
 .splash-background{
-	width: 180vh;
-    height: 1800px;
+	/*width: 180vh;*/
+    /*height: 1800px;*/
 }
 
 
@@ -1784,7 +1784,7 @@ iframe {
 	float:left;
 	position:relative;
 	display:block;
-	margin-left:10px;
+	margin-left:20px;
 	width:50%;
 	height:auto;
 }
