@@ -43,7 +43,7 @@ const Mailee = () => (
 						<li><AboutModal/></li>
 						<li><a 
 									target="_blank"
-									href="https://liuffy.github.io/">Portfolio</a></li>
+									href="http://www.sophia-liu.com/">Portfolio</a></li>
 					</ul>
 				</div>
 
