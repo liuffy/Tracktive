@@ -5,7 +5,7 @@ import Mailto from 'react-mailto';
 const Mailee = () => (
       <Mailto 
       	className="link"
-      	email="sliu3@wellesley.edu" obfuscate={false}>
+      	email="sophialiu.dev@gmail.com" obfuscate={false}>
         here.
       </Mailto>
     );
