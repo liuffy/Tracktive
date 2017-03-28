@@ -41397,7 +41397,7 @@ return jQuery;
 											'a',
 											{
 												target: '_blank',
-												href: 'https://liuffy.github.io/' },
+												href: 'http://www.sophia-liu.com/' },
 											'Portfolio'
 										)
 									)
@@ -41620,7 +41620,7 @@ return jQuery;
 			_reactMailto2.default,
 			{
 				className: 'link',
-				email: 'sliu3@wellesley.edu', obfuscate: false },
+				email: 'sophialiu.dev@gmail.com', obfuscate: false },
 			'here.'
 		);
 	};
