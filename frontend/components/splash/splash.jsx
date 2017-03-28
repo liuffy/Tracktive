@@ -83,6 +83,12 @@ class Splash extends React.Component{
       <div className="splash-buttons">
       <button className='splash-button' 
           onClick={this.openModal.bind(this, 'login', false)}>login</button>
+          <div className='text-blurb scaleDownOut'>
+            <span>Skip the formalities</span>
+          <div className="triangle"></div>
+          </div>
+
+
       <button className='splash-button demo' 
           onClick={this.openModal.bind(this, 'login', true)}>demo</button>
       <button className='splash-button' 

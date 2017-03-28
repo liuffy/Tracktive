@@ -18,9 +18,9 @@
   background-position: center;
   bottom:0;
   background-size: 150% 150%;
-  -webkit-animation: GradientAnimation 10s ease infinite;
-  -moz-animation: GradientAnimation 10s ease infinite;
-  animation: GradientAnimation 10s ease infinite;
+  -webkit-animation: GradientAnimation 8s ease infinite;
+  -moz-animation: GradientAnimation 8s ease infinite;
+  animation: GradientAnimation 8s ease infinite;
 }
 
 .whole-page{
@@ -93,7 +93,6 @@
   display:inline-block;
   color: white;
   text-shadow:
-
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
   rgba(123, 155, 242, 0.3) 3px 3px,

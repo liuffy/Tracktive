@@ -189,18 +189,7 @@ h3.create{
 }
 
 
-/* .submit{
-  border:2px solid #ce25fc;
-  color: #ce25fc;
-  transition: all 0.2s ease 0s;
-}
 
-.submit:hover{
-  color: white;
-  border: 2px solid #ce25fc;
-  background: #ce25fc;
-}
-*/
  .submit, .create-button{
  	margin-top:15px;
  	width:90%;

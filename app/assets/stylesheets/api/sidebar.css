@@ -41,6 +41,75 @@
 	/*background: rgba(255,255,255,0.4);*/
 }
 
+.hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.flipLeftOut {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: flipLeftOut .5s both ease-in;
+    -moz-animation: flipLeftOut .5s both ease-in;
+    animation: flipLeftOut .5s both ease-in;
+}
+
+@-webkit-keyframes flipLeftOut {
+    to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+}
+@keyframes flipLeftOut {
+    to {transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+}
+
+.text-blurb{
+  display:inline-block;
+  padding:10px 7px 2px 7px;
+  border-radius:7px;
+  /*width:50px;*/
+  height:20px;
+  /*margin-left:10%;*/
+  /*top:10%;*/
+  color: rgb(126, 93, 237);
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  position:absolute;
+  z-index:3000;
+  background: white;
+  bottom:395px;
+}
+
+.triangle{
+  margin-left:50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: white transparent transparent transparent;
+}
 
 
 .logout-button{
@@ -54,5 +123,5 @@
 }
 
 .logout-button:hover{
-  border-bottom: 3px solid #626665;
+  border-bottom: 3px solid white;
 }
