@@ -94186,6 +94186,16 @@ return jQuery;
 	            'login'
 	          ),
 	          _react2.default.createElement(
+	            'div',
+	            { className: 'text-blurb scaleDownOut' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Skip the formalities'
+	            ),
+	            _react2.default.createElement('div', { className: 'triangle' })
+	          ),
+	          _react2.default.createElement(
 	            'button',
 	            { className: 'splash-button demo',
 	              onClick: this.openModal.bind(this, 'login', true) },

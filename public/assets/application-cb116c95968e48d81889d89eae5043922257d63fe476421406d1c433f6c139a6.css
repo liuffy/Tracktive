@@ -671,6 +671,9 @@ button.slick-arrow.slick-prev{
 .scaleOut {
   animation: scaleOut 0.5s ease-out both;
   -webkit-animation: scaleOut 0.5s ease-out both;
+    animation-delay:3s;
+  -webkit-animation-delay:3s;
+  -o-animation-delay:3s;
 }
 @keyframes scaleOut {
   to { opacity: 0; transform: scale(0.9); }
@@ -686,6 +689,9 @@ button.slick-arrow.slick-prev{
 .scaleUpOut {
   animation: scaleUpOut 0.5s ease-in both;
   -webkit-animation: scaleUpOut 0.5s ease-in both;
+    animation-delay:3s;
+  -webkit-animation-delay:3s;
+  -o-animation-delay:3s;
 }
 @keyframes scaleUpOut {
   to { opacity: 0; transform: scale(1.2); }
@@ -699,8 +705,11 @@ button.slick-arrow.slick-prev{
   -webkit-animation: scaleDownIn 0.5s ease-in both;
 }
 .scaleDownOut {
-  animation: scaleOut 0.5s ease-in both;
-  -webkit-animation: scaleOut 0.5s ease-in both;
+  animation: scaleOut 0.2s ease-in both;
+  -webkit-animation: scaleOut 0.2s ease-in both;
+    animation-delay:3s;
+  -webkit-animation-delay:3s;
+  -o-animation-delay:3s;
 }
 @keyframes scaleDownIn {
   from { opacity: 0; transform: scale(1.2); }
@@ -732,9 +741,13 @@ button.slick-arrow.slick-prev{
 }
 
 .slideOut {
-  animation: slideOut 0.5s ease-out both;
-  -webkit-animation: slideOut 0.5s ease-out both;
+  animation: slideOut 1s ease-out both;
+  -webkit-animation: slideOut 1s ease-out both;
+  animation-delay:3s;
+  -webkit-animation-delay:3s;
+  -o-animation-delay:3s;
 }
+
 @keyframes slideOut {
   to { opacity: 0; transform: translateY(50%); }
 }
@@ -1205,6 +1218,75 @@ input.search-bar{
 	/*background: rgba(255,255,255,0.4);*/
 }
 
+.hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.flipLeftOut {
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation: flipLeftOut .5s both ease-in;
+    -moz-animation: flipLeftOut .5s both ease-in;
+    animation: flipLeftOut .5s both ease-in;
+}
+
+@-webkit-keyframes flipLeftOut {
+    to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+}
+@keyframes flipLeftOut {
+    to {transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+}
+
+.text-blurb{
+  display:inline-block;
+  padding:10px 7px 2px 7px;
+  border-radius:7px;
+  /*width:50px;*/
+  height:20px;
+  /*margin-left:10%;*/
+  /*top:10%;*/
+  color: rgb(126, 93, 237);
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  position:absolute;
+  z-index:3000;
+  background: white;
+  bottom:395px;
+}
+
+.triangle{
+  margin-left:50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: white transparent transparent transparent;
+}
 
 
 .logout-button{
@@ -1218,7 +1300,7 @@ input.search-bar{
 }
 
 .logout-button:hover{
-  border-bottom: 3px solid #626665;
+  border-bottom: 3px solid white;
 }
 /* Splash page CSS only */
 
@@ -1241,9 +1323,9 @@ input.search-bar{
   background-position: center;
   bottom:0;
   background-size: 150% 150%;
-  -webkit-animation: GradientAnimation 10s ease infinite;
-  -moz-animation: GradientAnimation 10s ease infinite;
-  animation: GradientAnimation 10s ease infinite;
+  -webkit-animation: GradientAnimation 8s ease infinite;
+  -moz-animation: GradientAnimation 8s ease infinite;
+  animation: GradientAnimation 8s ease infinite;
 }
 
 .whole-page{
@@ -1316,7 +1398,6 @@ input.search-bar{
   display:inline-block;
   color: white;
   text-shadow:
-
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
   rgba(123, 155, 242, 0.3) 3px 3px,
@@ -1613,18 +1694,7 @@ h3.create{
 }
 
 
-/* .submit{
-  border:2px solid #ce25fc;
-  color: #ce25fc;
-  transition: all 0.2s ease 0s;
-}
 
-.submit:hover{
-  color: white;
-  border: 2px solid #ce25fc;
-  background: #ce25fc;
-}
-*/
  .submit, .create-button{
  	margin-top:15px;
  	width:90%;
