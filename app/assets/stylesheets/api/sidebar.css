@@ -102,15 +102,42 @@
   top:655px;
 }
 
+.text-blurb-2{
+  display:inline-block;
+  padding:10px 7px 2px 7px;
+  border-radius:7px;
+  /*width:50px;*/
+  height:20px;
+  /*margin-left:10%;*/
+  /*top:10%;*/
+  color: rgb(126, 93, 237);
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  position:absolute;
+  z-index:3000;
+  background: white;
+  top:65px;
+  left:250px;
+}
+
 .triangle{
   margin-left:50px;
   width: 0;
+  bottom:30px;
   height: 0;
   border-style: solid;
   border-width: 20px 20px 0 20px;
   border-color: white transparent transparent transparent;
 }
 
+.triangle-up{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent white transparent;
+}
 
 .logout-button{
   color:white;
@@ -125,3 +152,4 @@
 .logout-button:hover{
   border-bottom: 3px solid white;
 }
+

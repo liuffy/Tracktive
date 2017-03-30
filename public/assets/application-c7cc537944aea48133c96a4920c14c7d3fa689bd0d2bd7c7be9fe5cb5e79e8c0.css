@@ -141,6 +141,52 @@ div.site-info{
 	line-height:1.2;
 	margin-bottom:30px;
 }
+#return-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgb(126, 93, 237);
+    box-shadow:
+    rgba(123, 155, 242, 0.5) 1px 1px,
+    rgba(123, 155, 242, 0.4) 2px 2px,
+    rgba(123, 155, 242, 0.3) 2px 2px,
+    rgba(123, 155, 242, 0.2) 2px 2px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index:3000;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index:3001;
+}
+#return-to-top:hover {
+    background: rgba(126, 93, 237, 0.8);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
 
 
   .tracktlists-index-container {
@@ -1279,15 +1325,42 @@ input.search-bar{
   top:655px;
 }
 
+.text-blurb-2{
+  display:inline-block;
+  padding:10px 7px 2px 7px;
+  border-radius:7px;
+  /*width:50px;*/
+  height:20px;
+  /*margin-left:10%;*/
+  /*top:10%;*/
+  color: rgb(126, 93, 237);
+  text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  position:absolute;
+  z-index:3000;
+  background: white;
+  top:65px;
+  left:250px;
+}
+
 .triangle{
   margin-left:50px;
   width: 0;
+  bottom:30px;
   height: 0;
   border-style: solid;
   border-width: 20px 20px 0 20px;
   border-color: white transparent transparent transparent;
 }
 
+.triangle-up{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  border-color: transparent transparent white transparent;
+}
 
 .logout-button{
   color:white;
@@ -1302,6 +1375,7 @@ input.search-bar{
 .logout-button:hover{
   border-bottom: 3px solid white;
 }
+
 /* Splash page CSS only */
 
 /* Wordmark */
@@ -1335,10 +1409,12 @@ input.search-bar{
   top:0%;
   left:0%;
   right:0%;
+  margin: 0 auto;
 }
 
 
 .splash-background{
+  /*width:80%;*/
   min-height:100%;
   position: relative;
   background: #DA22FF; /* fallback for old browsers */
@@ -2090,6 +2166,7 @@ h2.profile-greeting {
 
 
 /* @import must be at top of file, otherwise CSS will not work */
+
 
 
 html {

@@ -31,6 +31,22 @@ class TracktlistIndex extends React.Component {
     $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
     });
 
+    // Scroller button
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+
 // SEARCHING!
   let {query, tracktlists} = this.props;
     let result = [];
@@ -72,6 +88,8 @@ class TracktlistIndex extends React.Component {
    return loading ? <div className="spinner">
   <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
 </div> :
+<div>
+<a href="javascript:" id="return-to-top"><i className="icon-chevron-up"></i></a>
 <div className="whole-index-page">
         <h2
           className="explore">{indexText}         <img 
@@ -89,6 +107,7 @@ class TracktlistIndex extends React.Component {
 
 
           <Footer/>
+  </div>
   </div>
   }
 }

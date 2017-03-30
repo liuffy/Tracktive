@@ -40528,7 +40528,11 @@ return jQuery;
 							{
 								className: 'logout-button',
 								onClick: this.logout },
-							'logout'
+							_react2.default.createElement(
+								'span',
+								{ className: 'logout-text' },
+								'logout'
+							)
 						)
 					);
 				} else {
@@ -57870,6 +57874,23 @@ return jQuery;
 	        $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
 	      });
 	
+	      // Scroller button
+	      // ===== Scroll to Top ==== 
+	      $(window).scroll(function () {
+	        if ($(this).scrollTop() >= 50) {
+	          // If page is scrolled more than 50px
+	          $('#return-to-top').fadeIn(200); // Fade in the arrow
+	        } else {
+	          $('#return-to-top').fadeOut(200); // Else fade out the arrow
+	        }
+	      });
+	      $('#return-to-top').click(function () {
+	        // When arrow is clicked
+	        $('body,html').animate({
+	          scrollTop: 0 // Scroll to top of body
+	        }, 500);
+	      });
+	
 	      // SEARCHING!
 	      var _props = this.props,
 	          query = _props.query,
@@ -57927,29 +57948,38 @@ return jQuery;
 	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png' })
 	      ) : _react2.default.createElement(
 	        'div',
-	        { className: 'whole-index-page' },
+	        null,
 	        _react2.default.createElement(
-	          'h2',
-	          {
-	            className: 'explore' },
-	          indexText,
-	          '         ',
-	          _react2.default.createElement('img', {
-	            className: 'binoculars-logo',
-	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png' })
+	          'a',
+	          { href: 'javascript:', id: 'return-to-top' },
+	          _react2.default.createElement('i', { className: 'icon-chevron-up' })
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'tracktlists-index' },
+	          { className: 'whole-index-page' },
 	          _react2.default.createElement(
-	            _reactMasonryComponent2.default,
-	            { className: 'tracktlists-index-container',
-	              elementType: 'ul',
-	              options: { fitWidth: false, columnWidth: 200, gutter: 30 } },
-	            result
-	          )
-	        ),
-	        _react2.default.createElement(_footer2.default, null)
+	            'h2',
+	            {
+	              className: 'explore' },
+	            indexText,
+	            '         ',
+	            _react2.default.createElement('img', {
+	              className: 'binoculars-logo',
+	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'tracktlists-index' },
+	            _react2.default.createElement(
+	              _reactMasonryComponent2.default,
+	              { className: 'tracktlists-index-container',
+	                elementType: 'ul',
+	                options: { fitWidth: false, columnWidth: 200, gutter: 30 } },
+	              result
+	            )
+	          ),
+	          _react2.default.createElement(_footer2.default, null)
+	        )
 	      );
 	    }
 	  }]);

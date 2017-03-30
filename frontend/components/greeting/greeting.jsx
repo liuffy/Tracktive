@@ -23,7 +23,7 @@ class Greeting extends React.Component{
 												to={`/users/${currentUser.id}`}>{currentUser.username}.</Link></span>
 					<button 
 						className="logout-button"
-						onClick={this.logout}>logout</button>
+						onClick={this.logout}><span className="logout-text">logout</span></button>
 				</div>
 					)
 		} 
