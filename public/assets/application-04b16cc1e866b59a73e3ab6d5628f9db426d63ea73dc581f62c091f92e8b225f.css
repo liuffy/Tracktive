@@ -143,8 +143,8 @@ div.site-info{
 }
 #return-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     background: rgb(126, 93, 237);
     box-shadow:
     rgba(123, 155, 242, 0.5) 1px 1px,
@@ -181,10 +181,10 @@ div.site-info{
     z-index:3001;
 }
 #return-to-top:hover {
-    background: rgba(126, 93, 237, 0.8);
+    background: #fff;
 }
 #return-to-top:hover i {
-    color: #fff;
+    color: rgb(126, 93, 237);
     top: 5px;
 }
 
