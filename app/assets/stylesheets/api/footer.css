@@ -60,13 +60,12 @@
 }
 
 .link-list li{
+  font-size:14px;
   cursor:pointer;
   line-height:35px;
 }
 
-.link-list li:hover{
-  color: #eca6fc;
-}
+
 
 .wordmark-logo-footer{
   height:70px;

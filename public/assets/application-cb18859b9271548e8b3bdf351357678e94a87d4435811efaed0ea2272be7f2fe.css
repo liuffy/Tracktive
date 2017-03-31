@@ -442,13 +442,12 @@ button.slick-arrow.slick-prev{
 }
 
 .link-list li{
+  font-size:14px;
   cursor:pointer;
   line-height:35px;
 }
 
-.link-list li:hover{
-  color: #eca6fc;
-}
+
 
 .wordmark-logo-footer{
   height:70px;
@@ -549,12 +548,12 @@ button.slick-arrow.slick-prev{
 		rgba(123, 155, 242, 0.3) 1px 1px !important;
 		padding:20px 0px !important;
 		margin-top:0px !important;
-		border-bottom: 1px solid rgb(126, 93, 237) !important;
+		border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
-  li.ham:hover{
-  	/*-webkit-filter: brightness( 60% )*/
-  }
+ /* .ham:hover{
+  	-webkit-filter: brightness( 120% );
+  }*/
 }
 .exit-button{
   z-index:2000;
@@ -1274,13 +1273,47 @@ input.search-bar{
   font-size:15px;
   float:left;
   padding:2px 0px;
-  font-weight:900;
+  font-weight:600;
   margin:25px 30px 5px 0px;
 }
 
-.logout-button:hover{
-  border-bottom: 3px solid white;
+.logout-button:after{
+    content: "";
+  width: 0;
+  margin-top:5px;
+  height: 3px;
+  background: white;
+  display: block;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
+
+.logout-button:hover::after {
+  -webkit-animation: bar 0.4s linear;
+  animation: bar 0.4s linear;
+  width:100%;
+  }
+
+
+  @-webkit-keyframes bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 
 /* Splash page CSS only */
 

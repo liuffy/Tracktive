@@ -145,11 +145,45 @@
   font-size:15px;
   float:left;
   padding:2px 0px;
-  font-weight:900;
+  font-weight:600;
   margin:25px 30px 5px 0px;
 }
 
-.logout-button:hover{
-  border-bottom: 3px solid white;
+.logout-button:after{
+    content: "";
+  width: 0;
+  margin-top:5px;
+  height: 3px;
+  background: white;
+  display: block;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
+
+.logout-button:hover::after {
+  -webkit-animation: bar 0.4s linear;
+  animation: bar 0.4s linear;
+  width:100%;
+  }
+
+
+  @-webkit-keyframes bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 
