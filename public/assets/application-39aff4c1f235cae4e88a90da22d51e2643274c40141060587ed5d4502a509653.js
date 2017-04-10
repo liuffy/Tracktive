@@ -94282,7 +94282,7 @@ return jQuery;
 	              _react2.default.createElement(
 	                'h3',
 	                { className: 'subtagline' },
-	                'make playlists'
+	                'Make playlists.'
 	              ),
 	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488056587/view-playlist_copy_copy_rgecg0.png' })
 	            ),
@@ -94292,7 +94292,7 @@ return jQuery;
 	              _react2.default.createElement(
 	                'h3',
 	                { className: 'subtagline' },
-	                'save playlists'
+	                'Save playlists.'
 	              ),
 	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488050192/saved-cropped_b9y1lu.png' })
 	            ),
@@ -94302,7 +94302,7 @@ return jQuery;
 	              _react2.default.createElement(
 	                'h3',
 	                { className: 'subtagline' },
-	                'browse other playlists!'
+	                'Browse other playlists!'
 	              ),
 	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488050195/search-cropped_dlho9f.png' })
 	            )

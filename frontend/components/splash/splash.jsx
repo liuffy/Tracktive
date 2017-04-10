@@ -117,17 +117,17 @@ class Splash extends React.Component{
         className="carousel-container">
 
         <div className="carousel-element">
-          <h3 className="subtagline">make playlists</h3>
+          <h3 className="subtagline">Make playlists.</h3>
           <img src="http://res.cloudinary.com/liuffy/image/upload/v1488056587/view-playlist_copy_copy_rgecg0.png"/>
         </div>
         
         <div className="carousel-element">
-          <h3 className="subtagline">save playlists</h3>
+          <h3 className="subtagline">Save playlists.</h3>
           <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050192/saved-cropped_b9y1lu.png"/>
         </div>
 
         <div className="carousel-element">
-          <h3 className="subtagline">browse other playlists!</h3>
+          <h3 className="subtagline">Browse other playlists!</h3>
           <img src="http://res.cloudinary.com/liuffy/image/upload/v1488050195/search-cropped_dlho9f.png"/>
         </div>
 

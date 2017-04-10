@@ -169,9 +169,21 @@
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
- /* .ham:hover{
-    -webkit-filter: brightness( 120% );
-  }*/
+  .footer{
+    padding-left:0em;
+  }
+
+/*  .tracktive-wordmark-main{
+    margin-left:3em;
+    font-size:1em !important;
+  }
+
+
+  .tagline{
+    margin-left:0em;
+    }*/
 }
-}
+
+
+
 

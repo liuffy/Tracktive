@@ -36,9 +36,7 @@
   position:relative;
   background: #f6f9fc;
   z-index:200;
-   margin-top:50px;
-  /*top:-360px;*/
-  /*margin-bottom:0px;*/
+ margin-top:50px;
   top:0;
 }
 
@@ -81,10 +79,10 @@
 
 .tagline{
   color:rgba(255, 255, 255, 0.7);
-  font-size:48px;
+  font-size:3em;
   position:absolute;
   display:inline-block;
-  margin-left:150px;
+  margin-left:2.3em;
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
@@ -92,17 +90,51 @@
 }
 
 .tracktive-wordmark-main{
-  font-size: 120px;
+   -webkit-animation: wordmark 7s ease infinite;
+  -moz-animation: wordmark 7s ease infinite;
+  animation: wordmark 7s ease infinite;
+  font-size: 8em;
   cursor: pointer;
   -webkit-touch-callout: none;  /*iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
        -moz-user-select: none; /* Firefox 
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
-                                  not supported by any browser */
+                                  not sup8ported by any browser */
   display:inline-block;
-  color: white;
-  text-shadow:
+  color: white; 
+  font-weight: 600;
+  margin-left:1.8em;
+      text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px;
+}
+
+
+  @-webkit-keyframes wordmark {
+    0%, 100%{
+         text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+    }
+    25%, 75%{
+          text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px,
+
+    }
+    50%{
+          text-shadow:
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
   rgba(123, 155, 242, 0.3) 3px 3px,
@@ -112,12 +144,77 @@
   rgb(86, 54, 175) 7px 7px,
   rgb(86, 54, 175) 8px 8px,
   rgb(86, 54, 175) 9px 9px,
-  rgb(86, 54, 175) 10px 10px; 
-  font-weight: 600;
-  margin-left:230px;
-  left:45%;
-}
+  rgb(86, 54, 175) 10px 10px;
 
+    }
+  }
+  @-moz-keyframes wordmark {
+    0%, 100%{
+         text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+    }
+    25%, 75%{
+          text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px,
+
+    }
+    50%{
+          text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px,
+  rgb(86, 54, 175) 8px 8px,
+  rgb(86, 54, 175) 9px 9px,
+  rgb(86, 54, 175) 10px 10px;
+
+    }
+  }
+
+  @keyframes wordmark { 
+    0%, 100%{
+         text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+    }
+    25%, 75%{
+          text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px,
+
+    }
+    50%{
+          text-shadow:
+  rgba(123, 155, 242, 0.3) 1px 1px,
+  rgba(123, 155, 242, 0.3) 2px 2px,
+  rgba(123, 155, 242, 0.3) 3px 3px,
+  rgb(86, 53, 174) 4px 4px, 
+  rgb(86, 54, 175) 5px 5px,
+  rgb(86, 54, 175) 6px 6px,
+  rgb(86, 54, 175) 7px 7px,
+  rgb(86, 54, 175) 8px 8px,
+  rgb(86, 54, 175) 9px 9px,
+  rgb(86, 54, 175) 10px 10px;
+
+    }
+  }
 .tracktive-wordmark{
 	font-size: 60px;
   cursor: pointer;

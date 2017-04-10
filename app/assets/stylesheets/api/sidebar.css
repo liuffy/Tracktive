@@ -157,13 +157,13 @@
   background: white;
   display: block;
   left: 0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .logout-button:hover::after {
-  -webkit-animation: bar 0.4s linear;
-  animation: bar 0.4s linear;
+  -webkit-animation: bar 0.2s linear;
+  animation: bar 0.2s linear;
   width:100%;
   }
 
