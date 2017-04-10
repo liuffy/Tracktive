@@ -6,7 +6,7 @@
 .gradient-div{
   display:block;
   /*margin-top:100px;*/
-  width:760px;
+  width:100%;
   height:268px;
   background: #DA22FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* Chrome 10-25, Safari 5.1-6 */
@@ -25,16 +25,13 @@
 
 .whole-page{
   display:block;
-  width:100%;
-  height:100vh;
   top:0%;
-  left:0%;
+  padding-left:8em;
   right:0%;
-  margin: 0 auto;
 }
 
 .intro-section{
-  /*display:block;*/
+  display:block;
   height:300px;
   position:relative;
   background: #f6f9fc;
@@ -46,7 +43,7 @@
 }
 
 .splash-background{
-  /*width:80%;*/
+  width:100vw;
   min-height:100%;
   position: relative;
   background: #DA22FF; /* fallback for old browsers */

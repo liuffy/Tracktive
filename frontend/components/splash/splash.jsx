@@ -103,8 +103,8 @@ class Splash extends React.Component{
     }
 
       return (
-        <div className="whole-page">
           <div className="splash-background"> 
+        <div className="whole-page">
             <span 
               className="tracktive-wordmark-main"><Link to="/">tracktive</Link></span>
               <br/>

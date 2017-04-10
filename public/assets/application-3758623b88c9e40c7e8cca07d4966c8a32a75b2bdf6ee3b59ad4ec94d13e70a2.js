@@ -94250,10 +94250,10 @@ return jQuery;
 	
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'whole-page' },
+	        { className: 'splash-background' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'splash-background' },
+	          { className: 'whole-page' },
 	          _react2.default.createElement(
 	            'span',
 	            {

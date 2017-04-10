@@ -4,18 +4,10 @@
 
 
 
+
 @media all and (max-width: 830px){
 
 /* the regular nav bar disappears at this max width*/
-
-.explore{
-	/*width:140vh;*/
-}
-
-.splash-background{
-	/*width: 180vh;*/
-    /*height: 1800px;*/
-}
 
 
 .tracktlist-info{
@@ -96,3 +88,90 @@
   	-webkit-filter: brightness( 120% );
   }*/
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .whole-page{
+  padding-left:0em !important;
+  min-height:100vh;
+  }
+
+  .tracktlist-info{
+  width:140vh !important;
+  margin-top:10vh;
+}
+
+  ul.sidebar{ 
+    display:none;
+    flex-direction:column;
+  }
+
+  ul.fullscreen-sidebar{
+    display:none;
+  }
+
+  img.wordmark-logo{
+    visibility:hidden;
+  }
+    .hamburger-dropdown {
+    display: block;
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    margin-left:20px;
+    margin-top:20px;
+  }
+
+
+    .hamburger-dropdown > li{
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1488132852/hamburger-vector_r4zcmr.png");
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+    position:relative;
+    cursor: pointer;
+  }
+
+/*  .footer{
+    width:100vh !important;
+  } */
+
+  div.index-footer{
+    /*width:140vh !important;*/
+  }
+
+  .hamburger-dropdown ul{
+    margin-top: 65px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    width:200px;
+    right:100px; /* this is relative to the hamburger dropdown icon*/
+    /* display flex children as a single column*/
+    cursor: pointer;
+  border:1px solid #949496;
+  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+  }
+
+    .hamburger-dropdown:hover ul{
+    display:flex;
+   /* enables a flex context for all its direct children*/
+    background: ghostwhite;
+  }
+
+  .ham{
+    font-size:24px !important;
+    font-weight:600;
+    color: rgb(126, 93, 237) !important;
+    text-shadow:
+    rgba(123, 155, 242, 0.3) 1px 1px !important;
+    padding:20px 0px !important;
+    margin-top:0px !important;
+    border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
+  }
+
+ /* .ham:hover{
+    -webkit-filter: brightness( 120% );
+  }*/
+}
+}
+
