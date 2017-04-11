@@ -139,6 +139,7 @@ html, body {
 .standard-input-field{
 	letter-spacing:1px;
 	color: #5B3DA8;
+  text-align:center;
 	font-size:14px;
 	margin: 2px 55px;
 	padding: 10px 13px;

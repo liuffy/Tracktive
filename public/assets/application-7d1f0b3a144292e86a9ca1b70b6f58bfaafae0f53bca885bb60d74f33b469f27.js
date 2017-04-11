@@ -40941,6 +40941,7 @@ return jQuery;
 	  animationName: 'scaleIn',
 	  animationDuration: '0.4s',
 	  left: 0,
+	  padding:'20px',
 	  background: 'none',
 	  zIndex: 9999,
 	  pointerEvents: 'auto',

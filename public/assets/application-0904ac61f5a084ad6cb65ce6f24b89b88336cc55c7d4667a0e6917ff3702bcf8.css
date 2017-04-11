@@ -13,7 +13,7 @@ div.tracktlists-index, div.user-detail-1{
 
 div.site-info{
 	z-index:9999;
-	padding:20px;
+	padding:50px;
 }
 .site-info p{
 	font-size:16px;
@@ -616,11 +616,11 @@ div.site-info{
   bakground-size:10px 10px;
   position:absolute;
   font-size:60px;
-  top:-15px;
+  top:-10px;
   font-weight:500 !important;
   color: rgba(124, 124, 183,0.7) !important;
   right:3px;
-  padding:0.1em;
+  padding:0.3em;
   transition: all 0.2s ease 0s;
 }
 
@@ -1912,7 +1912,7 @@ h3.create{
   background: #9191c4;
  	color: rgb(126, 93, 237);
 	border: 2px solid #9191c4;
-  padding:10px 15px;
+  padding:6px 15px;
 	border-radius:5px;
   color: white;
 }
@@ -2367,6 +2367,7 @@ html, body {
 .standard-input-field{
 	letter-spacing:1px;
 	color: #5B3DA8;
+  text-align:center;
 	font-size:14px;
 	margin: 2px 55px;
 	padding: 10px 13px;

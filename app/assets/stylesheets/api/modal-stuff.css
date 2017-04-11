@@ -3,11 +3,11 @@
   bakground-size:10px 10px;
   position:absolute;
   font-size:60px;
-  top:-15px;
+  top:-10px;
   font-weight:500 !important;
   color: rgba(124, 124, 183,0.7) !important;
   right:3px;
-  padding:0.1em;
+  padding:0.3em;
   transition: all 0.2s ease 0s;
 }
 
