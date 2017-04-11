@@ -25,7 +25,7 @@
   margin:0.5em 0em;
 }
 .splash-block-1{
-  padding:1.1em;
+  padding:2em;
   display: flex;
   flex-direction: row;
   height:380px;
@@ -36,7 +36,7 @@
 }
 
 .splash-block-2{
-  padding:1.1em;
+  padding:2em;
   z-index:103;
   display:flex;
   height:600px;

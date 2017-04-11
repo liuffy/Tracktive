@@ -623,7 +623,6 @@ div.site-info{
     font-size:28px;
   }
 
-
   div.entire-item{
     transform:scale(1.5);
     margin:80px !important;
@@ -631,15 +630,6 @@ div.site-info{
 
   div.index-right{
     /*width:400px !important;*/
-  }
-
-  .hamburger-dropdown ul, h2.explore{
-    transform:scale(1.8);
-  }
-
-  .hamburger-dropdown ul{
-    margin-top:220px !important;
-    margin-left:100px !important;
   }
 }
 
@@ -1425,7 +1415,7 @@ input.search-bar{
   margin:0.5em 0em;
 }
 .splash-block-1{
-  padding:1.1em;
+  padding:2em;
   display: flex;
   flex-direction: row;
   height:380px;
@@ -1436,7 +1426,7 @@ input.search-bar{
 }
 
 .splash-block-2{
-  padding:1.1em;
+  padding:2em;
   z-index:103;
   display:flex;
   height:600px;
