@@ -201,6 +201,10 @@
   div.index-right{
     /*width:400px !important;*/
   }
+
+  .hamburger-dropdown ul, h2.explore{
+    transform:scale(1.8);
+  }
 }
 
 
