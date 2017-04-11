@@ -4,17 +4,17 @@
     right: 20px;
     background: rgb(126, 93, 237);
     box-shadow:
-    rgba(123, 155, 242, 0.5) 1px 1px,
-    rgba(123, 155, 242, 0.4) 2px 2px,
-    rgba(123, 155, 242, 0.3) 2px 2px,
-    rgba(123, 155, 242, 0.2) 2px 2px;
-    width: 50px;
-    height: 50px;
+    rgba(184, 184, 219, 0.5) 1px 1px,
+    rgba(184, 184, 219, 0.4) 2px 2px,
+    rgba(184, 184, 219, 0.3) 2px 2px,
+    rgba(184, 184, 219, 0.2) 2px 2px;
+    width: 60px;
+    height: 60px;
     display: block;
     text-decoration: none;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
     display: none;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
@@ -27,8 +27,8 @@
     color: #fff;
     margin: 0;
     position: relative;
-    left: 16px;
-    top: 13px;
+    left: 21px;
+    top: 18px;
     font-size: 19px;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
