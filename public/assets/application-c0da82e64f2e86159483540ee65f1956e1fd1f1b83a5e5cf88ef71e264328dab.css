@@ -109,13 +109,13 @@ div.site-info{
   img.wordmark-logo{
   	height:70px;
   	display:inline-block;
+      -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;
 	  float:left;
-    margin:20px 20px 0px 30px;
+    margin:20px 30px 0px 30px;
   }
 
-  img.wordmark-logo:hover{
-	  animation: hover 0.8s infinite;
-  }
 
   @keyframes hover {
   0%, 100% {
@@ -215,7 +215,7 @@ div.site-info{
   margin-bottom: 60px;
   width:400px;
   border-radius:3px;
-	border:1px solid #949496;
+	border:1px solid #b8b8db;
   box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
 }
 .entire-item:hover{
@@ -359,7 +359,8 @@ div.site-info{
   min-height:150px;
   left: 0;
   box-shadow: 5px 5px 8px 8px rgba(0,0,0,0.2);
-  padding: 1rem;
+  padding: 1em;
+  padding-left:3em;
   background-color: white;
   display:block;
   bottom: 0;
@@ -463,7 +464,8 @@ div.site-info{
 
 
     .hamburger-dropdown > li{
-    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491890793/options_qbyqpr.svg");
+      top:10px;
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491922118/menu_yjc2nn.svg");
     background-repeat: no-repeat;
     background-size: 80px 80px;
     width: 80px;
@@ -472,27 +474,22 @@ div.site-info{
     cursor: pointer;
   }
 
-/*  .footer{
-  	width:100vh !important;
-  } */
 
   div.index-footer{
   	/*width:140vh !important;*/
   }
 
   .hamburger-dropdown ul{
-    margin-top: 75px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+    margin-top: 80px;
     width:300px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
     padding:0;
     list-style:none;
-    border-left:1px solid #949496;
-    border-right:1px solid #949496;
-   	border-bottom:1px solid #949496;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+   	border-bottom:2px solid #fff;
   /*box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);*/
   }
 
@@ -540,7 +537,7 @@ div.site-info{
   }
 
   img.wordmark-logo{
-    visibility:hidden;
+    visibility:hidden;80
   }
     .hamburger-dropdown {
     display: block;
@@ -553,11 +550,11 @@ div.site-info{
 
 
     .hamburger-dropdown > li{
-    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1488132852/hamburger-vector_r4zcmr.png");
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491922118/menu_yjc2nn.svg");
     background-repeat: no-repeat;
-    background-size: 70px 70px;
-    width: 70px;
-    height: 70px;
+    background-size: 90px 90px;
+    width: 90px;
+    height: 90px;
     position:relative;
     cursor: pointer;
   }
@@ -571,15 +568,16 @@ div.site-info{
   }
 
   .hamburger-dropdown ul{
-    margin-top: 65px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-    width:200px;
+    margin-top: 90px;
+    width:300px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
-  border:1px solid #949496;
-  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+    padding:0;
+    list-style:none;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
   }
 
     .hamburger-dropdown:hover ul{
@@ -598,9 +596,9 @@ div.site-info{
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
-  .footer{
+/*  .footer{
     padding-left:0em;
-  }
+  }*/
 
   .text-blurb{
     top:470px !important;
@@ -1084,6 +1082,7 @@ input.search-bar{
 
 .no-tracktlists h2{
 	text-align:center;
+	font-weight:500 !important;
 	color: #55587a;
 	font-size:24px;
 }
@@ -1097,8 +1096,7 @@ input.search-bar{
 
 .query-name{
 	font-size:28px;
-	color: #d623fe;
-	font-weight:bold;
+	color: #9191C4;
 }
 
 .clear-button{
@@ -1149,7 +1147,6 @@ input.search-bar{
   border-radius: 4px;
   font-size:20px;
   padding:2px 15px;
-  /*margin:50px 20px 5px 20px;*/
   transition: all 0.2s ease 0s;
   border:2px solid #ce25fc;
   color: #ce25fc;
@@ -1311,13 +1308,15 @@ input.search-bar{
 }
 
 .logout-button{
+  transition: all 0.2s ease 0s;
+  border-radius:5px;
   color:#6a3afc;
   display:inline-block;
   font-size:15px;
   float:left;
-  padding:2px 0px;
+  padding:4px 4px;
   font-weight:600;
-  margin:25px 30px 5px 0px;
+  margin:25px 30px 5px -4px;
 }
 
 .logout-button:after{
@@ -1330,6 +1329,10 @@ input.search-bar{
   left: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.logout-button:hover{
+  background: #dcdced;
 }
 
 .logout-button:hover::after {
@@ -2184,18 +2187,14 @@ iframe {
 
 
 .user-button{
-  /*background: rgba(255,255,255,0.8);*/
   opacity:0.4;
   width:43%;
-  /*border: 2px solid rgb(107, 90, 147);*/
-  /*border: 1px solid white;*/
   font-weight:bold;
-  color:white;
+  color:#6a3afc;
   text-align:center;
-  /*background:white;*/
   display:inline-block;
-  font-size:18px;
-  padding:10px 15px;
+  font-size:1.3em;
+  padding:10px 10px;
   margin:20px 0px 5px 0px;
   transition: all 0.3s ease 0s;
 }
@@ -2336,11 +2335,11 @@ html, body {
 @keyframes loading {
   0%, 100% {
     transform: scale(1);
-    opacity:0.8;
+    opacity:0.6;
     animation-timing-function: ease-out;
   }
   50% {
-    transform: scale(1.3);
+    transform: scale(1.1);
     opacity:1;
     animation-timing-function: ease-in;
   }
@@ -2526,7 +2525,7 @@ label {
 	color:white;
   font-weight:600;
 	float:left;
-	margin:55px 40px 5px 0px;
+	margin:65px 40px 5px 0px;
 	font-size:16px;
 }
 

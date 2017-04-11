@@ -57,6 +57,7 @@ input.search-bar{
 
 .no-tracktlists h2{
 	text-align:center;
+	font-weight:500 !important;
 	color: #55587a;
 	font-size:24px;
 }
@@ -70,8 +71,7 @@ input.search-bar{
 
 .query-name{
 	font-size:28px;
-	color: #d623fe;
-	font-weight:bold;
+	color: #9191C4;
 }
 
 .clear-button{

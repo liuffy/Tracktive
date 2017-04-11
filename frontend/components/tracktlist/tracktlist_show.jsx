@@ -34,7 +34,7 @@ class TracktlistShow extends React.Component{
    let tracktlistAge = `~${tracktlist.age} ago`;
 
     return loading ? <div className="spinner">
-  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
+  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg"/>
 </div> : <div className="tracktlist-detail cf">
 
       <div className="tracktlist-info">

@@ -7,30 +7,22 @@ const Graphics = () => (
 		<h4
 			className="about-header">images</h4>
 			<div className="left-side">
-			 <p className="numbering">1</p><img 
+			 <img 
           className="modal-image"
-          src="http://res.cloudinary.com/liuffy/image/upload/v1485994080/fist-bump-small_nn2wgh.gif" />
+          src="http://wwwhere.io/img/thumbs/flaticon.jpg" />
 
 
-        <p className="numbering">2</p><img
-        	className="modal-image"
-        	src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png"/>
 
 			</div>
       <div className = "right-side">
      <p className="about-text">
-		[Fist bump, wave] Gifs from the session form were created by <a className="link"
-																			href="https://dribbble.com/matt_yow">Matt Yow.</a>
+		 Most icons are sourced from <a className="link"
+																			href="http://www.flaticon.com/">Flat Icon.</a>
 		</p>
 		
 		<br/>
 		     
 
-		<p className="about-text">
-		[Fingerprint] This image from the search component was created by <a className="link"
-																			href="https://dribbble.com/antonkudin">Anton Kudin.</a>
-		</p>
-	
 			</div>
 	</div>
 	)

@@ -34,7 +34,8 @@
 
 
     .hamburger-dropdown > li{
-    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491890793/options_qbyqpr.svg");
+      top:10px;
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491922118/menu_yjc2nn.svg");
     background-repeat: no-repeat;
     background-size: 80px 80px;
     width: 80px;
@@ -43,27 +44,22 @@
     cursor: pointer;
   }
 
-/*  .footer{
-  	width:100vh !important;
-  } */
 
   div.index-footer{
   	/*width:140vh !important;*/
   }
 
   .hamburger-dropdown ul{
-    margin-top: 75px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+    margin-top: 80px;
     width:300px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
     padding:0;
     list-style:none;
-    border-left:1px solid #949496;
-    border-right:1px solid #949496;
-   	border-bottom:1px solid #949496;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+   	border-bottom:2px solid #fff;
   /*box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);*/
   }
 
@@ -111,7 +107,7 @@
   }
 
   img.wordmark-logo{
-    visibility:hidden;
+    visibility:hidden;80
   }
     .hamburger-dropdown {
     display: block;
@@ -124,11 +120,11 @@
 
 
     .hamburger-dropdown > li{
-    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1488132852/hamburger-vector_r4zcmr.png");
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491922118/menu_yjc2nn.svg");
     background-repeat: no-repeat;
-    background-size: 70px 70px;
-    width: 70px;
-    height: 70px;
+    background-size: 90px 90px;
+    width: 90px;
+    height: 90px;
     position:relative;
     cursor: pointer;
   }
@@ -142,15 +138,16 @@
   }
 
   .hamburger-dropdown ul{
-    margin-top: 65px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-    width:200px;
+    margin-top: 90px;
+    width:300px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
-  border:1px solid #949496;
-  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+    padding:0;
+    list-style:none;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
   }
 
     .hamburger-dropdown:hover ul{
@@ -169,9 +166,9 @@
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
-  .footer{
+/*  .footer{
     padding-left:0em;
-  }
+  }*/
 
   .text-blurb{
     top:470px !important;

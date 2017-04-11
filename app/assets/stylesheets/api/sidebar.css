@@ -134,13 +134,15 @@
 }
 
 .logout-button{
+  transition: all 0.2s ease 0s;
+  border-radius:5px;
   color:#6a3afc;
   display:inline-block;
   font-size:15px;
   float:left;
-  padding:2px 0px;
+  padding:4px 4px;
   font-weight:600;
-  margin:25px 30px 5px 0px;
+  margin:25px 30px 5px -4px;
 }
 
 .logout-button:after{
@@ -153,6 +155,10 @@
   left: 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.logout-button:hover{
+  background: #dcdced;
 }
 
 .logout-button:hover::after {

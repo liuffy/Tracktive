@@ -64,7 +64,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             <div className="no-tracktlists">
               <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
               Why not <FormModal/>a new one?</h2>
-              <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" />
+              <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1491920699/blueprint_wb9rur.svg" />
             </div>
          } else {
             result = filteredTracktlists.map(tracktlist =>
@@ -86,7 +86,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }
 
    return loading ? <div className="spinner">
-  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png"/>
+  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg"/>
 </div> :
 <div>
 <a href="javascript:" id="return-to-top"><i className="icon-chevron-up"></i></a>

@@ -41894,22 +41894,9 @@ return jQuery;
 			_react2.default.createElement(
 				"div",
 				{ className: "left-side" },
-				_react2.default.createElement(
-					"p",
-					{ className: "numbering" },
-					"1"
-				),
 				_react2.default.createElement("img", {
 					className: "modal-image",
-					src: "http://res.cloudinary.com/liuffy/image/upload/v1485994080/fist-bump-small_nn2wgh.gif" }),
-				_react2.default.createElement(
-					"p",
-					{ className: "numbering" },
-					"2"
-				),
-				_react2.default.createElement("img", {
-					className: "modal-image",
-					src: "http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png" })
+					src: "http://wwwhere.io/img/thumbs/flaticon.jpg" })
 			),
 			_react2.default.createElement(
 				"div",
@@ -41917,26 +41904,15 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"[Fist bump, wave] Gifs from the session form were created by ",
+					"Most icons are sourced from ",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
-							href: "https://dribbble.com/matt_yow" },
-						"Matt Yow."
+							href: "http://www.flaticon.com/" },
+						"Flat Icon."
 					)
 				),
-				_react2.default.createElement("br", null),
-				_react2.default.createElement(
-					"p",
-					{ className: "about-text" },
-					"[Fingerprint] This image from the search component was created by ",
-					_react2.default.createElement(
-						"a",
-						{ className: "link",
-							href: "https://dribbble.com/antonkudin" },
-						"Anton Kudin."
-					)
-				)
+				_react2.default.createElement("br", null)
 			)
 		);
 	};
@@ -57884,7 +57860,7 @@ return jQuery;
 	              _react2.default.createElement(_form_modal2.default, null),
 	              'a new one?'
 	            ),
-	            _react2.default.createElement('img', { className: 'thumbprint', src: 'http://res.cloudinary.com/liuffy/image/upload/v1486250085/transparent_thumbprint_m42mma.png' })
+	            _react2.default.createElement('img', { className: 'thumbprint', src: 'http://res.cloudinary.com/liuffy/image/upload/v1491920699/blueprint_wb9rur.svg' })
 	          );
 	        } else {
 	          result = filteredTracktlists.map(function (tracktlist) {
@@ -57905,7 +57881,7 @@ return jQuery;
 	      return loading ? _react2.default.createElement(
 	        'div',
 	        { className: 'spinner' },
-	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png' })
+	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg' })
 	      ) : _react2.default.createElement(
 	        'div',
 	        null,
@@ -97850,7 +97826,7 @@ return jQuery;
 	      return loading ? _react2.default.createElement(
 	        'div',
 	        { className: 'spinner' },
-	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1485894607/wordmark-2_m4clkf.png' })
+	        _react2.default.createElement('img', { className: 'loader-logo', src: 'http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg' })
 	      ) : _react2.default.createElement(
 	        'div',
 	        { className: 'tracktlist-detail cf' },
