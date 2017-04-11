@@ -206,6 +206,11 @@
   .hamburger-dropdown ul, h2.explore{
     transform:scale(1.8);
   }
+
+  .hamburger-dropdown ul{
+    margin-top:220px !important;
+    margin-left:100px !important;
+  }
 }
 
 
