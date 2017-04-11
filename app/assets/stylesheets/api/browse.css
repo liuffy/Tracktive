@@ -63,13 +63,13 @@
 }
 
   img.wordmark-logo{
-  	height:70px;
+  	height:60px;
   	display:inline-block;
       -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
 	  float:left;
-    margin:20px 30px 0px 30px;
+    margin:30px 30px 0px 30px;
   }
 
 
