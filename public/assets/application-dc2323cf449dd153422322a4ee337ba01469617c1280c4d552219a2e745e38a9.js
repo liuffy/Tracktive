@@ -40935,7 +40935,7 @@ return jQuery;
 	});
 	var modal = {
 	  position: 'fixed',
-	  top: 60,
+	  top: 30,
 	  right: 0,
 	  bottom: 0,
 	  animationName: 'scaleIn',
@@ -40951,10 +40951,11 @@ return jQuery;
 	   width: '800px',
 	  height: 'auto',
 	  position: 'relative',
-	  margin: '3% auto',
+	  margin: '0% auto',
 	  padding: '0px 0px 15px 0px',
 	  background: '#FFF',
-	  boxShadow: '0.8px 0.8px 8px 0px rgba(0,0,0,0.5)'
+	  border: '1px solid #b8b8db'
+	  // boxShadow: '2px 2px 8px 2px rgba(0,0,0,0.5)'
 	};
 	
 	var close = {
@@ -40967,9 +40968,7 @@ return jQuery;
 	  top: '-10px',
 	  width: '24px',
 	  textDecoration: 'none',
-	  fontWeight: 'bold',
 	  borderRadius: '12px',
-	  boxShadow: '1px 1px 3px #000',
 	  cursor: 'pointer'
 	};
 	
@@ -41005,7 +41004,7 @@ return jQuery;
 	    top: '10%',
 	    left: '21%',
 	    width: '580px',
-	    height: '460px',
+	    height: '430px',
 	    background: 'white',
 	    border: 'none',
 	    padding: 0,
@@ -41166,15 +41165,6 @@ return jQuery;
 	        'div',
 	        { className: 'form' },
 	        _react2.default.createElement(
-	          'h1',
-	          {
-	            className: 'create-banner-text' },
-	          'create a tracktlist          ',
-	          _react2.default.createElement('img', {
-	            className: 'flask-logo',
-	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1485845606/flask-final_mb5xeo.png' })
-	        ),
-	        _react2.default.createElement(
 	          'div',
 	          {
 	            className: 'tracktlist-form cf' },
@@ -41186,11 +41176,6 @@ return jQuery;
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'create-form' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'form-explanation' },
-	                'Tracktive will create a shuffled Spotify playlist based on the artists you enter.'
-	              ),
 	              _react2.default.createElement(
 	                'label',
 	                null,
@@ -95208,11 +95193,6 @@ return jQuery;
 	      var link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
 	
 	      var headerClass = this.props.formType === 'login' ? 'session-form-header purple' : 'session-form-header pink';
-	      var picture = this.props.formType === 'login' ? _react2.default.createElement('img', {
-	        className: 'fist-bump',
-	        src: 'http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif' }) : _react2.default.createElement('img', {
-	        className: 'hand-wave',
-	        src: 'http://res.cloudinary.com/liuffy/image/upload/v1487791818/hand_wave_oyn1yz.svg' });
 	
 	      var header = this.props.formType === 'signup' ? 'sign up' : 'login';
 	
@@ -95249,8 +95229,7 @@ return jQuery;
 	                className: headerClass },
 	              header,
 	              ' to make tracktlists.'
-	            ),
-	            picture
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'ul',

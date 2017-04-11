@@ -151,7 +151,6 @@ html, body {
 
 
 .standard-input-field:focus{
-   transform: scale(1.2) translate(30px);
    background: #ededef;
 }
 
@@ -295,7 +294,8 @@ label {
 
 .greeting{
 	position:fixed;
-	color:#6a3afc;
+	color:white;
+  font-weight:600;
 	float:left;
 	margin:55px 40px 5px 0px;
 	font-size:16px;
@@ -333,12 +333,11 @@ li{
 	position:fixed;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.48);
 	transition: all 0.4s ease 0s;
-  background: white;
+  background: #b8b8db;
   top: 0;
   left: 0;
   right: 0;
   background-size: cover;
-  background-position: center;
   bottom:0;
   background-size: 150% 150%;
 }

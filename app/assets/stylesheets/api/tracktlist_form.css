@@ -2,49 +2,23 @@
 	display:block;
 }
 
-.form-explanation{
-	height:70px;
-	font-size:24px;
-	margin:0px;
-	margin-top:-15px;
-	font-weight:600;
-	padding:0px;
-	color: #797a7a;
-	line-height:1.0;
-		  text-shadow:
-  rgba(255, 255, 255, 0.0) 0px 0px;
-}
+
 
 .create-header{
 	width:80%;
 }
 
 .create-banner-text{
+  font-family: 'Montserrat', sans-serif;
 	float:left;
 	font-size:40px;
 	margin-top:0px;
-	font-weight:bold;
-	color: white;
+	font-weight:600;
+	color: #6a3af9191c4c;
 	width:100%;
 	left:0;
 	right:0;
-	text-shadow:
-	rgb(107, 90, 147) 1px 1px,
-	rgb(107, 90, 147) 2px 2px,
-	rgb(107, 90, 147) 3px 3px,
-	rgb(86, 53, 174) 4px 4px, 
-	rgb(86, 54, 175) 5px 5px,
-	rgb(86, 54, 175) 6px 6px,
-	rgb(86, 54, 175) 7px 7px; 
-	font-weight: bold;
-	padding:15px 0px;
-background: linear-gradient(6deg, #d0d0d0, #242626);
-background-size: 200% 200%;
-
--webkit-animation: AnimationName 11s ease infinite;
--moz-animation: AnimationName 11s ease infinite;
--o-animation: AnimationName 11s ease infinite;
-animation: AnimationName 11s ease infinite;
+	padding:20px 0px;
 }
   
   
@@ -86,16 +60,14 @@ animation: AnimationName 11s ease infinite;
 }
 
 h3.create{
+  font-family: 'Montserrat', sans-serif;
 	position:relative;
-	font-weight:600;
+	font-weight:500;
 	font-size:18px;
 	line-height:0.9;
 	padding:2px;
 	display:inline-block;
-	color: #ce25fc;
-	  text-shadow:
-  rgba(255, 255, 255, 0.0) 0px 0px;
-	/*background:#ce25fc;*/
+	color: #6a3afc;
 }
 
 .purple{
@@ -148,29 +120,33 @@ h3.create{
 
 .standard-input-field2::-webkit-input-placeholder {
     color:#aba9bc;
+    font-weight:500;
     margin:0 auto;
   }
 
 .standard-input-field2::-moz-placeholder { /* Firefox 19+ */
   color:#aba9bc;
+    font-weight:500;
   margin:0 auto;
 }
 
 .standard-input-field2::-ms-input-placeholder { /* IE 10+ */
   color:#aba9bc;
+    font-weight:500;
   margin:0 auto;
 }
 
 .standard-input-field2::-moz-placeholder { /* Firefox 18- */
-  color:#aba9bc;
-    margin:0 auto;
+	color:#aba9bc;
+	font-weight:500;
+	margin:0 auto;
 }
 
 
 .standard-input-field2{
 	position:relative;
 	letter-spacing:1px;
-	color: #5B3DA8;
+	color: #464747;
 	font-size:18px;
 	/*border:1px solid #5B3DA8;*/
 	/*margin: 3px 0px;*/
@@ -191,21 +167,22 @@ h3.create{
 
 
  .submit, .create-button{
- 	margin-top:15px;
- 	width:90%;
+ 	  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  font-family: 'Montserrat', sans-serif;
+ 	margin-top:40px;
+ 	width:60%;
+  background: #9191c4;
  	color: rgb(126, 93, 237);
-	border: 2px solid rgb(126, 93, 237);
-	box-shadow:
-  rgba(123, 155, 242, 0.5) 1px 1px,
-  rgba(123, 155, 242, 0.4) 2px 2px,
-  rgba(123, 155, 242, 0.3) 3px 3px;
-  padding:5px 15px;
-	border-radius:3px;
+	border: 2px solid #9191c4;
+  padding:10px 15px;
+	border-radius:5px;
+  color: white;
 }
 
 .submit:hover, .create-button:hover{
-  color: white;
-  background: rgb(126, 93, 237);
-	border: 2px solid rgb(126, 93, 237);
+	border: 2px solid #6a3afc;
+	background: #6a3afc;
 }
 

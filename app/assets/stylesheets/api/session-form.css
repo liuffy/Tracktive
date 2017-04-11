@@ -2,12 +2,7 @@
 .session-form{
 	color:#77AF9C;
 	position: relative;
-/*  display: flex;
-  align-items:center;
-  flex-direction:column*/
 	padding:0px 0px 20px 50px;
-	/*border-radius:5px;*/
-  /*box-shadow: 0.5px 0.5px 3px 0px rgba(0,0,0,0.48);*/
   -webkit-transition: opacity 500ms ease-in;
   -moz-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
@@ -15,9 +10,10 @@
 
 .session-form-header{
   font-size:24px;
-  font-weight:bold;
-  color:#5b3da8;
-  margin:30px 0px 50px 100px;
+  font-weight:600;
+  font-family: 'Montserrat', sans-serif;
+  color:#7e3bf9 !important;
+  margin:50px 0px 50px 60px;
 }
 
 .splash-button.demo{
@@ -25,7 +21,6 @@
   background:#d623fe;
    animation: hover 0.8s infinite;
   animation-iteration-count: 3;
-  /*border: 2px solid #361575;*/
 }
 
 .submit{

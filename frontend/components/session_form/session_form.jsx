@@ -69,13 +69,7 @@ class SessionForm extends React.Component {
 
     const headerClass = this.props.formType === 'login' ? 'session-form-header purple' : 
                                                   'session-form-header pink';
-    const picture = this.props.formType === 'login' ?  <img 
-          className="fist-bump"
-          src="http://68.media.tumblr.com/c62d4d41221c5976bcf51051fd8464de/tumblr_ohvul2ijhJ1s6mi2go1_1280.gif" /> :
-
-           <img 
-          className="hand-wave"
-          src="http://res.cloudinary.com/liuffy/image/upload/v1487791818/hand_wave_oyn1yz.svg" />
+   
 
     const header = this.props.formType === 'signup' ? 'sign up' : 'login';
 
@@ -94,7 +88,6 @@ class SessionForm extends React.Component {
           className={headerClass}>{header} to make tracktlists.</h1>
 
 
-         {picture}
         </div>
         <ul className="login-errors">
           {errors}

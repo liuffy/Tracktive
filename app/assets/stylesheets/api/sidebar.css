@@ -16,7 +16,7 @@
   width:200px;
   height:30px;
   font-weight:600;
-  border-bottom:4px solid white;
+  /*border-bottom:4px solid white;*/
   color:#6a3afc;
   padding:0.5em;
   align-contents:center;
@@ -31,14 +31,14 @@
 }
 
 .sidebar-button:hover{
-  background:#eae8e8;
+  background:#dcdced;
   cursor:pointer;
 }
 
 .active-button-side{
   font-weight:bold;
 	color: #d623fe;
-	background: #eae8e8;
+	background: #dcdced;
 }
 
 .hideMe {

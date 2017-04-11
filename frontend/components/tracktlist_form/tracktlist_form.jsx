@@ -52,10 +52,7 @@ class TracktlistForm extends React.Component {
 
   	return(
       <div className="form">
-        <h1
-          className="create-banner-text">create a tracktlist          <img 
-                className="flask-logo"
-                src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/flask-final_mb5xeo.png"/></h1> 
+       
 
       <div
       className="tracktlist-form cf">
@@ -66,8 +63,6 @@ class TracktlistForm extends React.Component {
 
 
       <div className="create-form">
-      <h3 className="form-explanation">Tracktive will create a shuffled Spotify playlist based
-      on the artists you enter.</h3>
         <label><h3
           className="create">Enter artists you want to hear (separated by commas).</h3>
         <input 
