@@ -623,6 +623,7 @@ div.site-info{
     font-size:28px;
   }
 
+
   div.entire-item{
     transform:scale(1.5);
     margin:80px !important;
@@ -630,6 +631,10 @@ div.site-info{
 
   div.index-right{
     /*width:400px !important;*/
+  }
+
+  .hamburger-dropdown ul, h2.explore{
+    transform:scale(1.8);
   }
 }
 
