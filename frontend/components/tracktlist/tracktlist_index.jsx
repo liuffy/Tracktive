@@ -64,7 +64,6 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             <div className="no-tracktlists">
               <h2> Seems like <span className="query-name">{query}</span> hasn't been featured in any tracktlists yet.
               Why not <FormModal/>a new one?</h2>
-              <img className="thumbprint" src="http://res.cloudinary.com/liuffy/image/upload/v1491920699/blueprint_wb9rur.svg" />
             </div>
          } else {
             result = filteredTracktlists.map(tracktlist =>

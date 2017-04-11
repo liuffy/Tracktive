@@ -52,6 +52,7 @@ input.search-bar{
 
 .no-tracktlists{
 	height:300px;
+	width:800px;
 }
 
 
@@ -60,13 +61,16 @@ input.search-bar{
 	font-weight:500 !important;
 	color: #55587a;
 	font-size:24px;
+	margin-left:5em;
+	position:relative;
 }
 
 
 .thumbprint{
-	height:200px;
+	height:100px;
 	width:auto;
-	margin: 0 auto;
+	margin-left:7em;
+	position:absolute;
 }
 
 .query-name{

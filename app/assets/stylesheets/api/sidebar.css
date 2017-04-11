@@ -86,9 +86,7 @@
   padding:10px 7px 2px 7px;
   border-radius:7px;
   height:20px;
-  color: rgb(126, 93, 237);
-  text-shadow:
-  rgba(123, 155, 242, 0.3) 1px 1px;
+  color: #7777ad;
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
   position:absolute;
   z-index:3000;
