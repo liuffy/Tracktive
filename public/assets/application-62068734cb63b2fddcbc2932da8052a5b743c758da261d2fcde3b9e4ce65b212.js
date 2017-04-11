@@ -40948,15 +40948,13 @@ return jQuery;
 	};
 	
 	var container = {
-	   width: '80%',
+	   width: '800px',
 	  height: 'auto',
 	  position: 'relative',
 	  margin: '3% auto',
 	  padding: '0px 0px 15px 0px',
 	  background: '#FFF',
-	  // borderRadius: '5px',
 	  boxShadow: '0.8px 0.8px 8px 0px rgba(0,0,0,0.5)'
-	  // overflow: 'scroll'
 	};
 	
 	var close = {
@@ -41012,31 +41010,7 @@ return jQuery;
 	    border: 'none',
 	    padding: 0,
 	    margin: '0 auto',
-	    zIndex: 51
-	  }
-	};
-	
-	var aboutModalStyle = exports.aboutModalStyle = {
-	  overlay: {
-	    position: 'fixed',
-	    top: 0,
-	    left: 0,
-	    right: 0,
-	    bottom: 0,
-	    backgroundColor: 'rgba(214, 35, 254, 0.6)',
-	    zIndex: 50
-	  },
-	  content: {
-	    position: 'fixed',
-	    top: '0px',
-	    left: '0px',
-	    width: '700px',
-	    height: '600px',
-	    borderRadius: '5px',
-	    padding: 0,
-	    margin: '0 auto',
-	    zIndex: 51,
-	    overflow: 'scroll'
+	    zIndex: 500
 	  }
 	};
 
@@ -57965,7 +57939,7 @@ return jQuery;
 	            '         ',
 	            _react2.default.createElement('img', {
 	              className: 'binoculars-logo',
-	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png' })
+	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1491888128/submarine-with-periscope-up_pz2z4y.svg' })
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -94194,11 +94168,11 @@ return jQuery;
 	      };
 	
 	      $(window).scroll(function () {
-	        $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 150);
+	        $(".tracktive-wordmark-main").css("opacity", 1 - $(window).scrollTop() / 350);
 	      });
 	
 	      $(window).scroll(function () {
-	        $(".tagline").css("opacity", 1 - $(window).scrollTop() / 250);
+	        $(".tagline").css("opacity", 1 - $(window).scrollTop() / 450);
 	      });
 	
 	      var buttons = void 0;
@@ -94270,44 +94244,8 @@ return jQuery;
 	            'span',
 	            {
 	              className: 'tagline' },
-	            'make spotify playlists on the fly.'
+	            'Make Spotify playlists on the fly.'
 	          ),
-	          _react2.default.createElement(
-	            Slider,
-	            _extends({}, settings, {
-	              className: 'carousel-container' }),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'carousel-element' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'subtagline' },
-	                'Make playlists.'
-	              ),
-	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488056587/view-playlist_copy_copy_rgecg0.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'carousel-element' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'subtagline' },
-	                'Save playlists.'
-	              ),
-	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488050192/saved-cropped_b9y1lu.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'carousel-element' },
-	              _react2.default.createElement(
-	                'h3',
-	                { className: 'subtagline' },
-	                'Browse other playlists!'
-	              ),
-	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1488050195/search-cropped_dlho9f.png' })
-	            )
-	          ),
-	          buttons,
 	          _react2.default.createElement(
 	            _reactModal2.default,
 	            { isOpen: this.state.authModal,
@@ -94321,7 +94259,107 @@ return jQuery;
 	              demo: this.state.demo
 	            })
 	          ),
+	          buttons,
 	          _react2.default.createElement(_footer2.default, null)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'splash-block-1' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'splash-text' },
+	            _react2.default.createElement(
+	              'h2',
+	              { className: 'splash-header' },
+	              'The fastest way to build a perfect playlist.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'purp-text' },
+	              'Trying to build the perfect ambiance for your hangout but don\'t have the time to make a 5-hour long playlist?'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'purp-text h3' },
+	              _react2.default.createElement(
+	                'b',
+	                null,
+	                'Make a tracktlist in seconds.'
+	              )
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'purp-text' },
+	              'Enter the artists you like, give it a name, and instantly create the tracklist you need.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            Slider,
+	            _extends({}, settings, {
+	              className: 'carousel-container' }),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'carousel-element' },
+	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491877300/screen1.png' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'carousel-element' },
+	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491878105/screen2.5.png' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'carousel-element' },
+	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491877924/screen2.png' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'carousel-element' },
+	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491877981/screen4.png' })
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'splash-block-2' },
+	          _react2.default.createElement('img', { className: 'headphones-pic',
+	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1491882053/listening_aiqegr.svg' }),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'splash-text-2' },
+	            _react2.default.createElement(
+	              'h2',
+	              { className: 'splash-header-2' },
+	              'Save playlists that you create and like.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: '' },
+	              'Morning yoga? Pump up jams? Study session? ',
+	              _react2.default.createElement('br', null),
+	              ' Create playlists for any occasion. Your playlists will be saved to your account, so you can jam out whenever you want.'
+	            ),
+	            _react2.default.createElement('img', { className: 'image-block-2',
+	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1491886635/save_eueopy.svg' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'splash-text-2' },
+	            _react2.default.createElement(
+	              'h2',
+	              { className: 'splash-header-2' },
+	              'Discover new artists or songs.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: '' },
+	              'Scroll through the collections of music that other people have made. Find new songs from artists you already love, or discover exciting new artists you\'ve never listened to before.'
+	            ),
+	            _react2.default.createElement('img', { className: 'image-block-2',
+	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1491886948/new_os9tdz.svg' })
+	          )
 	        )
 	      );
 	    }
@@ -97675,7 +97713,7 @@ return jQuery;
 	          '\'s trackts ',
 	          _react2.default.createElement('img', {
 	            className: 'like-icon',
-	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1486002097/like_icon_cropped_okv740.png' })
+	            src: 'http://res.cloudinary.com/liuffy/image/upload/v1491888328/like_3_udw10b.svg' })
 	        ),
 	        _react2.default.createElement(
 	          'div',

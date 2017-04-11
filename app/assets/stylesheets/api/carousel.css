@@ -1,13 +1,10 @@
 .carousel-container {
-  margin-top:50px;
-  top:-60px;
-  width: 950px;
+  margin-right:30px;
+  width: 70%;
   display:block;
-  height:500px;
   overflow:hidden;
-  color: #333;
+  color: #3e3b47;
   display:block;
-  z-index:1;
 }
 
 .carousel-element{
@@ -15,14 +12,14 @@
 }
 
 .carousel-element img {
-  width:60%;
-  border: 1px solid white;
-  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+  margin-top:10%;
+  width:70%;
+  box-shadow: 2px 2px 15px 0px rgba(96, 104, 247, 0.4);
   border-radius:3px;
+  border: 1px solid rgba(106, 58, 252,0.6);
   height:auto;
-  opacity:0.9;
-  margin-top:150px;
-  margin-left:210px;
+  margin-left:15%;
+  z-index:10;
 }
 
 .carousel-image{
@@ -30,53 +27,48 @@
 	width:auto;
 }
 
+.slick-next, .slick-prev{
+  z-index:3000;
+  -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;
+}
+
+.slick-next:hover, .slick-prev:hover{
+  filter:brightness(120%);
+}
 
 .slick-next:before{
-	font-size:40px;
-	position:absolute;
-  right:100px;
-  z-index:300;
-  cursor:pointer;
+  right:60px;
+  top:20%;
 }
-
-button.slick-arrow.slick-next {
-  z-index:300;
-  font-size:40px;
-  cursor:pointer;
-}
-
-
-button.slick-arrow.slick-prev{
- z-index:300;
- cursor:pointer;
- left:50px;
-}
-
-
-
-.slick-prev:before, .slick-next:before{
-  font-size:40px;
-}
-
 
 .slick-prev:before {
-  font-size:40px;
-  z-index:300;
-  left:50px;
-  cursor:pointer;
+  left:60px;
+  top:20%;
+}
+
+.slick-prev:before, .slick-next:before{
   position:absolute;
+  cursor:pointer;
+  opacity:1.0;
+  z-index:3000;
+  font-size:60px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(106, 58, 252,0.6);
+ -webkit-filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
+ filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
+  color: #6a3afc;
 }
 
 
 .slick-dots {
-  position: absolute;
-  bottom: 15px;
-  /*right:25px;*/
+  display:none;
 }
 
 .subtagline{
   display:block;
-  color: white;
+  color: #3e3b47;
  font-size:1.3em;
   position:absolute;
   margin-left:400px;

@@ -94,7 +94,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         <h2
           className="explore">{indexText}         <img 
             className="binoculars-logo"
-            src="http://res.cloudinary.com/liuffy/image/upload/v1485845606/binoculars-final_ysflar.png" /></h2> 
+            src="http://res.cloudinary.com/liuffy/image/upload/v1491888128/submarine-with-periscope-up_pz2z4y.svg" /></h2> 
 
       <div className='tracktlists-index'>
           <Masonry className='tracktlists-index-container'

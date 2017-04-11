@@ -6,8 +6,6 @@
   animation-iteration-count: 3;
   width:100%;
   margin:0px;
-  text-shadow:
-  rgba(123, 155, 242, 0.3) 1px 1px;
 }
 
 .create-modal-button:hover{
@@ -15,30 +13,32 @@
 }
 
 .sidebar-button{
-    text-shadow:
-  rgba(123, 155, 242, 0.7) 1px 1px;
   width:200px;
-  height:31px;
-  border-bottom:3px solid white;
-  color:white;
+  height:30px;
+  font-weight:600;
+  border-bottom:4px solid white;
+  color:#6a3afc;
+  padding:0.5em;
+  align-contents:center;
   text-align:center;
   display:inline-block;
   /*border-radius: 4px;*/
   font-size:20px;
   float:left;
-  margin:40px 0px 5px 0px;
+  border-radius:5px;
+  margin:60px 0px 10px 40px;
   transition: all 0.2s ease 0s;
 }
 
 .sidebar-button:hover{
-  background:rgba(255,255,255,0.3);
+  background:#eae8e8;
+  cursor:pointer;
 }
 
 .active-button-side{
-	font-weight:600;
-	border-bottom:3px solid #361575;
-	color: #361575;
-	/*background: rgba(255,255,255,0.4);*/
+  font-weight:bold;
+	color: #d623fe;
+	background: #eae8e8;
 }
 
 .hideMe {
@@ -88,10 +88,7 @@
   display:inline-block;
   padding:10px 7px 2px 7px;
   border-radius:7px;
-  /*width:50px;*/
   height:20px;
-  /*margin-left:10%;*/
-  /*top:10%;*/
   color: rgb(126, 93, 237);
   text-shadow:
   rgba(123, 155, 242, 0.3) 1px 1px;
@@ -99,17 +96,14 @@
   position:absolute;
   z-index:3000;
   background: white;
-  top:655px;
+  top:300px;
 }
 
 .text-blurb-2{
   display:inline-block;
   padding:10px 7px 2px 7px;
   border-radius:7px;
-  /*width:50px;*/
   height:20px;
-  /*margin-left:10%;*/
-  /*top:10%;*/
   color: rgb(126, 93, 237);
   text-shadow:
   rgba(123, 155, 242, 0.3) 1px 1px;
@@ -140,7 +134,7 @@
 }
 
 .logout-button{
-  color:white;
+  color:#6a3afc;
   display:inline-block;
   font-size:15px;
   float:left;
@@ -154,7 +148,7 @@
   width: 0;
   margin-top:5px;
   height: 3px;
-  background: white;
+  background: #6a3afc;
   display: block;
   left: 0;
   -webkit-transition: all 0.2s;

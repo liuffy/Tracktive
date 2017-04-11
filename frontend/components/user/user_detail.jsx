@@ -54,7 +54,7 @@ class UserDetail extends React.Component{
 	 		<h2
 	 				className="explore">{user.username}'s trackts <img
 	 					className="like-icon" 
-	 					src="http://res.cloudinary.com/liuffy/image/upload/v1486002097/like_icon_cropped_okv740.png" />
+	 					src="http://res.cloudinary.com/liuffy/image/upload/v1491888328/like_3_udw10b.svg" />
 	 		</h2>
  			<div
  				className="tracktlists-index">

@@ -1,22 +1,20 @@
 .exit-button{
   z-index:2000;
+  bakground-size:10px 10px;
   position:absolute;
-  font-size:70px;
-  top:-40px;
-  right:-35px;
-  color: white;
-  text-shadow:
-  rgba(123, 155, 242, 0.3) 1px 1px,
-  rgba(123, 155, 242, 0.3) 2px 2px;
-  opacity:0.4;
+  font-size:50px;
+  top:-10px;
+  color: rgba(106, 58, 252,0.7);
+  right:3px;
+  padding:0.1em;
+  opacity:1;
   transition: all 0.2s ease 0s;
 }
 
 .exit-button:hover{
-  opacity:1;
+  color: rgba(106, 58, 252,1.0);
   cursor:pointer;
 }
-
 
 
 .faded-modal{ 

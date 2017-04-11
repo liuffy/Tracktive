@@ -2,10 +2,81 @@
 
 /* Wordmark */
 
+.headphones-pic{
+  margin-bottom:15em;
+  padding:2em 2em 4em 6em;
+  width:11%;  
+  height:auto;
+}
 
+.image-block-2{
+  width:15%;
+  height:auto;
+  margin:2em auto;
+}
+
+.purp-text{
+  color: #6a3afc !important;
+  font-size:1.0em;
+}
+
+.h3{
+  font-size: 1.3em;
+  margin:0.5em 0em;
+}
+.splash-block-1{
+  padding:1.1em;
+  display: flex;
+  flex-direction: row;
+  height:380px;
+  background: white;
+  z-index:100;
+  margin-top:50px;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.splash-block-2{
+  padding:1.1em;
+  z-index:103;
+  display:flex;
+  height:600px;
+  background:#7e3bf9;
+  flex-directon:row;
+}
+.splash-header-2,.splash-header{
+  font-family: 'Montserrat', sans-serif;
+  color:#6a3afc;
+  font-size:1.7em;
+  margin-top:0em;
+  padding-top:0em;
+  font-weight:600;
+  margin-bottom:1em;
+}
+.splash-header-2{
+  color:#fff !important;
+}
+
+.splash-text-2, .splash-text{
+  width:45% !important;
+  position:relative;
+  padding: 1% 2% 0% 6%;
+  margin: 4% 1%;
+  height:50px;
+  font-weight:500;
+  color:white;
+  float:left;
+}
+
+.splash-text-2{
+  width:26% !important;
+  text-align:center;
+}
+
+.top{
+  width:30%;
+}
 .gradient-div{
   display:block;
-  /*margin-top:100px;*/
   width:100%;
   height:268px;
   background: #DA22FF; /* fallback for old browsers */
@@ -24,9 +95,11 @@
 }
 
 .whole-page{
-  display:block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top:0%;
-  padding-left:8em;
   right:0%;
 }
 
@@ -53,7 +126,7 @@
   background-size: cover;
   background-position: center;
   bottom:0;
-  background-size: 150% 150%;
+  background-size: 120% 120%;
   -webkit-animation: GradientAnimation 10s ease infinite;
   -moz-animation: GradientAnimation 10s ease infinite;
   animation: GradientAnimation 10s ease infinite;
@@ -78,12 +151,9 @@
 
 
 .tagline{
-  color:rgba(255, 255, 255, 0.7);
-  font-size:3em;
-  position:absolute;
+  color: white;
+  font-size:2.5em;
   display:inline-block;
-  margin-left:2.3em;
-  line-height:0.8;
   white-space: nowrap;
   z-index:33;
   font-weight:600;
@@ -104,7 +174,6 @@
   display:inline-block;
   color: white; 
   font-weight: 600;
-  margin-left:1.8em;
       text-shadow:
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
@@ -112,6 +181,7 @@
   rgb(86, 53, 174) 4px 4px, 
   rgb(86, 54, 175) 5px 5px,
   rgb(86, 54, 175) 6px 6px;
+  padding-top:50px;
 }
 
 
@@ -243,34 +313,32 @@
 
 
 .splash-buttons{
-  /*position:absolute;*/
   display:inline-block;
-  margin-left:230px;
+  margin-top:80px;
   line-height:0.8;
   white-space: nowrap;
-  z-index:3333;
-  margin-bottom: 345px;
+  z-index:33;
   }
 
 
 .splash-button{
-  opacity:0.8;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+  background: white;
   width:80px;
-  border: 1px solid white;
-  font-weight:400;
-  color:white;
+  color:#7e3bf9;
   text-align:center;
   display:inline-block;
   border-radius: 3px;
-  font-size:20px;
-  padding:6px 30px;
+  font-size:1.1em;
+  padding:10px 30px;
   margin: 0 15px;
-  transition: all 0.2s ease 0s;
-}
+  -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;}
 
 .splash-button:hover{
-  opacity:1.0;
-  transform:scale(1.05);
+  filter:brightness(90%);
 }
 
 

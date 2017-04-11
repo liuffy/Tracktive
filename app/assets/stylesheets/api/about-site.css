@@ -15,22 +15,18 @@ div.site-info{
 	padding:20px;
 }
 .site-info p{
-	color:#282728;
 	font-size:16px;
+	color: #343335;
+	font-weight:400;
 	word-break: normal;
   white-space: normal;
 }
 
 .about-header{
-	color:#282728;
-	/*text-shadow: 0px 1px 5px #330d9b;*/
-	font-size: 2vmax;
-	margin:20px 0px;
-/*		text-shadow: rgb(20, 144, 120) 1px 1px,
-	rgb(20, 144, 120) 1px 1px,
-    rgb(107, 90, 147) 2px 2px,
-    rgb(107, 91, 148) 3px 3px,
-    rgb(107, 92, 149) 4px 4px;*/
+	color:#6a3afc;
+  font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	margin:1em 0em;
 }
 
 .head-shot{

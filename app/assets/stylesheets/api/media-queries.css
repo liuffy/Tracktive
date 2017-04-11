@@ -2,11 +2,7 @@
   display:none;
 }
 
-
-
-
-@media all and (max-width: 830px){
-
+@media all and (max-width: 1020px){
 /* the regular nav bar disappears at this max width*/
 
 
@@ -38,11 +34,11 @@
 
 
     .hamburger-dropdown > li{
-    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1488132852/hamburger-vector_r4zcmr.png");
+    background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491890793/options_qbyqpr.svg");
     background-repeat: no-repeat;
-    background-size: 70px 70px;
-    width: 70px;
-    height: 70px;
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
     position:relative;
     cursor: pointer;
   }
@@ -56,21 +52,25 @@
   }
 
   .hamburger-dropdown ul{
-    margin-top: 65px;
+    margin-top: 75px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
-    width:200px;
+    width:300px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
- 	border:1px solid #949496;
-  box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
+    padding:0;
+    list-style:none;
+    border-left:1px solid #949496;
+    border-right:1px solid #949496;
+   	border-bottom:1px solid #949496;
+  /*box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);*/
   }
 
     .hamburger-dropdown:hover ul{
     display:flex;
    /* enables a flex context for all its direct children*/
-    background: ghostwhite;
+    background: white;
   }
 
   .ham{
@@ -84,15 +84,16 @@
 		border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
- /* .ham:hover{
-  	-webkit-filter: brightness( 120% );
-  }*/
+
 }
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .splash-text{
+    width:80% !important;
+  }
   .whole-page{
   padding-left:0em !important;
-  min-height:100vh;
+  min-height:45vh;
   }
 
   .tracktlist-info{
@@ -154,8 +155,7 @@
 
     .hamburger-dropdown:hover ul{
     display:flex;
-   /* enables a flex context for all its direct children*/
-    background: ghostwhite;
+    background: white;
   }
 
   .ham{
@@ -173,15 +173,10 @@
     padding-left:0em;
   }
 
-/*  .tracktive-wordmark-main{
-    margin-left:3em;
-    font-size:1em !important;
+  .text-blurb{
+    top:470px !important;
   }
 
-
-  .tagline{
-    margin-left:0em;
-    }*/
 }
 
 

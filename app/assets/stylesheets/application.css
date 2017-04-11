@@ -194,18 +194,13 @@ label {
 	width:300px;
 }
 .link{
-	color:#361575;
-	font-weight:600;
+	color:#d623fe;
 	margin: 0px 3px;
 	cursor:pointer;
-    text-shadow:
-  rgba(123, 155, 242, 0.3) 1px 1px;
-/*  text-shadow:
-  rgb(123, 155, 242) 1px 1px;*/
 }
 
 .link:hover{
-	border-bottom:3px solid #361575;
+	border-bottom:3px solid #d623fe;
 }
 
 .about-link{
@@ -300,7 +295,7 @@ label {
 
 .greeting{
 	position:fixed;
-	color:white;
+	color:#6a3afc;
 	float:left;
 	margin:55px 40px 5px 0px;
 	font-size:16px;
@@ -325,11 +320,12 @@ li{
 
 .header-bar{
 		/* IE10+ */ 
-	height:110px;
+	height:150px;
 	background-size: cover;
 	/*background-position: center;*/
 	/*border-bottom: 2px solid #545252;*/
 	width:100%;
+  color: #6a3afc;
 	z-index:3;
 	top: 0;
 	left: 0;
@@ -337,12 +333,7 @@ li{
 	position:fixed;
 	box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.48);
 	transition: all 0.4s ease 0s;
-    background: #DA22FF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(128deg, #da22ff, #9733ee); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(128deg, #da22ff, #9733ee, #4ab4eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-animation: GradientAnimation 50s ease infinite;
-  -moz-animation: GradientAnimation 50s ease infinite;
-  animation: GradientAnimation 50s ease infinite;
+  background: white;
   top: 0;
   left: 0;
   right: 0;
