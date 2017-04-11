@@ -57859,8 +57859,7 @@ return jQuery;
 	              ' hasn\'t been featured in any tracktlists yet. Why not ',
 	              _react2.default.createElement(_form_modal2.default, null),
 	              'a new one?'
-	            ),
-	            _react2.default.createElement('img', { className: 'thumbprint', src: 'http://res.cloudinary.com/liuffy/image/upload/v1491920699/blueprint_wb9rur.svg' })
+	            )
 	          );
 	        } else {
 	          result = filteredTracktlists.map(function (tracktlist) {
