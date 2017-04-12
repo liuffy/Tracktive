@@ -55,7 +55,7 @@
   animation-duration: 0.5s;
     margin-top: 70px;
     padding-top:40px;
-    width:300px;
+    width:240px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
@@ -72,15 +72,32 @@
   }
 
   .ham{
-  	font-size:24px !important;
+  	font-size:16px !important;
   	font-weight:600;
+    border-radius:0px !important;
 		color: rgb(126, 93, 237) !important;
 		text-shadow:
 		rgba(123, 155, 242, 0.3) 1px 1px !important;
-		padding:20px 0px !important;
-		margin-top:0px !important;
+		padding:10px 20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top:0px !important;
+		margin-bottom:2px !important;
 		border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
+
+
+
+.create-modal-button{
+  animation: none !important;
+  width:100%;
+  margin:0px;
+}
+
+.active-button-side{
+  font-weight:bold;
+  color: #d623fe;
+}
 
 
 }
@@ -142,7 +159,7 @@
   .hamburger-dropdown ul{
     margin-top: 90px;
     padding-top:40px;
-    width:300px;
+    width:340px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
@@ -157,13 +174,16 @@
   }
 
   .ham{
-    font-size:24px !important;
+    font-size:42px !important;
     font-weight:600;
     color: rgb(126, 93, 237) !important;
     text-shadow:
     rgba(123, 155, 242, 0.3) 1px 1px !important;
-    padding:20px 0px !important;
+      padding:30px 70px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     margin-top:0px !important;
+    margin-bottom:2px !important;
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
@@ -185,11 +205,12 @@
     font-size:60px !important;
   }
   .text-blurb{
-    top:470px !important;
+    top:490px !important;
   }
 
   span.greeting, .logout-text{
     margin-left:20px !important;
+    margin-top:80px !important;
     font-size:28px;
   }
 

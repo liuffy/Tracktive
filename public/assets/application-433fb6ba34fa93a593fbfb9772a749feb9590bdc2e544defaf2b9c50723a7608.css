@@ -335,7 +335,9 @@ div.site-info{
   -webkit-text-stroke-color: rgba(106, 58, 252,0.6);
  -webkit-filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
  filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
-  color: #6a3afc;
+  color: white;
+     -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #b8b8db;
 }
 
 
@@ -485,7 +487,7 @@ div.site-info{
   animation-duration: 0.5s;
     margin-top: 70px;
     padding-top:40px;
-    width:300px;
+    width:240px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
@@ -502,15 +504,32 @@ div.site-info{
   }
 
   .ham{
-  	font-size:24px !important;
+  	font-size:16px !important;
   	font-weight:600;
+    border-radius:0px !important;
 		color: rgb(126, 93, 237) !important;
 		text-shadow:
 		rgba(123, 155, 242, 0.3) 1px 1px !important;
-		padding:20px 0px !important;
-		margin-top:0px !important;
+		padding:10px 20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top:0px !important;
+		margin-bottom:2px !important;
 		border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
+
+
+
+.create-modal-button{
+  animation: none !important;
+  width:100%;
+  margin:0px;
+}
+
+.active-button-side{
+  font-weight:bold;
+  color: #d623fe;
+}
 
 
 }
@@ -572,7 +591,7 @@ div.site-info{
   .hamburger-dropdown ul{
     margin-top: 90px;
     padding-top:40px;
-    width:300px;
+    width:340px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
     /* display flex children as a single column*/
     cursor: pointer;
@@ -587,13 +606,16 @@ div.site-info{
   }
 
   .ham{
-    font-size:24px !important;
+    font-size:42px !important;
     font-weight:600;
     color: rgb(126, 93, 237) !important;
     text-shadow:
     rgba(123, 155, 242, 0.3) 1px 1px !important;
-    padding:20px 0px !important;
+      padding:30px 70px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
     margin-top:0px !important;
+    margin-bottom:2px !important;
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
@@ -615,11 +637,12 @@ div.site-info{
     font-size:60px !important;
   }
   .text-blurb{
-    top:470px !important;
+    top:490px !important;
   }
 
   span.greeting, .logout-text{
     margin-left:20px !important;
+    margin-top:80px !important;
     font-size:28px;
   }
 
@@ -1225,7 +1248,7 @@ input.search-bar{
   text-align:center;
   display:inline-block;
   /*border-radius: 4px;*/
-  font-size:20px;
+  font-size:16px;
   float:left;
   border-radius:5px;
   margin:60px 0px 10px 40px;
@@ -1555,20 +1578,20 @@ input.search-bar{
 }
 
 .tracktive-wordmark-main{
+  font-family: 'Lobster', cursive;
    -webkit-animation: wordmark 7s ease infinite;
   -moz-animation: wordmark 7s ease infinite;
   animation: wordmark 7s ease infinite;
-  font-size: 8em;
+  font-size: 8.3em;
   cursor: pointer;
   -webkit-touch-callout: none;  /*iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
-       -moz-user-select: none; /* Firefox 
+       -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   not sup8ported by any browser */
   display:inline-block;
   color: white; 
-  font-weight: 600;
       text-shadow:
   rgba(123, 155, 242, 0.3) 1px 1px,
   rgba(123, 155, 242, 0.3) 2px 2px,
@@ -1576,7 +1599,7 @@ input.search-bar{
   rgb(86, 53, 174) 4px 4px, 
   rgb(86, 54, 175) 5px 5px,
   rgb(86, 54, 175) 6px 6px;
-  padding-top:50px;
+  padding-top:30px;
 }
 
 
@@ -1712,7 +1735,7 @@ input.search-bar{
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
   display:inline-block;
-  margin-top:80px;
+  margin-top:70px;
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
@@ -1735,6 +1758,9 @@ input.search-bar{
   transition: all 50ms ease-in;
 }
 
+.splash-button:hover{
+  filter:brightness(95%)
+}
 
 
 .active-button{
@@ -1945,7 +1971,7 @@ h3.create{
   background: #9191c4;
  	color: rgb(126, 93, 237);
 	border: 2px solid #9191c4;
-  padding:6px 15px;
+  padding:4px 15px;
 	border-radius:5px;
   color: white;
 }
@@ -2435,7 +2461,7 @@ input:focus::-webkit-input-placeholder{
 }
 
 .question{
-	color: #ce25fc;
+	color: #7070a8;
   margin:0px 100px;
 }
 

@@ -41010,7 +41010,7 @@ return jQuery;
 	    border: 'none',
 	    padding: 0,
 	    margin: '0 auto',
-	    zIndex: 500
+	    zIndex: 5000
 	  }
 	};
 
