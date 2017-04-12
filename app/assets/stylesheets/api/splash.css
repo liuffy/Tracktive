@@ -25,7 +25,7 @@
   margin:0.5em 0em;
 }
 .splash-block-1{
-  padding:2em;
+  padding:3em;
   display: flex;
   flex-direction: row;
   height:380px;
@@ -36,7 +36,7 @@
 }
 
 .splash-block-2{
-  padding:2em;
+  padding:3em;
   z-index:103;
   display:flex;
   height:600px;
@@ -59,7 +59,7 @@
 .splash-text-2, .splash-text{
   width:45% !important;
   position:relative;
-  padding: 1% 2% 0% 6%;
+  padding: 1% 8% 0% 8%;
   margin: 4% 1%;
   height:50px;
   font-weight:500;
@@ -313,13 +313,15 @@
 
 
 .splash-buttons{
+    -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;
   display:inline-block;
   margin-top:80px;
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
   }
-
 
 .splash-button{
   font-family: 'Montserrat', sans-serif;
@@ -335,10 +337,7 @@
   margin: 0 15px;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
-  transition: all 50ms ease-in;}
-
-.splash-button:hover{
-  filter:brightness(90%);
+  transition: all 50ms ease-in;
 }
 
 

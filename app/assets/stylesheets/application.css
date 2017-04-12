@@ -99,7 +99,7 @@ html, body {
   top:50%;
   left:40%;
   position:absolute;
-  height:100px;
+  height:50px;
   width:auto;
   animation: loading 1s infinite;
 }
