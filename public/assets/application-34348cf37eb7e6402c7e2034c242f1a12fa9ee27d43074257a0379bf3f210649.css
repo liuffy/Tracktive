@@ -277,7 +277,7 @@ div.site-info{
 
 .carousel-container {
   margin-right:30px;
-  width: 90%;
+  width: 80%;
   display:block;
   overflow:hidden;
   color: #3e3b47;
@@ -290,12 +290,12 @@ div.site-info{
 
 .carousel-element img {
   margin-top:10%;
-  width:80%;
+  height:60%;
   box-shadow: 2px 2px 15px 0px rgba(96, 104, 247, 0.4);
   border-radius:3px;
   border: 1px solid rgba(106, 58, 252,0.6);
-  height:auto;
-  margin-left:10%;
+  width:auto;
+  /*margin-left:10%;*/
   z-index:10;
 }
 
@@ -1403,6 +1403,7 @@ input.search-bar{
   width:15%;
   height:auto;
   margin:2em auto;
+  vertical-align:bottom;
 }
 
 .purp-text{
@@ -1414,8 +1415,10 @@ input.search-bar{
   font-size: 1.3em;
   margin:0.5em 0em;
 }
+
 .splash-block-1{
   padding:3em;
+  padding-top:1.5em;
   display: flex;
   flex-direction: row;
   height:380px;
@@ -1427,6 +1430,7 @@ input.search-bar{
 
 .splash-block-2{
   padding:3em;
+  padding-top:1.5em;
   z-index:103;
   display:flex;
   height:600px;
@@ -1442,6 +1446,7 @@ input.search-bar{
   font-weight:600;
   margin-bottom:1em;
 }
+
 .splash-header-2{
   color:#fff !important;
 }
@@ -1449,16 +1454,16 @@ input.search-bar{
 .splash-text-2, .splash-text{
   width:45% !important;
   position:relative;
-  padding: 1% 8% 0% 8%;
-  margin: 4% 1%;
-  height:50px;
+  padding: 1% 4% 0% 8%;
+  margin: 2% 1%;
+  height:200px;
   font-weight:500;
   color:white;
   float:left;
 }
 
 .splash-text-2{
-  width:26% !important;
+  width:27% !important;
   text-align:center;
 }
 

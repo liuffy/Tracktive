@@ -94297,7 +94297,7 @@ return jQuery;
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: '' },
+	              { className: 'white-text' },
 	              'Morning yoga? Pump up jams? Study session? ',
 	              _react2.default.createElement('br', null),
 	              ' Create playlists for any occasion. Your playlists will be saved to your account, so you can jam out whenever you want.'
@@ -94315,7 +94315,7 @@ return jQuery;
 	            ),
 	            _react2.default.createElement(
 	              'p',
-	              { className: '' },
+	              { className: 'white-text' },
 	              'Scroll through the collections of music that other people have made. Find new songs from artists you already love, or discover exciting new artists you\'ve never listened to before.'
 	            ),
 	            _react2.default.createElement('img', { className: 'image-block-2',

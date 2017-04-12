@@ -1,6 +1,6 @@
 .carousel-container {
   margin-right:30px;
-  width: 90%;
+  width: 80%;
   display:block;
   overflow:hidden;
   color: #3e3b47;
@@ -13,12 +13,12 @@
 
 .carousel-element img {
   margin-top:10%;
-  width:80%;
+  height:60%;
   box-shadow: 2px 2px 15px 0px rgba(96, 104, 247, 0.4);
   border-radius:3px;
   border: 1px solid rgba(106, 58, 252,0.6);
-  height:auto;
-  margin-left:10%;
+  width:auto;
+  /*margin-left:10%;*/
   z-index:10;
 }
 

@@ -175,14 +175,14 @@ class Splash extends React.Component{
           src="http://res.cloudinary.com/liuffy/image/upload/v1491882053/listening_aiqegr.svg" />
       <div className="splash-text-2">
  <h2 className="splash-header-2">Save playlists that you create and like.</h2>
-  <p className="">Morning yoga? Pump up jams? Study session? <br/> Create playlists for any occasion. Your playlists will be saved to your account, so you can jam out whenever you want.</p>
+  <p className="white-text">Morning yoga? Pump up jams? Study session? <br/> Create playlists for any occasion. Your playlists will be saved to your account, so you can jam out whenever you want.</p>
   <img className="image-block-2"
         src="http://res.cloudinary.com/liuffy/image/upload/v1491886635/save_eueopy.svg"/>
       </div>
 
             <div className="splash-text-2">
  <h2 className="splash-header-2">Discover new artists or songs.</h2>
-  <p className="">Scroll through the collections of music that other people have made. Find new songs from artists you already love,
+  <p className="white-text">Scroll through the collections of music that other people have made. Find new songs from artists you already love,
   or discover exciting new artists you've never listened to before.</p>
     <img className="image-block-2"
         src="http://res.cloudinary.com/liuffy/image/upload/v1491886948/new_os9tdz.svg"/>
