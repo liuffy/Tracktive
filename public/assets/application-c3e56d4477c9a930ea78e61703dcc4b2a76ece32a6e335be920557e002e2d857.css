@@ -277,7 +277,7 @@ div.site-info{
 
 .carousel-container {
   margin-right:30px;
-  width: 70%;
+  width: 90%;
   display:block;
   overflow:hidden;
   color: #3e3b47;
@@ -290,12 +290,12 @@ div.site-info{
 
 .carousel-element img {
   margin-top:10%;
-  width:70%;
+  width:80%;
   box-shadow: 2px 2px 15px 0px rgba(96, 104, 247, 0.4);
   border-radius:3px;
   border: 1px solid rgba(106, 58, 252,0.6);
   height:auto;
-  margin-left:15%;
+  margin-left:10%;
   z-index:10;
 }
 
@@ -330,7 +330,7 @@ div.site-info{
   cursor:pointer;
   opacity:1.0;
   z-index:3000;
-  font-size:60px;
+  font-size:30px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(106, 58, 252,0.6);
  -webkit-filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
@@ -1415,7 +1415,7 @@ input.search-bar{
   margin:0.5em 0em;
 }
 .splash-block-1{
-  padding:2em;
+  padding:3em;
   display: flex;
   flex-direction: row;
   height:380px;
@@ -1426,7 +1426,7 @@ input.search-bar{
 }
 
 .splash-block-2{
-  padding:2em;
+  padding:3em;
   z-index:103;
   display:flex;
   height:600px;
@@ -1449,7 +1449,7 @@ input.search-bar{
 .splash-text-2, .splash-text{
   width:45% !important;
   position:relative;
-  padding: 1% 2% 0% 6%;
+  padding: 1% 8% 0% 8%;
   margin: 4% 1%;
   height:50px;
   font-weight:500;
@@ -1703,13 +1703,15 @@ input.search-bar{
 
 
 .splash-buttons{
+    -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;
   display:inline-block;
   margin-top:80px;
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
   }
-
 
 .splash-button{
   font-family: 'Montserrat', sans-serif;
@@ -1725,10 +1727,7 @@ input.search-bar{
   margin: 0 15px;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
-  transition: all 50ms ease-in;}
-
-.splash-button:hover{
-  filter:brightness(90%);
+  transition: all 50ms ease-in;
 }
 
 
@@ -2024,6 +2023,7 @@ h3.create{
 	width:100%;
 	padding:40px;
 	height:180px;
+	margin-top:50px;
 }
 
 .left-side-player{
@@ -2352,7 +2352,7 @@ html, body {
   top:50%;
   left:40%;
   position:absolute;
-  height:100px;
+  height:50px;
   width:auto;
   animation: loading 1s infinite;
 }
