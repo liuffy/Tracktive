@@ -345,6 +345,7 @@
   font-size:1.1em;
   padding:10px 30px;
   margin: 0 15px;
+  margin-top:10px;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;

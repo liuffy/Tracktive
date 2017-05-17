@@ -87,7 +87,7 @@ class TracktlistForm extends React.Component {
         <br />
 
         <button
-        className="create-button">create tracktlist</button>
+        className="splash-button">create tracktlist</button>
              
         </div>
         </form>

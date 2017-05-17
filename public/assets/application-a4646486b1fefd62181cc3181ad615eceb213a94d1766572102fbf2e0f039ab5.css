@@ -155,20 +155,20 @@ div.site-info{
 		right:0;
 		padding:60px 0px;
 		font-weight: 900;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-size: cover;
-  background-position: center;
-  bottom:0;
-  background-size: 150% 150%;
-  -webkit-animation: GradientAnimation 50s ease infinite;
-  -moz-animation: GradientAnimation 50s ease infinite;
-  animation: GradientAnimation 50s ease infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    bottom:0;
+    background-size: 150% 150%;
+    -webkit-animation: GradientAnimation 50s ease infinite;
+    -moz-animation: GradientAnimation 50s ease infinite;
+    animation: GradientAnimation 50s ease infinite;
 }
   
     
-    @-webkit-keyframes GradientAnimation {
+  @-webkit-keyframes GradientAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -194,7 +194,6 @@ div.site-info{
 }
 .thumb-image{
 	background-position: center center;
-  /*border: 1px solid rgba(126, 93, 237,0.2);*/
 	height:140px;
 	width:auto;
 }
@@ -207,7 +206,6 @@ div.site-info{
 }
 
 .entire-item{
-	/*overflow:hidden;*/
   background:white;
   display:flex;
   flex-direction:row;
@@ -219,11 +217,9 @@ div.site-info{
   box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);
 }
 .entire-item:hover{
-	/*font-size: 1.05em;*/
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  	/*overflow:hidden;*/
 }
 
 
@@ -235,7 +231,6 @@ div.site-info{
     float:left;
     display:block;
     padding-left:10px;
-      /*border-bottom: 0.5px solid rgb(126, 93, 237);*/
   }
 
 .track-index-title{
@@ -249,8 +244,6 @@ div.site-info{
   width: 200px;
   height:auto;
   word-wrap: break-word;
-  /*word-spacing:4px;*/
-  /*border-bottom: 0.5px solid rgb(126, 93, 237);*/
 }
 
 .index-text{
@@ -293,9 +286,7 @@ div.site-info{
   height:80%;
   box-shadow: 2px 2px 15px 0px rgba(96, 104, 247, 0.4);
   border-radius:3px;
-/*  border: 1px solid rgba(106, 58, 252,0.6);
-*/  width:auto;
-  /*margin-left:10%;*/
+  width:auto;
   z-index:10;
 }
 
@@ -305,7 +296,7 @@ div.site-info{
 }
 
 .slick-next, .slick-prev{
-  z-index:3000;
+  z-index:15;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
@@ -333,11 +324,11 @@ div.site-info{
   font-size:40px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(106, 58, 252,0.6);
- -webkit-filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
- filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
+  filter: drop-shadow(2px 2px 2px rgba(96, 104, 247, 0.7) );
   color: white;
-     -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: #b8b8db;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #b8b8db;
 }
 
 
@@ -348,7 +339,7 @@ div.site-info{
 .subtagline{
   display:block;
   color: #3e3b47;
- font-size:1.3em;
+  font-size:1.3em;
   position:absolute;
   margin-left:400px;
   display:inline-block;
@@ -478,28 +469,21 @@ div.site-info{
   }
 
 
-  div.index-footer{
-  	/*width:140vh !important;*/
-  }
-
   .hamburger-dropdown ul{
-        animation-name: fadeIn;
-  animation-duration: 0.5s;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
     margin-top: 70px;
     padding-top:40px;
     width:240px;
     right:100px; /* this is relative to the hamburger dropdown icon*/
-    /* display flex children as a single column*/
     cursor: pointer;
     list-style:none;
     border-left:3px solid #fff;
    	border-bottom:3px solid #fff;
-  /*box-shadow: 2px 2px 15px 0px rgba(126, 93, 237, 0.8);*/
   }
 
-    .hamburger-dropdown:hover ul{
+  .hamburger-dropdown:hover ul{
     display:flex;
-   /* enables a flex context for all its direct children*/
     background: #B8B8DB;
   }
 
@@ -517,19 +501,16 @@ div.site-info{
 		margin-bottom:2px !important;
 		border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
+  .create-modal-button{
+    animation: none !important;
+    width:100%;
+    margin:0px;
+  }
 
-
-
-.create-modal-button{
-  animation: none !important;
-  width:100%;
-  margin:0px;
-}
-
-.active-button-side{
-  font-weight:bold;
-  color: #d623fe;
-}
+  .active-button-side{
+    font-weight:bold;
+    color: #d623fe;
+  }
 
 
 }
@@ -569,8 +550,7 @@ div.site-info{
     margin-top:0px;
   }
 
-
-    .hamburger-dropdown > li{
+  .hamburger-dropdown > li{
     background-image: url("http://res.cloudinary.com/liuffy/image/upload/v1491922118/menu_yjc2nn.svg");
     background-repeat: no-repeat;
     background-size: 100px 100px;
@@ -580,13 +560,7 @@ div.site-info{
     cursor: pointer;
   }
 
-/*  .footer{
-    width:100vh !important;
-  } */
 
-  div.index-footer{
-    /*width:140vh !important;*/
-  }
 
   .hamburger-dropdown ul{
     margin-top: 90px;
@@ -600,7 +574,7 @@ div.site-info{
     border-bottom:3px solid #fff;
   }
 
-    .hamburger-dropdown:hover ul{
+  .hamburger-dropdown:hover ul{
     display:flex;
     background: #B8B8DB;
   }
@@ -619,9 +593,6 @@ div.site-info{
     border-bottom: 1px solid rgba(126, 93, 237, 0) !important;
   }
 
-/*  .footer{
-    padding-left:0em;
-  }*/
   .search-bar{
     margin-left:170px !important;
     margin-top:40px !important;
@@ -650,10 +621,6 @@ div.site-info{
     transform:scale(1.5);
     margin:80px !important;
   }
-
-  div.index-right{
-    /*width:400px !important;*/
-  }
 }
 
 
@@ -665,7 +632,7 @@ div.site-info{
   position:absolute;
   font-size:60px;
   top:-10px;
-  font-weight:500 !important;
+  font-weight:100 !important;
   color: rgba(124, 124, 183,0.7) !important;
   right:3px;
   padding:0.3em;
@@ -684,7 +651,7 @@ div.site-info{
 }
 
 .scaled-modal{
-    animation-name: scaleIn;
+  animation-name: scaleIn;
   animation-duration: 0.2s;
 }
 /* Animations */
@@ -724,13 +691,15 @@ div.site-info{
 .scaleOut {
   animation: scaleOut 0.5s ease-out both;
   -webkit-animation: scaleOut 0.5s ease-out both;
-    animation-delay:3s;
+  animation-delay:3s;
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleOut {
   to { opacity: 0; transform: scale(0.9); }
 }
+
 @-webkit-keyframes scaleOut {
   to { opacity: 0; -webkit-transform: scale(0.9); }
 }
@@ -742,10 +711,11 @@ div.site-info{
 .scaleUpOut {
   animation: scaleUpOut 0.5s ease-in both;
   -webkit-animation: scaleUpOut 0.5s ease-in both;
-    animation-delay:3s;
+  animation-delay:3s;
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleUpOut {
   to { opacity: 0; transform: scale(1.2); }
 }
@@ -764,6 +734,7 @@ div.site-info{
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleDownIn {
   from { opacity: 0; transform: scale(1.2); }
 }
@@ -775,9 +746,11 @@ div.site-info{
   animation: slideIn 0.5s ease-in both;
   -webkit-animation: slideIn 0.5s ease-in both;
 }
+
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(-20%); }
 }
+
 @-webkit-keyframes slideIn {
   from { opacity: 0; -webkit-transform: translateY(-20%); }
 }
@@ -786,9 +759,11 @@ div.site-info{
   animation: slideUp 0.5s ease-in both;
   -webkit-animation: slideUp 0.5s ease-in both;
 }
+
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(10%); }
 }
+
 @-webkit-keyframes slideUp {
   from { opacity: 0; -webkit-transform: translateY(10%); }
 }
@@ -812,6 +787,7 @@ div.site-info{
   animation: slideLeftIn 0.5s ease-in both;
   -webkit-animation: slideLeftIn 0.5s ease-in both;
 }
+
 @keyframes slideLeftIn {
   from { opacity: 0; transform: translateX(-50%); }
 }
@@ -826,6 +802,7 @@ div.site-info{
 @keyframes slideLeftOut {
   to { opacity: 0; transform: translateX(50%); }
 }
+
 @-webkit-keyframes slideLeftOut {
   to { opacity: 0; -webkit-transform: translateX(50%); }
 }
@@ -838,9 +815,11 @@ div.site-info{
     -moz-animation: flipLeftIn .5s both ease-out;
     animation: flipLeftIn .5s both ease-out;
 }
+
 @-webkit-keyframes flipLeftIn {
     from {-webkit-transform: translateZ(-1000px) rotateY(90deg); opacity: .2;}
 }
+
 @keyframes flipLeftIn {
     from {transform: translateZ(-1000px) rotateY(90deg);opacity: .2;}
 }
@@ -855,7 +834,7 @@ div.site-info{
 }
 
 @-webkit-keyframes flipLeftOut {
-    to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+  to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
 }
 @keyframes flipLeftOut {
     to {transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
@@ -869,9 +848,11 @@ div.site-info{
     -moz-animation: flipRightIn .5s both ease-out;
     animation: flipRightIn .5s both ease-out;
 }
+
 @-webkit-keyframes flipRightIn {
     from {-webkit-transform: translateZ(-1000px) rotateY(-90deg); opacity: .2;}
 }
+
 @keyframes flipRightIn {
     from {transform: translateZ(-1000px) rotateY(-90deg);opacity: .2;}
 }
@@ -930,18 +911,18 @@ div.site-info{
 }
 
 .rotateCubeIn {
-    -webkit-transform-origin: 50% 100%;
-    -webkit-animation: rotateCubeIn .6s both ease-in;
-    -moz-transform-origin: 50% 100%;
-    -moz-animation: rotateCubeIn .6s both ease-in;
-    transform-origin: 50% 100%;
-    animation: rotateCubeIn .6s both ease-in;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation: rotateCubeIn .6s both ease-in;
+  -moz-transform-origin: 50% 100%;
+  -moz-animation: rotateCubeIn .6s both ease-in;
+  transform-origin: 50% 100%;
+  animation: rotateCubeIn .6s both ease-in;
 }
 @-webkit-keyframes rotateCubeIn {
-    0% {opacity: .3;
-        -webkit-transform: translateY(-100%) rotateX(90deg);}
-    50% {-webkit-animation-timing-function: ease-out;
-        -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
+  0% {opacity: .3;
+      -webkit-transform: translateY(-100%) rotateX(90deg);}
+  50% {-webkit-animation-timing-function: ease-out;
+      -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
 }
 @-moz-keyframes rotateCubeIn {
     0% {opacity: .3;
@@ -984,7 +965,6 @@ div.site-info{
 
 .left-side, .right-side{
   width:200px;
-  /*border:1px solid black;*/
   float:left;
 }
 
@@ -1077,7 +1057,6 @@ p{
 
 .search-bar{
 	letter-spacing:1px;
-	/*margin: 30px 0px 0px 20px;*/
 	padding: 6px 5px;
 	width:20%;
 	transition: all 0.2s ease 0s;
@@ -1229,6 +1208,7 @@ input.search-bar{
 .fullscreen-sidebar{
   margin-top:36px;
 }
+
 .create-modal-button{
   animation: hovery 0.8s infinite;
   animation-iteration-count: 3;
@@ -1241,16 +1221,13 @@ input.search-bar{
   width:200px;
   height:30px;
   font-weight:600;
-  /*border-bottom:4px solid white;*/
   color:#6a3afc;
-  padding:0.5em;
-  align-contents:center;
+  padding:0.5em 0.5em 0em 0.5em;
   text-align:center;
   display:inline-block;
-  /*border-radius: 4px;*/
   font-size:16px;
   float:left;
-  border-radius:5px;
+  border-radius:15px;
   margin:60px 0px 10px 40px;
   transition: all 0.2s ease 0s;
 }
@@ -1267,29 +1244,31 @@ input.search-bar{
 }
 
 .hideMe {
-    -moz-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
+
 @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-        overflow:hidden;
-    }
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+    overflow:hidden;
+  }
 }
+
 @-webkit-keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        visibility:hidden;
+      width:0;
+      height:0;
+      visibility:hidden;
     }
 }
 
@@ -1388,16 +1367,16 @@ input.search-bar{
   -webkit-animation: bar 0.2s linear;
   animation: bar 0.2s linear;
   width:100%;
-  }
+}
 
 
   @-webkit-keyframes bar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
 }
 
 @keyframes bar {
@@ -1418,12 +1397,12 @@ input.search-bar{
 .headphones-pic{
   margin-bottom:15em;
   padding:2em 2em 4em 6em;
-  width:11%;  
+  width:5%;  
   height:auto;
 }
 
 .image-block-2{
-  width:15%;
+  width:8%;
   height:auto;
   margin:2em auto;
   vertical-align:bottom;
@@ -1439,7 +1418,12 @@ input.search-bar{
   margin:0.5em 0em;
 }
 
+.login{
+  margin: 1em !important;
+  margin-left: 28% !important;
+}
 .splash-block-1{
+  margin-top:5em !important;
   padding:3em;
   padding-top:1.5em;
   display: flex;
@@ -1447,7 +1431,6 @@ input.search-bar{
   height:380px;
   background: white;
   z-index:100;
-  margin-top:50px;
   box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -1493,6 +1476,7 @@ input.search-bar{
 .top{
   width:30%;
 }
+
 .gradient-div{
   display:block;
   width:100%;
@@ -1731,7 +1715,7 @@ input.search-bar{
 
 
 .splash-buttons{
-    -webkit-transition: all 50ms ease-in;
+  -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
   display:inline-block;
@@ -1739,7 +1723,7 @@ input.search-bar{
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
-  }
+}
 
 .splash-button{
   font-family: 'Montserrat', sans-serif;
@@ -1753,6 +1737,7 @@ input.search-bar{
   font-size:1.1em;
   padding:10px 30px;
   margin: 0 15px;
+  margin-top:10px;
   -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
@@ -1762,7 +1747,6 @@ input.search-bar{
   filter:brightness(95%)
 }
 
-
 .active-button{
   background:rgb(84, 82, 82);
   color: white;
@@ -1770,34 +1754,12 @@ input.search-bar{
   rgb(84, 82, 82) 0px 0px;
 }
 
-
-
 .greeting-container{
   width:100%;
 }
-
-.fist-bump{
-    height:100px;
-    margin-top:-50px;
-    margin-left:150px;
-    width:auto;
-    position:relative;
-    z-index:-1;
-  }
-
-  .hand-wave{
-    height:100px;
-    width:auto;
-    margin-top:-50px;
-    margin-left:50px;
-    position:relative;
-    z-index:-1;
-  }
 .form{
 	display:block;
 }
-
-
 
 .create-header{
 	width:80%;
@@ -1809,7 +1771,6 @@ input.search-bar{
 	font-size:40px;
 	margin-top:0px;
 	font-weight:600;
-	color: #6a3af9191c4c;
 	width:100%;
 	left:0;
 	right:0;
@@ -1859,7 +1820,7 @@ h3.create{
 	position:relative;
 	font-weight:500;
 	font-size:18px;
-	line-height:0.9;
+	line-height:1.1;
 	padding:2px;
 	display:inline-block;
 	color: #6a3afc;
@@ -1943,14 +1904,10 @@ h3.create{
 	letter-spacing:1px;
 	color: #464747;
 	font-size:18px;
-	/*border:1px solid #5B3DA8;*/
-	/*margin: 3px 0px;*/
-	/*border-radius:5px;*/
 	padding: 5px 5px;
 	width:80%;
 	transition: all 0.2s ease 0s;
   border-bottom: 3px solid #ededef;
-  /*box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;*/
   transition: all 0.2s ease 0s;
 }
 
@@ -1959,10 +1916,19 @@ h3.create{
    background: #ededef;
 }
 
-
-
- .submit, .create-button{
- 	  -webkit-transition: all 100ms ease-in;
+.create-button{
+	 -webkit-transition: all 50ms ease-in;
+  -moz-transition: all 50ms ease-in;
+  transition: all 50ms ease-in;
+  display:inline-block;
+  margin-top:70px;
+  line-height:0.8;
+  white-space: nowrap;
+  z-index:33;
+}
+}
+ .submit{
+	-webkit-transition: all 100ms ease-in;
   -moz-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
   font-family: 'Montserrat', sans-serif;
@@ -2298,78 +2264,18 @@ h2.profile-greeting {
  */
 
 
-/**
- * @license
- * MyFonts Webfont Build ID 3318813, 2016-12-08T19:03:58-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: ProximaNovaA-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-bold/
- * 
- * Webfont: ProximaNovaS-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold/
- * 
- * Webfont: ProximaNovaA-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-bold-it/
- * 
- * Webfont: ProximaNova-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
- * 
- * Webfont: ProximaNovaS-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold-it/
- * 
- * Webfont: ProximaNova-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
- * 
- * Webfont: ProximaNovaA-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular/
- * 
- * Webfont: ProximaNovaS-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular/
- * 
- * Webfont: ProximaNovaA-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular-it/
- * 
- * Webfont: ProximaNova-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
- * 
- * Webfont: ProximaNovaS-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular-it/
- * 
- * Webfont: ProximaNova-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3318813
- * Licensed pageviews: 1,000,000
- * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * 
- * © 2016 MyFonts Inc
-*/
-
-
-/* @import must be at top of file, otherwise CSS will not work */
-
-
 
 html {
     height: 100vh;
 }
 
-
 body {
   overflow-x:hidden;
-font-family: 'Raleway', sans-serif;	/* IE10+ */ 
+  font-family: 'Raleway', sans-serif;	/* IE10+ */ 
    -webkit-font-smoothing: subpixel-antialiased;
    
 	background:#f6f9fc;
 	min-height:100vh;
-	/*padding-top: 175px;*/
 }
 
 html, body {
@@ -2489,13 +2395,11 @@ label {
 
 .about-link{
   z-index:100;
-  /*z-index:50;*/
 	font-weight:bold;
 	color:rgba(255,255,255,0.8);
 	font-size:18px;
 	position:fixed;
 	margin-right:10px;
-	/*margin-top:5%;*/
 	top:16px;
 	right:140px;
 	cursor:pointer;
@@ -2607,8 +2511,6 @@ li{
 		/* IE10+ */ 
 	height:150px;
 	background-size: cover;
-	/*background-position: center;*/
-	/*border-bottom: 2px solid #545252;*/
 	width:100%;
   color: #6a3afc;
 	z-index:3;

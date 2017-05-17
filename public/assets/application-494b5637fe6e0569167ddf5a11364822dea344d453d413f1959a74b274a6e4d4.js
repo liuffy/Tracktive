@@ -40381,9 +40381,8 @@ return jQuery;
 	  _createClass(App, [{
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(newProps) {
-	      // Need this to redirect! 
 	      if (!newProps.currentUser) {
-	        this.props.router.push('/'); // redirect to splash if logged out
+	        this.props.router.push('/'); // redirect to Splash page if logged out
 	      }
 	    }
 	  }, {
@@ -40396,8 +40395,7 @@ return jQuery;
 	        { className: 'whole-index-page' },
 	        _react2.default.createElement(
 	          'div',
-	          {
-	            className: 'header-bar' },
+	          { className: 'header-bar' },
 	          _react2.default.createElement(
 	            'span',
 	            null,
@@ -40949,7 +40947,7 @@ return jQuery;
 	};
 	
 	var container = {
-	   width: '800px',
+	  width: '700px',
 	  height: 'auto',
 	  position: 'relative',
 	  margin: '0% auto',
@@ -41003,7 +41001,7 @@ return jQuery;
 	    position: 'fixed',
 	    boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
 	    top: '10%',
-	    left: '21%',
+	    left: '28%',
 	    width: '580px',
 	    height: '430px',
 	    background: 'white',
@@ -41136,20 +41134,6 @@ return jQuery;
 	      createTracktlist(artists, title, index_image_url);
 	      this.props.router.push('/users/' + this.props.currentUser.id); // redirect
 	    }
-	
-	    // renderErrors(e){
-	    // 	let {errors} = this.props;
-	
-	    // 	return(
-	    // 	<ul>
-	    // 			{errors.map((error, idx) => (
-	    // 			<li className="error" 
-	    //             key={idx}>{error}</li>
-	    // 			))}
-	    // 			</ul>
-	    // 			)
-	    // 		}
-	
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -41233,7 +41217,7 @@ return jQuery;
 	              _react2.default.createElement(
 	                'button',
 	                {
-	                  className: 'create-button' },
+	                  className: 'splash-button' },
 	                'create tracktlist'
 	              )
 	            )
@@ -41313,7 +41297,6 @@ return jQuery;
 				    tracktlists = _props.tracktlists,
 				    loading = _props.loading;
 	
-				// Script for fading effect 
 	
 				var Mailee = function Mailee() {
 					return _react2.default.createElement(
@@ -41489,8 +41472,6 @@ return jQuery;
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	// import { Link } from 'react-router';
-	
 	
 	var Mailee = function Mailee() {
 	  return _react2.default.createElement(
@@ -41588,8 +41569,6 @@ return jQuery;
 			'here.'
 		);
 	};
-	// import { Link } from 'react-router';
-	
 	
 	var SiteInfo = function SiteInfo() {
 		return _react2.default.createElement(
@@ -41604,7 +41583,8 @@ return jQuery;
 			),
 			_react2.default.createElement(
 				'p',
-				{ className: 'about-text' },
+				{
+					className: 'about-text' },
 				'This site is built on a Ruby on Rails backend, a PostgreSQL database, and a React.js with Redux architectural framework on the frontend.',
 				_react2.default.createElement('br', null),
 				'Icons and wordmarks were created using CSS and Adobe Photoshop 2017.'
@@ -41620,8 +41600,9 @@ return jQuery;
 				src: 'http://res.cloudinary.com/liuffy/image/upload/v1481323424/transparent_me_v6jbcl.png' }),
 			_react2.default.createElement(
 				'p',
-				{ className: 'about-text' },
-				'SL has had her fingers in many pies, including organic farming, educating high schoolers, and now learning how to program. Like most developers, she can be found on ',
+				{
+					className: 'about-text' },
+				'SL has had her fingers in many pies, including organic farming, educating high schoolers, and now learning how to program. Like most developers, she can be found on',
 				_react2.default.createElement(
 					'a',
 					{
@@ -41629,7 +41610,7 @@ return jQuery;
 						href: 'https://github.com/liuffy' },
 					'Github'
 				),
-				' and  ',
+				' and',
 				_react2.default.createElement(
 					'a',
 					{
@@ -41642,7 +41623,8 @@ return jQuery;
 			_react2.default.createElement('br', null),
 			_react2.default.createElement(
 				'p',
-				{ className: 'about-text' },
+				{
+					className: 'about-text' },
 				'Want to get in touch? You can add her on LinkedIn or e-mail her ',
 				_react2.default.createElement(Mailee, null)
 			),
@@ -42050,7 +42032,7 @@ return jQuery;
 				_react2.default.createElement(
 					"p",
 					{ className: "about-text" },
-					"Special thanks to ",
+					"Special thanks to",
 					_react2.default.createElement(
 						"a",
 						{ className: "link",
@@ -49483,7 +49465,6 @@ return jQuery;
 	  return $.ajax({
 	    method: 'GET',
 	    url: '/api/tracktlists'
-	    // makes an AJAX request that will make a http request to the tracktlistsController#index endpoint
 	  });
 	};
 	
@@ -57811,7 +57792,6 @@ return jQuery;
 	      });
 	
 	      // Scroller button
-	      // ===== Scroll to Top ==== 
 	      $(window).scroll(function () {
 	        if ($(this).scrollTop() >= 50) {
 	          // If page is scrolled more than 50px
@@ -94263,11 +94243,6 @@ return jQuery;
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'carousel-element' },
-	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491877300/screen1.png' })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'carousel-element' },
 	              _react2.default.createElement('img', { src: 'http://res.cloudinary.com/liuffy/image/upload/v1491878105/screen2.5.png' })
 	            ),
 	            _react2.default.createElement(
@@ -94302,7 +94277,8 @@ return jQuery;
 	              _react2.default.createElement('br', null),
 	              ' Create playlists for any occasion. Your playlists will be saved to your account, so you can jam out whenever you want.'
 	            ),
-	            _react2.default.createElement('img', { className: 'image-block-2',
+	            _react2.default.createElement('img', {
+	              className: 'image-block-2',
 	              src: 'http://res.cloudinary.com/liuffy/image/upload/v1491886635/save_eueopy.svg' })
 	          ),
 	          _react2.default.createElement(
@@ -95165,11 +95141,8 @@ return jQuery;
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	
 	      var link = this.props.formType === 'login' ? 'Sign Up' : 'Login';
-	
 	      var headerClass = this.props.formType === 'login' ? 'session-form-header purple' : 'session-form-header pink';
-	
 	      var header = this.props.formType === 'signup' ? 'sign up' : 'login';
 	
 	      var errors = this.props.errors.map(function (error, idx) {
@@ -95197,15 +95170,10 @@ return jQuery;
 	          'div',
 	          { className: 'session-form' },
 	          _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	              'h1',
-	              {
-	                className: headerClass },
-	              header,
-	              ' to make tracktlists.'
-	            )
+	            'h1',
+	            { className: headerClass },
+	            header,
+	            ' to make tracktlists.'
 	          ),
 	          _react2.default.createElement(
 	            'ul',
@@ -95231,7 +95199,7 @@ return jQuery;
 	              'button',
 	              { type: 'submit',
 	                value: 'Submit',
-	                className: 'submit' },
+	                className: 'splash-button login' },
 	              'submit'
 	            )
 	          ),
@@ -97622,8 +97590,6 @@ return jQuery;
 	        _react2.default.createElement('h2', null)
 	      );
 	
-	      // let createdTracktlists = user.tracktlists;
-	
 	      if (currentUser.username === user.username) {
 	        greeting = _react2.default.createElement(
 	          'div',
@@ -97651,9 +97617,6 @@ return jQuery;
 	          tracktlist: tracktlist,
 	          key: idx });
 	      });
-	      //  // console.log(user.username.toLowerCase())  
-	      //  console.log('user.username:', user.username)
-	      // console.log('user.createdTracktlists: ', user.createdTracktlists)
 	
 	      $(".footer").removeClass("footer").addClass("index-footer");
 	
@@ -97804,9 +97767,6 @@ return jQuery;
 	    value: function componentDidMount() {
 	      this.props.fetchTracktlist(this.props.params.tracktlistId);
 	    }
-	  }, {
-	    key: 'instructionsToggle',
-	    value: function instructionsToggle() {}
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -98105,12 +98065,6 @@ return jQuery;
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
-	// const _defaultUser = {
-	// 	user: {
-	// 		id: "", 
-	// 		username: ""
-	// 	}
-	// }
 	var UsersReducer = function UsersReducer() {
 		var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 		var action = arguments[1];
