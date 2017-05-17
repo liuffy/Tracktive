@@ -15,77 +15,17 @@
  */
 
 
-/**
- * @license
- * MyFonts Webfont Build ID 3318813, 2016-12-08T19:03:58-0500
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: ProximaNovaA-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-bold/
- * 
- * Webfont: ProximaNovaS-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold/
- * 
- * Webfont: ProximaNovaA-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-bold-it/
- * 
- * Webfont: ProximaNova-Bold by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
- * 
- * Webfont: ProximaNovaS-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-bold-it/
- * 
- * Webfont: ProximaNova-BoldIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
- * 
- * Webfont: ProximaNovaA-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular/
- * 
- * Webfont: ProximaNovaS-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular/
- * 
- * Webfont: ProximaNovaA-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/a-regular-it/
- * 
- * Webfont: ProximaNova-Regular by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
- * 
- * Webfont: ProximaNovaS-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/s-regular-it/
- * 
- * Webfont: ProximaNova-RegularIt by Mark Simonson
- * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3318813
- * Licensed pageviews: 1,000,000
- * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
- * 
- * © 2016 MyFonts Inc
-*/
-
-
-/* @import must be at top of file, otherwise CSS will not work */
-
-
 html {
     height: 100vh;
 }
 
-
 body {
   overflow-x:hidden;
-font-family: 'Raleway', sans-serif;	/* IE10+ */ 
+  font-family: 'Raleway', sans-serif;	/* IE10+ */ 
    -webkit-font-smoothing: subpixel-antialiased;
    
 	background:#f6f9fc;
 	min-height:100vh;
-	/*padding-top: 175px;*/
 }
 
 html, body {
@@ -205,13 +145,11 @@ label {
 
 .about-link{
   z-index:100;
-  /*z-index:50;*/
 	font-weight:bold;
 	color:rgba(255,255,255,0.8);
 	font-size:18px;
 	position:fixed;
 	margin-right:10px;
-	/*margin-top:5%;*/
 	top:16px;
 	right:140px;
 	cursor:pointer;
@@ -323,8 +261,6 @@ li{
 		/* IE10+ */ 
 	height:150px;
 	background-size: cover;
-	/*background-position: center;*/
-	/*border-bottom: 2px solid #545252;*/
 	width:100%;
   color: #6a3afc;
 	z-index:3;

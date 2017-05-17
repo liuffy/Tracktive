@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import {search} from '../../actions/search_actions';
+import { search } from '../../actions/search_actions';
 import Search from './search';
 
 const mapStateToProps = (state) =>({
-	query: state.query
+	query: state.query;
 });
 
 const mapDispatchToProps = dispatch => ({

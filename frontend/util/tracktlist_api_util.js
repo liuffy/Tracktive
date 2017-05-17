@@ -5,7 +5,6 @@ export const fetchTracktlists = () => {
 	return $.ajax({
 		method: 'GET',
 		url: '/api/tracktlists'
-		 // makes an AJAX request that will make a http request to the tracktlistsController#index endpoint
 	})
 }
 

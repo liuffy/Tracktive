@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal, {closeStyle} from 'simple-react-modal';
-import {aboutModalStyle} from '../../util/modal_styles';
+import Modal, { closeStyle } from 'simple-react-modal';
+import { aboutModalStyle } from '../../util/modal_styles';
 import Graphics from './graphics';
 
 
@@ -24,18 +24,18 @@ export default class GraphicsModal extends React.Component{
 
      return (
       <div className="modal">
-      <a onClick={this.show.bind(this)}>Graphics</a>
-      <Modal
-      show={this.state.show}
-      onClose={this.close.bind(this)}>
-      
-      <span 
-      onClick={this.close.bind(this)}
-      className="exit-button">&times;</span>
+        <a onClick={this.show.bind(this)}>Graphics</a>
+        <Modal
+        show={this.state.show}
+        onClose={this.close.bind(this)}>
+        
+          <span 
+          onClick={this.close.bind(this)}
+          className="exit-button">&times;</span>
 
-      <Graphics/>
- 
-      </Modal>
+        <Graphics/>
+
+        </Modal>
       </div>
   	)
   }

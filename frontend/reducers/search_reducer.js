@@ -1,5 +1,4 @@
-import {SEARCH_PLAYLISTS} from '../actions/search_actions';
-
+import { SEARCH_PLAYLISTS } from '../actions/search_actions';
 
 const initialState = {
   query: null

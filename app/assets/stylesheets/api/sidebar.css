@@ -1,6 +1,7 @@
 .fullscreen-sidebar{
   margin-top:36px;
 }
+
 .create-modal-button{
   animation: hovery 0.8s infinite;
   animation-iteration-count: 3;
@@ -13,16 +14,13 @@
   width:200px;
   height:30px;
   font-weight:600;
-  /*border-bottom:4px solid white;*/
   color:#6a3afc;
-  padding:0.5em;
-  align-contents:center;
+  padding:0.5em 0.5em 0em 0.5em;
   text-align:center;
   display:inline-block;
-  /*border-radius: 4px;*/
   font-size:16px;
   float:left;
-  border-radius:5px;
+  border-radius:15px;
   margin:60px 0px 10px 40px;
   transition: all 0.2s ease 0s;
 }
@@ -39,29 +37,31 @@
 }
 
 .hideMe {
-    -moz-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 5s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Firefox */
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Safari and Chrome */
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  /* Opera */
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
+
 @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-        overflow:hidden;
-    }
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+    overflow:hidden;
+  }
 }
+
 @-webkit-keyframes cssAnimation {
     to {
-        width:0;
-        height:0;
-        visibility:hidden;
+      width:0;
+      height:0;
+      visibility:hidden;
     }
 }
 
@@ -160,16 +160,16 @@
   -webkit-animation: bar 0.2s linear;
   animation: bar 0.2s linear;
   width:100%;
-  }
+}
 
 
   @-webkit-keyframes bar {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
 }
 
 @keyframes bar {

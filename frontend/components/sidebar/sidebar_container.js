@@ -1,6 +1,6 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Sidebar from './sidebar';
-import {logout} from '../../actions/session_actions';
+import { logout } from '../../actions/session_actions';
 
 
 const mapStateToProps = ({session}) => ({

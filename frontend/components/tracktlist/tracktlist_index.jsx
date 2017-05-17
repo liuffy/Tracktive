@@ -1,6 +1,6 @@
 import React from 'react';
 import TracktlistIndexItemContainer from './tracktlist_index_item_container';
-import {withRouter, Link} from 'react-router';
+import { withRouter, Link } from 'react-router';
 import Masonry from 'react-masonry-component';
 import Footer from '../footer/footer';
 import ReactDOM from 'react-dom';
@@ -31,20 +31,19 @@ class TracktlistIndex extends React.Component {
     $(".explore").css("opacity", 1 - $(window).scrollTop() / 250);
     });
 
-    // Scroller button
-// ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+// Scroller button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
 
 
 // SEARCHING!
@@ -71,43 +70,44 @@ $('#return-to-top').click(function() {      // When arrow is clicked
                tracktlist = {tracktlist}
                key={tracktlist.id}/>
                )
-            }
+           }
 
-    } 
-    else {
+    } else {
       indexText = 'explore'
       result = tracktlists.map( (tracktlist, idx) =>
-          <TracktlistIndexItemContainer
-           tracktlist = {tracktlist}
-           key={idx}/>
-           )
+        <TracktlistIndexItemContainer
+         tracktlist = {tracktlist}
+         key={idx}/>
+         )
       
     }
 
    return loading ? <div className="spinner">
-  <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg"/>
-</div> :
-<div>
-<a href="javascript:" id="return-to-top"><i className="icon-chevron-up"></i></a>
-<div className="whole-index-page">
-        <h2
-          className="explore">{indexText}         <img 
-            className="binoculars-logo"
-            src="http://res.cloudinary.com/liuffy/image/upload/v1491888128/submarine-with-periscope-up_pz2z4y.svg" /></h2> 
+    <img className="loader-logo" src="http://res.cloudinary.com/liuffy/image/upload/v1491921600/vinyl_pwajpu.svg"/>
+    </div> :
+    
+    <div>
+      <a href="javascript:" id="return-to-top"><i className="icon-chevron-up"></i></a>
+
+      <div className="whole-index-page">
+      <h2
+        className="explore">{indexText}         <img 
+        className="binoculars-logo"
+        src="http://res.cloudinary.com/liuffy/image/upload/v1491888128/submarine-with-periscope-up_pz2z4y.svg" />
+      </h2> 
 
       <div className='tracktlists-index'>
-          <Masonry className='tracktlists-index-container'
+        <Masonry className='tracktlists-index-container'
           elementType={'ul'}
-           options={{fitWidth: false, columnWidth: 200, gutter: 30}}>
-      
-           {result}
-          </Masonry>
+          options={{fitWidth: false, columnWidth: 200, gutter: 30}}>
+          {result}
+        </Masonry>
       </div>
 
 
-          <Footer/>
-  </div>
-  </div>
+      <Footer/>
+      </div>
+    </div>
   }
 }
 

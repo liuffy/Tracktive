@@ -1,6 +1,6 @@
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Like from './like';
-import {createLike, deleteLke} from '../../actions/like_actions';
+import { createLike, deleteLke } from '../../actions/like_actions';
 
 const mapStateToProps = (state, {session}) => {
 	let likedTracktlists = session.currentUser.likedTracktlists;

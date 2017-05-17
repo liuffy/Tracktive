@@ -9,7 +9,7 @@ const configureStore = (preloadedState = {}) => (
 		preloadedState,
 		compose(
 			applyMiddleware(thunk), 
-	  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() Redux add-on for Chrome Dev Tools
 			)
 		)
 	)

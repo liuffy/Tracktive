@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router';
-import {withRouter} from 'react-router';
+import { Link } from 'react-router';
+import { withRouter } from 'react-router';
 
 
 const TracktlistIndexItem = ({tracktlist, router}) =>{
@@ -10,9 +10,10 @@ const TracktlistIndexItem = ({tracktlist, router}) =>{
 				key={tracktlist.id}>
 				<Link to={`/tracktlists/${tracktlist.id}`}>
 				<div className="entire-item">
-				<div className="index-image-container">
-					<img className="thumb-image" 
-						src={tracktlist.index_image_url}/>
+
+					<div className="index-image-container">
+						<img className="thumb-image" 
+							src={tracktlist.index_image_url}/>
 					</div>
 
 					<div className="index-right">
@@ -27,9 +28,10 @@ const TracktlistIndexItem = ({tracktlist, router}) =>{
 						<span
 						className="index-text artists">features: {tracktlist.artists}</span>
 					</div>
+
 				</div>
-				</Link>
-			</li>)
+			</Link>
+		</li>)
 }
 
 

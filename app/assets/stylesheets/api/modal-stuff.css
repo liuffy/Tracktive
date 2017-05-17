@@ -4,7 +4,7 @@
   position:absolute;
   font-size:60px;
   top:-10px;
-  font-weight:500 !important;
+  font-weight:100 !important;
   color: rgba(124, 124, 183,0.7) !important;
   right:3px;
   padding:0.3em;
@@ -23,7 +23,7 @@
 }
 
 .scaled-modal{
-    animation-name: scaleIn;
+  animation-name: scaleIn;
   animation-duration: 0.2s;
 }
 /* Animations */
@@ -63,13 +63,15 @@
 .scaleOut {
   animation: scaleOut 0.5s ease-out both;
   -webkit-animation: scaleOut 0.5s ease-out both;
-    animation-delay:3s;
+  animation-delay:3s;
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleOut {
   to { opacity: 0; transform: scale(0.9); }
 }
+
 @-webkit-keyframes scaleOut {
   to { opacity: 0; -webkit-transform: scale(0.9); }
 }
@@ -81,10 +83,11 @@
 .scaleUpOut {
   animation: scaleUpOut 0.5s ease-in both;
   -webkit-animation: scaleUpOut 0.5s ease-in both;
-    animation-delay:3s;
+  animation-delay:3s;
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleUpOut {
   to { opacity: 0; transform: scale(1.2); }
 }
@@ -103,6 +106,7 @@
   -webkit-animation-delay:3s;
   -o-animation-delay:3s;
 }
+
 @keyframes scaleDownIn {
   from { opacity: 0; transform: scale(1.2); }
 }
@@ -114,9 +118,11 @@
   animation: slideIn 0.5s ease-in both;
   -webkit-animation: slideIn 0.5s ease-in both;
 }
+
 @keyframes slideIn {
   from { opacity: 0; transform: translateY(-20%); }
 }
+
 @-webkit-keyframes slideIn {
   from { opacity: 0; -webkit-transform: translateY(-20%); }
 }
@@ -125,9 +131,11 @@
   animation: slideUp 0.5s ease-in both;
   -webkit-animation: slideUp 0.5s ease-in both;
 }
+
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(10%); }
 }
+
 @-webkit-keyframes slideUp {
   from { opacity: 0; -webkit-transform: translateY(10%); }
 }
@@ -151,6 +159,7 @@
   animation: slideLeftIn 0.5s ease-in both;
   -webkit-animation: slideLeftIn 0.5s ease-in both;
 }
+
 @keyframes slideLeftIn {
   from { opacity: 0; transform: translateX(-50%); }
 }
@@ -165,6 +174,7 @@
 @keyframes slideLeftOut {
   to { opacity: 0; transform: translateX(50%); }
 }
+
 @-webkit-keyframes slideLeftOut {
   to { opacity: 0; -webkit-transform: translateX(50%); }
 }
@@ -177,9 +187,11 @@
     -moz-animation: flipLeftIn .5s both ease-out;
     animation: flipLeftIn .5s both ease-out;
 }
+
 @-webkit-keyframes flipLeftIn {
     from {-webkit-transform: translateZ(-1000px) rotateY(90deg); opacity: .2;}
 }
+
 @keyframes flipLeftIn {
     from {transform: translateZ(-1000px) rotateY(90deg);opacity: .2;}
 }
@@ -194,7 +206,7 @@
 }
 
 @-webkit-keyframes flipLeftOut {
-    to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
+  to {-webkit-transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
 }
 @keyframes flipLeftOut {
     to {transform: translateZ(1000px) rotateY(-90deg); opacity: 0;}
@@ -208,9 +220,11 @@
     -moz-animation: flipRightIn .5s both ease-out;
     animation: flipRightIn .5s both ease-out;
 }
+
 @-webkit-keyframes flipRightIn {
     from {-webkit-transform: translateZ(-1000px) rotateY(-90deg); opacity: .2;}
 }
+
 @keyframes flipRightIn {
     from {transform: translateZ(-1000px) rotateY(-90deg);opacity: .2;}
 }
@@ -269,18 +283,18 @@
 }
 
 .rotateCubeIn {
-    -webkit-transform-origin: 50% 100%;
-    -webkit-animation: rotateCubeIn .6s both ease-in;
-    -moz-transform-origin: 50% 100%;
-    -moz-animation: rotateCubeIn .6s both ease-in;
-    transform-origin: 50% 100%;
-    animation: rotateCubeIn .6s both ease-in;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation: rotateCubeIn .6s both ease-in;
+  -moz-transform-origin: 50% 100%;
+  -moz-animation: rotateCubeIn .6s both ease-in;
+  transform-origin: 50% 100%;
+  animation: rotateCubeIn .6s both ease-in;
 }
 @-webkit-keyframes rotateCubeIn {
-    0% {opacity: .3;
-        -webkit-transform: translateY(-100%) rotateX(90deg);}
-    50% {-webkit-animation-timing-function: ease-out;
-        -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
+  0% {opacity: .3;
+      -webkit-transform: translateY(-100%) rotateX(90deg);}
+  50% {-webkit-animation-timing-function: ease-out;
+      -webkit-transform: translateY(-50%) translateZ(-200px) rotateX(45deg); }
 }
 @-moz-keyframes rotateCubeIn {
     0% {opacity: .3;
@@ -323,7 +337,6 @@
 
 .left-side, .right-side{
   width:200px;
-  /*border:1px solid black;*/
   float:left;
 }
 

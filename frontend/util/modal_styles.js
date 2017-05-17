@@ -10,9 +10,9 @@ export const authModalStyle = {
  },
  content : {
    position        : 'fixed',
-  boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
+   boxShadow: '0.5px 0.5px 3px 0px rgba(0,0,0,0.8)',
    top             : '10%',
-   left:'21%',
+   left:'28%',
    width           : '580px',
    height          : '430px',
    background:'white',

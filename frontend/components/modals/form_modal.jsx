@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal, {closeStyle} from 'simple-react-modal';
-import {aboutModalStyle} from '../../util/modal_styles';
+import Modal, { closeStyle } from 'simple-react-modal';
+import { aboutModalStyle } from '../../util/modal_styles';
 import TracktlistFormContainer from '../tracktlist_form/tracktlist_form_container';
 import { browserHistory } from 'react-router'; 
 

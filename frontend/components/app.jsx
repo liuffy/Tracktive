@@ -12,9 +12,9 @@ class App extends React.Component {
     super(props);
   }
 
- componentWillReceiveProps(newProps){ // Need this to redirect! 
+ componentWillReceiveProps(newProps){  
     if(!newProps.currentUser){
-      this.props.router.push('/'); // redirect to splash if logged out
+      this.props.router.push('/'); // redirect to Splash page if logged out
     }
   }
 
@@ -24,15 +24,14 @@ class App extends React.Component {
 
     return(
       <div className="whole-index-page"> 
-      	<div
-      		className="header-bar">
-        <span><Link to="/browse"><img className="wordmark-logo"
-            src="http://res.cloudinary.com/liuffy/image/upload/v1485894985/wordmark-4_yiaq9n.png"/></Link></span>
-        <GreetingContainer />
+      	<div className="header-bar">
+          <span><Link to="/browse"><img className="wordmark-logo"
+              src="http://res.cloudinary.com/liuffy/image/upload/v1485894985/wordmark-4_yiaq9n.png"/></Link>
+          </span>
+          <GreetingContainer />
           <Search />
-        <SidebarContainer />
+          <SidebarContainer />
         </div>
-        
         { this.props.children }
       </div>
       )

@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import { fetchUser } from '../../actions/user_actions';
 import { selectUser} from '../../reducers/selectors';
-import {fetchTracktlists} from '../../actions/tracktlist_actions';
-import {selectAllTracktlists} from '../../reducers/selectors';
+import { fetchTracktlists } from '../../actions/tracktlist_actions';
+import { selectAllTracktlists } from '../../reducers/selectors';
 import UserDetail from './user_detail';
 
 

@@ -1,7 +1,7 @@
 
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Splash from './splash';
-import {clearErrors} from '../../actions/session_actions';
+import { clearErrors } from '../../actions/session_actions';
 
 
 const mapStateToProps = ({session}) => ({

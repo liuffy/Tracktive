@@ -5,12 +5,12 @@
 .headphones-pic{
   margin-bottom:15em;
   padding:2em 2em 4em 6em;
-  width:11%;  
+  width:5%;  
   height:auto;
 }
 
 .image-block-2{
-  width:15%;
+  width:8%;
   height:auto;
   margin:2em auto;
   vertical-align:bottom;
@@ -26,7 +26,12 @@
   margin:0.5em 0em;
 }
 
+.login{
+  margin: 1em !important;
+  margin-left: 28% !important;
+}
 .splash-block-1{
+  margin-top:5em !important;
   padding:3em;
   padding-top:1.5em;
   display: flex;
@@ -34,7 +39,6 @@
   height:380px;
   background: white;
   z-index:100;
-  margin-top:50px;
   box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,6 +84,7 @@
 .top{
   width:30%;
 }
+
 .gradient-div{
   display:block;
   width:100%;
@@ -318,7 +323,7 @@
 
 
 .splash-buttons{
-    -webkit-transition: all 50ms ease-in;
+  -webkit-transition: all 50ms ease-in;
   -moz-transition: all 50ms ease-in;
   transition: all 50ms ease-in;
   display:inline-block;
@@ -326,7 +331,7 @@
   line-height:0.8;
   white-space: nowrap;
   z-index:33;
-  }
+}
 
 .splash-button{
   font-family: 'Montserrat', sans-serif;
@@ -349,7 +354,6 @@
   filter:brightness(95%)
 }
 
-
 .active-button{
   background:rgb(84, 82, 82);
   color: white;
@@ -357,26 +361,6 @@
   rgb(84, 82, 82) 0px 0px;
 }
 
-
-
 .greeting-container{
   width:100%;
 }
-
-.fist-bump{
-    height:100px;
-    margin-top:-50px;
-    margin-left:150px;
-    width:auto;
-    position:relative;
-    z-index:-1;
-  }
-
-  .hand-wave{
-    height:100px;
-    width:auto;
-    margin-top:-50px;
-    margin-left:50px;
-    position:relative;
-    z-index:-1;
-  }

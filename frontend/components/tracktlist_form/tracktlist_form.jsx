@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, withRouter} from 'react-router';
+import { Link, withRouter } from 'react-router';
 import Footer from '../footer/footer';
 
 
@@ -31,19 +31,6 @@ class TracktlistForm extends React.Component {
   }
 
 
-
-  // renderErrors(e){
-  // 	let {errors} = this.props;
-
-  // 	return(
-		// 	<ul>
-  // 			{errors.map((error, idx) => (
-		// 			<li className="error" 
-  //             key={idx}>{error}</li>
-  // 			))}
-  // 			</ul>
-  // 			)
-  // 		}
 				
   render(){
     let {tracktlists} = this.props;

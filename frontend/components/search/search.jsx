@@ -1,6 +1,6 @@
 import { FormGroup, FormControl, HelpBlock } from 'react-bootstrap';
 import { Link, hashHistory } from 'react-router';
-import {bindActionCreators} from 'redux';
+import { bindActionCreators } from 'redux';
 import * as searchActions from '../../actions/search_actions';
 import { connect } from 'react-redux';
 const React = require('react');
